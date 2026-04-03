@@ -1,3 +1,0 @@
-UnityEngine.Networking
-UnityEngine.Input::get_touches
-UnityEngine.Input::get_touchCount
