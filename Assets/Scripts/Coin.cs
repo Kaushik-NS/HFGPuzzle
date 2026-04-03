@@ -55,4 +55,20 @@ public class Coin : MonoBehaviour
     {
         return isMoving;
     }
+
+    public void SetColor(string newColor)
+    {
+        colorName = newColor;
+
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+
+        switch (newColor)
+        {
+            case "Red": sr.color = Color.red; break;
+            case "Green": sr.color = Color.green; break;
+            case "Blue": sr.color = Color.blue; break;
+            case "Yellow": sr.color = Color.yellow; break;
+            case "Purple": sr.color = new Color(0.5f, 0, 0.5f); break;
+        }
+    }
 }

@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public GameObject MainMenuButton;
 
     public bool canPlay = false; //IMPORTANT
+    public AutoColorChanger ACC;
 
     void Start()
     {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("PUZZLE SOLVED!");
+        StartCoroutine(ACC.GetComponent<AutoColorChanger>().ChangeColorRoutine());
         CongratsText.enabled = true;
         PuzzleSolvedText.enabled = true;
         WinSound.Play();
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
 
     public void PlayGame()
     {
-        canPlay = true; //ENABLE GAME
+        canPlay = true;
         InsText.enabled = false;
         PlayButton.SetActive(false);
         ExitButton.SetActive(false);
