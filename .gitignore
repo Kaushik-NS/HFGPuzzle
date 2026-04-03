@@ -1,0 +1,17 @@
+# Unity
+Library/
+Temp/
+Build/
+Builds/
+Logs/
+UserSettings/
+
+# Android
+.gradle/
+*.apk
+*.aab
+
+# Visual Studio
+.vs/
+*.csproj
+*.sln

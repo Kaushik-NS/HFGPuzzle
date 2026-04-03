@@ -3,8 +3,8 @@
   <element name="org.gradle.parallel" element-id="231" assign-type="EqualsNoSpaces" property-value="True" type="Unity.Android.Gradle.PropertyBoolean" base-type="BaseProperty" is-default="true" dependencies="" />
   <element name="unityStreamingAssets" element-id="232" assign-type="EqualsNoSpaces" property-value="" type="Unity.Android.Gradle.Property`1" base-type="BaseProperty" is-default="true" dependencies="" />
   <element name="" element-id="235" assign-type="None" raw-value="unityTemplateVersion=21" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
-  <element name="" element-id="236" assign-type="None" raw-value="unityProjectPath=D:/UnityProj/HFGPuzzle" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
-  <element name="" element-id="237" assign-type="None" raw-value="unity.projectPath=D:/UnityProj/HFGPuzzle" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+  <element name="" element-id="236" assign-type="None" raw-value="unityProjectPath=D:/HFGPuzzle" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
+  <element name="" element-id="237" assign-type="None" raw-value="unity.projectPath=D:/HFGPuzzle" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
   <element name="" element-id="238" assign-type="None" raw-value="unity.debugSymbolLevel=none" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
   <element name="" element-id="239" assign-type="None" raw-value="unity.buildToolsVersion=36.0.0" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />
   <element name="" element-id="240" assign-type="None" raw-value="unity.minSdkVersion=25" type="Unity.Android.Gradle.Element" base-type="Unity.Android.Gradle.Element" is-default="false" dependencies="" />

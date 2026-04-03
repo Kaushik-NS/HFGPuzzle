@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,41 +9,57 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI PuzzleSolvedText;
     public AudioSource WinSound;
 
-    public GameObject InsPanel;
-    public GameObject InsButton;
-    public GameObject CloseButton;
+    public GameObject PlayButton;
+    public TextMeshProUGUI InsText;
+    public GameObject ExitButton;
+    public GameObject MainMenuButton;
 
+    public bool canPlay = false; //IMPORTANT
+
+    void Start()
+    {
+        canPlay = false; //FORCE LOCK
+
+        CongratsText.enabled = false;
+        PuzzleSolvedText.enabled = false;
+    }
 
     public void CheckWin()
     {
         foreach (Node node in allNodes)
         {
-            // Skip center (no color assigned)
             if (string.IsNullOrEmpty(node.targetColor))
                 continue;
 
-            // If node is empty  not solved
             if (node.currentCoin == null)
                 return;
 
-            // If wrong coin  not solved
             if (node.currentCoin.colorName != node.targetColor)
                 return;
         }
 
-        //  ALL CORRECT
-        Debug.Log(" PUZZLE SOLVED!");
-        WinSound.Play();
+        Debug.Log("PUZZLE SOLVED!");
         CongratsText.enabled = true;
         PuzzleSolvedText.enabled = true;
+        WinSound.Play();
+        MainMenuButton.SetActive(true);
     }
 
-    public void OpenInsPanel()
+    public void PlayGame()
     {
-        InsPanel.SetActive(true);
+        canPlay = true; //ENABLE GAME
+        InsText.enabled = false;
+        PlayButton.SetActive(false);
+        ExitButton.SetActive(false);
     }
-    public void CloseInsPanel()
+
+    public void ExitGame()
     {
-        InsPanel.SetActive(false); 
+       Application.Quit();
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

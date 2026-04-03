@@ -1844,6 +1844,7 @@ UnityEngine.UIElements.UIRenderer::ResetDrawCallData_Injected
 UnityEngine.UISystemProfilerApi::AddMarker_Injected
 UnityEngine.UISystemProfilerApi::BeginSample
 UnityEngine.UISystemProfilerApi::EndSample
+UnityEngine.UnityConsent.EndUserConsent::GetConsentState_Injected
 UnityEngine.UnityLogWriter::WriteStringToUnityLogImpl_Injected
 UnityEngine.VFX.VFXEventAttribute::Internal_Create
 UnityEngine.VFX.VFXEventAttribute::Internal_Destroy

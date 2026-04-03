@@ -7,7 +7,7 @@ public class CoinMover : MonoBehaviour
 
     private bool isBusy = false;
 
-    public GameObject GM;
+    public GameManager GM;
     public AudioSource CoinMoveSound;
 
     void Update()
@@ -20,21 +20,27 @@ public class CoinMover : MonoBehaviour
 
     void HandleClick()
     {
+        if (GM == null)
+        {
+            Debug.LogError("GameManager not assigned!");
+            return;
+        }
+
+        if (!GM.canPlay)
+        {
+            Debug.Log("Game not started yet");
+            return;
+        }
+
         if (isBusy) return;
 
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-        //Debug.Log("The HIT is : " + hit.transform.gameObject.name);
 
         if (hit.collider == null) return;
 
         Coin coin = hit.collider.GetComponent<Coin>();
-        if (coin == null)
-        {
-            //Debug.Log("The Coin is NULL");
-            return;
-        }
+        if (coin == null) return;
 
         TryMove(coin);
     }
@@ -52,7 +58,7 @@ public class CoinMover : MonoBehaviour
 
         if (!coinNode.connectedNodes.Contains(emptyNode))
         {
-            Debug.Log(" Invalid move — no empty node nearby");
+            Debug.Log(" Invalid move no empty node nearby");
             return;
         }
 
@@ -69,14 +75,15 @@ public class CoinMover : MonoBehaviour
 
         coin.SetNode(emptyNode);
 
-        // wait until movement completes
+        //wait until movement completes
         while (coin.IsMoving())
             yield return null;
 
         emptyNode = oldNode;
 
         isBusy = false;
-        GM.GetComponent<GameManager>().CheckWin();
-        
+
+        //CORRECT CALL
+        GM.CheckWin();
     }
 }

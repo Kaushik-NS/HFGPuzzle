@@ -5,6 +5,8 @@ android.hardware.vulkan.version was added because:
 android.permission.INTERNET was added because:
 	UnityEngine.Networking was present in:
 		Unity.RenderPipelines.Core.Runtime-FeaturesChecked.txt
+	Crash Reporting
+	App Insights
 android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
 	UnityEngine.Input::get_touches was present in:
 		Unity.RenderPipelines.Core.Runtime-FeaturesChecked.txt

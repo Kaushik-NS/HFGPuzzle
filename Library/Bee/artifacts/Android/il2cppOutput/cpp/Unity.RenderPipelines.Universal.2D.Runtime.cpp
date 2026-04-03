@@ -1399,6 +1399,7 @@ inline void List_1_AddWithResize_mB909A85F4F78AA06831AE6DDE2FCC796D6F0B059 (List
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57907
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ShadowShapeProvider2DUtility_GetTrimEdgeFromBounds_m6C6B9FACDACF3342E20B3892A13E930FE64F0820 (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___0_bounds, float ___1_trimMultipler, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -1410,9 +1411,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ShadowShapeProvider2DUtility_GetTrimEdg
 	float G_B3_0 = 0.0f;
 	float G_B3_1 = 0.0f;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/Providers/ShadowShapeProvider2D_Utility.cs:13>
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
 		L_0 = Bounds_get_size_m0699A53A55A78B3201D7270D6F338DFA91B6FAD4_inline((&___0_bounds), NULL);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/Providers/ShadowShapeProvider2D_Utility.cs:16>
 		float L_1 = ___1_trimMultipler;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = V_0;
 		float L_3 = L_2.___x;
@@ -1444,6 +1447,7 @@ IL_001f:
 IL_0025:
 	{
 		V_1 = ((float)il2cpp_codegen_multiply(G_B3_1, G_B3_0));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/Providers/ShadowShapeProvider2D_Utility.cs:19>
 		float L_10 = V_1;
 		float L_11;
 		L_11 = log10f(L_10);
@@ -1452,19 +1456,23 @@ IL_0025:
 		float L_13;
 		L_13 = powf((10.0f), ((-L_12)));
 		V_2 = L_13;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/Providers/ShadowShapeProvider2D_Utility.cs:20>
 		float L_14 = V_1;
 		float L_15 = V_2;
 		float L_16;
 		L_16 = floorf(((float)il2cpp_codegen_multiply(L_14, L_15)));
 		float L_17 = V_2;
 		V_1 = ((float)(L_16/L_17));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/Providers/ShadowShapeProvider2D_Utility.cs:22>
 		float L_18 = V_1;
 		return L_18;
 	}
 }
+// Method Definition Index: 57908
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ShadowShapeProvider2DUtility_IsUsingGpuDeformation_m8C590AC63075427436DD23B0B3E704374CD3E6EF (const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/Providers/ShadowShapeProvider2D_Utility.cs:28>
 		bool L_0;
 		L_0 = SpriteSkinUtility_IsUsingGpuDeformation_mF50D05BFCC9B1AC8DDD49DA47A83708B2E041944(NULL);
 		return L_0;
@@ -1478,6 +1486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ShadowShapeProvider2DUtility_IsUsingGpuD
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57909
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C VertexDictionary_GetIndexRemap_m0E5260046A68AA40445328A6A22F21EB718AA143 (VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D* __this, NativeArray_1_t97E2BFD61E13EEF2CDE34A313415FAD03AB993FD ___0_vertices, NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C ___1_indices, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1501,29 +1510,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8
 	memset((&V_3), 0, sizeof(V_3));
 	int32_t V_4 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:13>
 		int32_t L_0;
 		L_0 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_vertices))->___m_Length);
 		NativeArray_1__ctor_mB7BB23924A114599D399A5EC6C00B2B6407CF66D((&V_0), L_0, 2, 1, NativeArray_1__ctor_mB7BB23924A114599D399A5EC6C00B2B6407CF66D_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:14>
 		il2cpp_codegen_runtime_class_init_inline(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var);
 		Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8* L_1 = ((VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_StaticFields*)il2cpp_codegen_static_fields_for(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var))->___m_VertexDictionary;
 		NullCheck(L_1);
 		Dictionary_2_Clear_mD9C1F50088CCD1E05534B8692A64DCB2824137C4(L_1, Dictionary_2_Clear_mD9C1F50088CCD1E05534B8692A64DCB2824137C4_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:15>
 		Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8* L_2 = ((VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_StaticFields*)il2cpp_codegen_static_fields_for(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var))->___m_VertexDictionary;
 		int32_t L_3;
 		L_3 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_vertices))->___m_Length);
 		NullCheck(L_2);
 		int32_t L_4;
 		L_4 = Dictionary_2_EnsureCapacity_m122CA237B8AA53B2058C59B6B09398B6E9A98ED9(L_2, L_3, Dictionary_2_EnsureCapacity_m122CA237B8AA53B2058C59B6B09398B6E9A98ED9_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:16>
 		V_2 = 0;
 		goto IL_0074;
 	}
 
 IL_0030:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:18>
 		int32_t L_5 = V_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = IL2CPP_NATIVEARRAY_GET_ITEM(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, ((&___0_vertices))->___m_Buffer, L_5);
 		V_3 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:19>
 		il2cpp_codegen_runtime_class_init_inline(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var);
 		Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8* L_7 = ((VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_StaticFields*)il2cpp_codegen_static_fields_for(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var))->___m_VertexDictionary;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = V_3;
@@ -1536,9 +1551,11 @@ IL_0030:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:21>
 		int32_t L_10 = V_2;
 		int32_t L_11 = V_2;
 		IL2CPP_NATIVEARRAY_SET_ITEM(int32_t, ((&V_0))->___m_Buffer, L_10, (L_11));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:22>
 		il2cpp_codegen_runtime_class_init_inline(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var);
 		Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8* L_12 = ((VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_StaticFields*)il2cpp_codegen_static_fields_for(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var))->___m_VertexDictionary;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = V_3;
@@ -1550,6 +1567,7 @@ IL_0030:
 
 IL_005d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:26>
 		int32_t L_15 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var);
 		Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8* L_16 = ((VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_StaticFields*)il2cpp_codegen_static_fields_for(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var))->___m_VertexDictionary;
@@ -1562,12 +1580,14 @@ IL_005d:
 
 IL_0070:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:16>
 		int32_t L_19 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_19, 1));
 	}
 
 IL_0074:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:16>
 		int32_t L_20 = V_2;
 		int32_t L_21;
 		L_21 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___0_vertices))->___m_Length);
@@ -1577,15 +1597,18 @@ IL_0074:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:30>
 		int32_t L_22;
 		L_22 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___1_indices))->___m_Length);
 		NativeArray_1__ctor_mB7BB23924A114599D399A5EC6C00B2B6407CF66D((&V_1), L_22, 2, 1, NativeArray_1__ctor_mB7BB23924A114599D399A5EC6C00B2B6407CF66D_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:31>
 		V_4 = 0;
 		goto IL_00b2;
 	}
 
 IL_0093:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:33>
 		int32_t L_23 = V_4;
 		int32_t L_24 = V_4;
 		int32_t L_25;
@@ -1593,12 +1616,14 @@ IL_0093:
 		int32_t L_26;
 		L_26 = IL2CPP_NATIVEARRAY_GET_ITEM(int32_t, ((&V_0))->___m_Buffer, L_25);
 		IL2CPP_NATIVEARRAY_SET_ITEM(int32_t, ((&V_1))->___m_Buffer, L_23, (L_26));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:31>
 		int32_t L_27 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 	}
 
 IL_00b2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:31>
 		int32_t L_28 = V_4;
 		int32_t L_29;
 		L_29 = IL2CPP_NATIVEARRAY_GET_LENGTH(((&___1_indices))->___m_Length);
@@ -1608,6 +1633,7 @@ IL_00b2:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:36>
 		NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C L_30 = V_1;
 		return L_30;
 	}
@@ -1621,6 +1647,7 @@ IL2CPP_EXTERN_C  NativeArray_1_tA833EB7E3E1C9AF82C37976AD964B8D4BAC38B2C VertexD
 	_returnValue = VertexDictionary_GetIndexRemap_m0E5260046A68AA40445328A6A22F21EB718AA143(_thisAdjusted, ___0_vertices, ___1_indices, method);
 	return _returnValue;
 }
+// Method Definition Index: 57910
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexDictionary__cctor_mB58E922FDCBC9C102CCF0A439CF913F8DD1F91B3 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1632,6 +1659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexDictionary__cctor_mB58E922FDCBC9C1
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Shadows/ShadowProvider/VertexDictionary.cs:8>
 		Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8* L_0 = (Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8*)il2cpp_codegen_object_new(Dictionary_2_t9E2CD61857E2645197B7279CE040480C40510DD8_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m34B1AD57666C052D367EE98ED14DCF1183D4A774(L_0, Dictionary_2__ctor_m34B1AD57666C052D367EE98ED14DCF1183D4A774_RuntimeMethod_var);
 		((VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_StaticFields*)il2cpp_codegen_static_fields_for(VertexDictionary_t1A68BB41185E8A1C1BE37392E27C48945623D42D_il2cpp_TypeInfo_var))->___m_VertexDictionary = L_0;
@@ -1647,6 +1675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void VertexDictionary__cctor_mB58E922FDCBC9C1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57911
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8345DAC815C52842240CFBB84E4DD3609621BB51 UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m050A9CAA08705EC022F15BE62FE419CF3D6E2C76 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1680,6 +1709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8345DAC815C52842240CFBB84E4DD
 		return L_6;
 	}
 }
+// Method Definition Index: 57912
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m28F5DE7E6798EB10AB1BD26513A5C7E15F3096A8 (UnitySourceGeneratedAssemblyMonoScriptTypes_v1_tD519ED6E178A22719F9DA4763477CBCBD8288856* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1765,6 +1795,7 @@ IL2CPP_EXTERN_C void MonoScriptData_t8345DAC815C52842240CFBB84E4DD3609621BB51_ma
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57913
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachineUniversalPixelPerfect_OnEnable_mE985C3B2D6154244E4D1586771D7F4CCD7420F94 (CinemachineUniversalPixelPerfect_t3711639A816F27FC59B879159EE59D8AE64F9DC7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1775,11 +1806,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachineUniversalPixelPerfect_OnEnabl
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/CinemachineUniversalPixelPerfect.cs:17>
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(_stringLiteral5ACAF85894F379498F7ECBD9B54D46B981B506A2, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/CinemachineUniversalPixelPerfect.cs:18>
 		return;
 	}
 }
+// Method Definition Index: 57914
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachineUniversalPixelPerfect__ctor_mC7A1AE72895E88A136FA7BD8421DBC2C0A710BFC (CinemachineUniversalPixelPerfect_t3711639A816F27FC59B879159EE59D8AE64F9DC7* __this, const RuntimeMethod* method) 
 {
 	{
@@ -1795,13 +1829,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CinemachineUniversalPixelPerfect__ctor_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57915
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoublePoint__ctor_m29F8204086F248FC19FB9593452E8EECF612563A (DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5* __this, double ___0_x, double ___1_y, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:70>
 		double L_0 = ___0_x;
 		__this->___X = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:70>
 		double L_1 = ___1_y;
 		__this->___Y = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:71>
 		return;
 	}
 }
@@ -1812,15 +1850,19 @@ IL2CPP_EXTERN_C  void DoublePoint__ctor_m29F8204086F248FC19FB9593452E8EECF612563
 	_thisAdjusted = reinterpret_cast<DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5*>(__this + _offset);
 	DoublePoint__ctor_m29F8204086F248FC19FB9593452E8EECF612563A(_thisAdjusted, ___0_x, ___1_y, method);
 }
+// Method Definition Index: 57916
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoublePoint__ctor_m52141CF0CACA19656612BC12A2C4F7664763F1B2 (DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5* __this, DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5 ___0_dp, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:75>
 		DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5 L_0 = ___0_dp;
 		double L_1 = L_0.___X;
 		__this->___X = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:75>
 		DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5 L_2 = ___0_dp;
 		double L_3 = L_2.___Y;
 		__this->___Y = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:76>
 		return;
 	}
 }
@@ -1831,15 +1873,19 @@ IL2CPP_EXTERN_C  void DoublePoint__ctor_m52141CF0CACA19656612BC12A2C4F7664763F1B
 	_thisAdjusted = reinterpret_cast<DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5*>(__this + _offset);
 	DoublePoint__ctor_m52141CF0CACA19656612BC12A2C4F7664763F1B2(_thisAdjusted, ___0_dp, method);
 }
+// Method Definition Index: 57917
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DoublePoint__ctor_m41A0279EEC0F9151AE7450FB7897C28252712545 (DoublePoint_t2E74DC3005CF86530561F3ACB78FABF74A1BEAE5* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_ip, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:80>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_ip;
 		int64_t L_1 = L_0.___X;
 		__this->___X = ((double)L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:80>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___0_ip;
 		int64_t L_3 = L_2.___Y;
 		__this->___Y = ((double)L_3);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:81>
 		return;
 	}
 }
@@ -1858,6 +1904,7 @@ IL2CPP_EXTERN_C  void DoublePoint__ctor_m41A0279EEC0F9151AE7450FB7897C2825271254
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57918
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyTree_Clear_m4EE08CDE266753595E9B4A79A6B363EEE4CC9C43 (PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1870,22 +1917,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyTree_Clear_m4EE08CDE266753595E9B4A79
 	}
 	int32_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:98>
 		V_0 = 0;
 		goto IL_0015;
 	}
 
 IL_0004:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:99>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = __this->___m_AllPolys;
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		List_1_set_Item_mB2D5A8F8B1DF4CCE4090CA4B3A907D93C56C2B66(L_0, L_1, (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)NULL, List_1_set_Item_mB2D5A8F8B1DF4CCE4090CA4B3A907D93C56C2B66_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:98>
 		int32_t L_2 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_2, 1));
 	}
 
 IL_0015:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:98>
 		int32_t L_3 = V_0;
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_4 = __this->___m_AllPolys;
 		NullCheck(L_4);
@@ -1897,15 +1948,19 @@ IL_0015:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:100>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_6 = __this->___m_AllPolys;
 		NullCheck(L_6);
 		List_1_Clear_m0A26DE6C2767CD486B29BF9516DEE948B6538541_inline(L_6, List_1_Clear_m0A26DE6C2767CD486B29BF9516DEE948B6538541_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:101>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_7 = ((PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)__this)->___m_Childs;
 		NullCheck(L_7);
 		List_1_Clear_m0A26DE6C2767CD486B29BF9516DEE948B6538541_inline(L_7, List_1_Clear_m0A26DE6C2767CD486B29BF9516DEE948B6538541_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:102>
 		return;
 	}
 }
+// Method Definition Index: 57919
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* PolyTree_GetFirst_m0B5384CBBF4424101DED5DF85ACD3429571B0D7B (PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1916,6 +1971,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:106>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = ((PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)__this)->___m_Childs;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -1926,6 +1982,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:107>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_2 = ((PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)__this)->___m_Childs;
 		NullCheck(L_2);
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_3;
@@ -1935,9 +1992,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 
 IL_001b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:109>
 		return (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)NULL;
 	}
 }
+// Method Definition Index: 57920
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PolyTree_get_Total_m2C24746F50527209FE394C6CF52CD40BB95B48C7 (PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1949,11 +2008,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PolyTree_get_Total_m2C24746F50527209F
 	}
 	int32_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:116>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = __this->___m_AllPolys;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_mA6116DFDAF4F4B9F9029E0AC1B92D2318FC87D85_inline(L_0, List_1_get_Count_mA6116DFDAF4F4B9F9029E0AC1B92D2318FC87D85_RuntimeMethod_var);
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:118>
 		int32_t L_2 = V_0;
 		if ((((int32_t)L_2) <= ((int32_t)0)))
 		{
@@ -1975,16 +2036,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PolyTree_get_Total_m2C24746F50527209F
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:118>
 		int32_t L_7 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_7, 1));
 	}
 
 IL_002e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:119>
 		int32_t L_8 = V_0;
 		return L_8;
 	}
 }
+// Method Definition Index: 57921
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyTree__ctor_m1994B16073578DFA1EEA2842DB0F445B50757AF7 (PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1995,6 +2059,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyTree__ctor_m1994B16073578DFA1EEA2842
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:91>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = (List_1_t1B6F28CED46A3783113870E638DC8159DE918001*)il2cpp_codegen_object_new(List_1_t1B6F28CED46A3783113870E638DC8159DE918001_il2cpp_TypeInfo_var);
 		List_1__ctor_mE73A2642493C9165D3615E7437B5B9E37203478A(L_0, List_1__ctor_mE73A2642493C9165D3615E7437B5B9E37203478A_RuntimeMethod_var);
 		__this->___m_AllPolys = L_0;
@@ -2011,12 +2076,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyTree__ctor_m1994B16073578DFA1EEA2842
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57922
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolyNode_IsHoleNode_m7BE6DBE07C8A7B4C61D0D3A9FFA4F71FE0B47EE5 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
 	PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:135>
 		V_0 = (bool)1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:136>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_0 = __this->___m_Parent;
 		V_1 = L_0;
 		goto IL_0017;
@@ -2024,8 +2092,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolyNode_IsHoleNode_m7BE6DBE07C8A7B4C61D
 
 IL_000b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:139>
 		bool L_1 = V_0;
 		V_0 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:140>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_2 = V_1;
 		NullCheck(L_2);
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_3 = L_2->___m_Parent;
@@ -2034,6 +2104,7 @@ IL_000b:
 
 IL_0017:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:137>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_4 = V_1;
 		if (L_4)
 		{
@@ -2041,10 +2112,12 @@ IL_0017:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:142>
 		bool L_5 = V_0;
 		return L_5;
 	}
 }
+// Method Definition Index: 57923
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PolyNode_get_ChildCount_m0C56A91C4A8A62998B9AA4D3ABC143B511B66A89 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2054,6 +2127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PolyNode_get_ChildCount_m0C56A91C4A8A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:147>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = __this->___m_Childs;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -2061,13 +2135,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PolyNode_get_ChildCount_m0C56A91C4A8A
 		return L_1;
 	}
 }
+// Method Definition Index: 57924
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* PolyNode_get_Contour_m9AB3A0595689E2DB122E050B8725FD4F56FAC521 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:152>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = __this->___m_polygon;
 		return L_0;
 	}
 }
+// Method Definition Index: 57925
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyNode_AddChild_mB8507A9D14D146FFB323B4428B46CFAB27ACD9BF (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* ___0_Child, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2079,26 +2156,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyNode_AddChild_mB8507A9D14D146FFB323B
 	}
 	int32_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:157>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = __this->___m_Childs;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_mA6116DFDAF4F4B9F9029E0AC1B92D2318FC87D85_inline(L_0, List_1_get_Count_mA6116DFDAF4F4B9F9029E0AC1B92D2318FC87D85_RuntimeMethod_var);
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:158>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_2 = __this->___m_Childs;
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_3 = ___0_Child;
 		NullCheck(L_2);
 		List_1_Add_m3BAB6E2984D947EEF9D53C7CA3366BF8833AE576_inline(L_2, L_3, List_1_Add_m3BAB6E2984D947EEF9D53C7CA3366BF8833AE576_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:159>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_4 = ___0_Child;
 		NullCheck(L_4);
 		L_4->___m_Parent = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___m_Parent), (void*)__this);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:160>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_5 = ___0_Child;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		L_5->___m_Index = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:161>
 		return;
 	}
 }
+// Method Definition Index: 57926
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* PolyNode_GetNext_m1D7A502BB5D76DECC88DC4D6621D6C3FA590206F (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2109,6 +2192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:165>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = __this->___m_Childs;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -2119,6 +2203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:166>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_2 = __this->___m_Childs;
 		NullCheck(L_2);
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_3;
@@ -2128,11 +2213,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 
 IL_001b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:168>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_4;
 		L_4 = PolyNode_GetNextSiblingUp_m85E45FDAFBB96E6FE37F9EE1C146D9ACC09D4F3B(__this, NULL);
 		return L_4;
 	}
 }
+// Method Definition Index: 57927
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* PolyNode_GetNextSiblingUp_m85E45FDAFBB96E6FE37F9EE1C146D9ACC09D4F3B (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2143,6 +2230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:173>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_0 = __this->___m_Parent;
 		if (L_0)
 		{
@@ -2150,11 +2238,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF4
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:174>
 		return (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)NULL;
 	}
 
 IL_000a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:175>
 		int32_t L_1 = __this->___m_Index;
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_2 = __this->___m_Parent;
 		NullCheck(L_2);
@@ -2168,6 +2258,7 @@ IL_000a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:176>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_5 = __this->___m_Parent;
 		NullCheck(L_5);
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_6;
@@ -2177,6 +2268,7 @@ IL_000a:
 
 IL_0030:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:178>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_7 = __this->___m_Parent;
 		NullCheck(L_7);
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_8 = L_7->___m_Childs;
@@ -2187,43 +2279,54 @@ IL_0030:
 		return L_10;
 	}
 }
+// Method Definition Index: 57928
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t1B6F28CED46A3783113870E638DC8159DE918001* PolyNode_get_Childs_m9504B6F5165F6AD581F63D3A80A5FAA7B472BC79 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:183>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = __this->___m_Childs;
 		return L_0;
 	}
 }
+// Method Definition Index: 57929
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* PolyNode_get_Parent_mF7E2484447DB849847A1F57387E4B676DDF9E0E5 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:188>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_0 = __this->___m_Parent;
 		return L_0;
 	}
 }
+// Method Definition Index: 57930
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolyNode_get_IsHole_m59B43B31ED19DD2E0CB22EDFD3627004A46E33E9 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:193>
 		bool L_0;
 		L_0 = PolyNode_IsHoleNode_m7BE6DBE07C8A7B4C61D0D3A9FFA4F71FE0B47EE5(__this, NULL);
 		return L_0;
 	}
 }
+// Method Definition Index: 57931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PolyNode_get_IsOpen_m92C56CD9B1E64B260B7C09FC2A90D5D834292447 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:196>
 		bool L_0 = __this->___U3CIsOpenU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 57932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyNode_set_IsOpen_m2242B21BDCDB2E105ED4EBCD63F89F602047F629 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:196>
 		bool L_0 = ___0_value;
 		__this->___U3CIsOpenU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 57933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyNode__ctor_mC3D70892D4FF7F6870DA40C31CDC5826588606CF (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2236,10 +2339,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyNode__ctor_mC3D70892D4FF7F6870DA40C3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:127>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m5BB202F387A1636DB039D86A67417512F697C91C(L_0, List_1__ctor_m5BB202F387A1636DB039D86A67417512F697C91C_RuntimeMethod_var);
 		__this->___m_polygon = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_polygon), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:131>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_1 = (List_1_t1B6F28CED46A3783113870E638DC8159DE918001*)il2cpp_codegen_object_new(List_1_t1B6F28CED46A3783113870E638DC8159DE918001_il2cpp_TypeInfo_var);
 		List_1__ctor_mE73A2642493C9165D3615E7437B5B9E37203478A(L_1, List_1__ctor_mE73A2642493C9165D3615E7437B5B9E37203478A_RuntimeMethod_var);
 		__this->___m_Childs = L_1;
@@ -2256,11 +2361,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PolyNode__ctor_mC3D70892D4FF7F6870DA40C3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Int128__ctor_m2BB0A4CF9E48910476A58754D2AE1250D3C12966 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35* __this, int64_t ___0__lo, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:215>
 		int64_t L_0 = ___0__lo;
 		__this->___lo = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:216>
 		int64_t L_1 = ___0__lo;
 		if ((((int64_t)L_1) >= ((int64_t)((int64_t)0))))
 		{
@@ -2268,13 +2376,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Int128__ctor_m2BB0A4CF9E48910476A58754D2
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:216>
 		__this->___hi = ((int64_t)(-1));
 		return;
 	}
 
 IL_0015:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:217>
 		__this->___hi = ((int64_t)0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:218>
 		return;
 	}
 }
@@ -2285,13 +2396,17 @@ IL2CPP_EXTERN_C  void Int128__ctor_m2BB0A4CF9E48910476A58754D2AE1250D3C12966_Adj
 	_thisAdjusted = reinterpret_cast<Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35*>(__this + _offset);
 	Int128__ctor_m2BB0A4CF9E48910476A58754D2AE1250D3C12966(_thisAdjusted, ___0__lo, method);
 }
+// Method Definition Index: 57935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Int128__ctor_mBC356544A97CDF5EACE12C41CBB3C286CC68B723 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35* __this, int64_t ___0__hi, uint64_t ___1__lo, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:222>
 		uint64_t L_0 = ___1__lo;
 		__this->___lo = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:223>
 		int64_t L_1 = ___0__hi;
 		__this->___hi = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:224>
 		return;
 	}
 }
@@ -2302,15 +2417,19 @@ IL2CPP_EXTERN_C  void Int128__ctor_mBC356544A97CDF5EACE12C41CBB3C286CC68B723_Adj
 	_thisAdjusted = reinterpret_cast<Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35*>(__this + _offset);
 	Int128__ctor_mBC356544A97CDF5EACE12C41CBB3C286CC68B723(_thisAdjusted, ___0__hi, ___1__lo, method);
 }
+// Method Definition Index: 57936
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Int128__ctor_mE8A298C41D274843EE69B61FA4505EEE3D2C1054 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35* __this, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_val, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:228>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_val;
 		int64_t L_1 = L_0.___hi;
 		__this->___hi = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:229>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_2 = ___0_val;
 		uint64_t L_3 = L_2.___lo;
 		__this->___lo = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:230>
 		return;
 	}
 }
@@ -2321,9 +2440,11 @@ IL2CPP_EXTERN_C  void Int128__ctor_mE8A298C41D274843EE69B61FA4505EEE3D2C1054_Adj
 	_thisAdjusted = reinterpret_cast<Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35*>(__this + _offset);
 	Int128__ctor_mE8A298C41D274843EE69B61FA4505EEE3D2C1054(_thisAdjusted, ___0_val, method);
 }
+// Method Definition Index: 57937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_IsNegative_m70EBBF367872796AFF9BEA2D5B0C44B391B2FD91 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:234>
 		int64_t L_0 = __this->___hi;
 		return (bool)((((int64_t)L_0) < ((int64_t)((int64_t)0)))? 1 : 0);
 	}
@@ -2337,6 +2458,7 @@ IL2CPP_EXTERN_C  bool Int128_IsNegative_m70EBBF367872796AFF9BEA2D5B0C44B391B2FD9
 	_returnValue = Int128_IsNegative_m70EBBF367872796AFF9BEA2D5B0C44B391B2FD91(_thisAdjusted, method);
 	return _returnValue;
 }
+// Method Definition Index: 57938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_Equality_mDC0CD599A09D6D85CFFB4A3F9E03BB32F5289CC9 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_val1, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___1_val2, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2346,6 +2468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_Equality_mDC0CD599A09D6D85CFFB
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:239>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_val1;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_1 = L_0;
 		RuntimeObject* L_2 = Box(Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35_il2cpp_TypeInfo_var, &L_1);
@@ -2358,11 +2481,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_Equality_mDC0CD599A09D6D85CFFB
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:239>
 		return (bool)1;
 	}
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:240>
 	}
 	{
 		goto IL_0022;
@@ -2370,6 +2495,7 @@ IL_0010:
 
 IL_0022:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:241>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_8 = ___0_val1;
 		int64_t L_9 = L_8.___hi;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_10 = ___1_val2;
@@ -2392,9 +2518,11 @@ IL_003f:
 		return (bool)0;
 	}
 }
+// Method Definition Index: 57939
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_Inequality_m34C85F43A0A9C5A3D064C0FA631D8B2473AA97B9 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_val1, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___1_val2, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:246>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_val1;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_1 = ___1_val2;
 		bool L_2;
@@ -2402,6 +2530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_Inequality_m34C85F43A0A9C5A3D0
 		return (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
 	}
 }
+// Method Definition Index: 57940
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_Equals_m9E0BF4D381BD6AB4201A7F1C8D6DE2E76FCA7CDE (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2413,6 +2542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_Equals_m9E0BF4D381BD6AB4201A7F1C8
 	Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:251>
 		RuntimeObject* L_0 = ___0_obj;
 		if (!L_0)
 		{
@@ -2429,13 +2559,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_Equals_m9E0BF4D381BD6AB4201A7F1C8
 
 IL_000b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:252>
 		return (bool)0;
 	}
 
 IL_000d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:253>
 		RuntimeObject* L_2 = ___0_obj;
 		V_0 = ((*(Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35*)UnBox(L_2, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35_il2cpp_TypeInfo_var)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:254>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_3 = V_0;
 		int64_t L_4 = L_3.___hi;
 		int64_t L_5 = __this->___hi;
@@ -2465,9 +2598,11 @@ IL2CPP_EXTERN_C  bool Int128_Equals_m9E0BF4D381BD6AB4201A7F1C8D6DE2E76FCA7CDE_Ad
 	_returnValue = Int128_Equals_m9E0BF4D381BD6AB4201A7F1C8D6DE2E76FCA7CDE(_thisAdjusted, ___0_obj, method);
 	return _returnValue;
 }
+// Method Definition Index: 57941
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int128_GetHashCode_m4D04D0D584560C74DC48A4931C0FEFC434233CA2 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:259>
 		int64_t* L_0 = (int64_t*)(&__this->___hi);
 		int32_t L_1;
 		L_1 = Int64_GetHashCode_mDB050BE2AC244D92B14D1DF725AAD279CDC48496(L_0, NULL);
@@ -2486,9 +2621,11 @@ IL2CPP_EXTERN_C  int32_t Int128_GetHashCode_m4D04D0D584560C74DC48A4931C0FEFC4342
 	_returnValue = Int128_GetHashCode_m4D04D0D584560C74DC48A4931C0FEFC434233CA2(_thisAdjusted, method);
 	return _returnValue;
 }
+// Method Definition Index: 57942
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_GreaterThan_mE7DE40923FEBDAAA9ABF80C43237AF39362B8434 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_val1, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___1_val2, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:264>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_val1;
 		int64_t L_1 = L_0.___hi;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_2 = ___1_val2;
@@ -2499,6 +2636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_GreaterThan_mE7DE40923FEBDAAA9
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:265>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_4 = ___0_val1;
 		int64_t L_5 = L_4.___hi;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_6 = ___1_val2;
@@ -2508,6 +2646,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_GreaterThan_mE7DE40923FEBDAAA9
 
 IL_001d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:267>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_8 = ___0_val1;
 		uint64_t L_9 = L_8.___lo;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_10 = ___1_val2;
@@ -2515,9 +2654,11 @@ IL_001d:
 		return (bool)((!(((uint64_t)L_9) <= ((uint64_t)L_11)))? 1 : 0);
 	}
 }
+// Method Definition Index: 57943
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_LessThan_m80BA06A74741A1A873BC0223843EA0E337A87B8E (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_val1, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___1_val2, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:272>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_val1;
 		int64_t L_1 = L_0.___hi;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_2 = ___1_val2;
@@ -2528,6 +2669,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_LessThan_m80BA06A74741A1A873BC
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:273>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_4 = ___0_val1;
 		int64_t L_5 = L_4.___hi;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_6 = ___1_val2;
@@ -2537,6 +2679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int128_op_LessThan_m80BA06A74741A1A873BC
 
 IL_001d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:275>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_8 = ___0_val1;
 		uint64_t L_9 = L_8.___lo;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_10 = ___1_val2;
@@ -2544,21 +2687,25 @@ IL_001d:
 		return (bool)((!(((uint64_t)L_9) >= ((uint64_t)L_11)))? 1 : 0);
 	}
 }
+// Method Definition Index: 57944
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 Int128_op_Addition_m2026A4247863AA78F3A004E6405CE72837B85A8C (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_lhs, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___1_rhs, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:280>
 		int64_t* L_0 = (int64_t*)(&(&___0_lhs)->___hi);
 		int64_t* L_1 = L_0;
 		int64_t L_2 = *((int64_t*)L_1);
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_3 = ___1_rhs;
 		int64_t L_4 = L_3.___hi;
 		*((int64_t*)L_1) = (int64_t)((int64_t)il2cpp_codegen_add(L_2, L_4));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:281>
 		uint64_t* L_5 = (uint64_t*)(&(&___0_lhs)->___lo);
 		uint64_t* L_6 = L_5;
 		int64_t L_7 = *((int64_t*)L_6);
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_8 = ___1_rhs;
 		uint64_t L_9 = L_8.___lo;
 		*((int64_t*)L_6) = (int64_t)((int64_t)il2cpp_codegen_add(L_7, (int64_t)L_9));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:282>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_10 = ___0_lhs;
 		uint64_t L_11 = L_10.___lo;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_12 = ___1_rhs;
@@ -2569,6 +2716,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:282>
 		int64_t* L_14 = (int64_t*)(&(&___0_lhs)->___hi);
 		int64_t* L_15 = L_14;
 		int64_t L_16 = *((int64_t*)L_15);
@@ -2577,13 +2725,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 
 IL_003d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:283>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_17 = ___0_lhs;
 		return L_17;
 	}
 }
+// Method Definition Index: 57945
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 Int128_op_Subtraction_m9518B4A9B0C14D87B451F43A881AFC43631416B8 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_lhs, Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___1_rhs, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:288>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_lhs;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_1 = ___1_rhs;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_2;
@@ -2593,9 +2744,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 		return L_3;
 	}
 }
+// Method Definition Index: 57946
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 Int128_op_UnaryNegation_m141B38A5611CF59437D561CD625B9E38788CE257 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_val, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:293>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_val;
 		uint64_t L_1 = L_0.___lo;
 		if (L_1)
@@ -2604,6 +2757,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:294>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_2 = ___0_val;
 		int64_t L_3 = L_2.___hi;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_4;
@@ -2614,6 +2768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 
 IL_0017:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:296>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_5 = ___0_val;
 		int64_t L_6 = L_5.___hi;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_7 = ___0_val;
@@ -2624,9 +2779,11 @@ IL_0017:
 		return L_9;
 	}
 }
+// Method Definition Index: 57947
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Int128_op_Explicit_m73D92CA9FB1D3FD008EADA7B99E26F4C47A69466 (Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 ___0_val, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:302>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_0 = ___0_val;
 		int64_t L_1 = L_0.___hi;
 		if ((((int64_t)L_1) >= ((int64_t)((int64_t)0))))
@@ -2635,6 +2792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Int128_op_Explicit_m73D92CA9FB1D3FD008
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:304>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_2 = ___0_val;
 		uint64_t L_3 = L_2.___lo;
 		if (L_3)
@@ -2643,6 +2801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Int128_op_Explicit_m73D92CA9FB1D3FD008
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:305>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_4 = ___0_val;
 		int64_t L_5 = L_4.___hi;
 		return ((double)il2cpp_codegen_multiply(((double)L_5), (1.8446744073709552E+19)));
@@ -2650,6 +2809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Int128_op_Explicit_m73D92CA9FB1D3FD008
 
 IL_0024:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:307>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_6 = ___0_val;
 		uint64_t L_7 = L_6.___lo;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_8 = ___0_val;
@@ -2659,6 +2819,7 @@ IL_0024:
 
 IL_0043:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:310>
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_10 = ___0_val;
 		uint64_t L_11 = L_10.___lo;
 		Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 L_12 = ___0_val;
@@ -2666,6 +2827,7 @@ IL_0043:
 		return ((double)((double)il2cpp_codegen_add(((double)((double)(uint64_t)L_11)), ((double)il2cpp_codegen_multiply(((double)L_13), (1.8446744073709552E+19))))));
 	}
 }
+// Method Definition Index: 57948
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BACF35 Int128_Int128Mul_m1A760A293E9FEB7A1395EF901CD1A2AA3FF4C61A (int64_t ___0_lhs, int64_t ___1_rhs, const RuntimeMethod* method) 
 {
 	uint64_t V_0 = 0;
@@ -2685,8 +2847,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 	int32_t G_B6_0 = 0;
 	int32_t G_B5_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:319>
 		int64_t L_0 = ___0_lhs;
 		int64_t L_1 = ___1_rhs;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:320>
 		int64_t L_2 = ___0_lhs;
 		if ((((int64_t)L_2) >= ((int64_t)((int64_t)0))))
 		{
@@ -2696,6 +2860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 		G_B1_0 = ((((int32_t)((((int32_t)((((int64_t)L_0) < ((int64_t)((int64_t)0)))? 1 : 0)) == ((int32_t)((((int64_t)L_1) < ((int64_t)((int64_t)0)))? 1 : 0)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:320>
 		int64_t L_3 = ___0_lhs;
 		___0_lhs = ((-L_3));
 		G_B2_0 = G_B1_0;
@@ -2703,6 +2868,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int128_tDF30ADE11DF4C54A931D47A44125FD0B49BAC
 
 IL_0018:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:321>
 		int64_t L_4 = ___1_rhs;
 		if ((((int64_t)L_4) >= ((int64_t)((int64_t)0))))
 		{
@@ -2712,6 +2878,7 @@ IL_0018:
 		G_B3_0 = G_B2_0;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:321>
 		int64_t L_5 = ___1_rhs;
 		___1_rhs = ((-L_5));
 		G_B4_0 = G_B3_0;
@@ -2719,29 +2886,39 @@ IL_0018:
 
 IL_0021:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:322>
 		int64_t L_6 = ___0_lhs;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:323>
 		int64_t L_7 = ___0_lhs;
 		V_0 = ((int64_t)(L_7&((int64_t)(uint64_t)((uint32_t)(-1)))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:324>
 		int64_t L_8 = ___1_rhs;
 		V_1 = ((int64_t)((uint64_t)L_8>>((int32_t)32)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:325>
 		int64_t L_9 = ___1_rhs;
 		V_2 = ((int64_t)(L_9&((int64_t)(uint64_t)((uint32_t)(-1)))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:328>
 		int64_t L_10 = ((int64_t)((uint64_t)L_6>>((int32_t)32)));
 		uint64_t L_11 = V_1;
 		V_3 = ((int64_t)il2cpp_codegen_multiply(L_10, (int64_t)L_11));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:329>
 		uint64_t L_12 = V_0;
 		uint64_t L_13 = V_2;
 		V_4 = ((int64_t)il2cpp_codegen_multiply((int64_t)L_12, (int64_t)L_13));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:330>
 		uint64_t L_14 = V_2;
 		uint64_t L_15 = V_0;
 		uint64_t L_16 = V_1;
 		V_5 = ((int64_t)il2cpp_codegen_add(((int64_t)il2cpp_codegen_multiply(L_10, (int64_t)L_14)), ((int64_t)il2cpp_codegen_multiply((int64_t)L_15, (int64_t)L_16))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:334>
 		uint64_t L_17 = V_3;
 		uint64_t L_18 = V_5;
 		V_7 = ((int64_t)il2cpp_codegen_add((int64_t)L_17, ((int64_t)((uint64_t)L_18>>((int32_t)32)))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:336>
 		uint64_t L_19 = V_5;
 		uint64_t L_20 = V_4;
 		V_6 = ((int64_t)il2cpp_codegen_add(((int64_t)((int64_t)L_19<<((int32_t)32))), (int64_t)L_20));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:337>
 		uint64_t L_21 = V_6;
 		uint64_t L_22 = V_4;
 		if ((!(((uint64_t)L_21) < ((uint64_t)L_22))))
@@ -2752,6 +2929,7 @@ IL_0021:
 		G_B5_0 = G_B4_0;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:337>
 		int64_t L_23 = V_7;
 		V_7 = ((int64_t)il2cpp_codegen_add(L_23, ((int64_t)1)));
 		G_B6_0 = G_B5_0;
@@ -2759,9 +2937,11 @@ IL_0021:
 
 IL_0065:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:338>
 		int64_t L_24 = V_7;
 		uint64_t L_25 = V_6;
 		Int128__ctor_mBC356544A97CDF5EACE12C41CBB3C286CC68B723((&V_8), L_24, L_25, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:339>
 		if (G_B6_0)
 		{
 			goto IL_0075;
@@ -2788,17 +2968,25 @@ IL_0075:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57949
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* __this, int64_t ___0_X, int64_t ___1_Y, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:357>
 		int64_t L_0 = ___0_X;
 		__this->___X = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:357>
 		int64_t L_1 = ___1_Y;
 		__this->___Y = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:358>
 		__this->___NX = (0.0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:358>
 		__this->___NY = (0.0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:359>
 		__this->___N = ((int64_t)(-1));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:359>
 		__this->___D = ((int64_t)0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:360>
 		return;
 	}
 }
@@ -2809,17 +2997,25 @@ IL2CPP_EXTERN_C  void IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7_A
 	_thisAdjusted = reinterpret_cast<IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*>(__this + _offset);
 	IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7(_thisAdjusted, ___0_X, ___1_Y, method);
 }
+// Method Definition Index: 57950
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntPoint__ctor_m1C17D5437492194E95980214849A1BA4FEC919B0 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* __this, double ___0_x, double ___1_y, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:364>
 		double L_0 = ___0_x;
 		__this->___X = il2cpp_codegen_cast_double_to_int<int64_t>(L_0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:364>
 		double L_1 = ___1_y;
 		__this->___Y = il2cpp_codegen_cast_double_to_int<int64_t>(L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:365>
 		__this->___NX = (0.0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:365>
 		__this->___NY = (0.0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:366>
 		__this->___N = ((int64_t)(-1));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:366>
 		__this->___D = ((int64_t)0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:367>
 		return;
 	}
 }
@@ -2830,27 +3026,35 @@ IL2CPP_EXTERN_C  void IntPoint__ctor_m1C17D5437492194E95980214849A1BA4FEC919B0_A
 	_thisAdjusted = reinterpret_cast<IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*>(__this + _offset);
 	IntPoint__ctor_m1C17D5437492194E95980214849A1BA4FEC919B0(_thisAdjusted, ___0_x, ___1_y, method);
 }
+// Method Definition Index: 57951
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntPoint__ctor_mA6DA01E8192EAB09DAEE3C900A83D4A2E87AA8FE (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:371>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_pt;
 		int64_t L_1 = L_0.___X;
 		__this->___X = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:371>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___0_pt;
 		int64_t L_3 = L_2.___Y;
 		__this->___Y = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:372>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = ___0_pt;
 		double L_5 = L_4.___NX;
 		__this->___NX = L_5;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:372>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = ___0_pt;
 		double L_7 = L_6.___NY;
 		__this->___NY = L_7;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:373>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_8 = ___0_pt;
 		int64_t L_9 = L_8.___N;
 		__this->___N = L_9;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:373>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_10 = ___0_pt;
 		int64_t L_11 = L_10.___D;
 		__this->___D = L_11;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:374>
 		return;
 	}
 }
@@ -2861,9 +3065,11 @@ IL2CPP_EXTERN_C  void IntPoint__ctor_mA6DA01E8192EAB09DAEE3C900A83D4A2E87AA8FE_A
 	_thisAdjusted = reinterpret_cast<IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*>(__this + _offset);
 	IntPoint__ctor_mA6DA01E8192EAB09DAEE3C900A83D4A2E87AA8FE(_thisAdjusted, ___0_pt, method);
 }
+// Method Definition Index: 57952
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPoint_op_Equality_m19418B21E6FE3EB92A59BF3E7E2881C21CF9755C (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_a, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_b, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:378>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_a;
 		int64_t L_1 = L_0.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___1_b;
@@ -2886,9 +3092,11 @@ IL_001d:
 		return (bool)0;
 	}
 }
+// Method Definition Index: 57953
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPoint_op_Inequality_m567150C592985BE0233C9E7FEA6D526F681864D3 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_a, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_b, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:383>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_a;
 		int64_t L_1 = L_0.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___1_b;
@@ -2911,6 +3119,7 @@ IL_0020:
 		return (bool)1;
 	}
 }
+// Method Definition Index: 57954
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPoint_Equals_mB95B6A612FF6F33DAFB3AF701DF7554CFB414833 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2922,6 +3131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPoint_Equals_mB95B6A612FF6F33DAFB3AF7
 	IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:388>
 		RuntimeObject* L_0 = ___0_obj;
 		if (L_0)
 		{
@@ -2929,11 +3139,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPoint_Equals_mB95B6A612FF6F33DAFB3AF7
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:388>
 		return (bool)0;
 	}
 
 IL_0005:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:389>
 		RuntimeObject* L_1 = ___0_obj;
 		if (!((RuntimeObject*)IsInstSealed((RuntimeObject*)L_1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538_il2cpp_TypeInfo_var)))
 		{
@@ -2941,8 +3153,10 @@ IL_0005:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:391>
 		RuntimeObject* L_2 = ___0_obj;
 		V_0 = ((*(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)UnBox(L_2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538_il2cpp_TypeInfo_var)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:392>
 		int64_t L_3 = __this->___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = V_0;
 		int64_t L_5 = L_4.___X;
@@ -2965,6 +3179,7 @@ IL_0031:
 
 IL_0033:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:394>
 		return (bool)0;
 	}
 }
@@ -2977,6 +3192,7 @@ IL2CPP_EXTERN_C  bool IntPoint_Equals_mB95B6A612FF6F33DAFB3AF701DF7554CFB414833_
 	_returnValue = IntPoint_Equals_mB95B6A612FF6F33DAFB3AF701DF7554CFB414833(_thisAdjusted, ___0_obj, method);
 	return _returnValue;
 }
+// Method Definition Index: 57955
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t IntPoint_GetHashCode_mCC421CBDCDE3C6A291D3CAA06D787AF76B6F8EA9 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2986,6 +3202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t IntPoint_GetHashCode_mCC421CBDCDE3C6A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:400>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = (*(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)__this);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = L_0;
 		RuntimeObject* L_2 = Box(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538_il2cpp_TypeInfo_var, &L_1);
@@ -3011,17 +3228,23 @@ IL2CPP_EXTERN_C  int32_t IntPoint_GetHashCode_mCC421CBDCDE3C6A291D3CAA06D787AF76
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57956
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntRect__ctor_m2679B769D75424420E84A8348164D92437FD003A (IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D* __this, int64_t ___0_l, int64_t ___1_t, int64_t ___2_r, int64_t ___3_b, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:413>
 		int64_t L_0 = ___0_l;
 		__this->___left = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:413>
 		int64_t L_1 = ___1_t;
 		__this->___top = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:414>
 		int64_t L_2 = ___2_r;
 		__this->___right = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:414>
 		int64_t L_3 = ___3_b;
 		__this->___bottom = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:415>
 		return;
 	}
 }
@@ -3032,21 +3255,27 @@ IL2CPP_EXTERN_C  void IntRect__ctor_m2679B769D75424420E84A8348164D92437FD003A_Ad
 	_thisAdjusted = reinterpret_cast<IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D*>(__this + _offset);
 	IntRect__ctor_m2679B769D75424420E84A8348164D92437FD003A(_thisAdjusted, ___0_l, ___1_t, ___2_r, ___3_b, method);
 }
+// Method Definition Index: 57957
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntRect__ctor_m61FE9261A36D5EE88EB7CFDF926045C308753D8E (IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D* __this, IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D ___0_ir, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:419>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_0 = ___0_ir;
 		int64_t L_1 = L_0.___left;
 		__this->___left = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:419>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_2 = ___0_ir;
 		int64_t L_3 = L_2.___top;
 		__this->___top = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:420>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_4 = ___0_ir;
 		int64_t L_5 = L_4.___right;
 		__this->___right = L_5;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:420>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_6 = ___0_ir;
 		int64_t L_7 = L_6.___bottom;
 		__this->___bottom = L_7;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:421>
 		return;
 	}
 }
@@ -3161,6 +3390,7 @@ IL2CPP_EXTERN_C  void IntRect__ctor_m61FE9261A36D5EE88EB7CFDF926045C308753D8E_Ad
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57958
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TEdge__ctor_m610F3E67203EB46AF16C214956F390FFFA84DE7C (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3176,6 +3406,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TEdge__ctor_m610F3E67203EB46AF16C214956F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57959
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntersectNode__ctor_m67DEB85303E6FF915F173B73C8F41E1B4AEA54FC (IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3191,10 +3422,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntersectNode__ctor_m67DEB85303E6FF915F1
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57960
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MyIntersectNodeSort_Compare_mC6F12D968F6F4536E1C45EF6E36D5FBB294853FB (MyIntersectNodeSort_t3A5AA650773947B2048050528167F4022BAD1CF1* __this, IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* ___0_node1, IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* ___1_node2, const RuntimeMethod* method) 
 {
 	int64_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:572>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_0 = ___1_node2;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Pt);
@@ -3204,6 +3437,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MyIntersectNodeSort_Compare_mC6F12D96
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_4 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_3->___Pt);
 		int64_t L_5 = L_4->___Y;
 		V_0 = ((int64_t)il2cpp_codegen_subtract(L_2, L_5));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:573>
 		int64_t L_6 = V_0;
 		if ((((int64_t)L_6) <= ((int64_t)((int64_t)0))))
 		{
@@ -3211,11 +3445,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MyIntersectNodeSort_Compare_mC6F12D96
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:573>
 		return 1;
 	}
 
 IL_001f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:574>
 		int64_t L_7 = V_0;
 		if ((((int64_t)L_7) >= ((int64_t)((int64_t)0))))
 		{
@@ -3223,14 +3459,17 @@ IL_001f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:574>
 		return (-1);
 	}
 
 IL_0026:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:575>
 		return 0;
 	}
 }
+// Method Definition Index: 57961
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MyIntersectNodeSort__ctor_mB8C56DB3FAED9391DFBABE28026911599CEFAC33 (MyIntersectNodeSort_t3A5AA650773947B2048050528167F4022BAD1CF1* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3246,6 +3485,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MyIntersectNodeSort__ctor_mB8C56DB3FAED9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57962
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalMinima__ctor_mA494B9C91045BD7B788A7FD2985648D9859F36E0 (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3261,6 +3501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LocalMinima__ctor_mA494B9C91045BD7B788A7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57963
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scanbeam__ctor_mD24C1558F845142F670925E66F753D37439CCFF0 (Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3276,6 +3517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Scanbeam__ctor_mD24C1558F845142F670925E6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57964
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Maxima__ctor_mC32025C99D8EA87503C8E97448C0D14B5646FC07 (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3291,6 +3533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Maxima__ctor_mC32025C99D8EA87503C8E97448
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57965
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutRec__ctor_m3C5E6760414D602107B4D98A0F050F561C249C74 (OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3306,6 +3549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutRec__ctor_m3C5E6760414D602107B4D98A0F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57966
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutPt__ctor_mCE53B6D8295199ABEC9AB5648E09C9F365A12F27 (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3321,6 +3565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OutPt__ctor_mCE53B6D8295199ABEC9AB5648E0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57967
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Join__ctor_m88EEDAF536FE700D923B4AB9AE7ECCCD5FD1FAB6 (Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* __this, const RuntimeMethod* method) 
 {
 	{
@@ -3336,9 +3581,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Join__ctor_m88EEDAF536FE700D923B4AB9AE7E
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 57968
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_near_zero_m8B80BDA7A141F620A243DFED5559F9A549C0B1D4 (double ___0_val, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:634>
 		double L_0 = ___0_val;
 		if ((!(((double)L_0) > ((double)(-9.9999999999999995E-21)))))
 		{
@@ -3355,41 +3602,52 @@ IL_0019:
 		return (bool)0;
 	}
 }
+// Method Definition Index: 57969
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_get_PreserveCollinear_m9D2B1A1F052450CACBF3905CA51A50A1BE37B4C2 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:652>
 		bool L_0 = __this->___U3CPreserveCollinearU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 57970
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_set_PreserveCollinear_mC58976CDF7BAF261FABB75AFCB9EAFA07E24F78A (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:653>
 		bool L_0 = ___0_value;
 		__this->___U3CPreserveCollinearU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 57971
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_Swap_m2EEA14EBC5B1D1D8C61D5446D9EFE46A318B6B4D (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, int64_t* ___0_val1, int64_t* ___1_val2, const RuntimeMethod* method) 
 {
 	int64_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:659>
 		int64_t* L_0 = ___0_val1;
 		int64_t L_1 = *((int64_t*)L_0);
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:660>
 		int64_t* L_2 = ___0_val1;
 		int64_t* L_3 = ___1_val2;
 		int64_t L_4 = *((int64_t*)L_3);
 		*((int64_t*)L_2) = (int64_t)L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:661>
 		int64_t* L_5 = ___1_val2;
 		int64_t L_6 = V_0;
 		*((int64_t*)L_5) = (int64_t)L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:662>
 		return;
 	}
 }
+// Method Definition Index: 57972
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_IsHorizontal_m6BAD44CE7EDD2316867C067D25B16BC929CE2674 (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:668>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Delta);
@@ -3397,16 +3655,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_IsHorizontal_m6BAD44CE7EDD23
 		return (bool)((((int64_t)L_2) == ((int64_t)((int64_t)0)))? 1 : 0);
 	}
 }
+// Method Definition Index: 57973
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PointIsVertex_m8ADAF8684696049E6A3682C82192D9CC7FE9C177 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___1_pp, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:675>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___1_pp;
 		V_0 = L_0;
 	}
 
 IL_0002:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:678>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = V_0;
 		NullCheck(L_1);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = L_1->___Pt;
@@ -3419,15 +3680,18 @@ IL_0002:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:678>
 		return (bool)1;
 	}
 
 IL_0012:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:679>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = V_0;
 		NullCheck(L_5);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = L_5->___Next;
 		V_0 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:681>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = ___1_pp;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_7) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_8))))
@@ -3436,12 +3700,15 @@ IL_0012:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:682>
 		return (bool)0;
 	}
 }
+// Method Definition Index: 57974
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PointOnLineSegment_m6D701248A671BAA1DECAF77E62F840FE06F54F15 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_linePt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_linePt2, bool ___3_UseFullRange, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:690>
 		bool L_0 = ___3_UseFullRange;
 		if (!L_0)
 		{
@@ -3449,6 +3716,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PointOnLineSegment_m6D701248
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:691>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:692>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:693>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:694>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:695>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:696>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = ___0_pt;
 		int64_t L_2 = L_1.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_3 = ___1_linePt1;
@@ -3558,6 +3831,12 @@ IL_00c7:
 
 IL_00c9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:698>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:699>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:700>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:701>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:702>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:703>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_52 = ___0_pt;
 		int64_t L_53 = L_52.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_54 = ___1_linePt1;
@@ -3659,16 +3938,19 @@ IL_017b:
 		return (bool)1;
 	}
 }
+// Method Definition Index: 57975
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PointOnPolygon_mD693C741F82F0B3ACC8836413DE7C578DD9B6508 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___1_pp, bool ___2_UseFullRange, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:710>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___1_pp;
 		V_0 = L_0;
 	}
 
 IL_0002:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:713>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = ___0_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = V_0;
 		NullCheck(L_2);
@@ -3687,15 +3969,18 @@ IL_0002:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:714>
 		return (bool)1;
 	}
 
 IL_001f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:715>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = V_0;
 		NullCheck(L_9);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_10 = L_9->___Next;
 		V_0 = L_10;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:716>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_12 = ___1_pp;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_11) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_12))))
@@ -3704,12 +3989,15 @@ IL_001f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:718>
 		return (bool)0;
 	}
 }
+// Method Definition Index: 57976
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_m00AF12F96769255CE798C4E74DE3C5996F461C8A (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_e2, bool ___2_UseFullRange, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:725>
 		bool L_0 = ___2_UseFullRange;
 		if (!L_0)
 		{
@@ -3717,6 +4005,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_m00AF12F96769255
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:726>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:727>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___0_e1;
 		NullCheck(L_1);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_2 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_1->___Delta);
@@ -3744,6 +4034,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_m00AF12F96769255
 
 IL_003f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:729>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:730>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_e1;
 		NullCheck(L_16);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_17 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_16->___Delta);
@@ -3763,9 +4055,11 @@ IL_003f:
 		return (bool)((((int64_t)((int64_t)il2cpp_codegen_multiply(L_18, L_21))) == ((int64_t)((int64_t)il2cpp_codegen_multiply(L_24, L_27))))? 1 : 0);
 	}
 }
+// Method Definition Index: 57977
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_mEB17161B9ECC29DFF57B793C164DB8C00029CC94 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_pt3, bool ___3_UseFullRange, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:738>
 		bool L_0 = ___3_UseFullRange;
 		if (!L_0)
 		{
@@ -3773,6 +4067,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_mEB17161B9ECC29D
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:739>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:740>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = ___0_pt1;
 		int64_t L_2 = L_1.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_3 = ___1_pt2;
@@ -3800,6 +4096,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_mEB17161B9ECC29D
 
 IL_0047:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:742>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:743>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_20 = ___0_pt1;
 		int64_t L_21 = L_20.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_22 = ___1_pt2;
@@ -3819,9 +4117,11 @@ IL_0047:
 		return (bool)((((int64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_multiply(((int64_t)il2cpp_codegen_subtract(L_21, L_23)), ((int64_t)il2cpp_codegen_subtract(L_25, L_27)))), ((int64_t)il2cpp_codegen_multiply(((int64_t)il2cpp_codegen_subtract(L_29, L_31)), ((int64_t)il2cpp_codegen_subtract(L_33, L_35))))))) == ((int64_t)((int64_t)0)))? 1 : 0);
 	}
 }
+// Method Definition Index: 57978
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_m589B45B1AAFE029C0360B6A8EC802C8AFD6ED1EB (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_pt3, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___3_pt4, bool ___4_UseFullRange, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:751>
 		bool L_0 = ___4_UseFullRange;
 		if (!L_0)
 		{
@@ -3829,6 +4129,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_m589B45B1AAFE029
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:752>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:753>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = ___0_pt1;
 		int64_t L_2 = L_1.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_3 = ___1_pt2;
@@ -3856,6 +4158,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_SlopesEqual_m589B45B1AAFE029
 
 IL_0048:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:755>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:756>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_20 = ___0_pt1;
 		int64_t L_21 = L_20.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_22 = ___1_pt2;
@@ -3875,6 +4179,7 @@ IL_0048:
 		return (bool)((((int64_t)((int64_t)il2cpp_codegen_subtract(((int64_t)il2cpp_codegen_multiply(((int64_t)il2cpp_codegen_subtract(L_21, L_23)), ((int64_t)il2cpp_codegen_subtract(L_25, L_27)))), ((int64_t)il2cpp_codegen_multiply(((int64_t)il2cpp_codegen_subtract(L_29, L_31)), ((int64_t)il2cpp_codegen_subtract(L_33, L_35))))))) == ((int64_t)((int64_t)0)))? 1 : 0);
 	}
 }
+// Method Definition Index: 57979
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase__ctor_m0894488439AE46B592AE18030F09235C1FDC693F (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3885,20 +4190,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase__ctor_m0894488439AE46B592AE1
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:641>
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_0 = (List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85*)il2cpp_codegen_object_new(List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85_il2cpp_TypeInfo_var);
 		List_1__ctor_mA0D084B3180C6E8B436B0CDD7C76FCB1EA8B1706(L_0, List_1__ctor_mA0D084B3180C6E8B436B0CDD7C76FCB1EA8B1706_RuntimeMethod_var);
 		__this->___m_edges = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_edges), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:761>
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:763>
 		__this->___m_MinimaList = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MinimaList), (void*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:764>
 		__this->___m_CurrentLM = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentLM), (void*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:765>
 		__this->___m_UseFullRange = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:766>
 		__this->___m_HasOpenPaths = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:767>
 		return;
 	}
 }
+// Method Definition Index: 57980
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_Clear_m0B93D231A51B4F6B1B019E45834124B1E09E7069 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3915,19 +4228,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_Clear_m0B93D231A51B4F6B1B019
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:773>
 		ClipperBase_DisposeLocalMinimaList_m7D4312016822E530E1D4E7FBBB46FA8CBEF5A6E7(__this, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:774>
 		V_0 = 0;
 		goto IL_004e;
 	}
 
 IL_000a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:776>
 		V_1 = 0;
 		goto IL_0025;
 	}
 
 IL_000e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:776>
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_0 = __this->___m_edges;
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
@@ -3936,12 +4253,14 @@ IL_000e:
 		int32_t L_3 = V_1;
 		NullCheck(L_2);
 		List_1_set_Item_m0C5D9C0C0904036A38D3A6878D1D6DFC647CA31E(L_2, L_3, (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL, List_1_set_Item_m0C5D9C0C0904036A38D3A6878D1D6DFC647CA31E_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:776>
 		int32_t L_4 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_4, 1));
 	}
 
 IL_0025:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:776>
 		int32_t L_5 = V_1;
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_6 = __this->___m_edges;
 		int32_t L_7 = V_0;
@@ -3957,6 +4276,7 @@ IL_0025:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:777>
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_10 = __this->___m_edges;
 		int32_t L_11 = V_0;
 		NullCheck(L_10);
@@ -3964,12 +4284,14 @@ IL_0025:
 		L_12 = List_1_get_Item_mADA2D85B1698645B532F3D4F813F0795031830A7(L_10, L_11, List_1_get_Item_mADA2D85B1698645B532F3D4F813F0795031830A7_RuntimeMethod_var);
 		NullCheck(L_12);
 		List_1_Clear_m69E1D24149E2CEDFA8036CE423388DB09FEFFF02_inline(L_12, List_1_Clear_m69E1D24149E2CEDFA8036CE423388DB09FEFFF02_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:774>
 		int32_t L_13 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_13, 1));
 	}
 
 IL_004e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:774>
 		int32_t L_14 = V_0;
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_15 = __this->___m_edges;
 		NullCheck(L_15);
@@ -3981,14 +4303,19 @@ IL_004e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:779>
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_17 = __this->___m_edges;
 		NullCheck(L_17);
 		List_1_Clear_mB1B80B81C9450C4C5946BBDA8FFB9964BC50B0CA_inline(L_17, List_1_Clear_mB1B80B81C9450C4C5946BBDA8FFB9964BC50B0CA_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:780>
 		__this->___m_UseFullRange = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:781>
 		__this->___m_HasOpenPaths = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:782>
 		return;
 	}
 }
+// Method Definition Index: 57981
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DisposeLocalMinimaList_m7D4312016822E530E1D4E7FBBB46FA8CBEF5A6E7 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* V_0 = NULL;
@@ -3998,12 +4325,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DisposeLocalMinimaList_m7D43
 
 IL_0002:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:790>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_0 = __this->___m_MinimaList;
 		NullCheck(L_0);
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_1 = L_0->___Next;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:791>
 		__this->___m_MinimaList = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MinimaList), (void*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:792>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_2 = V_0;
 		__this->___m_MinimaList = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MinimaList), (void*)L_2);
@@ -4011,6 +4341,7 @@ IL_0002:
 
 IL_001c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:788>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_3 = __this->___m_MinimaList;
 		if (L_3)
 		{
@@ -4018,14 +4349,18 @@ IL_001c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:794>
 		__this->___m_CurrentLM = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentLM), (void*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:795>
 		return;
 	}
 }
+// Method Definition Index: 57982
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_RangeTest_mA0B6D833FDEFCF7EF73C25ADDC9A93AE49917081 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_Pt, bool* ___1_useFullRange, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:801>
 		bool* L_0 = ___1_useFullRange;
 		int32_t L_1 = *((uint8_t*)L_0);
 		if (!L_1)
@@ -4034,6 +4369,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_RangeTest_mA0B6D833FDEFCF7EF
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:803>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___0_Pt;
 		int64_t L_3 = L_2.___X;
 		if ((((int64_t)L_3) > ((int64_t)((int64_t)4611686018427387903LL))))
@@ -4068,6 +4404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_RangeTest_mA0B6D833FDEFCF7EF
 
 IL_004a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:804>
 		ClipperException_t033D39948325F397A565E04767C45C94FB810C92* L_10 = (ClipperException_t033D39948325F397A565E04767C45C94FB810C92*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperException_t033D39948325F397A565E04767C45C94FB810C92_il2cpp_TypeInfo_var)));
 		ClipperException__ctor_mF1E22950760B1F1C7D5ADE536EACE305D09B8651(L_10, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral76A687268C6501A2D839515789CE7708BD08399A)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperBase_RangeTest_mA0B6D833FDEFCF7EF73C25ADDC9A93AE49917081_RuntimeMethod_var)));
@@ -4075,6 +4412,7 @@ IL_004a:
 
 IL_0055:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:806>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_11 = ___0_Pt;
 		int64_t L_12 = L_11.___X;
 		if ((((int64_t)L_12) > ((int64_t)((int64_t)((int32_t)1073741823)))))
@@ -4109,8 +4447,10 @@ IL_0055:
 
 IL_008f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:808>
 		bool* L_19 = ___1_useFullRange;
 		*((int8_t*)L_19) = (int8_t)1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:809>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_20 = ___0_Pt;
 		bool* L_21 = ___1_useFullRange;
 		ClipperBase_RangeTest_mA0B6D833FDEFCF7EF73C25ADDC9A93AE49917081(__this, L_20, L_21, NULL);
@@ -4118,35 +4458,44 @@ IL_008f:
 
 IL_009a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:811>
 		return;
 	}
 }
+// Method Definition Index: 57983
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InitEdge_m4D917102532B87E80607086BD42F811F66B4171D (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_eNext, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___2_ePrev, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___3_pt, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:818>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___1_eNext;
 		NullCheck(L_0);
 		L_0->___Next = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&L_0->___Next), (void*)L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:819>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___2_ePrev;
 		NullCheck(L_2);
 		L_2->___Prev = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Prev), (void*)L_3);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:820>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___0_e;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_5 = ___3_pt;
 		NullCheck(L_4);
 		L_4->___Curr = L_5;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:821>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = ___0_e;
 		NullCheck(L_6);
 		L_6->___OutIdx = (-1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:822>
 		return;
 	}
 }
+// Method Definition Index: 57984
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InitEdge2_m5B567E5C9D56734F0DE68206F659D26F9043F669 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, int32_t ___1_polyType, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:828>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Curr);
@@ -4163,12 +4512,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InitEdge2_m5B567E5C9D56734F0
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:830>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_e;
 		NullCheck(L_8);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_9 = L_8->___Curr;
 		NullCheck(L_7);
 		L_7->___Bot = L_9;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:831>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = ___0_e;
 		NullCheck(L_11);
@@ -4182,12 +4533,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InitEdge2_m5B567E5C9D56734F0
 
 IL_003c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:835>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = ___0_e;
 		NullCheck(L_15);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_16 = L_15->___Curr;
 		NullCheck(L_14);
 		L_14->___Top = L_16;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:836>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = ___0_e;
 		NullCheck(L_18);
@@ -4200,15 +4553,19 @@ IL_003c:
 
 IL_0059:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:838>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___0_e;
 		ClipperBase_SetDx_m26594DD05B93158C408F0AF7E4525BACD3C9233B(__this, L_21, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:839>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = ___0_e;
 		int32_t L_23 = ___1_polyType;
 		NullCheck(L_22);
 		L_22->___PolyTyp = L_23;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:840>
 		return;
 	}
 }
+// Method Definition Index: 57985
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ClipperBase_FindNextLocMin_m271E984508D670BE99476E553DBA25FEAE3CCDBB (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_E, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
@@ -4218,6 +4575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 
 IL_0002:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:849>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_E;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___Next;
@@ -4226,6 +4584,7 @@ IL_0002:
 
 IL_000a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:849>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_E;
 		NullCheck(L_2);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_3 = L_2->___Bot;
@@ -4256,6 +4615,7 @@ IL_000a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:850>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = ___0_E;
 		NullCheck(L_13);
 		double L_14 = L_13->___Dx;
@@ -4276,11 +4636,13 @@ IL_000a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:850>
 		goto IL_00d9;
 	}
 
 IL_005e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:851>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = ___0_E;
 		NullCheck(L_18);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = L_18->___Prev;
@@ -4289,6 +4651,7 @@ IL_005e:
 
 IL_0066:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:851>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_E;
 		NullCheck(L_20);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = L_20->___Prev;
@@ -4300,6 +4663,7 @@ IL_0066:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:852>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_23 = ___0_E;
 		V_0 = L_23;
 		goto IL_0088;
@@ -4307,6 +4671,7 @@ IL_0066:
 
 IL_0080:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:853>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = ___0_E;
 		NullCheck(L_24);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = L_24->___Next;
@@ -4315,6 +4680,7 @@ IL_0080:
 
 IL_0088:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:853>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_26 = ___0_E;
 		NullCheck(L_26);
 		double L_27 = L_26->___Dx;
@@ -4324,6 +4690,7 @@ IL_0088:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:854>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = ___0_E;
 		NullCheck(L_28);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_29 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_28->___Top);
@@ -4340,6 +4707,7 @@ IL_0088:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:855>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = V_0;
 		NullCheck(L_35);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = L_35->___Prev;
@@ -4356,16 +4724,19 @@ IL_0088:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:855>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_42 = V_0;
 		___0_E = L_42;
 	}
 
 IL_00d9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:858>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_43 = ___0_E;
 		return L_43;
 	}
 }
+// Method Definition Index: 57986
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ClipperBase_ProcessBound_m49923BA5E64AF4EB19CF8EAF5F731A100A919A53 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_E, bool ___1_LeftBoundIsForward, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4379,8 +4750,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_2 = NULL;
 	LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* V_3 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:865>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_E;
 		V_1 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:868>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = V_1;
 		NullCheck(L_1);
 		int32_t L_2 = L_1->___OutIdx;
@@ -4390,8 +4763,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:872>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = V_1;
 		___0_E = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:873>
 		bool L_4 = ___1_LeftBoundIsForward;
 		if (!L_4)
 		{
@@ -4404,6 +4779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 
 IL_0017:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:875>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = ___0_E;
 		NullCheck(L_5);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = L_5->___Next;
@@ -4412,6 +4788,7 @@ IL_0017:
 
 IL_001f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:875>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = ___0_E;
 		NullCheck(L_7);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_8 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_7->___Top);
@@ -4433,6 +4810,7 @@ IL_001f:
 
 IL_003e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:876>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = ___0_E;
 		NullCheck(L_14);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = L_14->___Prev;
@@ -4441,6 +4819,7 @@ IL_003e:
 
 IL_0046:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:876>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_E;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = V_1;
 		if ((((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_16) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_17)))
@@ -4463,6 +4842,7 @@ IL_0046:
 
 IL_005d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:880>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_E;
 		NullCheck(L_20);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = L_20->___Prev;
@@ -4471,6 +4851,7 @@ IL_005d:
 
 IL_0065:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:880>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = ___0_E;
 		NullCheck(L_22);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_23 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_22->___Top);
@@ -4492,6 +4873,7 @@ IL_0065:
 
 IL_0084:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:881>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___0_E;
 		NullCheck(L_29);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = L_29->___Next;
@@ -4500,6 +4882,7 @@ IL_0084:
 
 IL_008c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:881>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_31 = ___0_E;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = V_1;
 		if ((((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_31) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_32)))
@@ -4519,6 +4902,7 @@ IL_008c:
 
 IL_00a1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:883>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = ___0_E;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = V_1;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_35) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_36))))
@@ -4527,6 +4911,7 @@ IL_00a1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:885>
 		bool L_37 = ___1_LeftBoundIsForward;
 		if (!L_37)
 		{
@@ -4534,6 +4919,7 @@ IL_00a1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:885>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_38 = ___0_E;
 		NullCheck(L_38);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = L_38->___Next;
@@ -4543,6 +4929,7 @@ IL_00a1:
 
 IL_00b1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:886>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_40 = ___0_E;
 		NullCheck(L_40);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_41 = L_40->___Prev;
@@ -4552,6 +4939,7 @@ IL_00b1:
 
 IL_00ba:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:891>
 		bool L_42 = ___1_LeftBoundIsForward;
 		if (!L_42)
 		{
@@ -4559,6 +4947,7 @@ IL_00ba:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:892>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_43 = V_1;
 		NullCheck(L_43);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_44 = L_43->___Next;
@@ -4568,6 +4957,7 @@ IL_00ba:
 
 IL_00c7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:894>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_45 = V_1;
 		NullCheck(L_45);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46 = L_45->___Prev;
@@ -4576,13 +4966,16 @@ IL_00c7:
 
 IL_00cf:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:895>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_47 = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)il2cpp_codegen_object_new(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F_il2cpp_TypeInfo_var);
 		LocalMinima__ctor_mA494B9C91045BD7B788A7FD2985648D9859F36E0(L_47, NULL);
 		V_3 = L_47;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:896>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_48 = V_3;
 		NullCheck(L_48);
 		L_48->___Next = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_48->___Next), (void*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:897>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_49 = V_3;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = ___0_E;
 		NullCheck(L_50);
@@ -4590,35 +4983,42 @@ IL_00cf:
 		int64_t L_52 = L_51->___Y;
 		NullCheck(L_49);
 		L_49->___Y = L_52;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:898>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_53 = V_3;
 		NullCheck(L_53);
 		L_53->___LeftBound = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_53->___LeftBound), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:899>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_54 = V_3;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_55 = ___0_E;
 		NullCheck(L_54);
 		L_54->___RightBound = L_55;
 		Il2CppCodeGenWriteBarrier((void**)(&L_54->___RightBound), (void*)L_55);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:900>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_56 = ___0_E;
 		NullCheck(L_56);
 		L_56->___WindDelta = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:901>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_57 = ___0_E;
 		bool L_58 = ___1_LeftBoundIsForward;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_59;
 		L_59 = ClipperBase_ProcessBound_m49923BA5E64AF4EB19CF8EAF5F731A100A919A53(__this, L_57, L_58, NULL);
 		V_1 = L_59;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:902>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_60 = V_3;
 		ClipperBase_InsertLocalMinima_m0E794BEC70E81A9BE1FA0C0A1D8A40A08718CE23(__this, L_60, NULL);
 	}
 
 IL_0112:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:904>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_61 = V_1;
 		return L_61;
 	}
 
 IL_0114:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:907>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_62 = ___0_E;
 		NullCheck(L_62);
 		double L_63 = L_62->___Dx;
@@ -4628,6 +5028,7 @@ IL_0114:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:912>
 		bool L_64 = ___1_LeftBoundIsForward;
 		if (!L_64)
 		{
@@ -4635,6 +5036,7 @@ IL_0114:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:912>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_65 = ___0_E;
 		NullCheck(L_65);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_66 = L_65->___Prev;
@@ -4644,6 +5046,7 @@ IL_0114:
 
 IL_0131:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:913>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_67 = ___0_E;
 		NullCheck(L_67);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_68 = L_67->___Next;
@@ -4652,6 +5055,7 @@ IL_0131:
 
 IL_0138:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:914>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_69 = V_0;
 		NullCheck(L_69);
 		double L_70 = L_69->___Dx;
@@ -4661,6 +5065,7 @@ IL_0138:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:916>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_71 = V_0;
 		NullCheck(L_71);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_72 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_71->___Bot);
@@ -4689,6 +5094,7 @@ IL_0138:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:917>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_83 = ___0_E;
 		ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23(__this, L_83, NULL);
 		goto IL_01a1;
@@ -4696,6 +5102,7 @@ IL_0138:
 
 IL_0182:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:919>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_84 = V_0;
 		NullCheck(L_84);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_85 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_84->___Bot);
@@ -4710,14 +5117,17 @@ IL_0182:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:920>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_90 = ___0_E;
 		ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23(__this, L_90, NULL);
 	}
 
 IL_01a1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:923>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_91 = ___0_E;
 		V_0 = L_91;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:924>
 		bool L_92 = ___1_LeftBoundIsForward;
 		if (!L_92)
 		{
@@ -4730,6 +5140,7 @@ IL_01a1:
 
 IL_01ab:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:927>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_93 = V_1;
 		NullCheck(L_93);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_94 = L_93->___Next;
@@ -4738,6 +5149,7 @@ IL_01ab:
 
 IL_01b2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:926>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_95 = V_1;
 		NullCheck(L_95);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_96 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_95->___Top);
@@ -4767,6 +5179,7 @@ IL_01b2:
 
 IL_01de:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:928>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_105 = V_1;
 		NullCheck(L_105);
 		double L_106 = L_105->___Dx;
@@ -4787,6 +5200,7 @@ IL_01de:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:933>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_110 = V_1;
 		V_2 = L_110;
 		goto IL_020f;
@@ -4794,6 +5208,7 @@ IL_01de:
 
 IL_0208:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:934>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_111 = V_2;
 		NullCheck(L_111);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_112 = L_111->___Prev;
@@ -4802,6 +5217,7 @@ IL_0208:
 
 IL_020f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:934>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_113 = V_2;
 		NullCheck(L_113);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_114 = L_113->___Prev;
@@ -4813,6 +5229,7 @@ IL_020f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:935>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_116 = V_2;
 		NullCheck(L_116);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_117 = L_116->___Prev;
@@ -4831,6 +5248,7 @@ IL_020f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:935>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_124 = V_2;
 		NullCheck(L_124);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_125 = L_124->___Prev;
@@ -4840,6 +5258,7 @@ IL_020f:
 
 IL_0250:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:939>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_126 = ___0_E;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_127 = ___0_E;
 		NullCheck(L_127);
@@ -4847,6 +5266,7 @@ IL_0250:
 		NullCheck(L_126);
 		L_126->___NextInLML = L_128;
 		Il2CppCodeGenWriteBarrier((void**)(&L_126->___NextInLML), (void*)L_128);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:940>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_129 = ___0_E;
 		NullCheck(L_129);
 		double L_130 = L_129->___Dx;
@@ -4880,12 +5300,14 @@ IL_0250:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:941>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_140 = ___0_E;
 		ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23(__this, L_140, NULL);
 	}
 
 IL_0295:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:942>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_141 = ___0_E;
 		NullCheck(L_141);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_142 = L_141->___Next;
@@ -4894,6 +5316,7 @@ IL_0295:
 
 IL_029d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:937>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_143 = ___0_E;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_144 = V_1;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_143) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_144))))
@@ -4902,6 +5325,7 @@ IL_029d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:944>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_145 = ___0_E;
 		NullCheck(L_145);
 		double L_146 = L_145->___Dx;
@@ -4935,12 +5359,14 @@ IL_029d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:945>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_156 = ___0_E;
 		ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23(__this, L_156, NULL);
 	}
 
 IL_02da:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:946>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_157 = V_1;
 		NullCheck(L_157);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_158 = L_157->___Next;
@@ -4950,6 +5376,7 @@ IL_02da:
 
 IL_02e6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:951>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_159 = V_1;
 		NullCheck(L_159);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_160 = L_159->___Prev;
@@ -4958,6 +5385,7 @@ IL_02e6:
 
 IL_02ed:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:950>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_161 = V_1;
 		NullCheck(L_161);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_162 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_161->___Top);
@@ -4987,6 +5415,7 @@ IL_02ed:
 
 IL_0319:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:952>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_171 = V_1;
 		NullCheck(L_171);
 		double L_172 = L_171->___Dx;
@@ -5007,6 +5436,7 @@ IL_0319:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:954>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_176 = V_1;
 		V_2 = L_176;
 		goto IL_034a;
@@ -5014,6 +5444,7 @@ IL_0319:
 
 IL_0343:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:955>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_177 = V_2;
 		NullCheck(L_177);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_178 = L_177->___Next;
@@ -5022,6 +5453,7 @@ IL_0343:
 
 IL_034a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:955>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_179 = V_2;
 		NullCheck(L_179);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_180 = L_179->___Next;
@@ -5033,6 +5465,8 @@ IL_034a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:956>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:957>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_182 = V_2;
 		NullCheck(L_182);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_183 = L_182->___Next;
@@ -5071,6 +5505,7 @@ IL_034a:
 
 IL_03a4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:957>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_198 = V_2;
 		NullCheck(L_198);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_199 = L_198->___Next;
@@ -5080,6 +5515,7 @@ IL_03a4:
 
 IL_03ad:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:962>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_200 = ___0_E;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_201 = ___0_E;
 		NullCheck(L_201);
@@ -5087,6 +5523,7 @@ IL_03ad:
 		NullCheck(L_200);
 		L_200->___NextInLML = L_202;
 		Il2CppCodeGenWriteBarrier((void**)(&L_200->___NextInLML), (void*)L_202);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:963>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_203 = ___0_E;
 		NullCheck(L_203);
 		double L_204 = L_203->___Dx;
@@ -5120,12 +5557,14 @@ IL_03ad:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:964>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_214 = ___0_E;
 		ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23(__this, L_214, NULL);
 	}
 
 IL_03f2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:965>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_215 = ___0_E;
 		NullCheck(L_215);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_216 = L_215->___Prev;
@@ -5134,6 +5573,7 @@ IL_03f2:
 
 IL_03fa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:960>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_217 = ___0_E;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_218 = V_1;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_217) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_218))))
@@ -5142,6 +5582,7 @@ IL_03fa:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:967>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_219 = ___0_E;
 		NullCheck(L_219);
 		double L_220 = L_219->___Dx;
@@ -5175,12 +5616,14 @@ IL_03fa:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:968>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_230 = ___0_E;
 		ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23(__this, L_230, NULL);
 	}
 
 IL_0437:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:969>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_231 = V_1;
 		NullCheck(L_231);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_232 = L_231->___Prev;
@@ -5189,10 +5632,12 @@ IL_0437:
 
 IL_043e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:971>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_233 = V_1;
 		return L_233;
 	}
 }
+// Method Definition Index: 57987
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_AddPath_mA946CF9B6011042421DDEE21266D25E70AA4FB68 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_pg, int32_t ___1_polyType, bool ___2_Closed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5223,6 +5668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_AddPath_mA946CF9B6011042421D
 	LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* V_11 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_12 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:980>
 		bool L_0 = ___2_Closed;
 		if (L_0)
 		{
@@ -5237,6 +5683,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_AddPath_mA946CF9B6011042421D
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:981>
 		ClipperException_t033D39948325F397A565E04767C45C94FB810C92* L_2 = (ClipperException_t033D39948325F397A565E04767C45C94FB810C92*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperException_t033D39948325F397A565E04767C45C94FB810C92_il2cpp_TypeInfo_var)));
 		ClipperException__ctor_mF1E22950760B1F1C7D5ADE536EACE305D09B8651(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA4CC80C3BD7D502BD84E9E1CA919B42CFA5B7A8C)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperBase_AddPath_mA946CF9B6011042421DDEE21266D25E70AA4FB68_RuntimeMethod_var)));
@@ -5244,11 +5691,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_AddPath_mA946CF9B6011042421D
 
 IL_0012:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:987>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_3 = ___0_pg;
 		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_inline(L_3, List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_RuntimeMethod_var);
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_4, 1));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:988>
 		bool L_5 = ___2_Closed;
 		if (!L_5)
 		{
@@ -5261,12 +5710,14 @@ IL_0012:
 
 IL_0020:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:988>
 		int32_t L_6 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_6, 1));
 	}
 
 IL_0024:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:988>
 		int32_t L_7 = V_0;
 		if ((((int32_t)L_7) <= ((int32_t)0)))
 		{
@@ -5296,12 +5747,14 @@ IL_0024:
 
 IL_003f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:989>
 		int32_t L_14 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_14, 1));
 	}
 
 IL_0043:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:989>
 		int32_t L_15 = V_0;
 		if ((((int32_t)L_15) <= ((int32_t)0)))
 		{
@@ -5329,6 +5782,7 @@ IL_0043:
 
 IL_005e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:990>
 		bool L_23 = ___2_Closed;
 		if (!L_23)
 		{
@@ -5361,32 +5815,38 @@ IL_0065:
 
 IL_006c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:990>
 		return (bool)0;
 	}
 
 IL_006e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:993>
 		int32_t L_27 = V_0;
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_28 = (List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6*)il2cpp_codegen_object_new(List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6_il2cpp_TypeInfo_var);
 		List_1__ctor_m58FCE8A08EEAD8107BEA0C92FE94F4BACBAC2588(L_28, ((int32_t)il2cpp_codegen_add(L_27, 1)), List_1__ctor_m58FCE8A08EEAD8107BEA0C92FE94F4BACBAC2588_RuntimeMethod_var);
 		V_1 = L_28;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:994>
 		V_8 = 0;
 		goto IL_008d;
 	}
 
 IL_007c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:994>
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_29 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)il2cpp_codegen_object_new(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084_il2cpp_TypeInfo_var);
 		TEdge__ctor_m610F3E67203EB46AF16C214956F390FFFA84DE7C(L_30, NULL);
 		NullCheck(L_29);
 		List_1_Add_m07A0BFEE19964063E8729B3690B567BD9CD75BE5_inline(L_29, L_30, List_1_Add_m07A0BFEE19964063E8729B3690B567BD9CD75BE5_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:994>
 		int32_t L_31 = V_8;
 		V_8 = ((int32_t)il2cpp_codegen_add(L_31, 1));
 	}
 
 IL_008d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:994>
 		int32_t L_32 = V_8;
 		int32_t L_33 = V_0;
 		if ((((int32_t)L_32) <= ((int32_t)L_33)))
@@ -5395,7 +5855,9 @@ IL_008d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:996>
 		V_2 = (bool)1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:999>
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_34 = V_1;
 		NullCheck(L_34);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35;
@@ -5406,12 +5868,14 @@ IL_008d:
 		L_37 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_36, 1, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		NullCheck(L_35);
 		L_35->___Curr = L_37;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1000>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_38 = ___0_pg;
 		NullCheck(L_38);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_39;
 		L_39 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_38, 0, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		bool* L_40 = (bool*)(&__this->___m_UseFullRange);
 		ClipperBase_RangeTest_mA0B6D833FDEFCF7EF73C25ADDC9A93AE49917081(__this, L_39, L_40, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1001>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_41 = ___0_pg;
 		int32_t L_42 = V_0;
 		NullCheck(L_41);
@@ -5419,6 +5883,7 @@ IL_008d:
 		L_43 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_41, L_42, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		bool* L_44 = (bool*)(&__this->___m_UseFullRange);
 		ClipperBase_RangeTest_mA0B6D833FDEFCF7EF73C25ADDC9A93AE49917081(__this, L_43, L_44, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1002>
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_45 = V_1;
 		NullCheck(L_45);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46;
@@ -5437,6 +5902,7 @@ IL_008d:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_53;
 		L_53 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_52, 0, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		ClipperBase_InitEdge_m4D917102532B87E80607086BD42F811F66B4171D(__this, L_46, L_48, L_51, L_53, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1003>
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_54 = V_1;
 		int32_t L_55 = V_0;
 		NullCheck(L_54);
@@ -5457,6 +5923,7 @@ IL_008d:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_64;
 		L_64 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_62, L_63, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		ClipperBase_InitEdge_m4D917102532B87E80607086BD42F811F66B4171D(__this, L_56, L_58, L_61, L_64, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1004>
 		int32_t L_65 = V_0;
 		V_9 = ((int32_t)il2cpp_codegen_subtract(L_65, 1));
 		goto IL_015e;
@@ -5464,6 +5931,7 @@ IL_008d:
 
 IL_011a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1006>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_66 = ___0_pg;
 		int32_t L_67 = V_9;
 		NullCheck(L_66);
@@ -5471,6 +5939,7 @@ IL_011a:
 		L_68 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_66, L_67, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		bool* L_69 = (bool*)(&__this->___m_UseFullRange);
 		ClipperBase_RangeTest_mA0B6D833FDEFCF7EF73C25ADDC9A93AE49917081(__this, L_68, L_69, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1007>
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_70 = V_1;
 		int32_t L_71 = V_9;
 		NullCheck(L_70);
@@ -5492,12 +5961,14 @@ IL_011a:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_81;
 		L_81 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_79, L_80, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		ClipperBase_InitEdge_m4D917102532B87E80607086BD42F811F66B4171D(__this, L_72, L_75, L_78, L_81, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1004>
 		int32_t L_82 = V_9;
 		V_9 = ((int32_t)il2cpp_codegen_subtract(L_82, 1));
 	}
 
 IL_015e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1004>
 		int32_t L_83 = V_9;
 		if ((((int32_t)L_83) >= ((int32_t)1)))
 		{
@@ -5505,19 +5976,23 @@ IL_015e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1009>
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_84 = V_1;
 		NullCheck(L_84);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_85;
 		L_85 = List_1_get_Item_m9219875B768F71F6DDB6A5CC149BE46CE39D85F8(L_84, 0, List_1_get_Item_m9219875B768F71F6DDB6A5CC149BE46CE39D85F8_RuntimeMethod_var);
 		V_3 = L_85;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1012>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_86 = V_3;
 		V_4 = L_86;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1012>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_87 = V_3;
 		V_5 = L_87;
 	}
 
 IL_0171:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1016>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_88 = V_4;
 		NullCheck(L_88);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_89 = L_88->___Curr;
@@ -5553,6 +6028,7 @@ IL_0171:
 
 IL_0198:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1018>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_98 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_99 = V_4;
 		NullCheck(L_99);
@@ -5563,6 +6039,7 @@ IL_0198:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1019>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_101 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_102 = V_3;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_101) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_102))))
@@ -5571,6 +6048,7 @@ IL_0198:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1019>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_103 = V_4;
 		NullCheck(L_103);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_104 = L_103->___Next;
@@ -5579,17 +6057,21 @@ IL_0198:
 
 IL_01b3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1020>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_105 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_106;
 		L_106 = ClipperBase_RemoveEdge_m7D4A0FFE739E0A8C43C2B5CDE98CF7C8D51C8E13(__this, L_105, NULL);
 		V_4 = L_106;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1021>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_107 = V_4;
 		V_5 = L_107;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1022>
 		goto IL_0171;
 	}
 
 IL_01c3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1024>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_108 = V_4;
 		NullCheck(L_108);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_109 = L_108->___Prev;
@@ -5602,6 +6084,10 @@ IL_01c3:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1026>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1027>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1028>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1029>
 		bool L_112 = ___2_Closed;
 		if (!L_112)
 		{
@@ -5662,6 +6148,7 @@ IL_01c3:
 
 IL_0237:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1035>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_133 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_134 = V_3;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_133) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_134))))
@@ -5670,6 +6157,7 @@ IL_0237:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1035>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_135 = V_4;
 		NullCheck(L_135);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_136 = L_135->___Next;
@@ -5678,25 +6166,31 @@ IL_0237:
 
 IL_0244:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1036>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_137 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_138;
 		L_138 = ClipperBase_RemoveEdge_m7D4A0FFE739E0A8C43C2B5CDE98CF7C8D51C8E13(__this, L_137, NULL);
 		V_4 = L_138;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1037>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_139 = V_4;
 		NullCheck(L_139);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_140 = L_139->___Prev;
 		V_4 = L_140;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1038>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_141 = V_4;
 		V_5 = L_141;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1039>
 		goto IL_0171;
 	}
 
 IL_0260:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1041>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_142 = V_4;
 		NullCheck(L_142);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_143 = L_142->___Next;
 		V_4 = L_143;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1042>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_144 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_145 = V_5;
 		if ((((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_144) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_145)))
@@ -5724,6 +6218,7 @@ IL_0260:
 
 IL_0282:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1045>
 		bool L_150 = ___2_Closed;
 		if (L_150)
 		{
@@ -5764,11 +6259,13 @@ IL_0290:
 
 IL_02a3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1046>
 		return (bool)0;
 	}
 
 IL_02a5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1048>
 		bool L_159 = ___2_Closed;
 		if (L_159)
 		{
@@ -5776,7 +6273,9 @@ IL_02a5:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1050>
 		__this->___m_HasOpenPaths = (bool)1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1051>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_160 = V_3;
 		NullCheck(L_160);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_161 = L_160->___Prev;
@@ -5786,19 +6285,23 @@ IL_02a5:
 
 IL_02bc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1055>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_162 = V_3;
 		V_4 = L_162;
 	}
 
 IL_02bf:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1058>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_163 = V_4;
 		int32_t L_164 = ___1_polyType;
 		ClipperBase_InitEdge2_m5B567E5C9D56734F0DE68206F659D26F9043F669(__this, L_163, L_164, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1059>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_165 = V_4;
 		NullCheck(L_165);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_166 = L_165->___Next;
 		V_4 = L_166;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1060>
 		bool L_167 = V_2;
 		if (!L_167)
 		{
@@ -5820,11 +6323,13 @@ IL_02bf:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1060>
 		V_2 = (bool)0;
 	}
 
 IL_02ef:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1062>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_174 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_175 = V_3;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_174) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_175))))
@@ -5833,6 +6338,7 @@ IL_02ef:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1068>
 		bool L_176 = V_2;
 		if (!L_176)
 		{
@@ -5840,6 +6346,7 @@ IL_02ef:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1070>
 		bool L_177 = ___2_Closed;
 		if (!L_177)
 		{
@@ -5847,23 +6354,28 @@ IL_02ef:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1070>
 		return (bool)0;
 	}
 
 IL_02ff:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1071>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_178 = V_4;
 		NullCheck(L_178);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_179 = L_178->___Prev;
 		NullCheck(L_179);
 		L_179->___OutIdx = ((int32_t)-2);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1072>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_180 = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)il2cpp_codegen_object_new(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F_il2cpp_TypeInfo_var);
 		LocalMinima__ctor_mA494B9C91045BD7B788A7FD2985648D9859F36E0(L_180, NULL);
 		V_10 = L_180;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1073>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_181 = V_10;
 		NullCheck(L_181);
 		L_181->___Next = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_181->___Next), (void*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1074>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_182 = V_10;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_183 = V_4;
 		NullCheck(L_183);
@@ -5871,20 +6383,24 @@ IL_02ff:
 		int64_t L_185 = L_184->___Y;
 		NullCheck(L_182);
 		L_182->___Y = L_185;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1075>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_186 = V_10;
 		NullCheck(L_186);
 		L_186->___LeftBound = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_186->___LeftBound), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1076>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_187 = V_10;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_188 = V_4;
 		NullCheck(L_187);
 		L_187->___RightBound = L_188;
 		Il2CppCodeGenWriteBarrier((void**)(&L_187->___RightBound), (void*)L_188);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1077>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_189 = V_10;
 		NullCheck(L_189);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_190 = L_189->___RightBound;
 		NullCheck(L_190);
 		L_190->___Side = 1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1078>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_191 = V_10;
 		NullCheck(L_191);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_192 = L_191->___RightBound;
@@ -5894,6 +6410,7 @@ IL_02ff:
 
 IL_035a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1081>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_193 = V_4;
 		NullCheck(L_193);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_194 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_193->___Bot);
@@ -5910,12 +6427,14 @@ IL_035a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1081>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_200 = V_4;
 		ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23(__this, L_200, NULL);
 	}
 
 IL_0381:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1082>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_201 = V_4;
 		NullCheck(L_201);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_202 = L_201->___Next;
@@ -5927,6 +6446,7 @@ IL_0381:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1083>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_204 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_205 = V_4;
 		NullCheck(L_205);
@@ -5934,6 +6454,7 @@ IL_0381:
 		NullCheck(L_204);
 		L_204->___NextInLML = L_206;
 		Il2CppCodeGenWriteBarrier((void**)(&L_204->___NextInLML), (void*)L_206);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1084>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_207 = V_4;
 		NullCheck(L_207);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_208 = L_207->___Next;
@@ -5943,22 +6464,28 @@ IL_0381:
 
 IL_03aa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1086>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_209 = V_10;
 		ClipperBase_InsertLocalMinima_m0E794BEC70E81A9BE1FA0C0A1D8A40A08718CE23(__this, L_209, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1087>
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_210 = __this->___m_edges;
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_211 = V_1;
 		NullCheck(L_210);
 		List_1_Add_m95D75D5E8362CC79E722029B34DE1A24028C78E1_inline(L_210, L_211, List_1_Add_m95D75D5E8362CC79E722029B34DE1A24028C78E1_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1088>
 		return (bool)1;
 	}
 
 IL_03c0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1091>
 		List_1_t80FBD215378351BA133420AF9AC33C56DDEC1E85* L_212 = __this->___m_edges;
 		List_1_tF3C6E14666C5EC530A992D1B2314B277AF86A8C6* L_213 = V_1;
 		NullCheck(L_212);
 		List_1_Add_m95D75D5E8362CC79E722029B34DE1A24028C78E1_inline(L_212, L_213, List_1_Add_m95D75D5E8362CC79E722029B34DE1A24028C78E1_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1093>
 		V_7 = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1097>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_214 = V_4;
 		NullCheck(L_214);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_215 = L_214->___Prev;
@@ -5977,6 +6504,7 @@ IL_03c0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1097>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_221 = V_4;
 		NullCheck(L_221);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_222 = L_221->___Next;
@@ -5985,10 +6513,12 @@ IL_03c0:
 
 IL_03f7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1101>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_223 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_224;
 		L_224 = ClipperBase_FindNextLocMin_m271E984508D670BE99476E553DBA25FEAE3CCDBB(__this, L_223, NULL);
 		V_4 = L_224;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1102>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_225 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_226 = V_7;
 		if ((((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_225) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_226)))
@@ -5997,6 +6527,7 @@ IL_03f7:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1103>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_227 = V_7;
 		if (L_227)
 		{
@@ -6004,19 +6535,23 @@ IL_03f7:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1103>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_228 = V_4;
 		V_7 = L_228;
 	}
 
 IL_0412:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1107>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_229 = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)il2cpp_codegen_object_new(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F_il2cpp_TypeInfo_var);
 		LocalMinima__ctor_mA494B9C91045BD7B788A7FD2985648D9859F36E0(L_229, NULL);
 		V_11 = L_229;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1108>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_230 = V_11;
 		NullCheck(L_230);
 		L_230->___Next = (LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_230->___Next), (void*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1109>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_231 = V_11;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_232 = V_4;
 		NullCheck(L_232);
@@ -6024,6 +6559,7 @@ IL_0412:
 		int64_t L_234 = L_233->___Y;
 		NullCheck(L_231);
 		L_231->___Y = L_234;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1110>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_235 = V_4;
 		NullCheck(L_235);
 		double L_236 = L_235->___Dx;
@@ -6038,6 +6574,7 @@ IL_0412:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1112>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_240 = V_11;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_241 = V_4;
 		NullCheck(L_241);
@@ -6045,22 +6582,26 @@ IL_0412:
 		NullCheck(L_240);
 		L_240->___LeftBound = L_242;
 		Il2CppCodeGenWriteBarrier((void**)(&L_240->___LeftBound), (void*)L_242);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1113>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_243 = V_11;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_244 = V_4;
 		NullCheck(L_243);
 		L_243->___RightBound = L_244;
 		Il2CppCodeGenWriteBarrier((void**)(&L_243->___RightBound), (void*)L_244);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1114>
 		V_6 = (bool)0;
 		goto IL_047f;
 	}
 
 IL_0465:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1118>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_245 = V_11;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_246 = V_4;
 		NullCheck(L_245);
 		L_245->___LeftBound = L_246;
 		Il2CppCodeGenWriteBarrier((void**)(&L_245->___LeftBound), (void*)L_246);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1119>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_247 = V_11;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_248 = V_4;
 		NullCheck(L_248);
@@ -6068,21 +6609,25 @@ IL_0465:
 		NullCheck(L_247);
 		L_247->___RightBound = L_249;
 		Il2CppCodeGenWriteBarrier((void**)(&L_247->___RightBound), (void*)L_249);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1120>
 		V_6 = (bool)1;
 	}
 
 IL_047f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1122>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_250 = V_11;
 		NullCheck(L_250);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_251 = L_250->___LeftBound;
 		NullCheck(L_251);
 		L_251->___Side = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1123>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_252 = V_11;
 		NullCheck(L_252);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_253 = L_252->___RightBound;
 		NullCheck(L_253);
 		L_253->___Side = 1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1125>
 		bool L_254 = ___2_Closed;
 		if (L_254)
 		{
@@ -6090,6 +6635,7 @@ IL_047f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1125>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_255 = V_11;
 		NullCheck(L_255);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_256 = L_255->___LeftBound;
@@ -6100,6 +6646,7 @@ IL_047f:
 
 IL_04ab:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1126>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_257 = V_11;
 		NullCheck(L_257);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_258 = L_257->___LeftBound;
@@ -6114,6 +6661,7 @@ IL_04ab:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1127>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_262 = V_11;
 		NullCheck(L_262);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_263 = L_262->___LeftBound;
@@ -6124,6 +6672,7 @@ IL_04ab:
 
 IL_04cf:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1128>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_264 = V_11;
 		NullCheck(L_264);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_265 = L_264->___LeftBound;
@@ -6133,6 +6682,7 @@ IL_04cf:
 
 IL_04dc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1129>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_266 = V_11;
 		NullCheck(L_266);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_267 = L_266->___RightBound;
@@ -6143,6 +6693,7 @@ IL_04dc:
 		int32_t L_270 = L_269->___WindDelta;
 		NullCheck(L_267);
 		L_267->___WindDelta = ((-L_270));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1131>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_271 = V_11;
 		NullCheck(L_271);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_272 = L_271->___LeftBound;
@@ -6150,6 +6701,7 @@ IL_04dc:
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_274;
 		L_274 = ClipperBase_ProcessBound_m49923BA5E64AF4EB19CF8EAF5F731A100A919A53(__this, L_272, L_273, NULL);
 		V_4 = L_274;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1132>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_275 = V_4;
 		NullCheck(L_275);
 		int32_t L_276 = L_275->___OutIdx;
@@ -6159,6 +6711,7 @@ IL_04dc:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1132>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_277 = V_4;
 		bool L_278 = V_6;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_279;
@@ -6168,6 +6721,7 @@ IL_04dc:
 
 IL_051d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1134>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_280 = V_11;
 		NullCheck(L_280);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_281 = L_280->___RightBound;
@@ -6175,6 +6729,7 @@ IL_051d:
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_283;
 		L_283 = ClipperBase_ProcessBound_m49923BA5E64AF4EB19CF8EAF5F731A100A919A53(__this, L_281, (bool)((((int32_t)L_282) == ((int32_t)0))? 1 : 0), NULL);
 		V_12 = L_283;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1135>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_284 = V_12;
 		NullCheck(L_284);
 		int32_t L_285 = L_284->___OutIdx;
@@ -6184,6 +6739,7 @@ IL_051d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1135>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_286 = V_12;
 		bool L_287 = V_6;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_288;
@@ -6193,6 +6749,7 @@ IL_051d:
 
 IL_054b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1137>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_289 = V_11;
 		NullCheck(L_289);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_290 = L_289->___LeftBound;
@@ -6204,6 +6761,7 @@ IL_054b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1138>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_292 = V_11;
 		NullCheck(L_292);
 		L_292->___LeftBound = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
@@ -6213,6 +6771,7 @@ IL_054b:
 
 IL_0565:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1139>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_293 = V_11;
 		NullCheck(L_293);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_294 = L_293->___RightBound;
@@ -6224,6 +6783,7 @@ IL_0565:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1140>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_296 = V_11;
 		NullCheck(L_296);
 		L_296->___RightBound = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
@@ -6232,8 +6792,10 @@ IL_0565:
 
 IL_057d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1141>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_297 = V_11;
 		ClipperBase_InsertLocalMinima_m0E794BEC70E81A9BE1FA0C0A1D8A40A08718CE23(__this, L_297, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1142>
 		bool L_298 = V_6;
 		if (L_298)
 		{
@@ -6241,6 +6803,7 @@ IL_057d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1142>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_299 = V_12;
 		V_4 = L_299;
 		goto IL_03f7;
@@ -6248,9 +6811,11 @@ IL_057d:
 
 IL_0595:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1144>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 57988
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_AddPaths_m27ACCC4640137E92BE1FF9BAF3382FB70CFBEBB1 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___0_ppg, int32_t ___1_polyType, bool ___2_closed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6263,13 +6828,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_AddPaths_m27ACCC4640137E92BE
 	bool V_0 = false;
 	int32_t V_1 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1151>
 		V_0 = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1152>
 		V_1 = 0;
 		goto IL_001d;
 	}
 
 IL_0006:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1153>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = ___0_ppg;
 		int32_t L_1 = V_1;
 		NullCheck(L_0);
@@ -6285,17 +6853,20 @@ IL_0006:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1153>
 		V_0 = (bool)1;
 	}
 
 IL_0019:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1152>
 		int32_t L_6 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_6, 1));
 	}
 
 IL_001d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1152>
 		int32_t L_7 = V_1;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_8 = ___0_ppg;
 		NullCheck(L_8);
@@ -6307,13 +6878,16 @@ IL_001d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1154>
 		bool L_10 = V_0;
 		return L_10;
 	}
 }
+// Method Definition Index: 57989
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_Pt2IsBetweenPt1AndPt3_m13DFE616832125372998174FEBBF95284BCBAC0B (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_pt3, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1161>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = ___2_pt3;
 		bool L_2;
@@ -6346,11 +6920,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_Pt2IsBetweenPt1AndPt3_m13DFE
 
 IL_001b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1161>
 		return (bool)0;
 	}
 
 IL_001d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1162>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_9 = ___0_pt1;
 		int64_t L_10 = L_9.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_11 = ___2_pt3;
@@ -6361,6 +6937,7 @@ IL_001d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1162>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_13 = ___1_pt2;
 		int64_t L_14 = L_13.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_15 = ___0_pt1;
@@ -6374,6 +6951,7 @@ IL_001d:
 
 IL_004a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1163>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_21 = ___1_pt2;
 		int64_t L_22 = L_21.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_23 = ___0_pt1;
@@ -6385,9 +6963,11 @@ IL_004a:
 		return (bool)((((int32_t)((((int64_t)L_22) > ((int64_t)L_24))? 1 : 0)) == ((int32_t)((((int64_t)L_26) < ((int64_t)L_28))? 1 : 0)))? 1 : 0);
 	}
 }
+// Method Definition Index: 57990
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ClipperBase_RemoveEdge_m7D4A0FFE739E0A8C43C2B5CDE98CF7C8D51C8E13 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1171>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___Prev;
@@ -6397,6 +6977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 		NullCheck(L_1);
 		L_1->___Next = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___Next), (void*)L_3);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1172>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___0_e;
 		NullCheck(L_4);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = L_4->___Next;
@@ -6406,19 +6987,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 		NullCheck(L_5);
 		L_5->___Prev = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___Prev), (void*)L_7);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1173>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_e;
 		NullCheck(L_8);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = L_8->___Next;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1174>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = ___0_e;
 		NullCheck(L_10);
 		L_10->___Prev = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_10->___Prev), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1175>
 		return L_9;
 	}
 }
+// Method Definition Index: 57991
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SetDx_m26594DD05B93158C408F0AF7E4525BACD3C9233B (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1182>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Delta);
@@ -6431,6 +7017,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SetDx_m26594DD05B93158C408F0
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_6 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_5->___Bot);
 		int64_t L_7 = L_6->___X;
 		L_1->___X = ((int64_t)il2cpp_codegen_subtract(L_4, L_7));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1183>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_e;
 		NullCheck(L_8);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_9 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_8->___Delta);
@@ -6443,6 +7030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SetDx_m26594DD05B93158C408F0
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_14 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_13->___Bot);
 		int64_t L_15 = L_14->___Y;
 		L_9->___Y = ((int64_t)il2cpp_codegen_subtract(L_12, L_15));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1184>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_e;
 		NullCheck(L_16);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_17 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_16->___Delta);
@@ -6453,6 +7041,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SetDx_m26594DD05B93158C408F0
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1184>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = ___0_e;
 		NullCheck(L_19);
 		L_19->___Dx = (-3.4E+38);
@@ -6461,6 +7050,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SetDx_m26594DD05B93158C408F0
 
 IL_0061:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1185>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___0_e;
 		NullCheck(L_21);
@@ -6472,13 +7062,16 @@ IL_0061:
 		int64_t L_26 = L_25->___Y;
 		NullCheck(L_20);
 		L_20->___Dx = ((double)(((double)L_23)/((double)L_26)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1186>
 		return;
 	}
 }
+// Method Definition Index: 57992
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InsertLocalMinima_m0E794BEC70E81A9BE1FA0C0A1D8A40A08718CE23 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* ___0_newLm, const RuntimeMethod* method) 
 {
 	LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1192>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_0 = __this->___m_MinimaList;
 		if (L_0)
 		{
@@ -6486,6 +7079,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InsertLocalMinima_m0E794BEC7
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1194>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_1 = ___0_newLm;
 		__this->___m_MinimaList = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MinimaList), (void*)L_1);
@@ -6494,6 +7088,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InsertLocalMinima_m0E794BEC7
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1196>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_2 = ___0_newLm;
 		NullCheck(L_2);
 		int64_t L_3 = L_2->___Y;
@@ -6506,11 +7101,13 @@ IL_0010:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1198>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_6 = ___0_newLm;
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_7 = __this->___m_MinimaList;
 		NullCheck(L_6);
 		L_6->___Next = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___Next), (void*)L_7);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1199>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_8 = ___0_newLm;
 		__this->___m_MinimaList = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_MinimaList), (void*)L_8);
@@ -6519,6 +7116,7 @@ IL_0010:
 
 IL_0037:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1203>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_9 = __this->___m_MinimaList;
 		V_0 = L_9;
 		goto IL_0047;
@@ -6526,6 +7124,7 @@ IL_0037:
 
 IL_0040:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1205>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_10 = V_0;
 		NullCheck(L_10);
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_11 = L_10->___Next;
@@ -6534,6 +7133,7 @@ IL_0040:
 
 IL_0047:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1204>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_12 = V_0;
 		NullCheck(L_12);
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_13 = L_12->___Next;
@@ -6559,6 +7159,7 @@ IL_0047:
 
 IL_0062:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1206>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_19 = ___0_newLm;
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_20 = V_0;
 		NullCheck(L_20);
@@ -6566,21 +7167,26 @@ IL_0062:
 		NullCheck(L_19);
 		L_19->___Next = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&L_19->___Next), (void*)L_21);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1207>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_22 = V_0;
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_23 = ___0_newLm;
 		NullCheck(L_22);
 		L_22->___Next = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___Next), (void*)L_23);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1209>
 		return;
 	}
 }
+// Method Definition Index: 57993
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PopLocalMinima_m24AFAE8B70455538DCD5922163EF5C11D6E980BA (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, int64_t ___0_Y, LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F** ___1_current, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1215>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F** L_0 = ___1_current;
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_1 = __this->___m_CurrentLM;
 		*((RuntimeObject**)L_0) = (RuntimeObject*)L_1;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_0, (void*)(RuntimeObject*)L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1216>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_2 = __this->___m_CurrentLM;
 		if (!L_2)
 		{
@@ -6598,22 +7204,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PopLocalMinima_m24AFAE8B7045
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1218>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_6 = __this->___m_CurrentLM;
 		NullCheck(L_6);
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_7 = L_6->___Next;
 		__this->___m_CurrentLM = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentLM), (void*)L_7);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1219>
 		return (bool)1;
 	}
 
 IL_0031:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1221>
 		return (bool)0;
 	}
 }
+// Method Definition Index: 57994
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_ReverseHorizontal_mA3AD14B2BCBE97985D26C06B255390CB0C7CAF23 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1231>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Top);
@@ -6623,17 +7234,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_ReverseHorizontal_mA3AD14B2B
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_4 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_3->___Bot);
 		int64_t* L_5 = (int64_t*)(&L_4->___X);
 		ClipperBase_Swap_m2EEA14EBC5B1D1D8C61D5446D9EFE46A318B6B4D(__this, L_2, L_5, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1232>
 		return;
 	}
 }
+// Method Definition Index: 57995
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_Reset_mFF927BD6DE091885EB0051B3EAC2B7768CB7AA1F (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* V_0 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1238>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_0 = __this->___m_MinimaList;
 		__this->___m_CurrentLM = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_CurrentLM), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1239>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_1 = __this->___m_CurrentLM;
 		if (L_1)
 		{
@@ -6641,13 +7256,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_Reset_mFF927BD6DE091885EB005
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1239>
 		return;
 	}
 
 IL_0015:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1242>
 		__this->___m_Scanbeam = (Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Scanbeam), (void*)(Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1243>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_2 = __this->___m_MinimaList;
 		V_0 = L_2;
 		goto IL_0072;
@@ -6655,14 +7273,17 @@ IL_0015:
 
 IL_0025:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1246>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_3 = V_0;
 		NullCheck(L_3);
 		int64_t L_4 = L_3->___Y;
 		ClipperBase_InsertScanbeam_mE98355A33D03DD9ECB3755B1F73D17C2A7E0DE34(__this, L_4, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1247>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_5 = V_0;
 		NullCheck(L_5);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = L_5->___LeftBound;
 		V_1 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1248>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = V_1;
 		if (!L_7)
 		{
@@ -6670,12 +7291,14 @@ IL_0025:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1250>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = V_1;
 		NullCheck(L_9);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_10 = L_9->___Bot;
 		NullCheck(L_8);
 		L_8->___Curr = L_10;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1251>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = V_1;
 		NullCheck(L_11);
 		L_11->___OutIdx = (-1);
@@ -6683,10 +7306,12 @@ IL_0025:
 
 IL_004e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1253>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_12 = V_0;
 		NullCheck(L_12);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = L_12->___RightBound;
 		V_1 = L_13;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1254>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_1;
 		if (!L_14)
 		{
@@ -6694,12 +7319,14 @@ IL_004e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1256>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = V_1;
 		NullCheck(L_16);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_17 = L_16->___Bot;
 		NullCheck(L_15);
 		L_15->___Curr = L_17;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1257>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = V_1;
 		NullCheck(L_18);
 		L_18->___OutIdx = (-1);
@@ -6707,6 +7334,7 @@ IL_004e:
 
 IL_006b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1259>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_19 = V_0;
 		NullCheck(L_19);
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_20 = L_19->___Next;
@@ -6715,6 +7343,7 @@ IL_006b:
 
 IL_0072:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1244>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_21 = V_0;
 		if (L_21)
 		{
@@ -6722,11 +7351,14 @@ IL_0072:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1261>
 		__this->___m_ActiveEdges = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ActiveEdges), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1262>
 		return;
 	}
 }
+// Method Definition Index: 57996
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D ClipperBase_GetBounds_m382A82FC696016C3D0484AB1115E2146F415E793 (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___0_paths, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6744,7 +7376,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE
 	memset((&V_2), 0, sizeof(V_2));
 	int32_t V_3 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1268>
 		V_0 = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1268>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = ___0_paths;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -6755,12 +7389,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE
 
 IL_000b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1269>
 		int32_t L_2 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_2, 1));
 	}
 
 IL_000f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1269>
 		int32_t L_3 = V_0;
 		int32_t L_4 = V_1;
 		if ((((int32_t)L_3) >= ((int32_t)L_4)))
@@ -6785,6 +7421,7 @@ IL_000f:
 
 IL_0021:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1270>
 		int32_t L_9 = V_0;
 		int32_t L_10 = V_1;
 		if ((!(((uint32_t)L_9) == ((uint32_t)L_10))))
@@ -6793,6 +7430,7 @@ IL_0021:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1270>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_11;
 		memset((&L_11), 0, sizeof(L_11));
 		IntRect__ctor_m2679B769D75424420E84A8348164D92437FD003A((&L_11), ((int64_t)0), ((int64_t)0), ((int64_t)0), ((int64_t)0), NULL);
@@ -6801,7 +7439,9 @@ IL_0021:
 
 IL_0033:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1271>
 		il2cpp_codegen_initobj((&V_2), sizeof(IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1272>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_12 = ___0_paths;
 		int32_t L_13 = V_0;
 		NullCheck(L_12);
@@ -6812,9 +7452,11 @@ IL_0033:
 		L_15 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_14, 0, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		int64_t L_16 = L_15.___X;
 		(&V_2)->___left = L_16;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1273>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_17 = V_2;
 		int64_t L_18 = L_17.___left;
 		(&V_2)->___right = L_18;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1274>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_19 = ___0_paths;
 		int32_t L_20 = V_0;
 		NullCheck(L_19);
@@ -6825,6 +7467,7 @@ IL_0033:
 		L_22 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_21, 0, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		int64_t L_23 = L_22.___Y;
 		(&V_2)->___top = L_23;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1275>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_24 = V_2;
 		int64_t L_25 = L_24.___top;
 		(&V_2)->___bottom = L_25;
@@ -6833,12 +7476,14 @@ IL_0033:
 
 IL_008c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1277>
 		V_3 = 0;
 		goto IL_0167;
 	}
 
 IL_0093:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1279>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_26 = ___0_paths;
 		int32_t L_27 = V_0;
 		NullCheck(L_26);
@@ -6857,6 +7502,7 @@ IL_0093:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1279>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_34 = ___0_paths;
 		int32_t L_35 = V_0;
 		NullCheck(L_34);
@@ -6873,6 +7519,7 @@ IL_0093:
 
 IL_00c8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1280>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_40 = ___0_paths;
 		int32_t L_41 = V_0;
 		NullCheck(L_40);
@@ -6891,6 +7538,7 @@ IL_00c8:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1280>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_48 = ___0_paths;
 		int32_t L_49 = V_0;
 		NullCheck(L_48);
@@ -6906,6 +7554,7 @@ IL_00c8:
 
 IL_00fb:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1281>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_54 = ___0_paths;
 		int32_t L_55 = V_0;
 		NullCheck(L_54);
@@ -6924,6 +7573,7 @@ IL_00fb:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1281>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_62 = ___0_paths;
 		int32_t L_63 = V_0;
 		NullCheck(L_62);
@@ -6940,6 +7590,7 @@ IL_00fb:
 
 IL_0130:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1282>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_68 = ___0_paths;
 		int32_t L_69 = V_0;
 		NullCheck(L_68);
@@ -6958,6 +7609,7 @@ IL_0130:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1282>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_76 = ___0_paths;
 		int32_t L_77 = V_0;
 		NullCheck(L_76);
@@ -6973,12 +7625,14 @@ IL_0130:
 
 IL_0163:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1277>
 		int32_t L_82 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_82, 1));
 	}
 
 IL_0167:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1277>
 		int32_t L_83 = V_3;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_84 = ___0_paths;
 		int32_t L_85 = V_0;
@@ -6994,12 +7648,14 @@ IL_0167:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1276>
 		int32_t L_88 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_88, 1));
 	}
 
 IL_017d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1276>
 		int32_t L_89 = V_0;
 		int32_t L_90 = V_1;
 		if ((((int32_t)L_89) < ((int32_t)L_90)))
@@ -7008,10 +7664,12 @@ IL_017d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1284>
 		IntRect_t7A1A93AFB7B7B893785A682D96CE87369DFE617D L_91 = V_2;
 		return L_91;
 	}
 }
+// Method Definition Index: 57997
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InsertScanbeam_mE98355A33D03DD9ECB3755B1F73D17C2A7E0DE34 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, int64_t ___0_Y, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7024,6 +7682,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InsertScanbeam_mE98355A33D03
 	Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* V_1 = NULL;
 	Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* V_2 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1292>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_0 = __this->___m_Scanbeam;
 		if (L_0)
 		{
@@ -7031,14 +7690,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InsertScanbeam_mE98355A33D03
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1294>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_1 = (Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)il2cpp_codegen_object_new(Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0_il2cpp_TypeInfo_var);
 		Scanbeam__ctor_mD24C1558F845142F670925E66F753D37439CCFF0(L_1, NULL);
 		__this->___m_Scanbeam = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Scanbeam), (void*)L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1295>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_2 = __this->___m_Scanbeam;
 		NullCheck(L_2);
 		L_2->___Next = (Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Next), (void*)(Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1296>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_3 = __this->___m_Scanbeam;
 		int64_t L_4 = ___0_Y;
 		NullCheck(L_3);
@@ -7048,6 +7710,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_InsertScanbeam_mE98355A33D03
 
 IL_002c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1298>
 		int64_t L_5 = ___0_Y;
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_6 = __this->___m_Scanbeam;
 		NullCheck(L_6);
@@ -7058,18 +7721,22 @@ IL_002c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1300>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_8 = (Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)il2cpp_codegen_object_new(Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0_il2cpp_TypeInfo_var);
 		Scanbeam__ctor_mD24C1558F845142F670925E66F753D37439CCFF0(L_8, NULL);
 		V_0 = L_8;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1301>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_9 = V_0;
 		int64_t L_10 = ___0_Y;
 		NullCheck(L_9);
 		L_9->___Y = L_10;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1302>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_11 = V_0;
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_12 = __this->___m_Scanbeam;
 		NullCheck(L_11);
 		L_11->___Next = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___Next), (void*)L_12);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1303>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_13 = V_0;
 		__this->___m_Scanbeam = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Scanbeam), (void*)L_13);
@@ -7078,6 +7745,7 @@ IL_002c:
 
 IL_005b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1307>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_14 = __this->___m_Scanbeam;
 		V_1 = L_14;
 		goto IL_006b;
@@ -7085,6 +7753,7 @@ IL_005b:
 
 IL_0064:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1308>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_15 = V_1;
 		NullCheck(L_15);
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_16 = L_15->___Next;
@@ -7093,6 +7762,7 @@ IL_0064:
 
 IL_006b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1308>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_17 = V_1;
 		NullCheck(L_17);
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_18 = L_17->___Next;
@@ -7116,6 +7786,7 @@ IL_006b:
 
 IL_0081:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1309>
 		int64_t L_23 = ___0_Y;
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_24 = V_1;
 		NullCheck(L_24);
@@ -7126,18 +7797,22 @@ IL_0081:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1309>
 		return;
 	}
 
 IL_008b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1310>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_26 = (Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)il2cpp_codegen_object_new(Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0_il2cpp_TypeInfo_var);
 		Scanbeam__ctor_mD24C1558F845142F670925E66F753D37439CCFF0(L_26, NULL);
 		V_2 = L_26;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1311>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_27 = V_2;
 		int64_t L_28 = ___0_Y;
 		NullCheck(L_27);
 		L_27->___Y = L_28;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1312>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_29 = V_2;
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_30 = V_1;
 		NullCheck(L_30);
@@ -7145,17 +7820,21 @@ IL_008b:
 		NullCheck(L_29);
 		L_29->___Next = L_31;
 		Il2CppCodeGenWriteBarrier((void**)(&L_29->___Next), (void*)L_31);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1313>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_32 = V_1;
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_33 = V_2;
 		NullCheck(L_32);
 		L_32->___Next = L_33;
 		Il2CppCodeGenWriteBarrier((void**)(&L_32->___Next), (void*)L_33);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1315>
 		return;
 	}
 }
+// Method Definition Index: 57998
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PopScanbeam_m30D6EC26308049F1C1C71E4276D5EE684D2E2A10 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, int64_t* ___0_Y, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1321>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_0 = __this->___m_Scanbeam;
 		if (L_0)
 		{
@@ -7163,33 +7842,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_PopScanbeam_m30D6EC26308049F
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1323>
 		int64_t* L_1 = ___0_Y;
 		*((int64_t*)L_1) = (int64_t)((int64_t)0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1324>
 		return (bool)0;
 	}
 
 IL_000e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1326>
 		int64_t* L_2 = ___0_Y;
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_3 = __this->___m_Scanbeam;
 		NullCheck(L_3);
 		int64_t L_4 = L_3->___Y;
 		*((int64_t*)L_2) = (int64_t)L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1327>
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_5 = __this->___m_Scanbeam;
 		NullCheck(L_5);
 		Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0* L_6 = L_5->___Next;
 		__this->___m_Scanbeam = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Scanbeam), (void*)L_6);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1328>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 57999
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ClipperBase_LocalMinimaPending_m811369BA00B320F43BAD38139AC65FAF37641F75 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1335>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_0 = __this->___m_CurrentLM;
 		return (bool)((!(((RuntimeObject*)(LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F*)L_0) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
 	}
 }
+// Method Definition Index: 58000
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ClipperBase_CreateOutRec_m8385CCD504D822268DDC5D9174253A80E76C2122 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7202,38 +7889,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402
 	}
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1342>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = (OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)il2cpp_codegen_object_new(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954_il2cpp_TypeInfo_var);
 		OutRec__ctor_m3C5E6760414D602107B4D98A0F050F561C249C74(L_0, NULL);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1343>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_1 = V_0;
 		NullCheck(L_1);
 		L_1->___Idx = (-1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1344>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2 = V_0;
 		NullCheck(L_2);
 		L_2->___IsHole = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1345>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3 = V_0;
 		NullCheck(L_3);
 		L_3->___IsOpen = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1346>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_4 = V_0;
 		NullCheck(L_4);
 		L_4->___FirstLeft = (OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___FirstLeft), (void*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1347>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_5 = V_0;
 		NullCheck(L_5);
 		L_5->___Pts = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___Pts), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1348>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_6 = V_0;
 		NullCheck(L_6);
 		L_6->___BottomPt = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___BottomPt), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1349>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_7 = V_0;
 		NullCheck(L_7);
 		L_7->___PolyNode = (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___PolyNode), (void*)(PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1350>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_8 = __this->___m_PolyOuts;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_9 = V_0;
 		NullCheck(L_8);
 		List_1_Add_mADB2C6592C3D069176E8A53766A9E0D17A489B0C_inline(L_8, L_9, List_1_Add_mADB2C6592C3D069176E8A53766A9E0D17A489B0C_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1351>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_10 = V_0;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_11 = __this->___m_PolyOuts;
 		NullCheck(L_11);
@@ -7241,10 +7938,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402
 		L_12 = List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_inline(L_11, List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_RuntimeMethod_var);
 		NullCheck(L_10);
 		L_10->___Idx = ((int32_t)il2cpp_codegen_subtract(L_12, 1));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1352>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_13 = V_0;
 		return L_13;
 	}
 }
+// Method Definition Index: 58001
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DisposeOutRec_m3F29081230A27D799F601FFBE9760A12ADE74A1C (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7255,26 +7954,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DisposeOutRec_m3F29081230A27
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1359>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_0 = __this->___m_PolyOuts;
 		int32_t L_1 = ___0_index;
 		NullCheck(L_0);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2;
 		L_2 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_0, L_1, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1360>
 		NullCheck(L_2);
 		L_2->___Pts = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Pts), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1362>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_3 = __this->___m_PolyOuts;
 		int32_t L_4 = ___0_index;
 		NullCheck(L_3);
 		List_1_set_Item_mAEE782CBF0B87CE4DD276B538F0CEF6CA881AED4(L_3, L_4, (OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)NULL, List_1_set_Item_mAEE782CBF0B87CE4DD276B538F0CEF6CA881AED4_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1363>
 		return;
 	}
 }
+// Method Definition Index: 58002
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_UpdateEdgeIntoAEL_m4C4C629344AE2E4072183668434761BF7E4D92DC (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** ___0_e, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1369>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_0 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_0);
 		NullCheck(L_1);
@@ -7285,6 +7990,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_UpdateEdgeIntoAEL_m4C4C62934
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1370>
 		ClipperException_t033D39948325F397A565E04767C45C94FB810C92* L_3 = (ClipperException_t033D39948325F397A565E04767C45C94FB810C92*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperException_t033D39948325F397A565E04767C45C94FB810C92_il2cpp_TypeInfo_var)));
 		ClipperException__ctor_mF1E22950760B1F1C7D5ADE536EACE305D09B8651(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral446CC2C63B5C7037C31B6CC2F9F1E1DFB056EB9C)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperBase_UpdateEdgeIntoAEL_m4C4C629344AE2E4072183668434761BF7E4D92DC_RuntimeMethod_var)));
@@ -7292,16 +7998,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_UpdateEdgeIntoAEL_m4C4C62934
 
 IL_0014:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1371>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_4 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_4);
 		NullCheck(L_5);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = L_5->___PrevInAEL;
 		V_0 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1372>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_7 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_7);
 		NullCheck(L_8);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = L_8->___NextInAEL;
 		V_1 = L_9;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1373>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_10 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_10);
 		NullCheck(L_11);
@@ -7312,6 +8021,7 @@ IL_0014:
 		int32_t L_15 = L_14->___OutIdx;
 		NullCheck(L_12);
 		L_12->___OutIdx = L_15;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1374>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = V_0;
 		if (!L_16)
 		{
@@ -7319,6 +8029,7 @@ IL_0014:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1375>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_18 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_18);
@@ -7332,6 +8043,7 @@ IL_0014:
 
 IL_0049:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1376>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_21 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_21);
 		NullCheck(L_22);
@@ -7342,6 +8054,7 @@ IL_0049:
 
 IL_0056:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1377>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = V_1;
 		if (!L_24)
 		{
@@ -7349,6 +8062,7 @@ IL_0056:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1378>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_26 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_26);
@@ -7361,6 +8075,7 @@ IL_0056:
 
 IL_0066:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1379>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_29 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_29);
 		NullCheck(L_30);
@@ -7371,6 +8086,7 @@ IL_0066:
 		int32_t L_34 = L_33->___Side;
 		NullCheck(L_31);
 		L_31->___Side = L_34;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1380>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_35 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_35);
 		NullCheck(L_36);
@@ -7381,6 +8097,7 @@ IL_0066:
 		int32_t L_40 = L_39->___WindDelta;
 		NullCheck(L_37);
 		L_37->___WindDelta = L_40;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1381>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_41 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_42 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_41);
 		NullCheck(L_42);
@@ -7391,6 +8108,7 @@ IL_0066:
 		int32_t L_46 = L_45->___WindCnt;
 		NullCheck(L_43);
 		L_43->___WindCnt = L_46;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1382>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_47 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_47);
 		NullCheck(L_48);
@@ -7401,6 +8119,7 @@ IL_0066:
 		int32_t L_52 = L_51->___WindCnt2;
 		NullCheck(L_49);
 		L_49->___WindCnt2 = L_52;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1383>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_53 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_54 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_55 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_54);
@@ -7408,6 +8127,7 @@ IL_0066:
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_56 = L_55->___NextInLML;
 		*((RuntimeObject**)L_53) = (RuntimeObject*)L_56;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_53, (void*)(RuntimeObject*)L_56);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1384>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_57 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_58 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_57);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_59 = ___0_e;
@@ -7416,18 +8136,21 @@ IL_0066:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_61 = L_60->___Bot;
 		NullCheck(L_58);
 		L_58->___Curr = L_61;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1385>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_62 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_63 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_62);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_64 = V_0;
 		NullCheck(L_63);
 		L_63->___PrevInAEL = L_64;
 		Il2CppCodeGenWriteBarrier((void**)(&L_63->___PrevInAEL), (void*)L_64);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1386>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_65 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_66 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_65);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_67 = V_1;
 		NullCheck(L_66);
 		L_66->___NextInAEL = L_67;
 		Il2CppCodeGenWriteBarrier((void**)(&L_66->___NextInAEL), (void*)L_67);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1387>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_68 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_69 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_68);
 		bool L_70;
@@ -7438,6 +8161,7 @@ IL_0066:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1387>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_71 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_72 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_71);
 		NullCheck(L_72);
@@ -7448,9 +8172,11 @@ IL_0066:
 
 IL_00f4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1388>
 		return;
 	}
 }
+// Method Definition Index: 58003
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SwapPositionsInAEL_m8115E667C69A638634397D13A4D0C34EA25DCB07 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_edge2, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
@@ -7460,6 +8186,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SwapPositionsInAEL_m8115E667
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_4 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_5 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1395>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1396>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge1;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___NextInAEL;
@@ -7486,11 +8214,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_SwapPositionsInAEL_m8115E667
 
 IL_001c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1396>
 		return;
 	}
 
 IL_001d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1398>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_edge1;
 		NullCheck(L_8);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = L_8->___NextInAEL;
@@ -7501,10 +8231,12 @@ IL_001d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1400>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = ___1_edge2;
 		NullCheck(L_11);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = L_11->___NextInAEL;
 		V_0 = L_12;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1401>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = V_0;
 		if (!L_13)
 		{
@@ -7512,6 +8244,7 @@ IL_001d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1402>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = ___0_edge1;
 		NullCheck(L_14);
@@ -7521,10 +8254,12 @@ IL_001d:
 
 IL_0037:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1403>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_edge1;
 		NullCheck(L_16);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = L_16->___PrevInAEL;
 		V_1 = L_17;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1404>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = V_1;
 		if (!L_18)
 		{
@@ -7532,6 +8267,7 @@ IL_0037:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1405>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___1_edge2;
 		NullCheck(L_19);
@@ -7541,21 +8277,25 @@ IL_0037:
 
 IL_0048:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1406>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = V_1;
 		NullCheck(L_21);
 		L_21->___PrevInAEL = L_22;
 		Il2CppCodeGenWriteBarrier((void**)(&L_21->___PrevInAEL), (void*)L_22);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1407>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_23 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = ___0_edge1;
 		NullCheck(L_23);
 		L_23->___NextInAEL = L_24;
 		Il2CppCodeGenWriteBarrier((void**)(&L_23->___NextInAEL), (void*)L_24);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1408>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_26 = ___1_edge2;
 		NullCheck(L_25);
 		L_25->___PrevInAEL = L_26;
 		Il2CppCodeGenWriteBarrier((void**)(&L_25->___PrevInAEL), (void*)L_26);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1409>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = V_0;
 		NullCheck(L_27);
@@ -7566,6 +8306,7 @@ IL_0048:
 
 IL_0069:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1411>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___1_edge2;
 		NullCheck(L_29);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = L_29->___NextInAEL;
@@ -7576,10 +8317,12 @@ IL_0069:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1413>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = ___0_edge1;
 		NullCheck(L_32);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_33 = L_32->___NextInAEL;
 		V_2 = L_33;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1414>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = V_2;
 		if (!L_34)
 		{
@@ -7587,6 +8330,7 @@ IL_0069:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1415>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = ___1_edge2;
 		NullCheck(L_35);
@@ -7596,10 +8340,12 @@ IL_0069:
 
 IL_0083:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1416>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_37 = ___1_edge2;
 		NullCheck(L_37);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_38 = L_37->___PrevInAEL;
 		V_3 = L_38;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1417>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = V_3;
 		if (!L_39)
 		{
@@ -7607,6 +8353,7 @@ IL_0083:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1418>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_40 = V_3;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_41 = ___0_edge1;
 		NullCheck(L_40);
@@ -7616,21 +8363,25 @@ IL_0083:
 
 IL_0094:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1419>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_42 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_43 = V_3;
 		NullCheck(L_42);
 		L_42->___PrevInAEL = L_43;
 		Il2CppCodeGenWriteBarrier((void**)(&L_42->___PrevInAEL), (void*)L_43);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1420>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_44 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_45 = ___1_edge2;
 		NullCheck(L_44);
 		L_44->___NextInAEL = L_45;
 		Il2CppCodeGenWriteBarrier((void**)(&L_44->___NextInAEL), (void*)L_45);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1421>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_47 = ___0_edge1;
 		NullCheck(L_46);
 		L_46->___PrevInAEL = L_47;
 		Il2CppCodeGenWriteBarrier((void**)(&L_46->___PrevInAEL), (void*)L_47);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1422>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_49 = V_2;
 		NullCheck(L_48);
@@ -7641,14 +8392,17 @@ IL_0094:
 
 IL_00b5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1426>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = ___0_edge1;
 		NullCheck(L_50);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = L_50->___NextInAEL;
 		V_4 = L_51;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1427>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_52 = ___0_edge1;
 		NullCheck(L_52);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_53 = L_52->___PrevInAEL;
 		V_5 = L_53;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1428>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_54 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_55 = ___1_edge2;
 		NullCheck(L_55);
@@ -7656,6 +8410,7 @@ IL_00b5:
 		NullCheck(L_54);
 		L_54->___NextInAEL = L_56;
 		Il2CppCodeGenWriteBarrier((void**)(&L_54->___NextInAEL), (void*)L_56);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1429>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_57 = ___0_edge1;
 		NullCheck(L_57);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_58 = L_57->___NextInAEL;
@@ -7665,6 +8420,7 @@ IL_00b5:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1430>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_59 = ___0_edge1;
 		NullCheck(L_59);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_60 = L_59->___NextInAEL;
@@ -7676,6 +8432,7 @@ IL_00b5:
 
 IL_00e5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1431>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_62 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_63 = ___1_edge2;
 		NullCheck(L_63);
@@ -7683,6 +8440,7 @@ IL_00e5:
 		NullCheck(L_62);
 		L_62->___PrevInAEL = L_64;
 		Il2CppCodeGenWriteBarrier((void**)(&L_62->___PrevInAEL), (void*)L_64);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1432>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_65 = ___0_edge1;
 		NullCheck(L_65);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_66 = L_65->___PrevInAEL;
@@ -7692,6 +8450,7 @@ IL_00e5:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1433>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_67 = ___0_edge1;
 		NullCheck(L_67);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_68 = L_67->___PrevInAEL;
@@ -7703,11 +8462,13 @@ IL_00e5:
 
 IL_0105:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1434>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_70 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_71 = V_4;
 		NullCheck(L_70);
 		L_70->___NextInAEL = L_71;
 		Il2CppCodeGenWriteBarrier((void**)(&L_70->___NextInAEL), (void*)L_71);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1435>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_72 = ___1_edge2;
 		NullCheck(L_72);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_73 = L_72->___NextInAEL;
@@ -7717,6 +8478,7 @@ IL_0105:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1436>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_74 = ___1_edge2;
 		NullCheck(L_74);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_75 = L_74->___NextInAEL;
@@ -7728,11 +8490,13 @@ IL_0105:
 
 IL_0121:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1437>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_77 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_78 = V_5;
 		NullCheck(L_77);
 		L_77->___PrevInAEL = L_78;
 		Il2CppCodeGenWriteBarrier((void**)(&L_77->___PrevInAEL), (void*)L_78);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1438>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_79 = ___1_edge2;
 		NullCheck(L_79);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_80 = L_79->___PrevInAEL;
@@ -7742,6 +8506,7 @@ IL_0121:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1439>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_81 = ___1_edge2;
 		NullCheck(L_81);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_82 = L_81->___PrevInAEL;
@@ -7753,6 +8518,7 @@ IL_0121:
 
 IL_013d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1442>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_84 = ___0_edge1;
 		NullCheck(L_84);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_85 = L_84->___PrevInAEL;
@@ -7762,6 +8528,7 @@ IL_013d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1443>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_86 = ___0_edge1;
 		__this->___m_ActiveEdges = L_86;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ActiveEdges), (void*)L_86);
@@ -7770,6 +8537,7 @@ IL_013d:
 
 IL_014d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1444>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_87 = ___1_edge2;
 		NullCheck(L_87);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_88 = L_87->___PrevInAEL;
@@ -7779,6 +8547,7 @@ IL_014d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1445>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_89 = ___1_edge2;
 		__this->___m_ActiveEdges = L_89;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ActiveEdges), (void*)L_89);
@@ -7786,22 +8555,27 @@ IL_014d:
 
 IL_015c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1446>
 		return;
 	}
 }
+// Method Definition Index: 58004
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996 (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1452>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___PrevInAEL;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1453>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_e;
 		NullCheck(L_2);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = L_2->___NextInAEL;
 		V_1 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1454>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = V_0;
 		if (L_4)
 		{
@@ -7824,11 +8598,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClipperBase_DeleteFromAEL_mBDD7A633D67B4
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1455>
 		return;
 	}
 
 IL_001e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1456>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = V_0;
 		if (!L_8)
 		{
@@ -7836,6 +8612,7 @@ IL_001e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1457>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = V_1;
 		NullCheck(L_9);
@@ -7846,6 +8623,7 @@ IL_001e:
 
 IL_002a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1458>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = V_1;
 		__this->___m_ActiveEdges = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_ActiveEdges), (void*)L_11);
@@ -7853,6 +8631,7 @@ IL_002a:
 
 IL_0031:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1459>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = V_1;
 		if (!L_12)
 		{
@@ -7860,6 +8639,7 @@ IL_0031:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1460>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_0;
 		NullCheck(L_13);
@@ -7869,14 +8649,17 @@ IL_0031:
 
 IL_003b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1461>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = ___0_e;
 		NullCheck(L_15);
 		L_15->___NextInAEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_15->___NextInAEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1462>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_e;
 		NullCheck(L_16);
 		L_16->___PrevInAEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___PrevInAEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1463>
 		return;
 	}
 }
@@ -7888,6 +8671,7 @@ IL_003b:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// Method Definition Index: 58005
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper__ctor_m79876B5EC9228EEAAF0564D8AED96823013A9378 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int32_t ___0_InitOptions, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7903,46 +8687,63 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper__ctor_m79876B5EC9228EEAAF0564D8A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1487>
 		ClipperBase__ctor_m0894488439AE46B592AE18030F09235C1FDC693F(__this, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1489>
 		((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_Scanbeam = (Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_Scanbeam), (void*)(Scanbeam_t0A2073548DD9793A7D8E075DF21CD75937DEE1D0*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1490>
 		__this->___m_Maxima = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Maxima), (void*)(Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1491>
 		((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1492>
 		__this->___m_SortedEdges = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1493>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_0 = (List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25*)il2cpp_codegen_object_new(List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25_il2cpp_TypeInfo_var);
 		List_1__ctor_m217E4BFAB45E6E0B94C0D9F0346DE23B9521443B(L_0, List_1__ctor_m217E4BFAB45E6E0B94C0D9F0346DE23B9521443B_RuntimeMethod_var);
 		__this->___m_IntersectList = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_IntersectList), (void*)L_0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1494>
 		MyIntersectNodeSort_t3A5AA650773947B2048050528167F4022BAD1CF1* L_1 = (MyIntersectNodeSort_t3A5AA650773947B2048050528167F4022BAD1CF1*)il2cpp_codegen_object_new(MyIntersectNodeSort_t3A5AA650773947B2048050528167F4022BAD1CF1_il2cpp_TypeInfo_var);
 		MyIntersectNodeSort__ctor_mB8C56DB3FAED9391DFBABE28026911599CEFAC33(L_1, NULL);
 		__this->___m_IntersectNodeComparer = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_IntersectNodeComparer), (void*)L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1495>
 		__this->___m_ExecuteLocked = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1496>
 		__this->___m_UsingPolyTree = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1497>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_2 = (List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7*)il2cpp_codegen_object_new(List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7_il2cpp_TypeInfo_var);
 		List_1__ctor_m34E3871DC5773EBE2D7D17FB1B006CB4B7A7FF1C(L_2, List_1__ctor_m34E3871DC5773EBE2D7D17FB1B006CB4B7A7FF1C_RuntimeMethod_var);
 		((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts), (void*)L_2);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1498>
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_3 = (List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6*)il2cpp_codegen_object_new(List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6_il2cpp_TypeInfo_var);
 		List_1__ctor_m35E5B2EA1312256467EB744B5D21CAD07995BE3A(L_3, List_1__ctor_m35E5B2EA1312256467EB744B5D21CAD07995BE3A_RuntimeMethod_var);
 		__this->___m_Joins = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Joins), (void*)L_3);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1499>
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_4 = (List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6*)il2cpp_codegen_object_new(List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6_il2cpp_TypeInfo_var);
 		List_1__ctor_m35E5B2EA1312256467EB744B5D21CAD07995BE3A(L_4, List_1__ctor_m35E5B2EA1312256467EB744B5D21CAD07995BE3A_RuntimeMethod_var);
 		__this->___m_GhostJoins = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_GhostJoins), (void*)L_4);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1500>
 		int32_t L_5 = ___0_InitOptions;
 		Clipper_set_ReverseSolution_m0D892BFC128ED8F617128C1247B128DA98046355_inline(__this, (bool)((!(((uint32_t)((int32_t)(1&L_5))) <= ((uint32_t)0)))? 1 : 0), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1501>
 		int32_t L_6 = ___0_InitOptions;
 		Clipper_set_StrictlySimple_mBAA38534C91283F371B0BC5847702C29E674A00C_inline(__this, (bool)((!(((uint32_t)((int32_t)(2&L_6))) <= ((uint32_t)0)))? 1 : 0), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1502>
 		int32_t L_7 = ___0_InitOptions;
 		ClipperBase_set_PreserveCollinear_mC58976CDF7BAF261FABB75AFCB9EAFA07E24F78A_inline(__this, (bool)((!(((uint32_t)((int32_t)(4&L_7))) <= ((uint32_t)0)))? 1 : 0), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1503>
 		return;
 	}
 }
+// Method Definition Index: 58006
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertMaxima_mB6D3CCC041F1854241C01396BD5D18FCC312AA1C (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int64_t ___0_X, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7954,13 +8755,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertMaxima_mB6D3CCC041F1854241
 	Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* V_0 = NULL;
 	Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1510>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_0 = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)il2cpp_codegen_object_new(Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C_il2cpp_TypeInfo_var);
 		Maxima__ctor_mC32025C99D8EA87503C8E97448C0D14B5646FC07(L_0, NULL);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1511>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_1 = V_0;
 		int64_t L_2 = ___0_X;
 		NullCheck(L_1);
 		L_1->___X = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1512>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_3 = __this->___m_Maxima;
 		if (L_3)
 		{
@@ -7968,13 +8772,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertMaxima_mB6D3CCC041F1854241
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1514>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_4 = V_0;
 		__this->___m_Maxima = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Maxima), (void*)L_4);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1515>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_5 = __this->___m_Maxima;
 		NullCheck(L_5);
 		L_5->___Next = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___Next), (void*)(Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1516>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_6 = __this->___m_Maxima;
 		NullCheck(L_6);
 		L_6->___Prev = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
@@ -7984,6 +8791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertMaxima_mB6D3CCC041F1854241
 
 IL_0035:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1518>
 		int64_t L_7 = ___0_X;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_8 = __this->___m_Maxima;
 		NullCheck(L_8);
@@ -7994,15 +8802,18 @@ IL_0035:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1520>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_10 = V_0;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_11 = __this->___m_Maxima;
 		NullCheck(L_10);
 		L_10->___Next = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&L_10->___Next), (void*)L_11);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1521>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_12 = V_0;
 		NullCheck(L_12);
 		L_12->___Prev = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___Prev), (void*)(Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1522>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_13 = V_0;
 		__this->___m_Maxima = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Maxima), (void*)L_13);
@@ -8011,6 +8822,7 @@ IL_0035:
 
 IL_005e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1526>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_14 = __this->___m_Maxima;
 		V_1 = L_14;
 		goto IL_006e;
@@ -8018,6 +8830,7 @@ IL_005e:
 
 IL_0067:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1527>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_15 = V_1;
 		NullCheck(L_15);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_16 = L_15->___Next;
@@ -8026,6 +8839,7 @@ IL_0067:
 
 IL_006e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1527>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_17 = V_1;
 		NullCheck(L_17);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_18 = L_17->___Next;
@@ -8049,6 +8863,7 @@ IL_006e:
 
 IL_0084:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1528>
 		int64_t L_23 = ___0_X;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_24 = V_1;
 		NullCheck(L_24);
@@ -8059,11 +8874,13 @@ IL_0084:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1528>
 		return;
 	}
 
 IL_008e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1530>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_26 = V_0;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_27 = V_1;
 		NullCheck(L_27);
@@ -8071,11 +8888,13 @@ IL_008e:
 		NullCheck(L_26);
 		L_26->___Next = L_28;
 		Il2CppCodeGenWriteBarrier((void**)(&L_26->___Next), (void*)L_28);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1531>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_29 = V_0;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_30 = V_1;
 		NullCheck(L_29);
 		L_29->___Prev = L_30;
 		Il2CppCodeGenWriteBarrier((void**)(&L_29->___Prev), (void*)L_30);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1532>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_31 = V_1;
 		NullCheck(L_31);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_32 = L_31->___Next;
@@ -8085,6 +8904,7 @@ IL_008e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1532>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_33 = V_1;
 		NullCheck(L_33);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_34 = L_33->___Next;
@@ -8096,62 +8916,78 @@ IL_008e:
 
 IL_00b5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1533>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_36 = V_1;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_37 = V_0;
 		NullCheck(L_36);
 		L_36->___Next = L_37;
 		Il2CppCodeGenWriteBarrier((void**)(&L_36->___Next), (void*)L_37);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1535>
 		return;
 	}
 }
+// Method Definition Index: 58007
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_get_LastIndex_mAC6074E04AB6F8042F2D853F146D20735F096B26 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1540>
 		int32_t L_0 = __this->___U3CLastIndexU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 58008
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_set_LastIndex_m6F599F61C577B01788A268086273E2A63838C40E (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1541>
 		int32_t L_0 = ___0_value;
 		__this->___U3CLastIndexU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 58009
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_get_ReverseSolution_mDA8487BE5689AC1DD8FA0AECA1687EDFC05442BE (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1548>
 		bool L_0 = __this->___U3CReverseSolutionU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 58010
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_set_ReverseSolution_m0D892BFC128ED8F617128C1247B128DA98046355 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1549>
 		bool L_0 = ___0_value;
 		__this->___U3CReverseSolutionU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 58011
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_get_StrictlySimple_m0668EAFA6CBFB92C4BA987D31B968956E406DA90 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1555>
 		bool L_0 = __this->___U3CStrictlySimpleU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 58012
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_set_StrictlySimple_mBAA38534C91283F371B0BC5847702C29E674A00C (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1556>
 		bool L_0 = ___0_value;
 		__this->___U3CStrictlySimpleU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 58013
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_m70516548117FA1F84C2D3CFF961D2A9EFB3A7621 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int32_t ___0_clipType, List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___1_solution, int32_t ___2_FillType, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1563>
 		int32_t L_0 = ___0_clipType;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_1 = ___1_solution;
 		int32_t L_2 = ___2_FillType;
@@ -8161,9 +8997,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_m70516548117FA1F84C2D3CF
 		return L_4;
 	}
 }
+// Method Definition Index: 58014
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_mA5A3F3FC444587617F075E17180654E802A7E4B0 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int32_t ___0_clipType, PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* ___1_polytree, int32_t ___2_FillType, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1571>
 		int32_t L_0 = ___0_clipType;
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_1 = ___1_polytree;
 		int32_t L_2 = ___2_FillType;
@@ -8173,6 +9011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_mA5A3F3FC444587617F075E1
 		return L_4;
 	}
 }
+// Method Definition Index: 58015
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_m6BFF7174B7680F350A69BB8CD2B7997C27A78BEA (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int32_t ___0_clipType, List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___1_solution, int32_t ___2_subjFillType, int32_t ___3_clipFillType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8183,6 +9022,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_m6BFF7174B7680F350A69BB8
 	}
 	bool V_0 = false;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1579>
 		bool L_0 = __this->___m_ExecuteLocked;
 		if (!L_0)
 		{
@@ -8190,11 +9030,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_m6BFF7174B7680F350A69BB8
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1579>
 		return (bool)0;
 	}
 
 IL_000a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1580>
 		bool L_1 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_HasOpenPaths;
 		if (!L_1)
 		{
@@ -8202,6 +9044,8 @@ IL_000a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1581>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1582>
 		ClipperException_t033D39948325F397A565E04767C45C94FB810C92* L_2 = (ClipperException_t033D39948325F397A565E04767C45C94FB810C92*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperException_t033D39948325F397A565E04767C45C94FB810C92_il2cpp_TypeInfo_var)));
 		ClipperException__ctor_mF1E22950760B1F1C7D5ADE536EACE305D09B8651(L_2, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral72179229E8E5413D5F2214BA1ECFBD62088DE1CE)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_2, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Clipper_Execute_m6BFF7174B7680F350A69BB8CD2B7997C27A78BEA_RuntimeMethod_var)));
@@ -8209,16 +9053,22 @@ IL_000a:
 
 IL_001d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1584>
 		__this->___m_ExecuteLocked = (bool)1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1585>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_3 = ___1_solution;
 		NullCheck(L_3);
 		List_1_Clear_mD5A9D76020A82AEC42B9C4870B2D6DB82138E7F8_inline(L_3, List_1_Clear_mD5A9D76020A82AEC42B9C4870B2D6DB82138E7F8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1586>
 		int32_t L_4 = ___2_subjFillType;
 		__this->___m_SubjFillType = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1587>
 		int32_t L_5 = ___3_clipFillType;
 		__this->___m_ClipFillType = L_5;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1588>
 		int32_t L_6 = ___0_clipType;
 		__this->___m_ClipType = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1589>
 		__this->___m_UsingPolyTree = (bool)0;
 	}
 	{
@@ -8227,17 +9077,22 @@ IL_001d:
 
 FINALLY_005a:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1599>
 				Clipper_DisposeAllPolyPts_m6C8F88CA62B0782EFFF78A998A8131D0451ED47F(__this, NULL);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1600>
 				__this->___m_ExecuteLocked = (bool)0;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1601>
 				return;
 			}
 		});
 		try
 		{
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1593>
 				bool L_7;
 				L_7 = Clipper_ExecuteInternal_m7D08783296C9BD61B5370C0DA00FA3E053DFE98B(__this, NULL);
 				V_0 = L_7;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1595>
 				bool L_8 = V_0;
 				if (!L_8)
 				{
@@ -8245,12 +9100,14 @@ FINALLY_005a:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1595>
 				List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_9 = ___1_solution;
 				Clipper_BuildResult_mFDFB8C6E1880CA19175F3CE89A95BA8C86DFE10C(__this, L_9, NULL);
 			}
 
 IL_0058_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1596>
 				goto IL_0068;
 			}
 		}
@@ -8262,14 +9119,17 @@ IL_0058_1:
 
 IL_0068:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1602>
 		bool L_10 = V_0;
 		return L_10;
 	}
 }
+// Method Definition Index: 58016
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_mEE13FA88C6CC6871D5D66D8C0652A99F2E4BD0E5 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int32_t ___0_clipType, PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* ___1_polytree, int32_t ___2_subjFillType, int32_t ___3_clipFillType, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1610>
 		bool L_0 = __this->___m_ExecuteLocked;
 		if (!L_0)
 		{
@@ -8277,18 +9137,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Execute_mEE13FA88C6CC6871D5D66D8
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1610>
 		return (bool)0;
 	}
 
 IL_000a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1611>
 		__this->___m_ExecuteLocked = (bool)1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1612>
 		int32_t L_1 = ___2_subjFillType;
 		__this->___m_SubjFillType = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1613>
 		int32_t L_2 = ___3_clipFillType;
 		__this->___m_ClipFillType = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1614>
 		int32_t L_3 = ___0_clipType;
 		__this->___m_ClipType = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1615>
 		__this->___m_UsingPolyTree = (bool)1;
 	}
 	{
@@ -8297,17 +9163,22 @@ IL_000a:
 
 FINALLY_0041:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1625>
 				Clipper_DisposeAllPolyPts_m6C8F88CA62B0782EFFF78A998A8131D0451ED47F(__this, NULL);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1626>
 				__this->___m_ExecuteLocked = (bool)0;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1627>
 				return;
 			}
 		});
 		try
 		{
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1619>
 				bool L_4;
 				L_4 = Clipper_ExecuteInternal_m7D08783296C9BD61B5370C0DA00FA3E053DFE98B(__this, NULL);
 				V_0 = L_4;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1621>
 				bool L_5 = V_0;
 				if (!L_5)
 				{
@@ -8315,12 +9186,14 @@ FINALLY_0041:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1621>
 				PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_6 = ___1_polytree;
 				Clipper_BuildResult2_m7367CEEAB529E9B4CA1E7F8888910375F44F8E63(__this, L_6, NULL);
 			}
 
 IL_003f_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1622>
 				goto IL_004f;
 			}
 		}
@@ -8332,14 +9205,19 @@ IL_003f_1:
 
 IL_004f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1628>
 		bool L_7 = V_0;
 		return L_7;
 	}
 }
+// Method Definition Index: 58017
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixHoleLinkage_m4B62F6906FD04FECBCE2F457400B2CC33694F834 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_outRec, const RuntimeMethod* method) 
 {
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1637>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1638>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1639>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_outRec;
 		NullCheck(L_0);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_1 = L_0->___FirstLeft;
@@ -8376,11 +9254,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixHoleLinkage_m4B62F6906FD04FEC
 
 IL_0028:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1639>
 		return;
 	}
 
 IL_0029:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1641>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_10 = ___0_outRec;
 		NullCheck(L_10);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_11 = L_10->___FirstLeft;
@@ -8390,6 +9270,7 @@ IL_0029:
 
 IL_0032:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1643>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_12 = V_0;
 		NullCheck(L_12);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_13 = L_12->___FirstLeft;
@@ -8398,6 +9279,7 @@ IL_0032:
 
 IL_0039:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1642>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_14 = V_0;
 		if (!L_14)
 		{
@@ -8428,14 +9310,17 @@ IL_0039:
 
 IL_0052:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1644>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_21 = ___0_outRec;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_22 = V_0;
 		NullCheck(L_21);
 		L_21->___FirstLeft = L_22;
 		Il2CppCodeGenWriteBarrier((void**)(&L_21->___FirstLeft), (void*)L_22);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1645>
 		return;
 	}
 }
+// Method Definition Index: 58018
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_ExecuteInternal_m7D08783296C9BD61B5370C0DA00FA3E053DFE98B (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8461,23 +9346,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_ExecuteInternal_m7D08783296C9BD6
 
 FINALLY_014f:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1696>
 				List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_0 = __this->___m_Joins;
 				NullCheck(L_0);
 				List_1_Clear_m9453CFA711C7CE2EC420855B2A42E8B57DDFBA26_inline(L_0, List_1_Clear_m9453CFA711C7CE2EC420855B2A42E8B57DDFBA26_RuntimeMethod_var);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1697>
 				List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_1 = __this->___m_GhostJoins;
 				NullCheck(L_1);
 				List_1_Clear_m9453CFA711C7CE2EC420855B2A42E8B57DDFBA26_inline(L_1, List_1_Clear_m9453CFA711C7CE2EC420855B2A42E8B57DDFBA26_RuntimeMethod_var);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1698>
 				return;
 			}
 		});
 		try
 		{
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1653>
 				VirtualActionInvoker0::Invoke(5, __this);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1654>
 				__this->___m_SortedEdges = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1655>
 				__this->___m_Maxima = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
 				Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Maxima), (void*)(Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1658>
 				bool L_2;
 				L_2 = ClipperBase_PopScanbeam_m30D6EC26308049F1C1C71E4276D5EE684D2E2A10(__this, (&V_0), NULL);
 				if (L_2)
@@ -8486,12 +9378,14 @@ FINALLY_014f:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1658>
 				V_2 = (bool)0;
 				goto IL_0166;
 			}
 
 IL_0025_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1659>
 				int64_t L_3 = V_0;
 				Clipper_InsertLocalMinimaIntoAEL_mA82B704FD997BB615616F8CF16F0ACE970706B52(__this, L_3, NULL);
 				goto IL_005f_1;
@@ -8499,10 +9393,13 @@ IL_0025_1:
 
 IL_002e_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1662>
 				Clipper_ProcessHorizontals_m4B595F375B5DA3AD1DEE1227A0B49CE6C63EAD46(__this, NULL);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1663>
 				List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_4 = __this->___m_GhostJoins;
 				NullCheck(L_4);
 				List_1_Clear_m9453CFA711C7CE2EC420855B2A42E8B57DDFBA26_inline(L_4, List_1_Clear_m9453CFA711C7CE2EC420855B2A42E8B57DDFBA26_RuntimeMethod_var);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1664>
 				int64_t L_5 = V_1;
 				bool L_6;
 				L_6 = Clipper_ProcessIntersections_m4A76591615621FC7F31C0D2A7344E1BAACE50BDD(__this, L_5, NULL);
@@ -8512,22 +9409,27 @@ IL_002e_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1664>
 				V_2 = (bool)0;
 				goto IL_0166;
 			}
 
 IL_004f_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1665>
 				int64_t L_7 = V_1;
 				Clipper_ProcessEdgesAtTopOfScanbeam_m6AD0668AC23EEFE993E18C5C190DA39612F2B8BC(__this, L_7, NULL);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1666>
 				int64_t L_8 = V_1;
 				V_0 = L_8;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1667>
 				int64_t L_9 = V_0;
 				Clipper_InsertLocalMinimaIntoAEL_mA82B704FD997BB615616F8CF16F0ACE970706B52(__this, L_9, NULL);
 			}
 
 IL_005f_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1660>
 				bool L_10;
 				L_10 = ClipperBase_PopScanbeam_m30D6EC26308049F1C1C71E4276D5EE684D2E2A10(__this, (&V_1), NULL);
 				if (L_10)
@@ -8544,6 +9446,7 @@ IL_005f_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1671>
 				List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_12 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 				NullCheck(L_12);
 				Enumerator_t8CFADDCDB705973808AFFE48AF147A098B9CB264 L_13;
@@ -8568,9 +9471,11 @@ FINALLY_00d5_1:
 
 IL_007f_2:
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1671>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_14;
 						L_14 = Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_inline((&V_3), Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_RuntimeMethod_var);
 						V_4 = L_14;
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1673>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_15 = V_4;
 						NullCheck(L_15);
 						OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_16 = L_15->___Pts;
@@ -8589,6 +9494,7 @@ IL_007f_2:
 						}
 					}
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1674>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_19 = V_4;
 						NullCheck(L_19);
 						bool L_20 = L_19->___IsHole;
@@ -8603,6 +9509,7 @@ IL_007f_2:
 						}
 					}
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1675>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_24 = V_4;
 						NullCheck(L_24);
 						OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_25 = L_24->___Pts;
@@ -8611,6 +9518,7 @@ IL_007f_2:
 
 IL_00ca_2:
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1671>
 						bool L_26;
 						L_26 = Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF((&V_3), Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF_RuntimeMethod_var);
 						if (L_26)
@@ -8630,7 +9538,9 @@ IL_00ca_2:
 
 IL_00e3_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1678>
 				Clipper_JoinCommonEdges_m2E6FD6E964AEE899F4725C3A930460926009DD02(__this, NULL);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1680>
 				List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_27 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 				NullCheck(L_27);
 				Enumerator_t8CFADDCDB705973808AFFE48AF147A098B9CB264 L_28;
@@ -8655,9 +9565,11 @@ FINALLY_012f_1:
 
 IL_00f7_2:
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1680>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_29;
 						L_29 = Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_inline((&V_3), Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_RuntimeMethod_var);
 						V_5 = L_29;
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1682>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_30 = V_5;
 						NullCheck(L_30);
 						OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_31 = L_30->___Pts;
@@ -8667,6 +9579,7 @@ IL_00f7_2:
 						}
 					}
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1684>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_32 = V_5;
 						NullCheck(L_32);
 						bool L_33 = L_32->___IsOpen;
@@ -8676,6 +9589,7 @@ IL_00f7_2:
 						}
 					}
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1685>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_34 = V_5;
 						Clipper_FixupOutPolyline_mD67B3527E6C50388E6E4A5610072C0340209E483(__this, L_34, NULL);
 						goto IL_0124_2;
@@ -8683,12 +9597,14 @@ IL_00f7_2:
 
 IL_011c_2:
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1687>
 						OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_35 = V_5;
 						Clipper_FixupOutPolygon_m85287817B16BDE7470C3BC58DD1C203298F6D299(__this, L_35, NULL);
 					}
 
 IL_0124_2:
 					{
+						//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1680>
 						bool L_36;
 						L_36 = Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF((&V_3), Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF_RuntimeMethod_var);
 						if (L_36)
@@ -8708,6 +9624,7 @@ IL_0124_2:
 
 IL_013d_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1690>
 				bool L_37;
 				L_37 = Clipper_get_StrictlySimple_m0668EAFA6CBFB92C4BA987D31B968956E406DA90_inline(__this, NULL);
 				if (!L_37)
@@ -8716,11 +9633,13 @@ IL_013d_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1690>
 				Clipper_DoSimplePolygons_mBEF68D5DED381C48823A211E5891E71A01E5A30C(__this, NULL);
 			}
 
 IL_014b_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1691>
 				V_2 = (bool)1;
 				goto IL_0166;
 			}
@@ -8733,10 +9652,12 @@ IL_014b_1:
 
 IL_0166:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1699>
 		bool L_38 = V_2;
 		return L_38;
 	}
 }
+// Method Definition Index: 58019
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DisposeAllPolyPts_m6C8F88CA62B0782EFFF78A998A8131D0451ED47F (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8748,20 +9669,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DisposeAllPolyPts_m6C8F88CA62B07
 	}
 	int32_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1705>
 		V_0 = 0;
 		goto IL_000f;
 	}
 
 IL_0004:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1705>
 		int32_t L_0 = V_0;
 		ClipperBase_DisposeOutRec_m3F29081230A27D799F601FFBE9760A12ADE74A1C(__this, L_0, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1705>
 		int32_t L_1 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_1, 1));
 	}
 
 IL_000f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1705>
 		int32_t L_2 = V_0;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_3 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_3);
@@ -8773,12 +9698,15 @@ IL_000f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1706>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_5 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_5);
 		List_1_Clear_mEEDADCD9C43EDDD5B2A2746129953F0C284CBF90_inline(L_5, List_1_Clear_mEEDADCD9C43EDDD5B2A2746129953F0C284CBF90_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1707>
 		return;
 	}
 }
+// Method Definition Index: 58020
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddJoin_mA87C379712044EED79BF51767A4C79D7D0351EC5 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_Op1, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___1_Op2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_OffPt, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8790,30 +9718,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddJoin_mA87C379712044EED79BF517
 	}
 	Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1713>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_0 = (Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970*)il2cpp_codegen_object_new(Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970_il2cpp_TypeInfo_var);
 		Join__ctor_m88EEDAF536FE700D923B4AB9AE7ECCCD5FD1FAB6(L_0, NULL);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1714>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_1 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = ___0_Op1;
 		NullCheck(L_1);
 		L_1->___OutPt1 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___OutPt1), (void*)L_2);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1715>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_3 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_4 = ___1_Op2;
 		NullCheck(L_3);
 		L_3->___OutPt2 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___OutPt2), (void*)L_4);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1716>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_5 = V_0;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = ___2_OffPt;
 		NullCheck(L_5);
 		L_5->___OffPt = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1717>
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_7 = __this->___m_Joins;
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_8 = V_0;
 		NullCheck(L_7);
 		List_1_Add_m97E02589DA43A570B0AD478056752AF6FD1DB34B_inline(L_7, L_8, List_1_Add_m97E02589DA43A570B0AD478056752AF6FD1DB34B_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1718>
 		return;
 	}
 }
+// Method Definition Index: 58021
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddGhostJoin_m612C3ADB4C32701F537DA35DAED2193BD80CE609 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_Op, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_OffPt, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8825,25 +9760,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddGhostJoin_m612C3ADB4C32701F53
 	}
 	Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1724>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_0 = (Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970*)il2cpp_codegen_object_new(Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970_il2cpp_TypeInfo_var);
 		Join__ctor_m88EEDAF536FE700D923B4AB9AE7ECCCD5FD1FAB6(L_0, NULL);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1725>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_1 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = ___0_Op;
 		NullCheck(L_1);
 		L_1->___OutPt1 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___OutPt1), (void*)L_2);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1726>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_3 = V_0;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = ___1_OffPt;
 		NullCheck(L_3);
 		L_3->___OffPt = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1727>
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_5 = __this->___m_GhostJoins;
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_6 = V_0;
 		NullCheck(L_5);
 		List_1_Add_m97E02589DA43A570B0AD478056752AF6FD1DB34B_inline(L_5, L_6, List_1_Add_m97E02589DA43A570B0AD478056752AF6FD1DB34B_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1728>
 		return;
 	}
 }
+// Method Definition Index: 58022
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertLocalMinimaIntoAEL_mA82B704FD997BB615616F8CF16F0ACE970706B52 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int64_t ___0_botY, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8868,15 +9809,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertLocalMinimaIntoAEL_mA82B70
 
 IL_0005:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1735>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_0 = V_0;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___LeftBound;
 		V_1 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1736>
 		LocalMinima_tB9A9A2EDBF8E7ECCF6A2646EB268BC2640C1AF1F* L_2 = V_0;
 		NullCheck(L_2);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = L_2->___RightBound;
 		V_2 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1738>
 		V_3 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1739>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = V_1;
 		if (L_4)
 		{
@@ -8884,10 +9829,13 @@ IL_0005:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1741>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = V_2;
 		Clipper_InsertEdgeIntoAEL_m7584619E65629469C02AC98B40B0CDD00922D617(__this, L_5, (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1742>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = V_2;
 		Clipper_SetWindingCount_mD42016432E8FEF29D8ED729408F9E24C3BFC80DD(__this, L_6, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1743>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = V_2;
 		bool L_8;
 		L_8 = Clipper_IsContributing_mDFF5C7D0EE49D4D958D774BE48C5598FE69F2FB9(__this, L_7, NULL);
@@ -8897,6 +9845,7 @@ IL_0005:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1744>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = V_2;
 		NullCheck(L_10);
@@ -8909,6 +9858,7 @@ IL_0005:
 
 IL_0046:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1746>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = V_2;
 		if (L_13)
 		{
@@ -8916,10 +9866,13 @@ IL_0046:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1748>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_1;
 		Clipper_InsertEdgeIntoAEL_m7584619E65629469C02AC98B40B0CDD00922D617(__this, L_14, (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1749>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = V_1;
 		Clipper_SetWindingCount_mD42016432E8FEF29D8ED729408F9E24C3BFC80DD(__this, L_15, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1750>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = V_1;
 		bool L_17;
 		L_17 = Clipper_IsContributing_mDFF5C7D0EE49D4D958D774BE48C5598FE69F2FB9(__this, L_16, NULL);
@@ -8929,6 +9882,7 @@ IL_0046:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1751>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = V_1;
 		NullCheck(L_19);
@@ -8940,6 +9894,7 @@ IL_0046:
 
 IL_006f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1752>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = V_1;
 		NullCheck(L_22);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_23 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_22->___Top);
@@ -8950,25 +9905,31 @@ IL_006f:
 
 IL_0082:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1756>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = V_1;
 		Clipper_InsertEdgeIntoAEL_m7584619E65629469C02AC98B40B0CDD00922D617(__this, L_25, (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1757>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_26 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = V_1;
 		Clipper_InsertEdgeIntoAEL_m7584619E65629469C02AC98B40B0CDD00922D617(__this, L_26, L_27, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1758>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = V_1;
 		Clipper_SetWindingCount_mD42016432E8FEF29D8ED729408F9E24C3BFC80DD(__this, L_28, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1759>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = V_1;
 		NullCheck(L_30);
 		int32_t L_31 = L_30->___WindCnt;
 		NullCheck(L_29);
 		L_29->___WindCnt = L_31;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1760>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_33 = V_1;
 		NullCheck(L_33);
 		int32_t L_34 = L_33->___WindCnt2;
 		NullCheck(L_32);
 		L_32->___WindCnt2 = L_34;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1761>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = V_1;
 		bool L_36;
 		L_36 = Clipper_IsContributing_mDFF5C7D0EE49D4D958D774BE48C5598FE69F2FB9(__this, L_35, NULL);
@@ -8978,6 +9939,7 @@ IL_0082:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1762>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_37 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_38 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = V_1;
@@ -8990,6 +9952,7 @@ IL_0082:
 
 IL_00c9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1763>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_42 = V_1;
 		NullCheck(L_42);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_43 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_42->___Top);
@@ -8999,6 +9962,7 @@ IL_00c9:
 
 IL_00da:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1766>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_45 = V_2;
 		if (!L_45)
 		{
@@ -9006,6 +9970,7 @@ IL_00da:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1768>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46 = V_2;
 		bool L_47;
 		L_47 = ClipperBase_IsHorizontal_m6BAD44CE7EDD2316867C067D25B16BC929CE2674(L_46, NULL);
@@ -9015,6 +9980,7 @@ IL_00da:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1770>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = V_2;
 		NullCheck(L_48);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_49 = L_48->___NextInLML;
@@ -9024,6 +9990,7 @@ IL_00da:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1771>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = V_2;
 		NullCheck(L_50);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = L_50->___NextInLML;
@@ -9035,6 +10002,7 @@ IL_00da:
 
 IL_0103:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1772>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_54 = V_2;
 		Clipper_AddEdgeToSEL_m3B43222EF1A254812F2A7D61AE72959852A7A4A1(__this, L_54, NULL);
 		goto IL_011d;
@@ -9042,6 +10010,7 @@ IL_0103:
 
 IL_010c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1775>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_55 = V_2;
 		NullCheck(L_55);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_56 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_55->___Top);
@@ -9051,6 +10020,7 @@ IL_010c:
 
 IL_011d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1778>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_58 = V_1;
 		if (!L_58)
 		{
@@ -9065,6 +10035,8 @@ IL_011d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1781>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1782>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_60 = V_3;
 		if (!L_60)
 		{
@@ -9100,18 +10072,21 @@ IL_011d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1784>
 		V_4 = 0;
 		goto IL_01bd;
 	}
 
 IL_0158:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1788>
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_67 = __this->___m_GhostJoins;
 		int32_t L_68 = V_4;
 		NullCheck(L_67);
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_69;
 		L_69 = List_1_get_Item_mCF2E3DBAAABB4BA12A33934C3A5A3F145A33423C(L_67, L_68, List_1_get_Item_mCF2E3DBAAABB4BA12A33934C3A5A3F145A33423C_RuntimeMethod_var);
 		V_5 = L_69;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1789>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_70 = V_5;
 		NullCheck(L_70);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_71 = L_70->___OutPt1;
@@ -9138,6 +10113,7 @@ IL_0158:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1790>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_84 = V_5;
 		NullCheck(L_84);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_85 = L_84->___OutPt1;
@@ -9150,12 +10126,14 @@ IL_0158:
 
 IL_01b7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1784>
 		int32_t L_89 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_89, 1));
 	}
 
 IL_01bd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1784>
 		int32_t L_90 = V_4;
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_91 = __this->___m_GhostJoins;
 		NullCheck(L_91);
@@ -9169,6 +10147,11 @@ IL_01bd:
 
 IL_01cc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1794>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1795>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1796>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1797>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1798>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_93 = V_1;
 		NullCheck(L_93);
 		int32_t L_94 = L_93->___OutIdx;
@@ -9259,6 +10242,7 @@ IL_01cc:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1800>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_124 = V_1;
 		NullCheck(L_124);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_125 = L_124->___PrevInAEL;
@@ -9268,6 +10252,7 @@ IL_01cc:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_128;
 		L_128 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_125, L_127, NULL);
 		V_6 = L_128;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1801>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_129 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_130 = V_6;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_131 = V_1;
@@ -9278,6 +10263,7 @@ IL_01cc:
 
 IL_0275:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1804>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_133 = V_1;
 		NullCheck(L_133);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_134 = L_133->___NextInAEL;
@@ -9288,6 +10274,9 @@ IL_0275:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1806>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1807>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1808>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_136 = V_2;
 		NullCheck(L_136);
 		int32_t L_137 = L_136->___OutIdx;
@@ -9353,6 +10342,7 @@ IL_0275:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1810>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_158 = V_2;
 		NullCheck(L_158);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_159 = L_158->___PrevInAEL;
@@ -9362,6 +10352,7 @@ IL_0275:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_162;
 		L_162 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_159, L_161, NULL);
 		V_8 = L_162;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1811>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_163 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_164 = V_8;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_165 = V_2;
@@ -9372,10 +10363,12 @@ IL_0275:
 
 IL_02ff:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1814>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_167 = V_1;
 		NullCheck(L_167);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_168 = L_167->___NextInAEL;
 		V_7 = L_168;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1815>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_169 = V_7;
 		if (!L_169)
 		{
@@ -9388,12 +10381,14 @@ IL_02ff:
 
 IL_030d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1820>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_170 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_171 = V_7;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_172 = V_1;
 		NullCheck(L_172);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_173 = L_172->___Curr;
 		Clipper_IntersectEdges_mD054D64A65188A152D241B4A66A9F4DAF61A5E97(__this, L_170, L_171, L_173, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1821>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_174 = V_7;
 		NullCheck(L_174);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_175 = L_174->___NextInAEL;
@@ -9402,6 +10397,7 @@ IL_030d:
 
 IL_0325:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1816>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_176 = V_7;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_177 = V_2;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_176) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_177))))
@@ -9412,6 +10408,7 @@ IL_0325:
 
 IL_032a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1733>
 		int64_t L_178 = ___0_botY;
 		bool L_179;
 		L_179 = ClipperBase_PopLocalMinima_m24AFAE8B70455538DCD5922163EF5C11D6E980BA(__this, L_178, (&V_0), NULL);
@@ -9421,12 +10418,15 @@ IL_032a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1825>
 		return;
 	}
 }
+// Method Definition Index: 58023
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertEdgeIntoAEL_m7584619E65629469C02AC98B40B0CDD00922D617 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_startEdge, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1831>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		if (L_0)
 		{
@@ -9434,14 +10434,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertEdgeIntoAEL_m7584619E65629
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1833>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___0_edge;
 		NullCheck(L_1);
 		L_1->___PrevInAEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___PrevInAEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1834>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_edge;
 		NullCheck(L_2);
 		L_2->___NextInAEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___NextInAEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1835>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___0_edge;
 		((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges), (void*)L_3);
@@ -9450,6 +10453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_InsertEdgeIntoAEL_m7584619E65629
 
 IL_001e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1837>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___1_startEdge;
 		if (L_4)
 		{
@@ -9467,20 +10471,24 @@ IL_001e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1839>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_edge;
 		NullCheck(L_8);
 		L_8->___PrevInAEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_8->___PrevInAEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1840>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		NullCheck(L_9);
 		L_9->___NextInAEL = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&L_9->___NextInAEL), (void*)L_10);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1841>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = ___0_edge;
 		NullCheck(L_11);
 		L_11->___PrevInAEL = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___PrevInAEL), (void*)L_12);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1842>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = ___0_edge;
 		((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges), (void*)L_13);
@@ -9489,6 +10497,7 @@ IL_001e:
 
 IL_0057:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1846>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = ___1_startEdge;
 		if (L_14)
 		{
@@ -9496,6 +10505,7 @@ IL_0057:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1846>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		___1_startEdge = L_15;
 		goto IL_006c;
@@ -9503,6 +10513,7 @@ IL_0057:
 
 IL_0064:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1849>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___1_startEdge;
 		NullCheck(L_16);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = L_16->___NextInAEL;
@@ -9511,6 +10522,8 @@ IL_0064:
 
 IL_006c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1847>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1848>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = ___1_startEdge;
 		NullCheck(L_18);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = L_18->___NextInAEL;
@@ -9534,6 +10547,7 @@ IL_006c:
 
 IL_0083:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1850>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = ___1_startEdge;
 		NullCheck(L_25);
@@ -9541,6 +10555,7 @@ IL_0083:
 		NullCheck(L_24);
 		L_24->___NextInAEL = L_26;
 		Il2CppCodeGenWriteBarrier((void**)(&L_24->___NextInAEL), (void*)L_26);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1851>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = ___1_startEdge;
 		NullCheck(L_27);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = L_27->___NextInAEL;
@@ -9550,6 +10565,7 @@ IL_0083:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1851>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___1_startEdge;
 		NullCheck(L_29);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = L_29->___NextInAEL;
@@ -9561,22 +10577,27 @@ IL_0083:
 
 IL_00a3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1852>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_33 = ___1_startEdge;
 		NullCheck(L_32);
 		L_32->___PrevInAEL = L_33;
 		Il2CppCodeGenWriteBarrier((void**)(&L_32->___PrevInAEL), (void*)L_33);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1853>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = ___1_startEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = ___0_edge;
 		NullCheck(L_34);
 		L_34->___NextInAEL = L_35;
 		Il2CppCodeGenWriteBarrier((void**)(&L_34->___NextInAEL), (void*)L_35);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1855>
 		return;
 	}
 }
+// Method Definition Index: 58024
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_E2InsertsBeforeE1_m0009EE4EFDDD65FBCFAA6DBB68CF69EECD7BC653 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_e2, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1861>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___1_e2;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Curr);
@@ -9591,6 +10612,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_E2InsertsBeforeE1_m0009EE4EFDDD6
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1863>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = ___1_e2;
 		NullCheck(L_6);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_7 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_6->___Top);
@@ -9605,6 +10627,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_E2InsertsBeforeE1_m0009EE4EFDDD6
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1864>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = ___1_e2;
 		NullCheck(L_12);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_13 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_12->___Top);
@@ -9621,6 +10644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_E2InsertsBeforeE1_m0009EE4EFDDD6
 
 IL_004f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1865>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_e1;
 		NullCheck(L_20);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_21 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_20->___Top);
@@ -9637,6 +10661,7 @@ IL_004f:
 
 IL_006e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1867>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = ___1_e2;
 		NullCheck(L_28);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_29 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_28->___Curr);
@@ -9648,9 +10673,11 @@ IL_006e:
 		return (bool)((((int64_t)L_30) < ((int64_t)L_33))? 1 : 0);
 	}
 }
+// Method Definition Index: 58025
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsEvenOddFillType_m9F2B05C69F279E0C7F9C1C5F2E748E6979321A3F (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1874>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___PolyTyp;
@@ -9660,19 +10687,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsEvenOddFillType_m9F2B05C69F279
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1875>
 		int32_t L_2 = __this->___m_SubjFillType;
 		return (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
 	}
 
 IL_0012:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1877>
 		int32_t L_3 = __this->___m_ClipFillType;
 		return (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
 	}
 }
+// Method Definition Index: 58026
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsEvenOddAltFillType_m5D259419A5C33724F372EE937C3469AA34FC199B (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1884>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___PolyTyp;
@@ -9682,16 +10713,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsEvenOddAltFillType_m5D259419A5
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1885>
 		int32_t L_2 = __this->___m_ClipFillType;
 		return (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
 	}
 
 IL_0012:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1887>
 		int32_t L_3 = __this->___m_SubjFillType;
 		return (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
 	}
 }
+// Method Definition Index: 58027
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsContributing_mDFF5C7D0EE49D4D958D774BE48C5598FE69F2FB9 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9704,6 +10738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsContributing_mDFF5C7D0EE49D4D9
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1895>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___PolyTyp;
@@ -9713,8 +10748,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsContributing_mDFF5C7D0EE49D4D9
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1897>
 		int32_t L_2 = __this->___m_SubjFillType;
 		V_0 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1898>
 		int32_t L_3 = __this->___m_ClipFillType;
 		V_1 = L_3;
 		goto IL_0026;
@@ -9722,8 +10759,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsContributing_mDFF5C7D0EE49D4D9
 
 IL_0018:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1902>
 		int32_t L_4 = __this->___m_ClipFillType;
 		V_0 = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1903>
 		int32_t L_5 = __this->___m_SubjFillType;
 		V_1 = L_5;
 	}
@@ -9753,6 +10792,7 @@ IL_0026:
 
 IL_003a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1910>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = ___0_edge;
 		NullCheck(L_7);
 		int32_t L_8 = L_7->___WindDelta;
@@ -9771,11 +10811,13 @@ IL_003a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1910>
 		return (bool)0;
 	}
 
 IL_004d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1913>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = ___0_edge;
 		NullCheck(L_11);
 		int32_t L_12 = L_11->___WindCnt;
@@ -9788,11 +10830,13 @@ IL_004d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1913>
 		return (bool)0;
 	}
 
 IL_005d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1916>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = ___0_edge;
 		NullCheck(L_14);
 		int32_t L_15 = L_14->___WindCnt;
@@ -9802,11 +10846,13 @@ IL_005d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1916>
 		return (bool)0;
 	}
 
 IL_0068:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1919>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_edge;
 		NullCheck(L_16);
 		int32_t L_17 = L_16->___WindCnt;
@@ -9816,11 +10862,13 @@ IL_0068:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1919>
 		return (bool)0;
 	}
 
 IL_0073:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1923>
 		int32_t L_18 = __this->___m_ClipType;
 		V_2 = L_18;
 		int32_t L_19 = V_2;
@@ -9869,6 +10917,7 @@ IL_0095:
 
 IL_009f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1930>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = ___0_edge;
 		NullCheck(L_22);
 		int32_t L_23 = L_22->___WindCnt2;
@@ -9877,6 +10926,7 @@ IL_009f:
 
 IL_00a9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1932>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = ___0_edge;
 		NullCheck(L_24);
 		int32_t L_25 = L_24->___WindCnt2;
@@ -9885,6 +10935,7 @@ IL_00a9:
 
 IL_00b3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1934>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_26 = ___0_edge;
 		NullCheck(L_26);
 		int32_t L_27 = L_26->___WindCnt2;
@@ -9912,6 +10963,7 @@ IL_00bd:
 
 IL_00c7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1941>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = ___0_edge;
 		NullCheck(L_30);
 		int32_t L_31 = L_30->___WindCnt2;
@@ -9920,6 +10972,7 @@ IL_00c7:
 
 IL_00d1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1943>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = ___0_edge;
 		NullCheck(L_32);
 		int32_t L_33 = L_32->___WindCnt2;
@@ -9928,6 +10981,7 @@ IL_00d1:
 
 IL_00de:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1945>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = ___0_edge;
 		NullCheck(L_34);
 		int32_t L_35 = L_34->___WindCnt2;
@@ -9936,6 +10990,7 @@ IL_00de:
 
 IL_00eb:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1948>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = ___0_edge;
 		NullCheck(L_36);
 		int32_t L_37 = L_36->___PolyTyp;
@@ -9964,6 +11019,7 @@ IL_00eb:
 
 IL_00fd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1953>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_40 = ___0_edge;
 		NullCheck(L_40);
 		int32_t L_41 = L_40->___WindCnt2;
@@ -9972,6 +11028,7 @@ IL_00fd:
 
 IL_0107:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1955>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_42 = ___0_edge;
 		NullCheck(L_42);
 		int32_t L_43 = L_42->___WindCnt2;
@@ -9980,6 +11037,7 @@ IL_0107:
 
 IL_0114:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1957>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_44 = ___0_edge;
 		NullCheck(L_44);
 		int32_t L_45 = L_44->___WindCnt2;
@@ -10007,6 +11065,7 @@ IL_0121:
 
 IL_012b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1964>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = ___0_edge;
 		NullCheck(L_48);
 		int32_t L_49 = L_48->___WindCnt2;
@@ -10015,6 +11074,7 @@ IL_012b:
 
 IL_0135:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1966>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = ___0_edge;
 		NullCheck(L_50);
 		int32_t L_51 = L_50->___WindCnt2;
@@ -10023,6 +11083,7 @@ IL_0135:
 
 IL_013f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1968>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_52 = ___0_edge;
 		NullCheck(L_52);
 		int32_t L_53 = L_52->___WindCnt2;
@@ -10031,6 +11092,7 @@ IL_013f:
 
 IL_0149:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1971>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_54 = ___0_edge;
 		NullCheck(L_54);
 		int32_t L_55 = L_54->___WindDelta;
@@ -10059,6 +11121,7 @@ IL_0149:
 
 IL_015b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1976>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_58 = ___0_edge;
 		NullCheck(L_58);
 		int32_t L_59 = L_58->___WindCnt2;
@@ -10067,6 +11130,7 @@ IL_015b:
 
 IL_0165:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1978>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_60 = ___0_edge;
 		NullCheck(L_60);
 		int32_t L_61 = L_60->___WindCnt2;
@@ -10075,6 +11139,7 @@ IL_0165:
 
 IL_0172:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1980>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_62 = ___0_edge;
 		NullCheck(L_62);
 		int32_t L_63 = L_62->___WindCnt2;
@@ -10083,14 +11148,17 @@ IL_0172:
 
 IL_017f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1983>
 		return (bool)1;
 	}
 
 IL_0181:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1985>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58028
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SetWindingCount_mD42016432E8FEF29D8ED729408F9E24C3BFC80DD (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10125,6 +11193,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SetWindingCount_mD42016432E8FEF2
 	int32_t G_B57_0 = 0;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* G_B57_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1992>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___PrevInAEL;
@@ -10134,6 +11203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SetWindingCount_mD42016432E8FEF2
 
 IL_0009:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1994>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = V_0;
 		NullCheck(L_2);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = L_2->___PrevInAEL;
@@ -10142,6 +11212,7 @@ IL_0009:
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1994>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = V_0;
 		if (!L_4)
 		{
@@ -10172,6 +11243,7 @@ IL_0010:
 
 IL_0029:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1995>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = V_0;
 		if (L_11)
 		{
@@ -10179,6 +11251,7 @@ IL_0029:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1998>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = ___0_edge;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->___PolyTyp;
@@ -10202,6 +11275,7 @@ IL_003c:
 IL_0042:
 	{
 		V_1 = G_B9_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1999>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_edge;
 		NullCheck(L_16);
 		int32_t L_17 = L_16->___WindDelta;
@@ -10211,6 +11285,7 @@ IL_0042:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1999>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = ___0_edge;
 		int32_t L_19 = V_1;
 		if ((((int32_t)L_19) == ((int32_t)3)))
@@ -10241,6 +11316,7 @@ IL_0054:
 
 IL_005b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2000>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___0_edge;
 		NullCheck(L_21);
@@ -10251,9 +11327,11 @@ IL_005b:
 
 IL_0067:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2001>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_23 = ___0_edge;
 		NullCheck(L_23);
 		L_23->___WindCnt2 = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2002>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		V_0 = L_24;
 		goto IL_01fa;
@@ -10261,6 +11339,7 @@ IL_0067:
 
 IL_007a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2004>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = ___0_edge;
 		NullCheck(L_25);
 		int32_t L_26 = L_25->___WindDelta;
@@ -10277,15 +11356,18 @@ IL_007a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2006>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = ___0_edge;
 		NullCheck(L_28);
 		L_28->___WindCnt = 1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2007>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = V_0;
 		NullCheck(L_30);
 		int32_t L_31 = L_30->___WindCnt2;
 		NullCheck(L_29);
 		L_29->___WindCnt2 = L_31;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2008>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = V_0;
 		NullCheck(L_32);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_33 = L_32->___NextInAEL;
@@ -10295,6 +11377,7 @@ IL_007a:
 
 IL_00aa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2010>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = ___0_edge;
 		bool L_35;
 		L_35 = Clipper_IsEvenOddFillType_m9F2B05C69F279E0C7F9C1C5F2E748E6979321A3F(__this, L_34, NULL);
@@ -10304,6 +11387,7 @@ IL_00aa:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2013>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = ___0_edge;
 		NullCheck(L_36);
 		int32_t L_37 = L_36->___WindDelta;
@@ -10313,7 +11397,9 @@ IL_00aa:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2016>
 		V_2 = (bool)1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2017>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_38 = V_0;
 		NullCheck(L_38);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = L_38->___PrevInAEL;
@@ -10323,6 +11409,7 @@ IL_00aa:
 
 IL_00c6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2020>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_40 = V_3;
 		NullCheck(L_40);
 		int32_t L_41 = L_40->___PolyTyp;
@@ -10344,12 +11431,14 @@ IL_00c6:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2021>
 		bool L_46 = V_2;
 		V_2 = (bool)((((int32_t)L_46) == ((int32_t)0))? 1 : 0);
 	}
 
 IL_00e1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2022>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_47 = V_3;
 		NullCheck(L_47);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = L_47->___PrevInAEL;
@@ -10358,6 +11447,7 @@ IL_00e1:
 
 IL_00e8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2018>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_49 = V_3;
 		if (L_49)
 		{
@@ -10365,6 +11455,7 @@ IL_00e8:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2024>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = ___0_edge;
 		bool L_51 = V_2;
 		if (L_51)
@@ -10395,6 +11486,7 @@ IL_00f3:
 
 IL_00fa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2028>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_52 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_53 = ___0_edge;
 		NullCheck(L_53);
@@ -10405,12 +11497,14 @@ IL_00fa:
 
 IL_0106:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2030>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_55 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_56 = V_0;
 		NullCheck(L_56);
 		int32_t L_57 = L_56->___WindCnt2;
 		NullCheck(L_55);
 		L_55->___WindCnt2 = L_57;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2031>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_58 = V_0;
 		NullCheck(L_58);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_59 = L_58->___NextInAEL;
@@ -10420,6 +11514,7 @@ IL_0106:
 
 IL_011e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2036>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_60 = V_0;
 		NullCheck(L_60);
 		int32_t L_61 = L_60->___WindCnt;
@@ -10432,6 +11527,7 @@ IL_011e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2040>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_64 = V_0;
 		NullCheck(L_64);
 		int32_t L_65 = L_64->___WindCnt;
@@ -10444,6 +11540,7 @@ IL_011e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2044>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_67 = V_0;
 		NullCheck(L_67);
 		int32_t L_68 = L_67->___WindDelta;
@@ -10456,6 +11553,7 @@ IL_011e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2044>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_71 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_72 = V_0;
 		NullCheck(L_72);
@@ -10467,6 +11565,7 @@ IL_011e:
 
 IL_015d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2046>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_74 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_75 = V_0;
 		NullCheck(L_75);
@@ -10481,6 +11580,7 @@ IL_015d:
 
 IL_0172:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2050>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_79 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_80 = ___0_edge;
 		NullCheck(L_80);
@@ -10516,6 +11616,7 @@ IL_0184:
 
 IL_018b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2056>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_84 = ___0_edge;
 		NullCheck(L_84);
 		int32_t L_85 = L_84->___WindDelta;
@@ -10525,6 +11626,7 @@ IL_018b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2057>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_86 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_87 = V_0;
 		NullCheck(L_87);
@@ -10563,6 +11665,7 @@ IL_01af:
 
 IL_01b6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2059>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_93 = V_0;
 		NullCheck(L_93);
 		int32_t L_94 = L_93->___WindDelta;
@@ -10575,6 +11678,7 @@ IL_01b6:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2060>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_97 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_98 = V_0;
 		NullCheck(L_98);
@@ -10586,6 +11690,7 @@ IL_01b6:
 
 IL_01d4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2062>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_100 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_101 = V_0;
 		NullCheck(L_101);
@@ -10599,12 +11704,14 @@ IL_01d4:
 
 IL_01e7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2064>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_105 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_106 = V_0;
 		NullCheck(L_106);
 		int32_t L_107 = L_106->___WindCnt2;
 		NullCheck(L_105);
 		L_105->___WindCnt2 = L_107;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2065>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_108 = V_0;
 		NullCheck(L_108);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_109 = L_108->___NextInAEL;
@@ -10613,6 +11720,7 @@ IL_01e7:
 
 IL_01fa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2069>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_110 = ___0_edge;
 		bool L_111;
 		L_111 = Clipper_IsEvenOddAltFillType_m5D259419A5C33724F372EE937C3469AA34FC199B(__this, L_110, NULL);
@@ -10627,6 +11735,7 @@ IL_01fa:
 
 IL_0205:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2074>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_112 = V_0;
 		NullCheck(L_112);
 		int32_t L_113 = L_112->___WindDelta;
@@ -10636,6 +11745,7 @@ IL_0205:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2075>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_114 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_115 = ___0_edge;
 		NullCheck(L_115);
@@ -10667,6 +11777,7 @@ IL_021a:
 
 IL_021f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2076>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_117 = V_0;
 		NullCheck(L_117);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_118 = L_117->___NextInAEL;
@@ -10675,6 +11786,7 @@ IL_021f:
 
 IL_0226:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2072>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_119 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_120 = ___0_edge;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_119) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_120))))
@@ -10688,6 +11800,7 @@ IL_0226:
 
 IL_022b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2084>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_121 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_122 = L_121;
 		NullCheck(L_122);
@@ -10697,6 +11810,7 @@ IL_022b:
 		int32_t L_125 = L_124->___WindDelta;
 		NullCheck(L_122);
 		L_122->___WindCnt2 = ((int32_t)il2cpp_codegen_add(L_123, L_125));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2085>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_126 = V_0;
 		NullCheck(L_126);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_127 = L_126->___NextInAEL;
@@ -10705,6 +11819,7 @@ IL_022b:
 
 IL_0245:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2082>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_128 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_129 = ___0_edge;
 		if ((!(((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_128) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_129))))
@@ -10713,12 +11828,15 @@ IL_0245:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2088>
 		return;
 	}
 }
+// Method Definition Index: 58029
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddEdgeToSEL_m3B43222EF1A254812F2A7D61AE72959852A7A4A1 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2097>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = __this->___m_SortedEdges;
 		if (L_0)
 		{
@@ -10726,13 +11844,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddEdgeToSEL_m3B43222EF1A254812F
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2099>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___0_edge;
 		__this->___m_SortedEdges = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2100>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_edge;
 		NullCheck(L_2);
 		L_2->___PrevInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___PrevInSEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2101>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___0_edge;
 		NullCheck(L_3);
 		L_3->___NextInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
@@ -10742,35 +11863,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddEdgeToSEL_m3B43222EF1A254812F
 
 IL_001e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2105>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___0_edge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = __this->___m_SortedEdges;
 		NullCheck(L_4);
 		L_4->___NextInSEL = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___NextInSEL), (void*)L_5);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2106>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = ___0_edge;
 		NullCheck(L_6);
 		L_6->___PrevInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___PrevInSEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2107>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = __this->___m_SortedEdges;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_edge;
 		NullCheck(L_7);
 		L_7->___PrevInSEL = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___PrevInSEL), (void*)L_8);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2108>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = ___0_edge;
 		__this->___m_SortedEdges = L_9;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_9);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2110>
 		return;
 	}
 }
+// Method Definition Index: 58030
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_PopEdgeFromSEL_m45006B3EB7CA7B77EB866606E3FA7C1D3A7BDEE9 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** ___0_e, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* G_B4_0 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* G_B3_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2117>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_0 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = __this->___m_SortedEdges;
 		*((RuntimeObject**)L_0) = (RuntimeObject*)L_1;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_0, (void*)(RuntimeObject*)L_1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2118>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_2 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_2);
 		if (L_3)
@@ -10779,19 +11908,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_PopEdgeFromSEL_m45006B3EB7CA7B77
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2118>
 		return (bool)0;
 	}
 
 IL_000e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2119>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_4 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_4);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2120>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084** L_6 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = *((TEdge_t65868A3823C94467F4F0D41207EE29B96912B084**)L_6);
 		NullCheck(L_7);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = L_7->___NextInSEL;
 		__this->___m_SortedEdges = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_8);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2121>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = __this->___m_SortedEdges;
 		if (!L_9)
 		{
@@ -10801,6 +11934,7 @@ IL_000e:
 		G_B3_0 = L_5;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2121>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = __this->___m_SortedEdges;
 		NullCheck(L_10);
 		L_10->___PrevInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
@@ -10810,22 +11944,28 @@ IL_000e:
 
 IL_0031:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2122>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = G_B4_0;
 		NullCheck(L_11);
 		L_11->___NextInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___NextInSEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2123>
 		NullCheck(L_11);
 		L_11->___PrevInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___PrevInSEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2124>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58031
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_CopyAELToSEL_mD4D878B45AD029FFA43E1B3F681D089B99058CFD (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2131>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2132>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = V_0;
 		__this->___m_SortedEdges = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_1);
@@ -10834,6 +11974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_CopyAELToSEL_mD4D878B45AD029FFA4
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2135>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = V_0;
 		NullCheck(L_3);
@@ -10841,6 +11982,7 @@ IL_0010:
 		NullCheck(L_2);
 		L_2->___PrevInSEL = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___PrevInSEL), (void*)L_4);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2136>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = V_0;
 		NullCheck(L_6);
@@ -10848,6 +11990,7 @@ IL_0010:
 		NullCheck(L_5);
 		L_5->___NextInSEL = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___NextInSEL), (void*)L_7);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2137>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = V_0;
 		NullCheck(L_8);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = L_8->___NextInAEL;
@@ -10856,6 +11999,7 @@ IL_0010:
 
 IL_002f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2133>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = V_0;
 		if (L_10)
 		{
@@ -10863,9 +12007,11 @@ IL_002f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2139>
 		return;
 	}
 }
+// Method Definition Index: 58032
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SwapPositionsInSEL_m5CC2DCF327486C0BE07121830577CB74CECDC207 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_edge2, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
@@ -10875,6 +12021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SwapPositionsInSEL_m5CC2DCF32748
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_4 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_5 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2145>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge1;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___NextInSEL;
@@ -10893,11 +12040,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SwapPositionsInSEL_m5CC2DCF32748
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2146>
 		return;
 	}
 
 IL_0011:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2147>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___1_edge2;
 		NullCheck(L_4);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = L_4->___NextInSEL;
@@ -10916,11 +12065,13 @@ IL_0011:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2148>
 		return;
 	}
 
 IL_0022:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2150>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_edge1;
 		NullCheck(L_8);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = L_8->___NextInSEL;
@@ -10931,10 +12082,12 @@ IL_0022:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2152>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = ___1_edge2;
 		NullCheck(L_11);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = L_11->___NextInSEL;
 		V_0 = L_12;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2153>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = V_0;
 		if (!L_13)
 		{
@@ -10942,6 +12095,7 @@ IL_0022:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2154>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = ___0_edge1;
 		NullCheck(L_14);
@@ -10951,10 +12105,12 @@ IL_0022:
 
 IL_003c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2155>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_edge1;
 		NullCheck(L_16);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = L_16->___PrevInSEL;
 		V_1 = L_17;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2156>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = V_1;
 		if (!L_18)
 		{
@@ -10962,6 +12118,7 @@ IL_003c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2157>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___1_edge2;
 		NullCheck(L_19);
@@ -10971,21 +12128,25 @@ IL_003c:
 
 IL_004d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2158>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = V_1;
 		NullCheck(L_21);
 		L_21->___PrevInSEL = L_22;
 		Il2CppCodeGenWriteBarrier((void**)(&L_21->___PrevInSEL), (void*)L_22);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2159>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_23 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = ___0_edge1;
 		NullCheck(L_23);
 		L_23->___NextInSEL = L_24;
 		Il2CppCodeGenWriteBarrier((void**)(&L_23->___NextInSEL), (void*)L_24);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2160>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_26 = ___1_edge2;
 		NullCheck(L_25);
 		L_25->___PrevInSEL = L_26;
 		Il2CppCodeGenWriteBarrier((void**)(&L_25->___PrevInSEL), (void*)L_26);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2161>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = V_0;
 		NullCheck(L_27);
@@ -10996,6 +12157,7 @@ IL_004d:
 
 IL_006e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2163>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___1_edge2;
 		NullCheck(L_29);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = L_29->___NextInSEL;
@@ -11006,10 +12168,12 @@ IL_006e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2165>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = ___0_edge1;
 		NullCheck(L_32);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_33 = L_32->___NextInSEL;
 		V_2 = L_33;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2166>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = V_2;
 		if (!L_34)
 		{
@@ -11017,6 +12181,7 @@ IL_006e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2167>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = ___1_edge2;
 		NullCheck(L_35);
@@ -11026,10 +12191,12 @@ IL_006e:
 
 IL_0088:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2168>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_37 = ___1_edge2;
 		NullCheck(L_37);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_38 = L_37->___PrevInSEL;
 		V_3 = L_38;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2169>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = V_3;
 		if (!L_39)
 		{
@@ -11037,6 +12204,7 @@ IL_0088:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2170>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_40 = V_3;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_41 = ___0_edge1;
 		NullCheck(L_40);
@@ -11046,21 +12214,25 @@ IL_0088:
 
 IL_0099:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2171>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_42 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_43 = V_3;
 		NullCheck(L_42);
 		L_42->___PrevInSEL = L_43;
 		Il2CppCodeGenWriteBarrier((void**)(&L_42->___PrevInSEL), (void*)L_43);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2172>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_44 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_45 = ___1_edge2;
 		NullCheck(L_44);
 		L_44->___NextInSEL = L_45;
 		Il2CppCodeGenWriteBarrier((void**)(&L_44->___NextInSEL), (void*)L_45);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2173>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_47 = ___0_edge1;
 		NullCheck(L_46);
 		L_46->___PrevInSEL = L_47;
 		Il2CppCodeGenWriteBarrier((void**)(&L_46->___PrevInSEL), (void*)L_47);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2174>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_49 = V_2;
 		NullCheck(L_48);
@@ -11071,14 +12243,17 @@ IL_0099:
 
 IL_00ba:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2178>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = ___0_edge1;
 		NullCheck(L_50);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = L_50->___NextInSEL;
 		V_4 = L_51;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2179>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_52 = ___0_edge1;
 		NullCheck(L_52);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_53 = L_52->___PrevInSEL;
 		V_5 = L_53;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2180>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_54 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_55 = ___1_edge2;
 		NullCheck(L_55);
@@ -11086,6 +12261,7 @@ IL_00ba:
 		NullCheck(L_54);
 		L_54->___NextInSEL = L_56;
 		Il2CppCodeGenWriteBarrier((void**)(&L_54->___NextInSEL), (void*)L_56);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2181>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_57 = ___0_edge1;
 		NullCheck(L_57);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_58 = L_57->___NextInSEL;
@@ -11095,6 +12271,7 @@ IL_00ba:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2182>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_59 = ___0_edge1;
 		NullCheck(L_59);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_60 = L_59->___NextInSEL;
@@ -11106,6 +12283,7 @@ IL_00ba:
 
 IL_00ea:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2183>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_62 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_63 = ___1_edge2;
 		NullCheck(L_63);
@@ -11113,6 +12291,7 @@ IL_00ea:
 		NullCheck(L_62);
 		L_62->___PrevInSEL = L_64;
 		Il2CppCodeGenWriteBarrier((void**)(&L_62->___PrevInSEL), (void*)L_64);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2184>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_65 = ___0_edge1;
 		NullCheck(L_65);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_66 = L_65->___PrevInSEL;
@@ -11122,6 +12301,7 @@ IL_00ea:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2185>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_67 = ___0_edge1;
 		NullCheck(L_67);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_68 = L_67->___PrevInSEL;
@@ -11133,11 +12313,13 @@ IL_00ea:
 
 IL_010a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2186>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_70 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_71 = V_4;
 		NullCheck(L_70);
 		L_70->___NextInSEL = L_71;
 		Il2CppCodeGenWriteBarrier((void**)(&L_70->___NextInSEL), (void*)L_71);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2187>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_72 = ___1_edge2;
 		NullCheck(L_72);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_73 = L_72->___NextInSEL;
@@ -11147,6 +12329,7 @@ IL_010a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2188>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_74 = ___1_edge2;
 		NullCheck(L_74);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_75 = L_74->___NextInSEL;
@@ -11158,11 +12341,13 @@ IL_010a:
 
 IL_0126:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2189>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_77 = ___1_edge2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_78 = V_5;
 		NullCheck(L_77);
 		L_77->___PrevInSEL = L_78;
 		Il2CppCodeGenWriteBarrier((void**)(&L_77->___PrevInSEL), (void*)L_78);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2190>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_79 = ___1_edge2;
 		NullCheck(L_79);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_80 = L_79->___PrevInSEL;
@@ -11172,6 +12357,7 @@ IL_0126:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2191>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_81 = ___1_edge2;
 		NullCheck(L_81);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_82 = L_81->___PrevInSEL;
@@ -11183,6 +12369,7 @@ IL_0126:
 
 IL_0142:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2194>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_84 = ___0_edge1;
 		NullCheck(L_84);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_85 = L_84->___PrevInSEL;
@@ -11192,6 +12379,7 @@ IL_0142:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2195>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_86 = ___0_edge1;
 		__this->___m_SortedEdges = L_86;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_86);
@@ -11200,6 +12388,7 @@ IL_0142:
 
 IL_0152:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2196>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_87 = ___1_edge2;
 		NullCheck(L_87);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_88 = L_87->___PrevInSEL;
@@ -11209,6 +12398,7 @@ IL_0152:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2197>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_89 = ___1_edge2;
 		__this->___m_SortedEdges = L_89;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_89);
@@ -11216,16 +12406,20 @@ IL_0152:
 
 IL_0161:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2198>
 		return;
 	}
 }
+// Method Definition Index: 58033
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddLocalMaxPoly_m375B6F89A77EC9D1B0EFDBEA8312F9FE249C807E (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_e2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_pt, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2205>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2;
 		L_2 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_0, L_1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2206>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___1_e2;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___WindDelta;
@@ -11235,6 +12429,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddLocalMaxPoly_m375B6F89A77EC9D
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2206>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7;
@@ -11243,6 +12438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddLocalMaxPoly_m375B6F89A77EC9D
 
 IL_001a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2207>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_e1;
 		NullCheck(L_8);
 		int32_t L_9 = L_8->___OutIdx;
@@ -11255,9 +12451,11 @@ IL_001a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2209>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = ___0_e1;
 		NullCheck(L_12);
 		L_12->___OutIdx = (-1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2210>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = ___1_e2;
 		NullCheck(L_13);
 		L_13->___OutIdx = (-1);
@@ -11266,6 +12464,7 @@ IL_001a:
 
 IL_0037:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2212>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = ___0_e1;
 		NullCheck(L_14);
 		int32_t L_15 = L_14->___OutIdx;
@@ -11278,6 +12477,7 @@ IL_0037:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2213>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = ___1_e2;
 		Clipper_AppendPolygon_m8A44054101EDA2291F3CE49082EDDE792ED3B9B9(__this, L_18, L_19, NULL);
@@ -11286,12 +12486,15 @@ IL_0037:
 
 IL_004e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2215>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___1_e2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___0_e1;
 		Clipper_AppendPolygon_m8A44054101EDA2291F3CE49082EDDE792ED3B9B9(__this, L_20, L_21, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2216>
 		return;
 	}
 }
+// Method Definition Index: 58034
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* Clipper_AddLocalMinPoly_m7C4A79390680D0A5C5F09A341F67FC64331C5A2B (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_e2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_pt, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
@@ -11301,6 +12504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 	int64_t V_4 = 0;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_5 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2224>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___1_e2;
 		bool L_1;
 		L_1 = ClipperBase_IsHorizontal_m6BAD44CE7EDD2316867C067D25B16BC929CE2674(L_0, NULL);
@@ -11324,25 +12528,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 
 IL_0016:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2226>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = ___0_e1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_7 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8;
 		L_8 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_6, L_7, NULL);
 		V_0 = L_8;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2227>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = ___1_e2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = ___0_e1;
 		NullCheck(L_10);
 		int32_t L_11 = L_10->___OutIdx;
 		NullCheck(L_9);
 		L_9->___OutIdx = L_11;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2228>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = ___0_e1;
 		NullCheck(L_12);
 		L_12->___Side = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2229>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = ___1_e2;
 		NullCheck(L_13);
 		L_13->___Side = 1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2230>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = ___0_e1;
 		V_1 = L_14;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2231>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = V_1;
 		NullCheck(L_15);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = L_15->___PrevInAEL;
@@ -11353,6 +12563,7 @@ IL_0016:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2232>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = ___1_e2;
 		NullCheck(L_18);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = L_18->___PrevInAEL;
@@ -11362,6 +12573,7 @@ IL_0016:
 
 IL_004d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2234>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = V_1;
 		NullCheck(L_20);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = L_20->___PrevInAEL;
@@ -11371,25 +12583,31 @@ IL_004d:
 
 IL_0056:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2238>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_23 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_24;
 		L_24 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_22, L_23, NULL);
 		V_0 = L_24;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2239>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_26 = ___1_e2;
 		NullCheck(L_26);
 		int32_t L_27 = L_26->___OutIdx;
 		NullCheck(L_25);
 		L_25->___OutIdx = L_27;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2240>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = ___0_e1;
 		NullCheck(L_28);
 		L_28->___Side = 1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2241>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___1_e2;
 		NullCheck(L_29);
 		L_29->___Side = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2242>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = ___1_e2;
 		V_1 = L_30;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2243>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_31 = V_1;
 		NullCheck(L_31);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = L_31->___PrevInAEL;
@@ -11400,6 +12618,7 @@ IL_0056:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2244>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = ___0_e1;
 		NullCheck(L_34);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = L_34->___PrevInAEL;
@@ -11409,6 +12628,7 @@ IL_0056:
 
 IL_008d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2246>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = V_1;
 		NullCheck(L_36);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_37 = L_36->___PrevInAEL;
@@ -11417,6 +12637,7 @@ IL_008d:
 
 IL_0094:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2249>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_38 = V_2;
 		if (!L_38)
 		{
@@ -11457,18 +12678,22 @@ IL_0094:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2251>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = V_2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_52 = ___2_pt;
 		int64_t L_53 = L_52.___Y;
 		int64_t L_54;
 		L_54 = Clipper_TopX_m8DE68B1C33B15035D802240A279626C5A0AE14B3(L_51, L_53, NULL);
 		V_3 = L_54;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2252>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_55 = V_1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_56 = ___2_pt;
 		int64_t L_57 = L_56.___Y;
 		int64_t L_58;
 		L_58 = Clipper_TopX_m8DE68B1C33B15035D802240A279626C5A0AE14B3(L_55, L_57, NULL);
 		V_4 = L_58;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2253>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2254>
 		int64_t L_59 = V_3;
 		int64_t L_60 = V_4;
 		if ((!(((uint64_t)L_59) == ((uint64_t)L_60))))
@@ -11522,11 +12747,13 @@ IL_0094:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2256>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_79 = V_2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_80 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_81;
 		L_81 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_79, L_80, NULL);
 		V_5 = L_81;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2257>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_82 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_83 = V_5;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_84 = V_1;
@@ -11537,10 +12764,12 @@ IL_0094:
 
 IL_014a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2260>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_86 = V_0;
 		return L_86;
 	}
 }
+// Method Definition Index: 58035
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11557,6 +12786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 	bool V_4 = false;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_5 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2267>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___OutIdx;
@@ -11566,43 +12796,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2269>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2;
 		L_2 = ClipperBase_CreateOutRec_m8385CCD504D822268DDC5D9174253A80E76C2122(__this, NULL);
 		V_0 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2270>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___0_e;
 		NullCheck(L_4);
 		int32_t L_5 = L_4->___WindDelta;
 		NullCheck(L_3);
 		L_3->___IsOpen = (bool)((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2271>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)il2cpp_codegen_object_new(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE_il2cpp_TypeInfo_var);
 		OutPt__ctor_mCE53B6D8295199ABEC9AB5648E09C9F365A12F27(L_6, NULL);
 		V_1 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2272>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_7 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = V_1;
 		NullCheck(L_7);
 		L_7->___Pts = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___Pts), (void*)L_8);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2273>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_10 = V_0;
 		NullCheck(L_10);
 		int32_t L_11 = L_10->___Idx;
 		NullCheck(L_9);
 		L_9->___Idx = L_11;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2274>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_12 = V_1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_13 = ___1_pt;
 		NullCheck(L_12);
 		L_12->___Pt = L_13;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2275>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_14 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_15 = V_1;
 		NullCheck(L_14);
 		L_14->___Next = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&L_14->___Next), (void*)L_15);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2276>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_16 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_17 = V_1;
 		NullCheck(L_16);
 		L_16->___Prev = L_17;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___Prev), (void*)L_17);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2277>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_18 = V_0;
 		NullCheck(L_18);
 		bool L_19 = L_18->___IsOpen;
@@ -11612,6 +12851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2278>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_e;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_21 = V_0;
 		Clipper_SetHoleState_mCF984127BF470390DCFE98A155E9D112320F08BE(__this, L_20, L_21, NULL);
@@ -11619,18 +12859,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 
 IL_005d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2279>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = ___0_e;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_23 = V_0;
 		NullCheck(L_23);
 		int32_t L_24 = L_23->___Idx;
 		NullCheck(L_22);
 		L_22->___OutIdx = L_24;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2280>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_25 = V_1;
 		return L_25;
 	}
 
 IL_006b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2284>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_26 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = ___0_e;
 		NullCheck(L_27);
@@ -11639,14 +12882,17 @@ IL_006b:
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_29;
 		L_29 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_26, L_28, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_2 = L_29;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2286>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_30 = V_2;
 		NullCheck(L_30);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_31 = L_30->___Pts;
 		V_3 = L_31;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2287>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_32 = ___0_e;
 		NullCheck(L_32);
 		int32_t L_33 = L_32->___Side;
 		V_4 = (bool)((((int32_t)L_33) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2288>
 		bool L_34 = V_4;
 		if (!L_34)
 		{
@@ -11666,12 +12912,14 @@ IL_006b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2288>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_39 = V_3;
 		return L_39;
 	}
 
 IL_00a3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2289>
 		bool L_40 = V_4;
 		if (L_40)
 		{
@@ -11693,6 +12941,7 @@ IL_00a3:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2289>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_46 = V_3;
 		NullCheck(L_46);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_47 = L_46->___Prev;
@@ -11701,24 +12950,29 @@ IL_00a3:
 
 IL_00c1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2291>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_48 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)il2cpp_codegen_object_new(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE_il2cpp_TypeInfo_var);
 		OutPt__ctor_mCE53B6D8295199ABEC9AB5648E09C9F365A12F27(L_48, NULL);
 		V_5 = L_48;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2292>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49 = V_5;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_50 = V_2;
 		NullCheck(L_50);
 		int32_t L_51 = L_50->___Idx;
 		NullCheck(L_49);
 		L_49->___Idx = L_51;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2293>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_52 = V_5;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_53 = ___1_pt;
 		NullCheck(L_52);
 		L_52->___Pt = L_53;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2294>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_54 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_55 = V_3;
 		NullCheck(L_54);
 		L_54->___Next = L_55;
 		Il2CppCodeGenWriteBarrier((void**)(&L_54->___Next), (void*)L_55);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2295>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_56 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_57 = V_3;
 		NullCheck(L_57);
@@ -11726,6 +12980,7 @@ IL_00c1:
 		NullCheck(L_56);
 		L_56->___Prev = L_58;
 		Il2CppCodeGenWriteBarrier((void**)(&L_56->___Prev), (void*)L_58);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2296>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_59 = V_5;
 		NullCheck(L_59);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_60 = L_59->___Prev;
@@ -11733,11 +12988,13 @@ IL_00c1:
 		NullCheck(L_60);
 		L_60->___Next = L_61;
 		Il2CppCodeGenWriteBarrier((void**)(&L_60->___Next), (void*)L_61);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2297>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_62 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_63 = V_5;
 		NullCheck(L_62);
 		L_62->___Prev = L_63;
 		Il2CppCodeGenWriteBarrier((void**)(&L_62->___Prev), (void*)L_63);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2298>
 		bool L_64 = V_4;
 		if (!L_64)
 		{
@@ -11745,6 +13002,7 @@ IL_00c1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2298>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_65 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_66 = V_5;
 		NullCheck(L_65);
@@ -11754,10 +13012,12 @@ IL_00c1:
 
 IL_0114:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2299>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_67 = V_5;
 		return L_67;
 	}
 }
+// Method Definition Index: 58036
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* Clipper_GetLastOutPt_mE511905B91CC0BC041D55B614DE1A5ABACDEF5E1 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11768,6 +13028,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 	}
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2307>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___0_e;
 		NullCheck(L_1);
@@ -11776,6 +13037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3;
 		L_3 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_0, L_2, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_0 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2308>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___0_e;
 		NullCheck(L_4);
 		int32_t L_5 = L_4->___Side;
@@ -11785,6 +13047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2309>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_6 = V_0;
 		NullCheck(L_6);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = L_6->___Pts;
@@ -11793,6 +13056,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 
 IL_0021:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2311>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_8 = V_0;
 		NullCheck(L_8);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = L_8->___Pts;
@@ -11801,27 +13065,34 @@ IL_0021:
 		return L_10;
 	}
 }
+// Method Definition Index: 58037
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SwapPoints_mC61CBEED84CE6DCC505247E0C8692FCB7CBAD043 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* ___1_pt2, const RuntimeMethod* method) 
 {
 	IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2318>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_0 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = (*(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)L_0);
 		IntPoint__ctor_mA6DA01E8192EAB09DAEE3C900A83D4A2E87AA8FE((&V_0), L_1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2319>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_2 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_3 = ___1_pt2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = (*(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)L_3);
 		*(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)L_2 = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2320>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_5 = ___1_pt2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = V_0;
 		*(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)L_5 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2321>
 		return;
 	}
 }
+// Method Definition Index: 58038
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_HorzSegmentsOverlap_mB0882EB0BA3FE027C2066A9FCE3176BA2144F0E0 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int64_t ___0_seg1a, int64_t ___1_seg1b, int64_t ___2_seg2a, int64_t ___3_seg2b, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2327>
 		int64_t L_0 = ___0_seg1a;
 		int64_t L_1 = ___1_seg1b;
 		if ((((int64_t)L_0) <= ((int64_t)L_1)))
@@ -11830,11 +13101,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_HorzSegmentsOverlap_mB0882EB0BA3
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2327>
 		ClipperBase_Swap_m2EEA14EBC5B1D1D8C61D5446D9EFE46A318B6B4D(__this, (&___0_seg1a), (&___1_seg1b), NULL);
 	}
 
 IL_000e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2328>
 		int64_t L_2 = ___2_seg2a;
 		int64_t L_3 = ___3_seg2b;
 		if ((((int64_t)L_2) <= ((int64_t)L_3)))
@@ -11843,11 +13116,13 @@ IL_000e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2328>
 		ClipperBase_Swap_m2EEA14EBC5B1D1D8C61D5446D9EFE46A318B6B4D(__this, (&___2_seg2a), (&___3_seg2b), NULL);
 	}
 
 IL_001d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2329>
 		int64_t L_4 = ___0_seg1a;
 		int64_t L_5 = ___3_seg2b;
 		if ((((int64_t)L_4) >= ((int64_t)L_5)))
@@ -11866,6 +13141,7 @@ IL_0027:
 		return (bool)0;
 	}
 }
+// Method Definition Index: 58039
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SetHoleState_mCF984127BF470390DCFE98A155E9D112320F08BE (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___1_outRec, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11877,16 +13153,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SetHoleState_mCF984127BF470390DC
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2336>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___PrevInAEL;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2337>
 		V_1 = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		goto IL_003a;
 	}
 
 IL_000b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2340>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = V_0;
 		NullCheck(L_2);
 		int32_t L_3 = L_2->___OutIdx;
@@ -11905,6 +13184,7 @@ IL_000b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2342>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = V_1;
 		if (L_6)
 		{
@@ -11912,6 +13192,7 @@ IL_000b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2343>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = V_0;
 		V_1 = L_7;
 		goto IL_0033;
@@ -11919,6 +13200,7 @@ IL_000b:
 
 IL_0023:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2344>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = V_1;
 		NullCheck(L_8);
 		int32_t L_9 = L_8->___OutIdx;
@@ -11931,11 +13213,13 @@ IL_0023:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2345>
 		V_1 = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 	}
 
 IL_0033:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2347>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = V_0;
 		NullCheck(L_12);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = L_12->___PrevInAEL;
@@ -11944,6 +13228,7 @@ IL_0033:
 
 IL_003a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2338>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_0;
 		if (L_14)
 		{
@@ -11951,6 +13236,7 @@ IL_003a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2350>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = V_1;
 		if (L_15)
 		{
@@ -11958,10 +13244,12 @@ IL_003a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2352>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_16 = ___1_outRec;
 		NullCheck(L_16);
 		L_16->___FirstLeft = (OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___FirstLeft), (void*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2353>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_17 = ___1_outRec;
 		NullCheck(L_17);
 		L_17->___IsHole = (bool)0;
@@ -11970,6 +13258,7 @@ IL_003a:
 
 IL_004f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2357>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_18 = ___1_outRec;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_19 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = V_1;
@@ -11981,6 +13270,7 @@ IL_004f:
 		NullCheck(L_18);
 		L_18->___FirstLeft = L_22;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___FirstLeft), (void*)L_22);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2358>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_23 = ___1_outRec;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_24 = ___1_outRec;
 		NullCheck(L_24);
@@ -11989,12 +13279,15 @@ IL_004f:
 		bool L_26 = L_25->___IsHole;
 		NullCheck(L_23);
 		L_23->___IsHole = (bool)((((int32_t)L_26) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2360>
 		return;
 	}
 }
+// Method Definition Index: 58040
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_GetDx_mE8200E866BD7A7DF76D24765377C40BCD0FAD709 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt2, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2366>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_pt1;
 		int64_t L_1 = L_0.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___1_pt2;
@@ -12005,11 +13298,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_GetDx_mE8200E866BD7A7DF76D2476
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2366>
 		return (-3.4E+38);
 	}
 
 IL_0018:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2367>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = ___1_pt2;
 		int64_t L_5 = L_4.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = ___0_pt1;
@@ -12021,6 +13316,7 @@ IL_0018:
 		return ((double)(((double)((int64_t)il2cpp_codegen_subtract(L_5, L_7)))/((double)((int64_t)il2cpp_codegen_subtract(L_9, L_11)))));
 	}
 }
+// Method Definition Index: 58041
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_FirstIsBottomPt_m736C3F4AF75269DF0920BEC50F0D49E9FEE27204 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_btmPt1, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___1_btmPt2, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12035,6 +13331,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_FirstIsBottomPt_m736C3F4AF75269D
 	double V_3 = 0.0;
 	double V_4 = 0.0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2374>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_btmPt1;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___Prev;
@@ -12044,6 +13341,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_FirstIsBottomPt_m736C3F4AF75269D
 
 IL_0009:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2375>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = V_0;
 		NullCheck(L_2);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_3 = L_2->___Prev;
@@ -12052,6 +13350,7 @@ IL_0009:
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2375>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_4 = V_0;
 		NullCheck(L_4);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_5 = L_4->___Pt;
@@ -12076,6 +13375,7 @@ IL_0010:
 
 IL_0027:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2376>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = ___0_btmPt1;
 		NullCheck(L_11);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_12 = L_11->___Pt;
@@ -12088,6 +13388,7 @@ IL_0027:
 		double L_16;
 		L_16 = fabs(L_15);
 		V_1 = L_16;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2377>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_17 = ___0_btmPt1;
 		NullCheck(L_17);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_18 = L_17->___Next;
@@ -12097,6 +13398,7 @@ IL_0027:
 
 IL_0048:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2378>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_19 = V_0;
 		NullCheck(L_19);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_20 = L_19->___Next;
@@ -12105,6 +13407,7 @@ IL_0048:
 
 IL_004f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2378>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_21 = V_0;
 		NullCheck(L_21);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_22 = L_21->___Pt;
@@ -12129,6 +13432,7 @@ IL_004f:
 
 IL_0066:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2379>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_28 = ___0_btmPt1;
 		NullCheck(L_28);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_29 = L_28->___Pt;
@@ -12141,6 +13445,7 @@ IL_0066:
 		double L_33;
 		L_33 = fabs(L_32);
 		V_2 = L_33;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2381>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_34 = ___1_btmPt2;
 		NullCheck(L_34);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_35 = L_34->___Prev;
@@ -12150,6 +13455,7 @@ IL_0066:
 
 IL_0087:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2382>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_36 = V_0;
 		NullCheck(L_36);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_37 = L_36->___Prev;
@@ -12158,6 +13464,7 @@ IL_0087:
 
 IL_008e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2382>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_38 = V_0;
 		NullCheck(L_38);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_39 = L_38->___Pt;
@@ -12182,6 +13489,7 @@ IL_008e:
 
 IL_00a5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2383>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_45 = ___1_btmPt2;
 		NullCheck(L_45);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_46 = L_45->___Pt;
@@ -12194,6 +13502,7 @@ IL_00a5:
 		double L_50;
 		L_50 = fabs(L_49);
 		V_3 = L_50;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2384>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_51 = ___1_btmPt2;
 		NullCheck(L_51);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_52 = L_51->___Next;
@@ -12203,6 +13512,7 @@ IL_00a5:
 
 IL_00c6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2385>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_53 = V_0;
 		NullCheck(L_53);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_54 = L_53->___Next;
@@ -12211,6 +13521,7 @@ IL_00c6:
 
 IL_00cd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2385>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_55 = V_0;
 		NullCheck(L_55);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_56 = L_55->___Pt;
@@ -12235,6 +13546,7 @@ IL_00cd:
 
 IL_00e4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2386>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_62 = ___1_btmPt2;
 		NullCheck(L_62);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_63 = L_62->___Pt;
@@ -12247,6 +13559,8 @@ IL_00e4:
 		double L_67;
 		L_67 = fabs(L_66);
 		V_4 = L_67;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2388>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2389>
 		double L_68 = V_1;
 		double L_69 = V_2;
 		double L_70;
@@ -12276,6 +13590,7 @@ IL_00e4:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2390>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_80 = ___0_btmPt1;
 		double L_81;
 		L_81 = Clipper_Area_mD211BB43D4AE983C8EEAE1BCC9B4DE6E653B8299(__this, L_80, NULL);
@@ -12284,6 +13599,7 @@ IL_00e4:
 
 IL_0132:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2392>
 		double L_82 = V_1;
 		double L_83 = V_3;
 		if ((!(((double)L_82) >= ((double)L_83))))
@@ -12325,12 +13641,15 @@ IL_014a:
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58042
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* Clipper_GetBottomPt_m840521EDC1D46AFC372FEEC7156A972401BAFDF6 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_pp, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2399>
 		V_0 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2400>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_pp;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___Next;
@@ -12340,6 +13659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 
 IL_000e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2403>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = V_1;
 		NullCheck(L_2);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_3 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_2->___Pt);
@@ -12354,14 +13674,17 @@ IL_000e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2405>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = V_1;
 		___0_pp = L_8;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2406>
 		V_0 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		goto IL_0090;
 	}
 
 IL_002d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2408>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = V_1;
 		NullCheck(L_9);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_10 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_9->___Pt);
@@ -12390,6 +13713,7 @@ IL_002d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2410>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_21 = V_1;
 		NullCheck(L_21);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_22 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_21->___Pt);
@@ -12404,7 +13728,9 @@ IL_002d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2412>
 		V_0 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2413>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_27 = V_1;
 		___0_pp = L_27;
 		goto IL_0090;
@@ -12412,6 +13738,7 @@ IL_002d:
 
 IL_007c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2417>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_28 = V_1;
 		NullCheck(L_28);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_29 = L_28->___Next;
@@ -12432,12 +13759,14 @@ IL_007c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2417>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_34 = V_1;
 		V_0 = L_34;
 	}
 
 IL_0090:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2420>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_35 = V_1;
 		NullCheck(L_35);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_36 = L_35->___Next;
@@ -12446,6 +13775,7 @@ IL_0090:
 
 IL_0097:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2401>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_37 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_38 = ___0_pp;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_37) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_38))))
@@ -12454,6 +13784,7 @@ IL_0097:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2422>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_39 = V_0;
 		if (!L_39)
 		{
@@ -12466,6 +13797,7 @@ IL_0097:
 
 IL_00a3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2427>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_40 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_41 = V_0;
 		bool L_42;
@@ -12476,12 +13808,14 @@ IL_00a3:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2427>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_43 = V_0;
 		___0_pp = L_43;
 	}
 
 IL_00b0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2428>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_44 = V_0;
 		NullCheck(L_44);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_45 = L_44->___Next;
@@ -12491,6 +13825,7 @@ IL_00b0:
 
 IL_00b9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2429>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_46 = V_0;
 		NullCheck(L_46);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_47 = L_46->___Next;
@@ -12499,6 +13834,7 @@ IL_00b9:
 
 IL_00c0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2429>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_48 = V_0;
 		NullCheck(L_48);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_49 = L_48->___Pt;
@@ -12515,6 +13851,7 @@ IL_00c0:
 
 IL_00d3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2425>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_53 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_54 = V_1;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_53) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_54))))
@@ -12525,15 +13862,18 @@ IL_00d3:
 
 IL_00d7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2432>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_55 = ___0_pp;
 		return L_55;
 	}
 }
+// Method Definition Index: 58043
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* Clipper_GetLowermostRec_mBF0DB1688D4B7C020685B70A1CE2873868ADFDF9 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_outRec1, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___1_outRec2, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2440>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_outRec1;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___BottomPt;
@@ -12543,6 +13883,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2441>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2 = ___0_outRec1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3 = ___0_outRec1;
 		NullCheck(L_3);
@@ -12556,6 +13897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402
 
 IL_001a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2442>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_6 = ___1_outRec2;
 		NullCheck(L_6);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = L_6->___BottomPt;
@@ -12565,6 +13907,7 @@ IL_001a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2443>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_8 = ___1_outRec2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_9 = ___1_outRec2;
 		NullCheck(L_9);
@@ -12578,14 +13921,17 @@ IL_001a:
 
 IL_0034:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2444>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_12 = ___0_outRec1;
 		NullCheck(L_12);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_13 = L_12->___BottomPt;
 		V_0 = L_13;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2445>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_14 = ___1_outRec2;
 		NullCheck(L_14);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_15 = L_14->___BottomPt;
 		V_1 = L_15;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2446>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_16 = V_0;
 		NullCheck(L_16);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_17 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_16->___Pt);
@@ -12600,12 +13946,14 @@ IL_0034:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2446>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_22 = ___0_outRec1;
 		return L_22;
 	}
 
 IL_005c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2447>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_23 = V_0;
 		NullCheck(L_23);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_24 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_23->___Pt);
@@ -12620,12 +13968,14 @@ IL_005c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2447>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_29 = ___1_outRec2;
 		return L_29;
 	}
 
 IL_0076:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2448>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_30 = V_0;
 		NullCheck(L_30);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_31 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_30->___Pt);
@@ -12640,12 +13990,14 @@ IL_0076:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2448>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_36 = ___0_outRec1;
 		return L_36;
 	}
 
 IL_0090:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2449>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_37 = V_0;
 		NullCheck(L_37);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_38 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_37->___Pt);
@@ -12660,12 +14012,14 @@ IL_0090:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2449>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_43 = ___1_outRec2;
 		return L_43;
 	}
 
 IL_00aa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2450>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_44 = V_0;
 		NullCheck(L_44);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_45 = L_44->___Next;
@@ -12676,12 +14030,14 @@ IL_00aa:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2450>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_47 = ___1_outRec2;
 		return L_47;
 	}
 
 IL_00b5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2451>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_48 = V_1;
 		NullCheck(L_48);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49 = L_48->___Next;
@@ -12692,12 +14048,14 @@ IL_00b5:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2451>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_51 = ___0_outRec1;
 		return L_51;
 	}
 
 IL_00c0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2452>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_52 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_53 = V_1;
 		bool L_54;
@@ -12708,25 +14066,30 @@ IL_00c0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2452>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_55 = ___0_outRec1;
 		return L_55;
 	}
 
 IL_00cc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2453>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_56 = ___1_outRec2;
 		return L_56;
 	}
 }
+// Method Definition Index: 58044
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_OutRec1RightOfOutRec2_mDF89A4E48E77D7F36B6712E32F0D2DC538405779 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_outRec1, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___1_outRec2, const RuntimeMethod* method) 
 {
 
 IL_0000:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2462>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_outRec1;
 		NullCheck(L_0);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_1 = L_0->___FirstLeft;
 		___0_outRec1 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2463>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2 = ___0_outRec1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3 = ___1_outRec2;
 		if ((!(((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_2) == ((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_3))))
@@ -12735,11 +14098,13 @@ IL_0000:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2463>
 		return (bool)1;
 	}
 
 IL_000e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2465>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_4 = ___0_outRec1;
 		if (L_4)
 		{
@@ -12747,9 +14112,11 @@ IL_000e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2466>
 		return (bool)0;
 	}
 }
+// Method Definition Index: 58045
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* Clipper_GetOutRec_mE6B40CDC55D028755FF06F961E56EED4B46A970E (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int32_t ___0_idx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12760,6 +14127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402
 	}
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2473>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		int32_t L_1 = ___0_idx;
 		NullCheck(L_0);
@@ -12771,6 +14139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402
 
 IL_000f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2475>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_3 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_4 = V_0;
 		NullCheck(L_4);
@@ -12783,6 +14152,7 @@ IL_000f:
 
 IL_0021:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2474>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_7 = V_0;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_8 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_9 = V_0;
@@ -12797,10 +14167,12 @@ IL_0021:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2476>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_12 = V_0;
 		return L_12;
 	}
 }
+// Method Definition Index: 58046
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AppendPolygon_m8A44054101EDA2291F3CE49082EDDE792ED3B9B9 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_e2, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12820,6 +14192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AppendPolygon_m8A44054101EDA2291
 	int32_t V_8 = 0;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_9 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2483>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___0_e1;
 		NullCheck(L_1);
@@ -12828,6 +14201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AppendPolygon_m8A44054101EDA2291
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3;
 		L_3 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_0, L_2, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_0 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2484>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_4 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = ___1_e2;
 		NullCheck(L_5);
@@ -12836,6 +14210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AppendPolygon_m8A44054101EDA2291
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_7;
 		L_7 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_4, L_6, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_1 = L_7;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2487>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_8 = V_0;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_9 = V_1;
 		bool L_10;
@@ -12846,6 +14221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AppendPolygon_m8A44054101EDA2291
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2488>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_11 = V_1;
 		V_2 = L_11;
 		goto IL_0049;
@@ -12853,6 +14229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AppendPolygon_m8A44054101EDA2291
 
 IL_0032:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2489>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_12 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_13 = V_0;
 		bool L_14;
@@ -12863,6 +14240,7 @@ IL_0032:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2490>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_15 = V_0;
 		V_2 = L_15;
 		goto IL_0049;
@@ -12870,6 +14248,7 @@ IL_0032:
 
 IL_0040:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2492>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_16 = V_0;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_17 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_18;
@@ -12879,22 +14258,27 @@ IL_0040:
 
 IL_0049:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2496>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_19 = V_0;
 		NullCheck(L_19);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_20 = L_19->___Pts;
 		V_3 = L_20;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2497>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_21 = V_3;
 		NullCheck(L_21);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_22 = L_21->___Prev;
 		V_4 = L_22;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2498>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_23 = V_1;
 		NullCheck(L_23);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_24 = L_23->___Pts;
 		V_5 = L_24;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2499>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_25 = V_5;
 		NullCheck(L_25);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_26 = L_25->___Prev;
 		V_6 = L_26;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2502>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = ___0_e1;
 		NullCheck(L_27);
 		int32_t L_28 = L_27->___Side;
@@ -12904,6 +14288,7 @@ IL_0049:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2504>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___1_e2;
 		NullCheck(L_29);
 		int32_t L_30 = L_29->___Side;
@@ -12913,28 +14298,34 @@ IL_0049:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2507>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_31 = V_5;
 		Clipper_ReversePolyPtLinks_mEA503CD7054E111843825753767C860123935328(__this, L_31, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2508>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_32 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_33 = V_3;
 		NullCheck(L_32);
 		L_32->___Next = L_33;
 		Il2CppCodeGenWriteBarrier((void**)(&L_32->___Next), (void*)L_33);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2509>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_34 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_35 = V_5;
 		NullCheck(L_34);
 		L_34->___Prev = L_35;
 		Il2CppCodeGenWriteBarrier((void**)(&L_34->___Prev), (void*)L_35);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2510>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_36 = V_4;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_37 = V_6;
 		NullCheck(L_36);
 		L_36->___Next = L_37;
 		Il2CppCodeGenWriteBarrier((void**)(&L_36->___Next), (void*)L_37);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2511>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_38 = V_6;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_39 = V_4;
 		NullCheck(L_38);
 		L_38->___Prev = L_39;
 		Il2CppCodeGenWriteBarrier((void**)(&L_38->___Prev), (void*)L_39);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2512>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_40 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_41 = V_6;
 		NullCheck(L_40);
@@ -12945,26 +14336,31 @@ IL_0049:
 
 IL_00b0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2517>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_42 = V_6;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_43 = V_3;
 		NullCheck(L_42);
 		L_42->___Next = L_43;
 		Il2CppCodeGenWriteBarrier((void**)(&L_42->___Next), (void*)L_43);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2518>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_44 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_45 = V_6;
 		NullCheck(L_44);
 		L_44->___Prev = L_45;
 		Il2CppCodeGenWriteBarrier((void**)(&L_44->___Prev), (void*)L_45);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2519>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_46 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_47 = V_4;
 		NullCheck(L_46);
 		L_46->___Prev = L_47;
 		Il2CppCodeGenWriteBarrier((void**)(&L_46->___Prev), (void*)L_47);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2520>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_48 = V_4;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49 = V_5;
 		NullCheck(L_48);
 		L_48->___Next = L_49;
 		Il2CppCodeGenWriteBarrier((void**)(&L_48->___Next), (void*)L_49);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2521>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_50 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_51 = V_5;
 		NullCheck(L_50);
@@ -12975,6 +14371,7 @@ IL_00b0:
 
 IL_00dc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2526>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_52 = ___1_e2;
 		NullCheck(L_52);
 		int32_t L_53 = L_52->___Side;
@@ -12984,23 +14381,28 @@ IL_00dc:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2529>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_54 = V_5;
 		Clipper_ReversePolyPtLinks_mEA503CD7054E111843825753767C860123935328(__this, L_54, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2530>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_55 = V_4;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_56 = V_6;
 		NullCheck(L_55);
 		L_55->___Next = L_56;
 		Il2CppCodeGenWriteBarrier((void**)(&L_55->___Next), (void*)L_56);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2531>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_57 = V_6;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_58 = V_4;
 		NullCheck(L_57);
 		L_57->___Prev = L_58;
 		Il2CppCodeGenWriteBarrier((void**)(&L_57->___Prev), (void*)L_58);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2532>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_59 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_60 = V_3;
 		NullCheck(L_59);
 		L_59->___Next = L_60;
 		Il2CppCodeGenWriteBarrier((void**)(&L_59->___Next), (void*)L_60);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2533>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_61 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_62 = V_5;
 		NullCheck(L_61);
@@ -13011,21 +14413,25 @@ IL_00dc:
 
 IL_0111:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2538>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_63 = V_4;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_64 = V_5;
 		NullCheck(L_63);
 		L_63->___Next = L_64;
 		Il2CppCodeGenWriteBarrier((void**)(&L_63->___Next), (void*)L_64);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2539>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_65 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_66 = V_4;
 		NullCheck(L_65);
 		L_65->___Prev = L_66;
 		Il2CppCodeGenWriteBarrier((void**)(&L_65->___Prev), (void*)L_66);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2540>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_67 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_68 = V_6;
 		NullCheck(L_67);
 		L_67->___Prev = L_68;
 		Il2CppCodeGenWriteBarrier((void**)(&L_67->___Prev), (void*)L_68);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2541>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_69 = V_6;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_70 = V_3;
 		NullCheck(L_69);
@@ -13035,10 +14441,12 @@ IL_0111:
 
 IL_0133:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2545>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_71 = V_0;
 		NullCheck(L_71);
 		L_71->___BottomPt = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_71->___BottomPt), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2546>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_72 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_73 = V_1;
 		if ((!(((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_72) == ((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_73))))
@@ -13047,6 +14455,7 @@ IL_0133:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2548>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_74 = V_1;
 		NullCheck(L_74);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_75 = L_74->___FirstLeft;
@@ -13057,6 +14466,7 @@ IL_0133:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2549>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_77 = V_0;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_78 = V_1;
 		NullCheck(L_78);
@@ -13068,6 +14478,7 @@ IL_0133:
 
 IL_0153:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2550>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_80 = V_0;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_81 = V_1;
 		NullCheck(L_81);
@@ -13078,33 +14489,41 @@ IL_0153:
 
 IL_015f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2552>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_83 = V_1;
 		NullCheck(L_83);
 		L_83->___Pts = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_83->___Pts), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2553>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_84 = V_1;
 		NullCheck(L_84);
 		L_84->___BottomPt = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_84->___BottomPt), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2555>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_85 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_86 = V_0;
 		NullCheck(L_85);
 		L_85->___FirstLeft = L_86;
 		Il2CppCodeGenWriteBarrier((void**)(&L_85->___FirstLeft), (void*)L_86);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2557>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_87 = ___0_e1;
 		NullCheck(L_87);
 		int32_t L_88 = L_87->___OutIdx;
 		V_7 = L_88;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2558>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_89 = ___1_e2;
 		NullCheck(L_89);
 		int32_t L_90 = L_89->___OutIdx;
 		V_8 = L_90;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2560>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_91 = ___0_e1;
 		NullCheck(L_91);
 		L_91->___OutIdx = (-1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2561>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_92 = ___1_e2;
 		NullCheck(L_92);
 		L_92->___OutIdx = (-1);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2563>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_93 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		V_9 = L_93;
 		goto IL_01c8;
@@ -13112,6 +14531,7 @@ IL_015f:
 
 IL_019c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2566>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_94 = V_9;
 		NullCheck(L_94);
 		int32_t L_95 = L_94->___OutIdx;
@@ -13122,21 +14542,25 @@ IL_019c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2568>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_97 = V_9;
 		int32_t L_98 = V_7;
 		NullCheck(L_97);
 		L_97->___OutIdx = L_98;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2569>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_99 = V_9;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_100 = ___0_e1;
 		NullCheck(L_100);
 		int32_t L_101 = L_100->___Side;
 		NullCheck(L_99);
 		L_99->___Side = L_101;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2570>
 		goto IL_01cc;
 	}
 
 IL_01bf:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2572>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_102 = V_9;
 		NullCheck(L_102);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_103 = L_102->___NextInAEL;
@@ -13145,6 +14569,7 @@ IL_01bf:
 
 IL_01c8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2564>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_104 = V_9;
 		if (L_104)
 		{
@@ -13154,20 +14579,24 @@ IL_01c8:
 
 IL_01cc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2574>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_105 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_106 = V_0;
 		NullCheck(L_106);
 		int32_t L_107 = L_106->___Idx;
 		NullCheck(L_105);
 		L_105->___Idx = L_107;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2575>
 		return;
 	}
 }
+// Method Definition Index: 58047
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ReversePolyPtLinks_mEA503CD7054E111843825753767C860123935328 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_pp, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2581>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_pp;
 		if (L_0)
 		{
@@ -13175,21 +14604,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ReversePolyPtLinks_mEA503CD7054E
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2581>
 		return;
 	}
 
 IL_0004:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2584>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = ___0_pp;
 		V_0 = L_1;
 	}
 
 IL_0006:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2587>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = V_0;
 		NullCheck(L_2);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_3 = L_2->___Next;
 		V_1 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2588>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_4 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = V_0;
 		NullCheck(L_5);
@@ -13197,13 +14630,16 @@ IL_0006:
 		NullCheck(L_4);
 		L_4->___Next = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___Next), (void*)L_6);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2589>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = V_1;
 		NullCheck(L_7);
 		L_7->___Prev = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&L_7->___Prev), (void*)L_8);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2590>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = V_1;
 		V_0 = L_9;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2592>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_10 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = ___0_pp;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_10) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_11))))
@@ -13212,51 +14648,63 @@ IL_0006:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2593>
 		return;
 	}
 }
+// Method Definition Index: 58048
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SwapSides_m9FC00D418F5135E48F2CC1EE5EC7013E42D34488 (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_edge2, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2599>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge1;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___Side;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2600>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___1_edge2;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___Side;
 		NullCheck(L_2);
 		L_2->___Side = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2601>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = ___1_edge2;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		L_5->___Side = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2602>
 		return;
 	}
 }
+// Method Definition Index: 58049
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_SwapPolyIndexes_mC557D0FE42F84FB0618EC3753ABFF452DD61127B (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_edge2, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2608>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_edge1;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___OutIdx;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2609>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_edge1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___1_edge2;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___OutIdx;
 		NullCheck(L_2);
 		L_2->___OutIdx = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2610>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = ___1_edge2;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		L_5->___OutIdx = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2611>
 		return;
 	}
 }
+// Method Definition Index: 58050
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_IntersectEdges_mD054D64A65188A152D241B4A66A9F4DAF61A5E97 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_e2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_pt, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13286,14 +14734,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_IntersectEdges_mD054D64A65188A15
 	int32_t G_B49_0 = 0;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* G_B49_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2620>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e1;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___OutIdx;
 		V_0 = (bool)((((int32_t)((((int32_t)L_1) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2621>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___1_e2;
 		NullCheck(L_2);
 		int32_t L_3 = L_2->___OutIdx;
 		V_1 = (bool)((((int32_t)((((int32_t)L_3) < ((int32_t)0))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2625>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___0_e1;
 		NullCheck(L_4);
 		int32_t L_5 = L_4->___WindDelta;
@@ -13314,6 +14765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_IntersectEdges_mD054D64A65188A15
 
 IL_002d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2629>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = ___0_e1;
 		NullCheck(L_8);
 		int32_t L_9 = L_8->___WindDelta;
@@ -13332,11 +14784,14 @@ IL_002d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2629>
 		return;
 	}
 
 IL_003e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2631>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2632>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = ___0_e1;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->___PolyTyp;
@@ -13368,6 +14823,7 @@ IL_003e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2634>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___0_e1;
 		NullCheck(L_21);
 		int32_t L_22 = L_21->___WindDelta;
@@ -13377,6 +14833,7 @@ IL_003e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2636>
 		bool L_23 = V_1;
 		if (!L_23)
 		{
@@ -13384,10 +14841,12 @@ IL_003e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2638>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_24 = ___0_e1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_25 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_26;
 		L_26 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_24, L_25, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2639>
 		bool L_27 = V_0;
 		if (!L_27)
 		{
@@ -13395,6 +14854,7 @@ IL_003e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2639>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = ___0_e1;
 		NullCheck(L_28);
 		L_28->___OutIdx = (-1);
@@ -13403,6 +14863,7 @@ IL_003e:
 
 IL_0088:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2644>
 		bool L_29 = V_0;
 		if (!L_29)
 		{
@@ -13410,10 +14871,12 @@ IL_0088:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2646>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_31 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_32;
 		L_32 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_30, L_31, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2647>
 		bool L_33 = V_1;
 		if (!L_33)
 		{
@@ -13421,6 +14884,7 @@ IL_0088:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2647>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = ___1_e2;
 		NullCheck(L_34);
 		L_34->___OutIdx = (-1);
@@ -13429,6 +14893,7 @@ IL_0088:
 
 IL_00a5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2651>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = ___0_e1;
 		NullCheck(L_35);
 		int32_t L_36 = L_35->___PolyTyp;
@@ -13441,6 +14906,8 @@ IL_00a5:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2653>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2654>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = ___0_e1;
 		NullCheck(L_39);
 		int32_t L_40 = L_39->___WindDelta;
@@ -13480,10 +14947,12 @@ IL_00a5:
 
 IL_00da:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2656>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_47 = ___0_e1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_48 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49;
 		L_49 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_47, L_48, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2657>
 		bool L_50 = V_0;
 		if (!L_50)
 		{
@@ -13491,6 +14960,7 @@ IL_00da:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2657>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = ___0_e1;
 		NullCheck(L_51);
 		L_51->___OutIdx = (-1);
@@ -13499,6 +14969,8 @@ IL_00da:
 
 IL_00ee:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2659>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2660>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_52 = ___1_e2;
 		NullCheck(L_52);
 		int32_t L_53 = L_52->___WindDelta;
@@ -13538,10 +15010,12 @@ IL_00ee:
 
 IL_0115:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2662>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_60 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_61 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_62;
 		L_62 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_60, L_61, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2663>
 		bool L_63 = V_1;
 		if (!L_63)
 		{
@@ -13549,6 +15023,7 @@ IL_0115:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2663>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_64 = ___1_e2;
 		NullCheck(L_64);
 		L_64->___OutIdx = (-1);
@@ -13556,11 +15031,13 @@ IL_0115:
 
 IL_0128:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2666>
 		return;
 	}
 
 IL_0129:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2672>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_65 = ___0_e1;
 		NullCheck(L_65);
 		int32_t L_66 = L_65->___PolyTyp;
@@ -13573,6 +15050,7 @@ IL_0129:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2674>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_69 = ___0_e1;
 		bool L_70;
 		L_70 = Clipper_IsEvenOddFillType_m9F2B05C69F279E0C7F9C1C5F2E748E6979321A3F(__this, L_69, NULL);
@@ -13582,16 +15060,19 @@ IL_0129:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2676>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_71 = ___0_e1;
 		NullCheck(L_71);
 		int32_t L_72 = L_71->___WindCnt;
 		V_8 = L_72;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2677>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_73 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_74 = ___1_e2;
 		NullCheck(L_74);
 		int32_t L_75 = L_74->___WindCnt;
 		NullCheck(L_73);
 		L_73->___WindCnt = L_75;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2678>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_76 = ___1_e2;
 		int32_t L_77 = V_8;
 		NullCheck(L_76);
@@ -13601,6 +15082,7 @@ IL_0129:
 
 IL_0164:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2682>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_78 = ___0_e1;
 		NullCheck(L_78);
 		int32_t L_79 = L_78->___WindCnt;
@@ -13613,6 +15095,7 @@ IL_0164:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2682>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_82 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_83 = ___0_e1;
 		NullCheck(L_83);
@@ -13624,6 +15107,7 @@ IL_0164:
 
 IL_0182:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2683>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_85 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_86 = L_85;
 		NullCheck(L_86);
@@ -13637,6 +15121,7 @@ IL_0182:
 
 IL_0195:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2684>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_90 = ___1_e2;
 		NullCheck(L_90);
 		int32_t L_91 = L_90->___WindCnt;
@@ -13649,6 +15134,7 @@ IL_0195:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2684>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_94 = ___1_e2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_95 = ___1_e2;
 		NullCheck(L_95);
@@ -13660,6 +15146,7 @@ IL_0195:
 
 IL_01b3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2685>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_97 = ___1_e2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_98 = L_97;
 		NullCheck(L_98);
@@ -13674,6 +15161,7 @@ IL_01b3:
 
 IL_01c8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2690>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_102 = ___1_e2;
 		bool L_103;
 		L_103 = Clipper_IsEvenOddFillType_m9F2B05C69F279E0C7F9C1C5F2E748E6979321A3F(__this, L_102, NULL);
@@ -13683,6 +15171,7 @@ IL_01c8:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2690>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_104 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_105 = L_104;
 		NullCheck(L_105);
@@ -13697,6 +15186,7 @@ IL_01c8:
 
 IL_01e6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2691>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_109 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_110 = ___0_e1;
 		NullCheck(L_110);
@@ -13728,6 +15218,7 @@ IL_01f3:
 
 IL_01f8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2692>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_112 = ___0_e1;
 		bool L_113;
 		L_113 = Clipper_IsEvenOddFillType_m9F2B05C69F279E0C7F9C1C5F2E748E6979321A3F(__this, L_112, NULL);
@@ -13737,6 +15228,7 @@ IL_01f8:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2692>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_114 = ___1_e2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_115 = L_114;
 		NullCheck(L_115);
@@ -13751,6 +15243,7 @@ IL_01f8:
 
 IL_0216:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2693>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_119 = ___1_e2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_120 = ___1_e2;
 		NullCheck(L_120);
@@ -13782,6 +15275,7 @@ IL_0223:
 
 IL_0228:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2697>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_122 = ___0_e1;
 		NullCheck(L_122);
 		int32_t L_123 = L_122->___PolyTyp;
@@ -13791,8 +15285,10 @@ IL_0228:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2699>
 		int32_t L_124 = __this->___m_SubjFillType;
 		V_2 = L_124;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2700>
 		int32_t L_125 = __this->___m_ClipFillType;
 		V_4 = L_125;
 		goto IL_0250;
@@ -13800,14 +15296,17 @@ IL_0228:
 
 IL_0241:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2704>
 		int32_t L_126 = __this->___m_ClipFillType;
 		V_2 = L_126;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2705>
 		int32_t L_127 = __this->___m_SubjFillType;
 		V_4 = L_127;
 	}
 
 IL_0250:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2707>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_128 = ___1_e2;
 		NullCheck(L_128);
 		int32_t L_129 = L_128->___PolyTyp;
@@ -13817,8 +15316,10 @@ IL_0250:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2709>
 		int32_t L_130 = __this->___m_SubjFillType;
 		V_3 = L_130;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2710>
 		int32_t L_131 = __this->___m_ClipFillType;
 		V_5 = L_131;
 		goto IL_0278;
@@ -13826,8 +15327,10 @@ IL_0250:
 
 IL_0269:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2714>
 		int32_t L_132 = __this->___m_ClipFillType;
 		V_3 = L_132;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2715>
 		int32_t L_133 = __this->___m_SubjFillType;
 		V_5 = L_133;
 	}
@@ -13853,24 +15356,29 @@ IL_0278:
 
 IL_0282:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2721>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_136 = ___0_e1;
 		NullCheck(L_136);
 		int32_t L_137 = L_136->___WindCnt;
 		V_6 = L_137;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2721>
 		goto IL_02a4;
 	}
 
 IL_028c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2722>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_138 = ___0_e1;
 		NullCheck(L_138);
 		int32_t L_139 = L_138->___WindCnt;
 		V_6 = ((-L_139));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2722>
 		goto IL_02a4;
 	}
 
 IL_0297:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2723>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_140 = ___0_e1;
 		NullCheck(L_140);
 		int32_t L_141 = L_140->___WindCnt;
@@ -13901,24 +15409,29 @@ IL_02a4:
 
 IL_02ae:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2727>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_145 = ___1_e2;
 		NullCheck(L_145);
 		int32_t L_146 = L_145->___WindCnt;
 		V_7 = L_146;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2727>
 		goto IL_02d0;
 	}
 
 IL_02b8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2728>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_147 = ___1_e2;
 		NullCheck(L_147);
 		int32_t L_148 = L_147->___WindCnt;
 		V_7 = ((-L_148));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2728>
 		goto IL_02d0;
 	}
 
 IL_02c3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2729>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_149 = ___1_e2;
 		NullCheck(L_149);
 		int32_t L_150 = L_149->___WindCnt;
@@ -13930,6 +15443,7 @@ IL_02c3:
 
 IL_02d0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2732>
 		bool L_152 = V_0;
 		bool L_153 = V_1;
 		if (!((int32_t)((int32_t)L_152&(int32_t)L_153)))
@@ -13938,6 +15452,8 @@ IL_02d0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2734>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2735>
 		int32_t L_154 = V_6;
 		if (!L_154)
 		{
@@ -13991,6 +15507,7 @@ IL_02e7:
 
 IL_02fe:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2737>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_163 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_164 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_165 = ___2_pt;
@@ -14000,17 +15517,21 @@ IL_02fe:
 
 IL_0308:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2741>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_166 = ___0_e1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_167 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_168;
 		L_168 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_166, L_167, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2742>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_169 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_170 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_171;
 		L_171 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_169, L_170, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2743>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_172 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_173 = ___1_e2;
 		Clipper_SwapSides_m9FC00D418F5135E48F2CC1EE5EC7013E42D34488(L_172, L_173, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2744>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_174 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_175 = ___1_e2;
 		Clipper_SwapPolyIndexes_mC557D0FE42F84FB0618EC3753ABFF452DD61127B(L_174, L_175, NULL);
@@ -14019,6 +15540,7 @@ IL_0308:
 
 IL_0329:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2747>
 		bool L_176 = V_0;
 		if (!L_176)
 		{
@@ -14026,6 +15548,7 @@ IL_0329:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2749>
 		int32_t L_177 = V_7;
 		if (!L_177)
 		{
@@ -14042,13 +15565,16 @@ IL_0329:
 
 IL_0338:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2751>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_179 = ___0_e1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_180 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_181;
 		L_181 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_179, L_180, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2752>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_182 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_183 = ___1_e2;
 		Clipper_SwapSides_m9FC00D418F5135E48F2CC1EE5EC7013E42D34488(L_182, L_183, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2753>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_184 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_185 = ___1_e2;
 		Clipper_SwapPolyIndexes_mC557D0FE42F84FB0618EC3753ABFF452DD61127B(L_184, L_185, NULL);
@@ -14057,6 +15583,7 @@ IL_0338:
 
 IL_0350:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2756>
 		bool L_186 = V_1;
 		if (!L_186)
 		{
@@ -14064,6 +15591,7 @@ IL_0350:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2758>
 		int32_t L_187 = V_6;
 		if (!L_187)
 		{
@@ -14080,13 +15608,16 @@ IL_0350:
 
 IL_035f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2760>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_189 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_190 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_191;
 		L_191 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_189, L_190, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2761>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_192 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_193 = ___1_e2;
 		Clipper_SwapSides_m9FC00D418F5135E48F2CC1EE5EC7013E42D34488(L_192, L_193, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2762>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_194 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_195 = ___1_e2;
 		Clipper_SwapPolyIndexes_mC557D0FE42F84FB0618EC3753ABFF452DD61127B(L_194, L_195, NULL);
@@ -14095,6 +15626,7 @@ IL_035f:
 
 IL_0377:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2765>
 		int32_t L_196 = V_6;
 		if (!L_196)
 		{
@@ -14146,24 +15678,29 @@ IL_038f:
 
 IL_039b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2771>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_202 = ___0_e1;
 		NullCheck(L_202);
 		int32_t L_203 = L_202->___WindCnt2;
 		V_9 = ((int64_t)L_203);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2771>
 		goto IL_03c0;
 	}
 
 IL_03a6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2772>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_204 = ___0_e1;
 		NullCheck(L_204);
 		int32_t L_205 = L_204->___WindCnt2;
 		V_9 = ((int64_t)((-L_205)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2772>
 		goto IL_03c0;
 	}
 
 IL_03b2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2773>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_206 = ___0_e1;
 		NullCheck(L_206);
 		int32_t L_207 = L_206->___WindCnt2;
@@ -14194,24 +15731,29 @@ IL_03c0:
 
 IL_03cc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2777>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_211 = ___1_e2;
 		NullCheck(L_211);
 		int32_t L_212 = L_211->___WindCnt2;
 		V_10 = ((int64_t)L_212);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2777>
 		goto IL_03f1;
 	}
 
 IL_03d7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2778>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_213 = ___1_e2;
 		NullCheck(L_213);
 		int32_t L_214 = L_213->___WindCnt2;
 		V_10 = ((int64_t)((-L_214)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2778>
 		goto IL_03f1;
 	}
 
 IL_03e3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2779>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_215 = ___1_e2;
 		NullCheck(L_215);
 		int32_t L_216 = L_215->___WindCnt2;
@@ -14223,6 +15765,7 @@ IL_03e3:
 
 IL_03f1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2782>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_218 = ___0_e1;
 		NullCheck(L_218);
 		int32_t L_219 = L_218->___PolyTyp;
@@ -14235,6 +15778,7 @@ IL_03f1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2784>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_222 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_223 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_224 = ___2_pt;
@@ -14245,6 +15789,7 @@ IL_03f1:
 
 IL_040a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2786>
 		int32_t L_226 = V_6;
 		if ((!(((uint32_t)L_226) == ((uint32_t)1))))
 		{
@@ -14259,6 +15804,7 @@ IL_040a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2787>
 		int32_t L_228 = __this->___m_ClipType;
 		V_11 = L_228;
 		int32_t L_229 = V_11;
@@ -14288,6 +15834,7 @@ IL_040a:
 
 IL_043a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2790>
 		int64_t L_230 = V_9;
 		if ((((int64_t)L_230) <= ((int64_t)((int64_t)0))))
 		{
@@ -14302,16 +15849,19 @@ IL_043a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2791>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_232 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_233 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_234 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_235;
 		L_235 = Clipper_AddLocalMinPoly_m7C4A79390680D0A5C5F09A341F67FC64331C5A2B(__this, L_232, L_233, L_234, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2792>
 		return;
 	}
 
 IL_0451:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2794>
 		int64_t L_236 = V_9;
 		if ((((int64_t)L_236) > ((int64_t)((int64_t)0))))
 		{
@@ -14326,16 +15876,20 @@ IL_0451:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2795>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_238 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_239 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_240 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_241;
 		L_241 = Clipper_AddLocalMinPoly_m7C4A79390680D0A5C5F09A341F67FC64331C5A2B(__this, L_238, L_239, L_240, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2796>
 		return;
 	}
 
 IL_0468:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2798>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2799>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_242 = ___0_e1;
 		NullCheck(L_242);
 		int32_t L_243 = L_242->___PolyTyp;
@@ -14386,26 +15940,31 @@ IL_047d:
 
 IL_0491:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2800>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_250 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_251 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_252 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_253;
 		L_253 = Clipper_AddLocalMinPoly_m7C4A79390680D0A5C5F09A341F67FC64331C5A2B(__this, L_250, L_251, L_252, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2801>
 		return;
 	}
 
 IL_049c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2803>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_254 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_255 = ___1_e2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_256 = ___2_pt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_257;
 		L_257 = Clipper_AddLocalMinPoly_m7C4A79390680D0A5C5F09A341F67FC64331C5A2B(__this, L_254, L_255, L_256, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2804>
 		return;
 	}
 
 IL_04a7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2807>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_258 = ___0_e1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_259 = ___1_e2;
 		Clipper_SwapSides_m9FC00D418F5135E48F2CC1EE5EC7013E42D34488(L_258, L_259, NULL);
@@ -14413,22 +15972,27 @@ IL_04a7:
 
 IL_04ae:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2809>
 		return;
 	}
 }
+// Method Definition Index: 58051
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DeleteFromSEL_m24617A4CCCF62EFE7D57818C59FD6BA322826E2D (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2815>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___PrevInSEL;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2816>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_e;
 		NullCheck(L_2);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = L_2->___NextInSEL;
 		V_1 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2817>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = V_0;
 		if (L_4)
 		{
@@ -14451,11 +16015,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DeleteFromSEL_m24617A4CCCF62EFE7
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2818>
 		return;
 	}
 
 IL_001e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2819>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_8 = V_0;
 		if (!L_8)
 		{
@@ -14463,6 +16029,7 @@ IL_001e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2820>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = V_1;
 		NullCheck(L_9);
@@ -14473,6 +16040,7 @@ IL_001e:
 
 IL_002a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2821>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = V_1;
 		__this->___m_SortedEdges = L_11;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_11);
@@ -14480,6 +16048,7 @@ IL_002a:
 
 IL_0031:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2822>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = V_1;
 		if (!L_12)
 		{
@@ -14487,6 +16056,7 @@ IL_0031:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2823>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_0;
 		NullCheck(L_13);
@@ -14496,17 +16066,21 @@ IL_0031:
 
 IL_003b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2824>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = ___0_e;
 		NullCheck(L_15);
 		L_15->___NextInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_15->___NextInSEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2825>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_e;
 		NullCheck(L_16);
 		L_16->___PrevInSEL = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_16->___PrevInSEL), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2826>
 		return;
 	}
 }
+// Method Definition Index: 58052
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessHorizontals_m4B595F375B5DA3AD1DEE1227A0B49CE6C63EAD46 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
@@ -14516,12 +16090,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessHorizontals_m4B595F375B5D
 
 IL_0002:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2834>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = V_0;
 		Clipper_ProcessHorizontal_mECF545528976041E2CD3C08E9D6031B379ACD772(__this, L_0, NULL);
 	}
 
 IL_0009:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2833>
 		bool L_1;
 		L_1 = Clipper_PopEdgeFromSEL_m45006B3EB7CA7B77EB866606E3FA7C1D3A7BDEE9(__this, (&V_0), NULL);
 		if (L_1)
@@ -14530,12 +16106,15 @@ IL_0009:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2835>
 		return;
 	}
 }
+// Method Definition Index: 58053
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_GetHorzDirection_m6A3C4247B1BB901651DD505DB7FE5DB156B7E715 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_HorzEdge, int32_t* ___1_Dir, int64_t* ___2_Left, int64_t* ___3_Right, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2841>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_HorzEdge;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Bot);
@@ -14550,18 +16129,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_GetHorzDirection_m6A3C4247B1BB90
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2843>
 		int64_t* L_6 = ___2_Left;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = ___0_HorzEdge;
 		NullCheck(L_7);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_8 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_7->___Bot);
 		int64_t L_9 = L_8->___X;
 		*((int64_t*)L_6) = (int64_t)L_9;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2844>
 		int64_t* L_10 = ___3_Right;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = ___0_HorzEdge;
 		NullCheck(L_11);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_12 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_11->___Top);
 		int64_t L_13 = L_12->___X;
 		*((int64_t*)L_10) = (int64_t)L_13;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2845>
 		int32_t* L_14 = ___1_Dir;
 		*((int32_t*)L_14) = (int32_t)1;
 		return;
@@ -14569,23 +16151,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_GetHorzDirection_m6A3C4247B1BB90
 
 IL_0037:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2849>
 		int64_t* L_15 = ___2_Left;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_HorzEdge;
 		NullCheck(L_16);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_17 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_16->___Top);
 		int64_t L_18 = L_17->___X;
 		*((int64_t*)L_15) = (int64_t)L_18;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2850>
 		int64_t* L_19 = ___3_Right;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_HorzEdge;
 		NullCheck(L_20);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_21 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_20->___Bot);
 		int64_t L_22 = L_21->___X;
 		*((int64_t*)L_19) = (int64_t)L_22;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2851>
 		int32_t* L_23 = ___1_Dir;
 		*((int32_t*)L_23) = (int32_t)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2853>
 		return;
 	}
 }
+// Method Definition Index: 58054
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessHorizontal_mECF545528976041E2CD3C08E9D6031B379ACD772 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_horzEdge, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -14611,20 +16198,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessHorizontal_mECF5455289760
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_18 = NULL;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_19 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2861>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_horzEdge;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___WindDelta;
 		V_3 = (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2863>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = ___0_horzEdge;
 		Clipper_GetHorzDirection_m6A3C4247B1BB901651DD505DB7FE5DB156B7E715(__this, L_2, (&V_0), (&V_1), (&V_2), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2865>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___0_horzEdge;
 		V_4 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2865>
 		V_5 = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		goto IL_0028;
 	}
 
 IL_001f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2867>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = V_4;
 		NullCheck(L_4);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = L_4->___NextInLML;
@@ -14633,6 +16225,7 @@ IL_001f:
 
 IL_0028:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2866>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = V_4;
 		NullCheck(L_6);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = L_6->___NextInLML;
@@ -14655,6 +16248,7 @@ IL_0028:
 
 IL_003f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2868>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = V_4;
 		NullCheck(L_11);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = L_11->___NextInLML;
@@ -14664,6 +16258,7 @@ IL_003f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2869>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14;
 		L_14 = Clipper_GetMaximaPair_m0220542A90C48A7028925F730724CF15CDEE1FA8(__this, L_13, NULL);
@@ -14672,8 +16267,10 @@ IL_003f:
 
 IL_0052:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2871>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_15 = __this->___m_Maxima;
 		V_6 = L_15;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2872>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_16 = V_6;
 		if (!L_16)
 		{
@@ -14681,6 +16278,7 @@ IL_0052:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2875>
 		int32_t L_17 = V_0;
 		if ((!(((uint32_t)L_17) == ((uint32_t)1))))
 		{
@@ -14693,6 +16291,7 @@ IL_0052:
 
 IL_0067:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2878>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_18 = V_6;
 		NullCheck(L_18);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_19 = L_18->___Next;
@@ -14701,6 +16300,7 @@ IL_0067:
 
 IL_0070:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2877>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_20 = V_6;
 		if (!L_20)
 		{
@@ -14723,6 +16323,7 @@ IL_0070:
 
 IL_0088:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2879>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_26 = V_6;
 		if (!L_26)
 		{
@@ -14743,12 +16344,14 @@ IL_0088:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2880>
 		V_6 = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
 		goto IL_00e9;
 	}
 
 IL_00a6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2885>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_32 = V_6;
 		NullCheck(L_32);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_33 = L_32->___Next;
@@ -14757,6 +16360,7 @@ IL_00a6:
 
 IL_00af:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2884>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_34 = V_6;
 		NullCheck(L_34);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_35 = L_34->___Next;
@@ -14783,6 +16387,7 @@ IL_00af:
 
 IL_00d1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2886>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_42 = V_6;
 		NullCheck(L_42);
 		int64_t L_43 = L_42->___X;
@@ -14796,19 +16401,23 @@ IL_00d1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2886>
 		V_6 = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
 	}
 
 IL_00e9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2890>
 		V_7 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 	}
 
 IL_00ec:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2893>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_47 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = V_4;
 		V_8 = (bool)((((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_47) == ((RuntimeObject*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)L_48))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2894>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_49 = ___0_horzEdge;
 		int32_t L_50 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51;
@@ -14819,6 +16428,7 @@ IL_00ec:
 
 IL_0102:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2900>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_52 = V_6;
 		if (!L_52)
 		{
@@ -14826,6 +16436,7 @@ IL_0102:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2902>
 		int32_t L_53 = V_0;
 		if ((!(((uint32_t)L_53) == ((uint32_t)1))))
 		{
@@ -14838,6 +16449,7 @@ IL_0102:
 
 IL_0112:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2906>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_54 = ___0_horzEdge;
 		NullCheck(L_54);
 		int32_t L_55 = L_54->___OutIdx;
@@ -14854,6 +16466,7 @@ IL_0112:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2907>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_57 = ___0_horzEdge;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_58 = V_6;
 		NullCheck(L_58);
@@ -14871,6 +16484,7 @@ IL_0112:
 
 IL_013d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2908>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_65 = V_6;
 		NullCheck(L_65);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_66 = L_65->___Next;
@@ -14879,6 +16493,7 @@ IL_013d:
 
 IL_0146:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2904>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_67 = V_6;
 		if (!L_67)
 		{
@@ -14904,6 +16519,7 @@ IL_0146:
 
 IL_0161:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2915>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_73 = ___0_horzEdge;
 		NullCheck(L_73);
 		int32_t L_74 = L_73->___OutIdx;
@@ -14920,6 +16536,7 @@ IL_0161:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2916>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_76 = ___0_horzEdge;
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_77 = V_6;
 		NullCheck(L_77);
@@ -14937,6 +16554,7 @@ IL_0161:
 
 IL_018c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2917>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_84 = V_6;
 		NullCheck(L_84);
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_85 = L_84->___Prev;
@@ -14945,6 +16563,7 @@ IL_018c:
 
 IL_0195:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2913>
 		Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C* L_86 = V_6;
 		if (!L_86)
 		{
@@ -14967,6 +16586,8 @@ IL_0195:
 
 IL_01ae:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2922>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2923>
 		int32_t L_92 = V_0;
 		if ((!(((uint32_t)L_92) == ((uint32_t)1))))
 		{
@@ -15007,6 +16628,8 @@ IL_01c4:
 
 IL_01d9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2927>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2928>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_102 = V_9;
 		NullCheck(L_102);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_103 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_102->___Curr);
@@ -15046,6 +16669,7 @@ IL_01d9:
 
 IL_0211:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2930>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_115 = ___0_horzEdge;
 		NullCheck(L_115);
 		int32_t L_116 = L_115->___OutIdx;
@@ -15062,6 +16686,7 @@ IL_0211:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2932>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_118 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_119 = V_9;
 		NullCheck(L_119);
@@ -15069,6 +16694,7 @@ IL_0211:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_121;
 		L_121 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_118, L_120, NULL);
 		V_7 = L_121;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2933>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_122 = __this->___m_SortedEdges;
 		V_10 = L_122;
 		goto IL_02a1;
@@ -15076,6 +16702,9 @@ IL_0211:
 
 IL_023d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2936>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2937>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2938>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_123 = V_10;
 		NullCheck(L_123);
 		int32_t L_124 = L_123->___OutIdx;
@@ -15109,10 +16738,12 @@ IL_023d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2940>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_138 = V_10;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_139;
 		L_139 = Clipper_GetLastOutPt_mE511905B91CC0BC041D55B614DE1A5ABACDEF5E1(__this, L_138, NULL);
 		V_11 = L_139;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2941>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_140 = V_11;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_141 = V_7;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_142 = V_10;
@@ -15123,6 +16754,7 @@ IL_023d:
 
 IL_0298:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2943>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_144 = V_10;
 		NullCheck(L_144);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_145 = L_144->___NextInSEL;
@@ -15131,6 +16763,7 @@ IL_0298:
 
 IL_02a1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2934>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_146 = V_10;
 		if (L_146)
 		{
@@ -15138,6 +16771,7 @@ IL_02a1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2945>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_147 = V_7;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_148 = ___0_horzEdge;
 		NullCheck(L_148);
@@ -15147,6 +16781,7 @@ IL_02a1:
 
 IL_02b3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2950>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_150 = V_9;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_151 = V_5;
 		bool L_152 = V_8;
@@ -15156,6 +16791,7 @@ IL_02b3:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2952>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_153 = ___0_horzEdge;
 		NullCheck(L_153);
 		int32_t L_154 = L_153->___OutIdx;
@@ -15165,6 +16801,7 @@ IL_02b3:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2953>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_155 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_156 = V_5;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_157 = ___0_horzEdge;
@@ -15175,15 +16812,19 @@ IL_02b3:
 
 IL_02d6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2954>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_159 = ___0_horzEdge;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_159, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2955>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_160 = V_5;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_160, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2956>
 		return;
 	}
 
 IL_02e6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2959>
 		int32_t L_161 = V_0;
 		if ((!(((uint32_t)L_161) == ((uint32_t)1))))
 		{
@@ -15191,6 +16832,7 @@ IL_02e6:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2961>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_162 = V_9;
 		NullCheck(L_162);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_163 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_162->___Curr);
@@ -15200,6 +16842,7 @@ IL_02e6:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_166 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_165->___Curr);
 		int64_t L_167 = L_166->___Y;
 		IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7((&V_12), L_164, L_167, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2962>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_168 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_169 = V_9;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_170 = V_12;
@@ -15209,6 +16852,7 @@ IL_02e6:
 
 IL_0315:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2966>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_171 = V_9;
 		NullCheck(L_171);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_172 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_171->___Curr);
@@ -15218,6 +16862,7 @@ IL_0315:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_175 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_174->___Curr);
 		int64_t L_176 = L_175->___Y;
 		IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7((&V_13), L_173, L_176, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2967>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_177 = V_9;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_178 = ___0_horzEdge;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_179 = V_13;
@@ -15226,18 +16871,22 @@ IL_0315:
 
 IL_033e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2969>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_180 = V_9;
 		int32_t L_181 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_182;
 		L_182 = Clipper_GetNextInAEL_m11BE83210097750DBC0BE637744F6E0465391C24(__this, L_180, L_181, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2970>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_183 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_184 = V_9;
 		ClipperBase_SwapPositionsInAEL_m8115E667C69A638634397D13A4D0C34EA25DCB07(__this, L_183, L_184, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2971>
 		V_9 = L_182;
 	}
 
 IL_0352:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2895>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_185 = V_9;
 		if (L_185)
 		{
@@ -15247,6 +16896,7 @@ IL_0352:
 
 IL_0359:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2975>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_186 = ___0_horzEdge;
 		NullCheck(L_186);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_187 = L_186->___NextInLML;
@@ -15267,7 +16917,9 @@ IL_0359:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2977>
 		ClipperBase_UpdateEdgeIntoAEL_m4C4C629344AE2E4072183668434761BF7E4D92DC(__this, (&___0_horzEdge), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2978>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_191 = ___0_horzEdge;
 		NullCheck(L_191);
 		int32_t L_192 = L_191->___OutIdx;
@@ -15277,6 +16929,7 @@ IL_0359:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2978>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_193 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_194 = ___0_horzEdge;
 		NullCheck(L_194);
@@ -15287,6 +16940,7 @@ IL_0359:
 
 IL_038d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2979>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_197 = ___0_horzEdge;
 		Clipper_GetHorzDirection_m6A3C4247B1BB901651DD505DB7FE5DB156B7E715(__this, L_197, (&V_0), (&V_1), (&V_2), NULL);
 		goto IL_00ec;
@@ -15294,6 +16948,7 @@ IL_038d:
 
 IL_039f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2982>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_198 = ___0_horzEdge;
 		NullCheck(L_198);
 		int32_t L_199 = L_198->___OutIdx;
@@ -15310,10 +16965,12 @@ IL_039f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2984>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_201 = ___0_horzEdge;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_202;
 		L_202 = Clipper_GetLastOutPt_mE511905B91CC0BC041D55B614DE1A5ABACDEF5E1(__this, L_201, NULL);
 		V_7 = L_202;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2985>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_203 = __this->___m_SortedEdges;
 		V_14 = L_203;
 		goto IL_0429;
@@ -15321,6 +16978,9 @@ IL_039f:
 
 IL_03c5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2988>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2989>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2990>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_204 = V_14;
 		NullCheck(L_204);
 		int32_t L_205 = L_204->___OutIdx;
@@ -15354,10 +17014,12 @@ IL_03c5:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2992>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_219 = V_14;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_220;
 		L_220 = Clipper_GetLastOutPt_mE511905B91CC0BC041D55B614DE1A5ABACDEF5E1(__this, L_219, NULL);
 		V_15 = L_220;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2993>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_221 = V_15;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_222 = V_7;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_223 = V_14;
@@ -15368,6 +17030,7 @@ IL_03c5:
 
 IL_0420:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2995>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_225 = V_14;
 		NullCheck(L_225);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_226 = L_225->___NextInSEL;
@@ -15376,6 +17039,7 @@ IL_0420:
 
 IL_0429:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2986>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_227 = V_14;
 		if (L_227)
 		{
@@ -15383,6 +17047,7 @@ IL_0429:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:2997>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_228 = V_7;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_229 = ___0_horzEdge;
 		NullCheck(L_229);
@@ -15392,6 +17057,7 @@ IL_0429:
 
 IL_043b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3000>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_231 = ___0_horzEdge;
 		NullCheck(L_231);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_232 = L_231->___NextInLML;
@@ -15401,6 +17067,7 @@ IL_043b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3002>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_233 = ___0_horzEdge;
 		NullCheck(L_233);
 		int32_t L_234 = L_233->___OutIdx;
@@ -15410,6 +17077,7 @@ IL_043b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3004>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_235 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_236 = ___0_horzEdge;
 		NullCheck(L_236);
@@ -15417,7 +17085,9 @@ IL_043b:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_238;
 		L_238 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_235, L_237, NULL);
 		V_7 = L_238;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3006>
 		ClipperBase_UpdateEdgeIntoAEL_m4C4C629344AE2E4072183668434761BF7E4D92DC(__this, (&___0_horzEdge), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3007>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_239 = ___0_horzEdge;
 		NullCheck(L_239);
 		int32_t L_240 = L_239->___WindDelta;
@@ -15427,19 +17097,26 @@ IL_043b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3007>
 		return;
 	}
 
 IL_0472:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3009>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_241 = ___0_horzEdge;
 		NullCheck(L_241);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_242 = L_241->___PrevInAEL;
 		V_16 = L_242;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3010>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_243 = ___0_horzEdge;
 		NullCheck(L_243);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_244 = L_243->___NextInAEL;
 		V_17 = L_244;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3011>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3012>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3013>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3014>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_245 = V_16;
 		if (!L_245)
 		{
@@ -15518,6 +17195,7 @@ IL_0472:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3016>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_272 = V_16;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_273 = ___0_horzEdge;
 		NullCheck(L_273);
@@ -15525,6 +17203,7 @@ IL_0472:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_275;
 		L_275 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_272, L_274, NULL);
 		V_18 = L_275;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3017>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_276 = V_7;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_277 = V_18;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_278 = ___0_horzEdge;
@@ -15536,6 +17215,10 @@ IL_0472:
 
 IL_0519:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3019>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3020>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3021>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3022>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_280 = V_17;
 		if (!L_280)
 		{
@@ -15614,6 +17297,7 @@ IL_0519:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3024>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_307 = V_17;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_308 = ___0_horzEdge;
 		NullCheck(L_308);
@@ -15621,6 +17305,7 @@ IL_0519:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_310;
 		L_310 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_307, L_309, NULL);
 		V_19 = L_310;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3025>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_311 = V_7;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_312 = V_19;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_313 = ___0_horzEdge;
@@ -15632,12 +17317,14 @@ IL_0519:
 
 IL_05b6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3029>
 		ClipperBase_UpdateEdgeIntoAEL_m4C4C629344AE2E4072183668434761BF7E4D92DC(__this, (&___0_horzEdge), NULL);
 		return;
 	}
 
 IL_05bf:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3033>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_315 = ___0_horzEdge;
 		NullCheck(L_315);
 		int32_t L_316 = L_315->___OutIdx;
@@ -15647,6 +17334,7 @@ IL_05bf:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3033>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_317 = ___0_horzEdge;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_318 = ___0_horzEdge;
 		NullCheck(L_318);
@@ -15657,18 +17345,22 @@ IL_05bf:
 
 IL_05d6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3034>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_321 = ___0_horzEdge;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_321, NULL);
 	}
 
 IL_05dd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3036>
 		return;
 	}
 }
+// Method Definition Index: 58055
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* Clipper_GetNextInAEL_m11BE83210097750DBC0BE637744F6E0465391C24 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, int32_t ___1_Directions, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3042>
 		int32_t L_0 = ___1_Directions;
 		if ((((int32_t)L_0) == ((int32_t)1)))
 		{
@@ -15690,9 +17382,11 @@ IL_000b:
 		return L_4;
 	}
 }
+// Method Definition Index: 58056
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsMinima_mA7F1B87150CF93342F8B66335DB3256ACEB2A616 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3049>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		if (!L_0)
 		{
@@ -15726,9 +17420,11 @@ IL_0023:
 		return (bool)0;
 	}
 }
+// Method Definition Index: 58057
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsMaxima_mE0DBD58A52930B956A04EEC33CE7444683D560E0 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, double ___1_Y, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3056>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		if (!L_0)
 		{
@@ -15758,9 +17454,11 @@ IL_001c:
 		return (bool)0;
 	}
 }
+// Method Definition Index: 58058
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_IsIntermediate_m470B2D9FB187245F625D3823186F77471A7E424B (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, double ___1_Y, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3063>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Top);
@@ -15783,9 +17481,11 @@ IL_0019:
 		return (bool)0;
 	}
 }
+// Method Definition Index: 58059
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* Clipper_GetMaximaPair_m0220542A90C48A7028925F730724CF15CDEE1FA8 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3070>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___Next;
@@ -15813,6 +17513,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3071>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = ___0_e;
 		NullCheck(L_9);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = L_9->___Next;
@@ -15821,6 +17522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 
 IL_002c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3072>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = ___0_e;
 		NullCheck(L_11);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = L_11->___Prev;
@@ -15848,6 +17550,7 @@ IL_002c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3073>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = ___0_e;
 		NullCheck(L_20);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = L_20->___Prev;
@@ -15856,17 +17559,22 @@ IL_002c:
 
 IL_0058:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3075>
 		return (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 	}
 }
+// Method Definition Index: 58060
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* Clipper_GetMaximaPairEx_mA4F0D5DBDF57152DA6CB784F96FEA4A1E8BBBCB6 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3083>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1;
 		L_1 = Clipper_GetMaximaPair_m0220542A90C48A7028925F730724CF15CDEE1FA8(__this, L_0, NULL);
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3084>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3085>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = V_0;
 		if (!L_2)
 		{
@@ -15906,15 +17614,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TEdge_t65868A3823C94467F4F0D41207EE29B96912B0
 
 IL_002b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3085>
 		return (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 	}
 
 IL_002d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3086>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = V_0;
 		return L_11;
 	}
 }
+// Method Definition Index: 58061
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_ProcessIntersections_m4A76591615621FC7F31C0D2A7344E1BAACE50BDD (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int64_t ___0_topY, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15926,6 +17637,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_ProcessIntersections_m4A76591615
 	bool V_0 = false;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3093>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		if (L_0)
 		{
@@ -15933,6 +17645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_ProcessIntersections_m4A76591615
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3093>
 		return (bool)1;
 	}
 
@@ -15942,8 +17655,10 @@ IL_000a:
 	try
 	{
 		{
+			//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3096>
 			int64_t L_1 = ___0_topY;
 			Clipper_BuildIntersectList_m2CB9D558A5A064D89485CC6D3DB2172EEDF6F70D(__this, L_1, NULL);
+			//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3097>
 			List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_2 = __this->___m_IntersectList;
 			NullCheck(L_2);
 			int32_t L_3;
@@ -15954,12 +17669,14 @@ IL_000a:
 			}
 		}
 		{
+			//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3097>
 			V_0 = (bool)1;
 			goto IL_006e;
 		}
 
 IL_0023_1:
 		{
+			//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3098>
 			List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_4 = __this->___m_IntersectList;
 			NullCheck(L_4);
 			int32_t L_5;
@@ -15980,18 +17697,21 @@ IL_0023_1:
 
 IL_0039_1:
 		{
+			//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3099>
 			Clipper_ProcessIntersectList_m914E8AA216C8EC1142AB3908727F0A151E487A66(__this, NULL);
 			goto IL_0045_1;
 		}
 
 IL_0041_1:
 		{
+			//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3101>
 			V_0 = (bool)0;
 			goto IL_006e;
 		}
 
 IL_0045_1:
 		{
+			//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3102>
 			goto IL_0065;
 		}
 	}
@@ -16008,11 +17728,15 @@ IL_0045_1:
 CATCH_0047:
 	{
 		RuntimeObject* L_7 = ((RuntimeObject*)IL2CPP_GET_ACTIVE_EXCEPTION(RuntimeObject*));;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3103>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3105>
 		__this->___m_SortedEdges = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3106>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_8 = __this->___m_IntersectList;
 		NullCheck(L_8);
 		List_1_Clear_m068F09301CE003157C3C99ECCB1357C88DAC90CA_inline(L_8, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&List_1_Clear_m068F09301CE003157C3C99ECCB1357C88DAC90CA_RuntimeMethod_var)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3107>
 		ClipperException_t033D39948325F397A565E04767C45C94FB810C92* L_9 = (ClipperException_t033D39948325F397A565E04767C45C94FB810C92*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperException_t033D39948325F397A565E04767C45C94FB810C92_il2cpp_TypeInfo_var)));
 		ClipperException__ctor_mF1E22950760B1F1C7D5ADE536EACE305D09B8651(L_9, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral663C41C05AB8CEC11013C2708A41A43B20004AB6)), NULL);
 		IL2CPP_POP_ACTIVE_EXCEPTION(Exception_t*);
@@ -16021,17 +17745,21 @@ CATCH_0047:
 
 IL_0065:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3109>
 		__this->___m_SortedEdges = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3110>
 		return (bool)1;
 	}
 
 IL_006e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3111>
 		bool L_10 = V_0;
 		return L_10;
 	}
 }
+// Method Definition Index: 58062
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildIntersectList_m2CB9D558A5A064D89485CC6D3DB2172EEDF6F70D (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int64_t ___0_topY, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16048,6 +17776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildIntersectList_m2CB9D558A5A0
 	memset((&V_3), 0, sizeof(V_3));
 	IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* V_4 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3117>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		if (L_0)
 		{
@@ -16055,13 +17784,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildIntersectList_m2CB9D558A5A0
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3117>
 		return;
 	}
 
 IL_0009:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3120>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3121>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = V_0;
 		__this->___m_SortedEdges = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)L_2);
@@ -16070,6 +17802,7 @@ IL_0009:
 
 IL_0019:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3124>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = V_0;
 		NullCheck(L_4);
@@ -16077,6 +17810,7 @@ IL_0019:
 		NullCheck(L_3);
 		L_3->___PrevInSEL = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_3->___PrevInSEL), (void*)L_5);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3125>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = V_0;
 		NullCheck(L_7);
@@ -16084,6 +17818,7 @@ IL_0019:
 		NullCheck(L_6);
 		L_6->___NextInSEL = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___NextInSEL), (void*)L_8);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3126>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = V_0;
 		NullCheck(L_9);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_10 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_9->___Curr);
@@ -16092,6 +17827,7 @@ IL_0019:
 		int64_t L_13;
 		L_13 = Clipper_TopX_m8DE68B1C33B15035D802240A279626C5A0AE14B3(L_11, L_12, NULL);
 		L_10->___X = L_13;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3127>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = V_0;
 		NullCheck(L_14);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = L_14->___NextInAEL;
@@ -16100,6 +17836,7 @@ IL_0019:
 
 IL_004a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3122>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = V_0;
 		if (L_16)
 		{
@@ -16107,13 +17844,16 @@ IL_004a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3131>
 		V_1 = (bool)1;
 		goto IL_00f9;
 	}
 
 IL_0054:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3134>
 		V_1 = (bool)0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3135>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = __this->___m_SortedEdges;
 		V_0 = L_17;
 		goto IL_00da;
@@ -16121,10 +17861,12 @@ IL_0054:
 
 IL_005f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3138>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = V_0;
 		NullCheck(L_18);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = L_18->___NextInSEL;
 		V_2 = L_19;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3140>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = V_0;
 		NullCheck(L_20);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_21 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_20->___Curr);
@@ -16139,9 +17881,11 @@ IL_005f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3142>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_26 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = V_2;
 		Clipper_IntersectPoint_mA466BDB8128485DCB73CA65F7942409B8F81E4CE(__this, L_26, L_27, (&V_3), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3143>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_28 = V_3;
 		int64_t L_29 = L_28.___Y;
 		int64_t L_30 = ___0_topY;
@@ -16151,6 +17895,7 @@ IL_005f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3144>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_31 = V_0;
 		int64_t L_32 = ___0_topY;
 		int64_t L_33;
@@ -16161,42 +17906,51 @@ IL_005f:
 
 IL_00a0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3145>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_35 = (IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D*)il2cpp_codegen_object_new(IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D_il2cpp_TypeInfo_var);
 		IntersectNode__ctor_m67DEB85303E6FF915F173B73C8F41E1B4AEA54FC(L_35, NULL);
 		V_4 = L_35;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3146>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_36 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_37 = V_0;
 		NullCheck(L_36);
 		L_36->___Edge1 = L_37;
 		Il2CppCodeGenWriteBarrier((void**)(&L_36->___Edge1), (void*)L_37);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3147>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_38 = V_4;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = V_2;
 		NullCheck(L_38);
 		L_38->___Edge2 = L_39;
 		Il2CppCodeGenWriteBarrier((void**)(&L_38->___Edge2), (void*)L_39);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3148>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_40 = V_4;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_41 = V_3;
 		NullCheck(L_40);
 		L_40->___Pt = L_41;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3149>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_42 = __this->___m_IntersectList;
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_43 = V_4;
 		NullCheck(L_42);
 		List_1_Add_m73877A7E2A3BB366832716E4668AE6AF905219DE_inline(L_42, L_43, List_1_Add_m73877A7E2A3BB366832716E4668AE6AF905219DE_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3151>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_44 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_45 = V_2;
 		Clipper_SwapPositionsInSEL_m5CC2DCF327486C0BE07121830577CB74CECDC207(__this, L_44, L_45, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3152>
 		V_1 = (bool)1;
 		goto IL_00da;
 	}
 
 IL_00d8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3155>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46 = V_2;
 		V_0 = L_46;
 	}
 
 IL_00da:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3136>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_47 = V_0;
 		NullCheck(L_47);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_48 = L_47->___NextInSEL;
@@ -16206,6 +17960,7 @@ IL_00da:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3157>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_49 = V_0;
 		NullCheck(L_49);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = L_49->___PrevInSEL;
@@ -16215,6 +17970,7 @@ IL_00da:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3157>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = V_0;
 		NullCheck(L_51);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_52 = L_51->___PrevInSEL;
@@ -16225,6 +17981,7 @@ IL_00da:
 
 IL_00f9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3132>
 		bool L_53 = V_1;
 		if (!L_53)
 		{
@@ -16241,14 +17998,19 @@ IL_00f9:
 
 IL_0107:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3160>
 		__this->___m_SortedEdges = (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_SortedEdges), (void*)(TEdge_t65868A3823C94467F4F0D41207EE29B96912B084*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3161>
 		return;
 	}
 }
+// Method Definition Index: 58063
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_EdgesAdjacent_mBCFFF6E516FEE06E1BB61B87630C092C2C6B0A7A (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* ___0_inode, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3167>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3168>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_0 = ___0_inode;
 		NullCheck(L_0);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = L_0->___Edge1;
@@ -16279,9 +18041,11 @@ IL_0027:
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58064
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_IntersectNodeSort_m3AD2B566799D815D66E4A0B5BF38FAA541EDF86A (IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* ___0_node1, IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* ___1_node2, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3177>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_0 = ___1_node2;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Pt);
@@ -16293,6 +18057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_IntersectNodeSort_m3AD2B56679
 		return ((int32_t)((int64_t)il2cpp_codegen_subtract(L_2, L_5)));
 	}
 }
+// Method Definition Index: 58065
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_FixupIntersectionOrder_m34743E697F79F00B31E1B46FBD29C5BD418B4F92 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16309,22 +18074,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_FixupIntersectionOrder_m34743E69
 	int32_t V_2 = 0;
 	IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* V_3 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3187>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_0 = __this->___m_IntersectList;
 		RuntimeObject* L_1 = __this->___m_IntersectNodeComparer;
 		NullCheck(L_0);
 		List_1_Sort_m112074C1E65CA5110E14230335CFE5D5F4EF9A83(L_0, L_1, List_1_Sort_m112074C1E65CA5110E14230335CFE5D5F4EF9A83_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3189>
 		Clipper_CopyAELToSEL_mD4D878B45AD029FFA43E1B3F681D089B99058CFD(__this, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3190>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_2 = __this->___m_IntersectList;
 		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = List_1_get_Count_mBFE02710398D072B0B92E33D03DB0F150E2A97B8_inline(L_2, List_1_get_Count_mBFE02710398D072B0B92E33D03DB0F150E2A97B8_RuntimeMethod_var);
 		V_0 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3191>
 		V_1 = 0;
 		goto IL_00c4;
 	}
 
 IL_002a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3193>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_4 = __this->___m_IntersectList;
 		int32_t L_5 = V_1;
 		NullCheck(L_4);
@@ -16338,6 +18108,7 @@ IL_002a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3195>
 		int32_t L_8 = V_1;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_8, 1));
 		goto IL_0048;
@@ -16345,12 +18116,14 @@ IL_002a:
 
 IL_0044:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3196>
 		int32_t L_9 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_9, 1));
 	}
 
 IL_0048:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3196>
 		int32_t L_10 = V_2;
 		int32_t L_11 = V_0;
 		if ((((int32_t)L_10) >= ((int32_t)L_11)))
@@ -16374,6 +18147,7 @@ IL_0048:
 
 IL_0060:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3197>
 		int32_t L_16 = V_2;
 		int32_t L_17 = V_0;
 		if ((!(((uint32_t)L_16) == ((uint32_t)L_17))))
@@ -16382,17 +18156,20 @@ IL_0060:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3197>
 		return (bool)0;
 	}
 
 IL_0066:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3199>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_18 = __this->___m_IntersectList;
 		int32_t L_19 = V_1;
 		NullCheck(L_18);
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_20;
 		L_20 = List_1_get_Item_m11956B21779464CDF09E15FAA6C13319BB41BBC5(L_18, L_19, List_1_get_Item_m11956B21779464CDF09E15FAA6C13319BB41BBC5_RuntimeMethod_var);
 		V_3 = L_20;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3200>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_21 = __this->___m_IntersectList;
 		int32_t L_22 = V_1;
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_23 = __this->___m_IntersectList;
@@ -16402,6 +18179,7 @@ IL_0066:
 		L_25 = List_1_get_Item_m11956B21779464CDF09E15FAA6C13319BB41BBC5(L_23, L_24, List_1_get_Item_m11956B21779464CDF09E15FAA6C13319BB41BBC5_RuntimeMethod_var);
 		NullCheck(L_21);
 		List_1_set_Item_mD4B65BDCC4D77277343A832BB0F9780375008E84(L_21, L_22, L_25, List_1_set_Item_mD4B65BDCC4D77277343A832BB0F9780375008E84_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3201>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_26 = __this->___m_IntersectList;
 		int32_t L_27 = V_2;
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_28 = V_3;
@@ -16411,6 +18189,7 @@ IL_0066:
 
 IL_0098:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3203>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_29 = __this->___m_IntersectList;
 		int32_t L_30 = V_1;
 		NullCheck(L_29);
@@ -16426,12 +18205,14 @@ IL_0098:
 		NullCheck(L_35);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = L_35->___Edge2;
 		Clipper_SwapPositionsInSEL_m5CC2DCF327486C0BE07121830577CB74CECDC207(__this, L_32, L_36, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3191>
 		int32_t L_37 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_37, 1));
 	}
 
 IL_00c4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3191>
 		int32_t L_38 = V_1;
 		int32_t L_39 = V_0;
 		if ((((int32_t)L_38) < ((int32_t)L_39)))
@@ -16440,9 +18221,11 @@ IL_00c4:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3205>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58066
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessIntersectList_m914E8AA216C8EC1142AB3908727F0A151E487A66 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16456,18 +18239,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessIntersectList_m914E8AA216
 	int32_t V_0 = 0;
 	IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3212>
 		V_0 = 0;
 		goto IL_003f;
 	}
 
 IL_0004:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3214>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_0 = __this->___m_IntersectList;
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_2;
 		L_2 = List_1_get_Item_m11956B21779464CDF09E15FAA6C13319BB41BBC5(L_0, L_1, List_1_get_Item_m11956B21779464CDF09E15FAA6C13319BB41BBC5_RuntimeMethod_var);
 		V_1 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3216>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_3 = V_1;
 		NullCheck(L_3);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = L_3->___Edge1;
@@ -16478,6 +18264,7 @@ IL_0004:
 		NullCheck(L_7);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_8 = L_7->___Pt;
 		Clipper_IntersectEdges_mD054D64A65188A152D241B4A66A9F4DAF61A5E97(__this, L_4, L_6, L_8, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3217>
 		IntersectNode_tBF66DAC09A037D741DF29350B23509772D848D7D* L_9 = V_1;
 		NullCheck(L_9);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = L_9->___Edge1;
@@ -16485,12 +18272,14 @@ IL_0004:
 		NullCheck(L_11);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = L_11->___Edge2;
 		ClipperBase_SwapPositionsInAEL_m8115E667C69A638634397D13A4D0C34EA25DCB07(__this, L_10, L_12, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3212>
 		int32_t L_13 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_13, 1));
 	}
 
 IL_003f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3212>
 		int32_t L_14 = V_0;
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_15 = __this->___m_IntersectList;
 		NullCheck(L_15);
@@ -16502,15 +18291,19 @@ IL_003f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3220>
 		List_1_t99981E9D8B40F9682F594EDB03AC4D867EA12D25* L_17 = __this->___m_IntersectList;
 		NullCheck(L_17);
 		List_1_Clear_m068F09301CE003157C3C99ECCB1357C88DAC90CA_inline(L_17, List_1_Clear_m068F09301CE003157C3C99ECCB1357C88DAC90CA_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3221>
 		return;
 	}
 }
+// Method Definition Index: 58067
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Clipper_Round_mA77D2621C05B82882ED72BB6E948D007CEC926B2 (double ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3227>
 		double L_0 = ___0_value;
 		if ((((double)L_0) < ((double)(0.0))))
 		{
@@ -16528,9 +18321,11 @@ IL_0019:
 		return il2cpp_codegen_cast_double_to_int<int64_t>(((double)il2cpp_codegen_subtract(L_2, (0.5))));
 	}
 }
+// Method Definition Index: 58068
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Clipper_TopX_m8DE68B1C33B15035D802240A279626C5A0AE14B3 (TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge, int64_t ___1_currentY, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3234>
 		int64_t L_0 = ___1_currentY;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___0_edge;
 		NullCheck(L_1);
@@ -16542,6 +18337,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Clipper_TopX_m8DE68B1C33B15035D802240
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3235>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_4 = ___0_edge;
 		NullCheck(L_4);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_5 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_4->___Top);
@@ -16551,6 +18347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Clipper_TopX_m8DE68B1C33B15035D802240
 
 IL_001a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3236>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = ___0_edge;
 		NullCheck(L_7);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_8 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_7->___Bot);
@@ -16568,6 +18365,7 @@ IL_001a:
 		return ((int64_t)il2cpp_codegen_add(L_9, L_16));
 	}
 }
+// Method Definition Index: 58069
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_IntersectPoint_mA466BDB8128485DCB73CA65F7942409B8F81E4CE (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_edge1, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___1_edge2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* ___2_ip, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16589,9 +18387,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_IntersectPoint_mA466BDB8128485DC
 	int64_t G_B24_0 = 0;
 	IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* G_B24_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3243>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_0 = ___2_ip;
 		il2cpp_codegen_initobj(L_0, sizeof(IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3244>
 		V_0 = ((int64_t)(-1));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3245>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = ___1_edge2;
 		NullCheck(L_1);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_2 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_1->___Curr);
@@ -16648,6 +18449,7 @@ IL_0055:
 IL_0056:
 	{
 		V_1 = (bool)G_B6_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3246>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = ___0_edge1;
 		NullCheck(L_15);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_16 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_15->___Curr);
@@ -16662,6 +18464,7 @@ IL_0056:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3248>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = ___1_edge2;
 		NullCheck(L_21);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_22 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_21->___Curr);
@@ -16672,6 +18475,7 @@ IL_0056:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3250>
 		bool L_24 = V_1;
 		if (!L_24)
 		{
@@ -16679,6 +18483,7 @@ IL_0056:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3252>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_25 = ___0_edge1;
 		NullCheck(L_25);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_26 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_25->___Curr);
@@ -16710,6 +18515,7 @@ IL_00a2:
 
 IL_00a5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3257>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_31 = ___0_edge1;
 		NullCheck(L_31);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_32 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_31->___Curr);
@@ -16720,6 +18526,7 @@ IL_00a5:
 
 IL_00b3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3262>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = ___0_edge1;
 		NullCheck(L_34);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_35 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_34->___Curr);
@@ -16730,6 +18537,7 @@ IL_00b3:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3264>
 		bool L_37 = V_1;
 		if (!L_37)
 		{
@@ -16737,6 +18545,7 @@ IL_00b3:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3266>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_38 = ___1_edge2;
 		NullCheck(L_38);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_39 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_38->___Curr);
@@ -16747,6 +18556,7 @@ IL_00b3:
 
 IL_00d3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3271>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_41 = ___1_edge2;
 		NullCheck(L_41);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_42 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_41->___Curr);
@@ -16777,8 +18587,10 @@ IL_00f4:
 
 IL_00f5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3274>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_47 = ___2_ip;
 		L_47->___D = ((int64_t)2);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3274>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_48 = ___2_ip;
 		bool L_49 = V_1;
 		if (L_49)
@@ -16804,6 +18616,7 @@ IL_0105:
 IL_0106:
 	{
 		G_B24_1->___N = G_B24_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3278>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = ___0_edge1;
 		NullCheck(L_51);
 		double L_52 = L_51->___Dx;
@@ -16816,12 +18629,14 @@ IL_0106:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3280>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_55 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_56 = ___0_edge1;
 		NullCheck(L_56);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_57 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_56->___Curr);
 		int64_t L_58 = L_57->___Y;
 		L_55->___Y = L_58;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3281>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_59 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_60 = ___0_edge1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_61 = ___2_ip;
@@ -16829,11 +18644,13 @@ IL_0106:
 		int64_t L_63;
 		L_63 = Clipper_TopX_m8DE68B1C33B15035D802240A279626C5A0AE14B3(L_60, L_62, NULL);
 		L_59->___X = L_63;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3282>
 		return;
 	}
 
 IL_013d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3286>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_64 = ___0_edge1;
 		NullCheck(L_64);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_65 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_64->___Delta);
@@ -16844,12 +18661,14 @@ IL_013d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3288>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_67 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_68 = ___0_edge1;
 		NullCheck(L_68);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_69 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_68->___Bot);
 		int64_t L_70 = L_69->___X;
 		L_67->___X = L_70;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3289>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_71 = ___1_edge2;
 		bool L_72;
 		L_72 = ClipperBase_IsHorizontal_m6BAD44CE7EDD2316867C067D25B16BC929CE2674(L_71, NULL);
@@ -16859,6 +18678,7 @@ IL_013d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3291>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_73 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_74 = ___1_edge2;
 		NullCheck(L_74);
@@ -16870,6 +18690,7 @@ IL_013d:
 
 IL_0179:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3295>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_77 = ___1_edge2;
 		NullCheck(L_77);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_78 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_77->___Bot);
@@ -16882,6 +18703,7 @@ IL_0179:
 		NullCheck(L_83);
 		double L_84 = L_83->___Dx;
 		V_3 = ((double)il2cpp_codegen_subtract(((double)L_79), ((double)(((double)L_82)/L_84))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3296>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_85 = ___2_ip;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_86 = ___2_ip;
 		int64_t L_87 = L_86->___X;
@@ -16897,6 +18719,7 @@ IL_0179:
 
 IL_01ba:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3299>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_92 = ___1_edge2;
 		NullCheck(L_92);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_93 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_92->___Delta);
@@ -16907,12 +18730,14 @@ IL_01ba:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3301>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_95 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_96 = ___1_edge2;
 		NullCheck(L_96);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_97 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_96->___Bot);
 		int64_t L_98 = L_97->___X;
 		L_95->___X = L_98;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3302>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_99 = ___0_edge1;
 		bool L_100;
 		L_100 = ClipperBase_IsHorizontal_m6BAD44CE7EDD2316867C067D25B16BC929CE2674(L_99, NULL);
@@ -16922,6 +18747,7 @@ IL_01ba:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3304>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_101 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_102 = ___0_edge1;
 		NullCheck(L_102);
@@ -16933,6 +18759,7 @@ IL_01ba:
 
 IL_01f6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3308>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_105 = ___0_edge1;
 		NullCheck(L_105);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_106 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_105->___Bot);
@@ -16945,6 +18772,7 @@ IL_01f6:
 		NullCheck(L_111);
 		double L_112 = L_111->___Dx;
 		V_2 = ((double)il2cpp_codegen_subtract(((double)L_107), ((double)(((double)L_110)/L_112))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3309>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_113 = ___2_ip;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_114 = ___2_ip;
 		int64_t L_115 = L_114->___X;
@@ -16960,6 +18788,7 @@ IL_01f6:
 
 IL_0237:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3314>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_120 = ___0_edge1;
 		NullCheck(L_120);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_121 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_120->___Bot);
@@ -16972,6 +18801,7 @@ IL_0237:
 		NullCheck(L_126);
 		double L_127 = L_126->___Dx;
 		V_2 = ((double)il2cpp_codegen_subtract(((double)L_122), ((double)il2cpp_codegen_multiply(((double)L_125), L_127))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3315>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_128 = ___1_edge2;
 		NullCheck(L_128);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_129 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_128->___Bot);
@@ -16984,6 +18814,7 @@ IL_0237:
 		NullCheck(L_134);
 		double L_135 = L_134->___Dx;
 		V_3 = ((double)il2cpp_codegen_subtract(((double)L_130), ((double)il2cpp_codegen_multiply(((double)L_133), L_135))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3316>
 		double L_136 = V_3;
 		double L_137 = V_2;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_138 = ___0_edge1;
@@ -16993,11 +18824,13 @@ IL_0237:
 		NullCheck(L_140);
 		double L_141 = L_140->___Dx;
 		V_4 = ((double)(((double)il2cpp_codegen_subtract(L_136, L_137))/((double)il2cpp_codegen_subtract(L_139, L_141))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3317>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_142 = ___2_ip;
 		double L_143 = V_4;
 		int64_t L_144;
 		L_144 = Clipper_Round_mA77D2621C05B82882ED72BB6E948D007CEC926B2(L_143, NULL);
 		L_142->___Y = L_144;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3318>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_145 = ___0_edge1;
 		NullCheck(L_145);
 		double L_146 = L_145->___Dx;
@@ -17015,6 +18848,7 @@ IL_0237:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3319>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_151 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_152 = ___0_edge1;
 		NullCheck(L_152);
@@ -17029,6 +18863,7 @@ IL_0237:
 
 IL_02c9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3321>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_157 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_158 = ___1_edge2;
 		NullCheck(L_158);
@@ -17042,6 +18877,7 @@ IL_02c9:
 
 IL_02df:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3324>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_163 = ___2_ip;
 		int64_t L_164 = L_163->___Y;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_165 = ___0_edge1;
@@ -17068,6 +18904,7 @@ IL_02df:
 
 IL_0305:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3326>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_173 = ___0_edge1;
 		NullCheck(L_173);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_174 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_173->___Top);
@@ -17082,6 +18919,7 @@ IL_0305:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3327>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_179 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_180 = ___0_edge1;
 		NullCheck(L_180);
@@ -17093,6 +18931,7 @@ IL_0305:
 
 IL_0330:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3329>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_183 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_184 = ___1_edge2;
 		NullCheck(L_184);
@@ -17103,6 +18942,7 @@ IL_0330:
 
 IL_0341:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3330>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_187 = ___0_edge1;
 		NullCheck(L_187);
 		double L_188 = L_187->___Dx;
@@ -17120,6 +18960,7 @@ IL_0341:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3331>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_193 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_194 = ___0_edge1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_195 = ___2_ip;
@@ -17132,6 +18973,7 @@ IL_0341:
 
 IL_036d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3333>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_198 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_199 = ___1_edge2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_200 = ___2_ip;
@@ -17143,6 +18985,7 @@ IL_036d:
 
 IL_037f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3336>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_203 = ___2_ip;
 		int64_t L_204 = L_203->___Y;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_205 = ___0_edge1;
@@ -17155,12 +18998,14 @@ IL_037f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3338>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_208 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_209 = ___0_edge1;
 		NullCheck(L_209);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_210 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_209->___Curr);
 		int64_t L_211 = L_210->___Y;
 		L_208->___Y = L_211;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3340>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_212 = ___0_edge1;
 		NullCheck(L_212);
 		double L_213 = L_212->___Dx;
@@ -17178,6 +19023,7 @@ IL_037f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3341>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_218 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_219 = ___1_edge2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_220 = ___2_ip;
@@ -17190,6 +19036,7 @@ IL_037f:
 
 IL_03ce:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3343>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_223 = ___2_ip;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_224 = ___0_edge1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_225 = ___2_ip;
@@ -17201,9 +19048,11 @@ IL_03ce:
 
 IL_03e0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3345>
 		return;
 	}
 }
+// Method Definition Index: 58070
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessEdgesAtTopOfScanbeam_m6AD0668AC23EEFE993E18C5C190DA39612F2B8BC (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int64_t ___0_topY, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
@@ -17222,6 +19071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessEdgesAtTopOfScanbeam_m6AD
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_12 = NULL;
 	int32_t G_B5_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3351>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		V_0 = L_0;
 		goto IL_015c;
@@ -17229,11 +19079,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ProcessEdgesAtTopOfScanbeam_m6AD
 
 IL_000c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3356>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1 = V_0;
 		int64_t L_2 = ___0_topY;
 		bool L_3;
 		L_3 = Clipper_IsMaxima_mE0DBD58A52930B956A04EEC33CE7444683D560E0(__this, L_1, ((double)L_2), NULL);
 		V_1 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3358>
 		bool L_4 = V_1;
 		if (!L_4)
 		{
@@ -17241,10 +19093,12 @@ IL_000c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3360>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6;
 		L_6 = Clipper_GetMaximaPairEx_mA4F0D5DBDF57152DA6CB784F96FEA4A1E8BBBCB6(__this, L_5, NULL);
 		V_2 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3361>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_7 = V_2;
 		if (!L_7)
 		{
@@ -17271,6 +19125,7 @@ IL_0030:
 
 IL_0031:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3364>
 		bool L_10 = V_1;
 		if (!L_10)
 		{
@@ -17278,6 +19133,7 @@ IL_0031:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3366>
 		bool L_11;
 		L_11 = Clipper_get_StrictlySimple_m0668EAFA6CBFB92C4BA987D31B968956E406DA90_inline(__this, NULL);
 		if (!L_11)
@@ -17286,6 +19142,7 @@ IL_0031:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3366>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = V_0;
 		NullCheck(L_12);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_13 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_12->___Top);
@@ -17295,12 +19152,15 @@ IL_0031:
 
 IL_004d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3367>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_15 = V_0;
 		NullCheck(L_15);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = L_15->___PrevInAEL;
 		V_3 = L_16;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3368>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = V_0;
 		Clipper_DoMaxima_m74C5B15D72E63AB46F7AD86BA78D81A825C8C753(__this, L_17, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3369>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = V_3;
 		if (L_18)
 		{
@@ -17308,6 +19168,7 @@ IL_004d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3369>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		V_0 = L_19;
 		goto IL_015c;
@@ -17315,6 +19176,7 @@ IL_004d:
 
 IL_006a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3370>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = V_3;
 		NullCheck(L_20);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_21 = L_20->___NextInAEL;
@@ -17324,6 +19186,7 @@ IL_006a:
 
 IL_0076:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3375>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_22 = V_0;
 		int64_t L_23 = ___0_topY;
 		bool L_24;
@@ -17345,7 +19208,9 @@ IL_0076:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3377>
 		ClipperBase_UpdateEdgeIntoAEL_m4C4C629344AE2E4072183668434761BF7E4D92DC(__this, (&V_0), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3378>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = V_0;
 		NullCheck(L_28);
 		int32_t L_29 = L_28->___OutIdx;
@@ -17355,6 +19220,7 @@ IL_0076:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3379>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_30 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_31 = V_0;
 		NullCheck(L_31);
@@ -17365,6 +19231,7 @@ IL_0076:
 
 IL_00ad:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3380>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_34 = V_0;
 		Clipper_AddEdgeToSEL_m3B43222EF1A254812F2A7D61AE72959852A7A4A1(__this, L_34, NULL);
 		goto IL_00d4;
@@ -17372,6 +19239,7 @@ IL_00ad:
 
 IL_00b6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3384>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = V_0;
 		NullCheck(L_35);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_36 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_35->___Curr);
@@ -17380,6 +19248,7 @@ IL_00b6:
 		int64_t L_39;
 		L_39 = Clipper_TopX_m8DE68B1C33B15035D802240A279626C5A0AE14B3(L_37, L_38, NULL);
 		L_36->___X = L_39;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3385>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_40 = V_0;
 		NullCheck(L_40);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_41 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_40->___Curr);
@@ -17389,6 +19258,7 @@ IL_00b6:
 
 IL_00d4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3389>
 		bool L_43;
 		L_43 = Clipper_get_StrictlySimple_m0668EAFA6CBFB92C4BA987D31B968956E406DA90_inline(__this, NULL);
 		if (!L_43)
@@ -17397,10 +19267,14 @@ IL_00d4:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3391>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_44 = V_0;
 		NullCheck(L_44);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_45 = L_44->___PrevInAEL;
 		V_4 = L_45;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3392>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3393>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3394>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46 = V_0;
 		NullCheck(L_46);
 		int32_t L_47 = L_46->___OutIdx;
@@ -17458,20 +19332,24 @@ IL_00d4:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3396>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_61 = V_0;
 		NullCheck(L_61);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_62 = L_61->___Curr;
 		IntPoint__ctor_mA6DA01E8192EAB09DAEE3C900A83D4A2E87AA8FE((&V_5), L_62, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3397>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_63 = V_4;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_64 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_65;
 		L_65 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_63, L_64, NULL);
 		V_6 = L_65;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3398>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_66 = V_0;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_67 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_68;
 		L_68 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_66, L_67, NULL);
 		V_7 = L_68;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3399>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_69 = V_6;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_70 = V_7;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_71 = V_5;
@@ -17480,6 +19358,7 @@ IL_00d4:
 
 IL_0155:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3403>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_72 = V_0;
 		NullCheck(L_72);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_73 = L_72->___NextInAEL;
@@ -17488,6 +19367,7 @@ IL_0155:
 
 IL_015c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3352>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_74 = V_0;
 		if (L_74)
 		{
@@ -17495,9 +19375,12 @@ IL_015c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3408>
 		Clipper_ProcessHorizontals_m4B595F375B5DA3AD1DEE1227A0B49CE6C63EAD46(__this, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3409>
 		__this->___m_Maxima = (Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Maxima), (void*)(Maxima_t4C22B463319196F32A8576067BC83E85AFDDA38C*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3412>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_75 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_ActiveEdges;
 		V_0 = L_75;
 		goto IL_0349;
@@ -17505,6 +19388,7 @@ IL_015c:
 
 IL_017b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3415>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_76 = V_0;
 		int64_t L_77 = ___0_topY;
 		bool L_78;
@@ -17515,7 +19399,9 @@ IL_017b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3417>
 		V_8 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3418>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_79 = V_0;
 		NullCheck(L_79);
 		int32_t L_80 = L_79->___OutIdx;
@@ -17525,6 +19411,7 @@ IL_017b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3419>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_81 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_82 = V_0;
 		NullCheck(L_82);
@@ -17536,15 +19423,23 @@ IL_017b:
 
 IL_01a4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3420>
 		ClipperBase_UpdateEdgeIntoAEL_m4C4C629344AE2E4072183668434761BF7E4D92DC(__this, (&V_0), NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3423>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_85 = V_0;
 		NullCheck(L_85);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_86 = L_85->___PrevInAEL;
 		V_9 = L_86;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3424>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_87 = V_0;
 		NullCheck(L_87);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_88 = L_87->___NextInAEL;
 		V_10 = L_88;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3425>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3426>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3427>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3428>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3429>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_89 = V_9;
 		if (!L_89)
 		{
@@ -17649,6 +19544,7 @@ IL_01a4:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3431>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_125 = V_9;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_126 = V_0;
 		NullCheck(L_126);
@@ -17656,6 +19552,7 @@ IL_01a4:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_128;
 		L_128 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_125, L_127, NULL);
 		V_11 = L_128;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3432>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_129 = V_8;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_130 = V_11;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_131 = V_0;
@@ -17667,6 +19564,11 @@ IL_01a4:
 
 IL_0283:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3434>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3435>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3436>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3437>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3438>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_133 = V_10;
 		if (!L_133)
 		{
@@ -17771,6 +19673,7 @@ IL_0283:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3440>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_169 = V_10;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_170 = V_0;
 		NullCheck(L_170);
@@ -17778,6 +19681,7 @@ IL_0283:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_172;
 		L_172 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_169, L_171, NULL);
 		V_12 = L_172;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3441>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_173 = V_8;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_174 = V_12;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_175 = V_0;
@@ -17788,6 +19692,7 @@ IL_0283:
 
 IL_0342:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3444>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_177 = V_0;
 		NullCheck(L_177);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_178 = L_177->___NextInAEL;
@@ -17796,6 +19701,7 @@ IL_0342:
 
 IL_0349:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3413>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_179 = V_0;
 		if (L_179)
 		{
@@ -17803,18 +19709,22 @@ IL_0349:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3446>
 		return;
 	}
 }
+// Method Definition Index: 58071
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DoMaxima_m74C5B15D72E63AB46F7AD86BA78D81A825C8C753 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* ___0_e, const RuntimeMethod* method) 
 {
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_0 = NULL;
 	TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3452>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_0 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_1;
 		L_1 = Clipper_GetMaximaPairEx_mA4F0D5DBDF57152DA6CB784F96FEA4A1E8BBBCB6(__this, L_0, NULL);
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3453>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_2 = V_0;
 		if (L_2)
 		{
@@ -17822,6 +19732,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DoMaxima_m74C5B15D72E63AB46F7AD8
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3455>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_3 = ___0_e;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___OutIdx;
@@ -17831,6 +19742,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DoMaxima_m74C5B15D72E63AB46F7AD8
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3456>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_5 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_6 = ___0_e;
 		NullCheck(L_6);
@@ -17841,13 +19753,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DoMaxima_m74C5B15D72E63AB46F7AD8
 
 IL_0022:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3457>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_9 = ___0_e;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_9, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3458>
 		return;
 	}
 
 IL_002a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3461>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_10 = ___0_e;
 		NullCheck(L_10);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_11 = L_10->___NextInAEL;
@@ -17857,15 +19772,18 @@ IL_002a:
 
 IL_0033:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3464>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_12 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_13 = V_1;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_14 = ___0_e;
 		NullCheck(L_14);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_15 = L_14->___Top;
 		Clipper_IntersectEdges_mD054D64A65188A152D241B4A66A9F4DAF61A5E97(__this, L_12, L_13, L_15, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3465>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_16 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_17 = V_1;
 		ClipperBase_SwapPositionsInAEL_m8115E667C69A638634397D13A4D0C34EA25DCB07(__this, L_16, L_17, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3466>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_18 = ___0_e;
 		NullCheck(L_18);
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_19 = L_18->___NextInAEL;
@@ -17874,6 +19792,7 @@ IL_0033:
 
 IL_0050:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3462>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_20 = V_1;
 		if (!L_20)
 		{
@@ -17891,6 +19810,7 @@ IL_0050:
 
 IL_0057:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3469>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_23 = ___0_e;
 		NullCheck(L_23);
 		int32_t L_24 = L_23->___OutIdx;
@@ -17909,8 +19829,10 @@ IL_0057:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3471>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_27 = ___0_e;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_27, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3472>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_28 = V_0;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_28, NULL);
 		return;
@@ -17918,6 +19840,7 @@ IL_0057:
 
 IL_0078:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3474>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_29 = ___0_e;
 		NullCheck(L_29);
 		int32_t L_30 = L_29->___OutIdx;
@@ -17936,6 +19859,7 @@ IL_0078:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3476>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_33 = ___0_e;
 		NullCheck(L_33);
 		int32_t L_34 = L_33->___OutIdx;
@@ -17945,6 +19869,7 @@ IL_0078:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3476>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_35 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_36 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_37 = ___0_e;
@@ -17955,8 +19880,10 @@ IL_0078:
 
 IL_00a1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3477>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_39 = ___0_e;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_39, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3478>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_40 = V_0;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_40, NULL);
 		return;
@@ -17964,6 +19891,7 @@ IL_00a1:
 
 IL_00b0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3481>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_41 = ___0_e;
 		NullCheck(L_41);
 		int32_t L_42 = L_41->___WindDelta;
@@ -17973,6 +19901,7 @@ IL_00b0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3483>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_43 = ___0_e;
 		NullCheck(L_43);
 		int32_t L_44 = L_43->___OutIdx;
@@ -17982,12 +19911,14 @@ IL_00b0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3485>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_45 = ___0_e;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_46 = ___0_e;
 		NullCheck(L_46);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_47 = L_46->___Top;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_48;
 		L_48 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_45, L_47, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3486>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_49 = ___0_e;
 		NullCheck(L_49);
 		L_49->___OutIdx = (-1);
@@ -17995,8 +19926,10 @@ IL_00b0:
 
 IL_00d6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3488>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_50 = ___0_e;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_50, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3490>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_51 = V_0;
 		NullCheck(L_51);
 		int32_t L_52 = L_51->___OutIdx;
@@ -18006,12 +19939,14 @@ IL_00d6:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3492>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_53 = V_0;
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_54 = ___0_e;
 		NullCheck(L_54);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_55 = L_54->___Top;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_56;
 		L_56 = Clipper_AddOutPt_mC0A2C10B5A7FCCFF77CABD850B17859164EDBBBF(__this, L_53, L_55, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3493>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_57 = V_0;
 		NullCheck(L_57);
 		L_57->___OutIdx = (-1);
@@ -18019,6 +19954,7 @@ IL_00d6:
 
 IL_00fb:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3495>
 		TEdge_t65868A3823C94467F4F0D41207EE29B96912B084* L_58 = V_0;
 		ClipperBase_DeleteFromAEL_mBDD7A633D67B4FE528EF0E1BC18E2997B9ADD996(__this, L_58, NULL);
 		return;
@@ -18026,11 +19962,13 @@ IL_00fb:
 
 IL_0103:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3498>
 		ClipperException_t033D39948325F397A565E04767C45C94FB810C92* L_59 = (ClipperException_t033D39948325F397A565E04767C45C94FB810C92*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ClipperException_t033D39948325F397A565E04767C45C94FB810C92_il2cpp_TypeInfo_var)));
 		ClipperException__ctor_mF1E22950760B1F1C7D5ADE536EACE305D09B8651(L_59, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral93A84290FD8A0638B11D851F370FBED98CE5BA5F)), NULL);
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_59, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Clipper_DoMaxima_m74C5B15D72E63AB46F7AD86BA78D81A825C8C753_RuntimeMethod_var)));
 	}
 }
+// Method Definition Index: 58072
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ReversePaths_m523FCFF78EF4BEBF609D318B0366178AED833CAB (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___0_polys, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18043,25 +19981,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_ReversePaths_m523FCFF78EF4BEBF60
 	}
 	int32_t V_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3505>
 		V_0 = 0;
 		goto IL_0014;
 	}
 
 IL_0004:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3507>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = ___0_polys;
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_2;
 		L_2 = List_1_get_Item_m00185D322E65B59FC4A6FECCF0C712EDCFE7E6DD(L_0, L_1, List_1_get_Item_m00185D322E65B59FC4A6FECCF0C712EDCFE7E6DD_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3508>
 		NullCheck(L_2);
 		List_1_Reverse_mF1CBF6168A0A35AEB533CA9D610558FFEE23E7B0(L_2, List_1_Reverse_mF1CBF6168A0A35AEB533CA9D610558FFEE23E7B0_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3505>
 		int32_t L_3 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_3, 1));
 	}
 
 IL_0014:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3505>
 		int32_t L_4 = V_0;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_5 = ___0_polys;
 		NullCheck(L_5);
@@ -18073,23 +20016,28 @@ IL_0014:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3510>
 		return;
 	}
 }
+// Method Definition Index: 58073
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Orientation_mAA2E77E8CFB335296C5F6DDF07DB62A401674FB6 (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_poly, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3516>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = ___0_poly;
 		double L_1;
 		L_1 = Clipper_Area_m0C8F6E265FB3A731A4BDEA4FAAC2BD11E691BDCF(L_0, NULL);
 		return (bool)((((int32_t)((!(((double)L_1) >= ((double)(0.0))))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
+// Method Definition Index: 58074
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointCount_m88CCAAEDFE45055530FB8008192EA3ECF7E3FBD2 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_pts, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_1 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3523>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_pts;
 		if (L_0)
 		{
@@ -18097,24 +20045,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointCount_m88CCAAEDFE4505553
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3523>
 		return 0;
 	}
 
 IL_0005:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3524>
 		V_0 = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3525>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = ___0_pts;
 		V_1 = L_1;
 	}
 
 IL_0009:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3528>
 		int32_t L_2 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_2, 1));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3529>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_3 = V_1;
 		NullCheck(L_3);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_4 = L_3->___Next;
 		V_1 = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3531>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = ___0_pts;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_5) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_6))))
@@ -18123,10 +20077,12 @@ IL_0009:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3532>
 		int32_t L_7 = V_0;
 		return L_7;
 	}
 }
+// Method Definition Index: 58075
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildResult_mFDFB8C6E1880CA19175F3CE89A95BA8C86DFE10C (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___0_polyg, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18149,9 +20105,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildResult_mFDFB8C6E1880CA19175
 	List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* V_4 = NULL;
 	int32_t V_5 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3539>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = ___0_polyg;
 		NullCheck(L_0);
 		List_1_Clear_mD5A9D76020A82AEC42B9C4870B2D6DB82138E7F8_inline(L_0, List_1_Clear_mD5A9D76020A82AEC42B9C4870B2D6DB82138E7F8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3540>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_1 = ___0_polyg;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_2 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_2);
@@ -18159,18 +20117,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildResult_mFDFB8C6E1880CA19175
 		L_3 = List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_inline(L_2, List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_RuntimeMethod_var);
 		NullCheck(L_1);
 		List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52(L_1, L_3, List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3541>
 		V_0 = 0;
 		goto IL_0080;
 	}
 
 IL_001b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3543>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_4 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_6;
 		L_6 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_4, L_5, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_1 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3544>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_7 = V_1;
 		NullCheck(L_7);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = L_7->___Pts;
@@ -18180,16 +20141,19 @@ IL_001b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3545>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_9 = V_1;
 		NullCheck(L_9);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_10 = L_9->___Pts;
 		NullCheck(L_10);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = L_10->___Prev;
 		V_2 = L_11;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3546>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_12 = V_2;
 		int32_t L_13;
 		L_13 = Clipper_PointCount_m88CCAAEDFE45055530FB8008192EA3ECF7E3FBD2(__this, L_12, NULL);
 		V_3 = L_13;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3547>
 		int32_t L_14 = V_3;
 		if ((((int32_t)L_14) < ((int32_t)2)))
 		{
@@ -18197,32 +20161,38 @@ IL_001b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3548>
 		int32_t L_15 = V_3;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_16 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118(L_16, L_15, List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118_RuntimeMethod_var);
 		V_4 = L_16;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3549>
 		V_5 = 0;
 		goto IL_006f;
 	}
 
 IL_0055:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3551>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_17 = V_4;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_18 = V_2;
 		NullCheck(L_18);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_19 = L_18->___Pt;
 		NullCheck(L_17);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_17, L_19, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3552>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_20 = V_2;
 		NullCheck(L_20);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_21 = L_20->___Prev;
 		V_2 = L_21;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3549>
 		int32_t L_22 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_22, 1));
 	}
 
 IL_006f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3549>
 		int32_t L_23 = V_5;
 		int32_t L_24 = V_3;
 		if ((((int32_t)L_23) < ((int32_t)L_24)))
@@ -18231,6 +20201,7 @@ IL_006f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3554>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_25 = ___0_polyg;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_26 = V_4;
 		NullCheck(L_25);
@@ -18239,12 +20210,14 @@ IL_006f:
 
 IL_007c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3541>
 		int32_t L_27 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 	}
 
 IL_0080:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3541>
 		int32_t L_28 = V_0;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_29 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_29);
@@ -18256,9 +20229,11 @@ IL_0080:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3556>
 		return;
 	}
 }
+// Method Definition Index: 58076
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildResult2_m7367CEEAB529E9B4CA1E7F8888910375F44F8E63 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* ___0_polytree, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18282,9 +20257,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildResult2_m7367CEEAB529E9B4CA
 	int32_t V_6 = 0;
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_7 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3562>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_0 = ___0_polytree;
 		NullCheck(L_0);
 		PolyTree_Clear_m4EE08CDE266753595E9B4A79A6B363EEE4CC9C43(L_0, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3565>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_1 = ___0_polytree;
 		NullCheck(L_1);
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_2 = L_1->___m_AllPolys;
@@ -18294,24 +20271,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_BuildResult2_m7367CEEAB529E9B4CA
 		L_4 = List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_inline(L_3, List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_RuntimeMethod_var);
 		NullCheck(L_2);
 		List_1_set_Capacity_m887CD2A0FA74EBC6E36D2481A62E7825FDF95D79(L_2, L_4, List_1_set_Capacity_m887CD2A0FA74EBC6E36D2481A62E7825FDF95D79_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3566>
 		V_0 = 0;
 		goto IL_00bd;
 	}
 
 IL_0023:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3568>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_5 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_7;
 		L_7 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_5, L_6, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_1 = L_7;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3569>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_8 = V_1;
 		NullCheck(L_8);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = L_8->___Pts;
 		int32_t L_10;
 		L_10 = Clipper_PointCount_m88CCAAEDFE45055530FB8008192EA3ECF7E3FBD2(__this, L_9, NULL);
 		V_2 = L_10;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3570>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3571>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_11 = V_1;
 		NullCheck(L_11);
 		bool L_12 = L_11->___IsOpen;
@@ -18348,40 +20330,48 @@ IL_0049:
 
 IL_0055:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3572>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_17 = V_1;
 		Clipper_FixHoleLinkage_m4B62F6906FD04FECBCE2F457400B2CC33694F834(__this, L_17, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3573>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_18 = (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)il2cpp_codegen_object_new(PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC_il2cpp_TypeInfo_var);
 		PolyNode__ctor_mC3D70892D4FF7F6870DA40C31CDC5826588606CF(L_18, NULL);
 		V_3 = L_18;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3574>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_19 = ___0_polytree;
 		NullCheck(L_19);
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_20 = L_19->___m_AllPolys;
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_21 = V_3;
 		NullCheck(L_20);
 		List_1_Add_m3BAB6E2984D947EEF9D53C7CA3366BF8833AE576_inline(L_20, L_21, List_1_Add_m3BAB6E2984D947EEF9D53C7CA3366BF8833AE576_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3575>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_22 = V_1;
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_23 = V_3;
 		NullCheck(L_22);
 		L_22->___PolyNode = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___PolyNode), (void*)L_23);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3576>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_24 = V_3;
 		NullCheck(L_24);
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_25 = L_24->___m_polygon;
 		int32_t L_26 = V_2;
 		NullCheck(L_25);
 		List_1_set_Capacity_mF6F00ACBA96AF511AF5B6034DB33704B386F877C(L_25, L_26, List_1_set_Capacity_mF6F00ACBA96AF511AF5B6034DB33704B386F877C_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3577>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_27 = V_1;
 		NullCheck(L_27);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_28 = L_27->___Pts;
 		NullCheck(L_28);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_29 = L_28->___Prev;
 		V_4 = L_29;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3578>
 		V_5 = 0;
 		goto IL_00b4;
 	}
 
 IL_0093:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3580>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_30 = V_3;
 		NullCheck(L_30);
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_31 = L_30->___m_polygon;
@@ -18390,16 +20380,19 @@ IL_0093:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_33 = L_32->___Pt;
 		NullCheck(L_31);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_31, L_33, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3581>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_34 = V_4;
 		NullCheck(L_34);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_35 = L_34->___Prev;
 		V_4 = L_35;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3578>
 		int32_t L_36 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_36, 1));
 	}
 
 IL_00b4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3578>
 		int32_t L_37 = V_5;
 		int32_t L_38 = V_2;
 		if ((((int32_t)L_37) < ((int32_t)L_38)))
@@ -18410,12 +20403,14 @@ IL_00b4:
 
 IL_00b9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3566>
 		int32_t L_39 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_39, 1));
 	}
 
 IL_00bd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3566>
 		int32_t L_40 = V_0;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_41 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_41);
@@ -18427,6 +20422,7 @@ IL_00bd:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3586>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_43 = ___0_polytree;
 		NullCheck(L_43);
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_44 = ((PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC*)L_43)->___m_Childs;
@@ -18436,18 +20432,21 @@ IL_00bd:
 		L_46 = List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_inline(L_45, List_1_get_Count_mBD8539F3327317A4177F8BF878E3638CB911462C_RuntimeMethod_var);
 		NullCheck(L_44);
 		List_1_set_Capacity_m887CD2A0FA74EBC6E36D2481A62E7825FDF95D79(L_44, L_46, List_1_set_Capacity_m887CD2A0FA74EBC6E36D2481A62E7825FDF95D79_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3587>
 		V_6 = 0;
 		goto IL_016d;
 	}
 
 IL_00ec:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3589>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_47 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		int32_t L_48 = V_6;
 		NullCheck(L_47);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_49;
 		L_49 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_47, L_48, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_7 = L_49;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3590>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_50 = V_7;
 		NullCheck(L_50);
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_51 = L_50->___PolyNode;
@@ -18457,6 +20456,7 @@ IL_00ec:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3591>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_52 = V_7;
 		NullCheck(L_52);
 		bool L_53 = L_52->___IsOpen;
@@ -18466,11 +20466,13 @@ IL_00ec:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3593>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_54 = V_7;
 		NullCheck(L_54);
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_55 = L_54->___PolyNode;
 		NullCheck(L_55);
 		PolyNode_set_IsOpen_m2242B21BDCDB2E105ED4EBCD63F89F602047F629_inline(L_55, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3594>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_56 = ___0_polytree;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_57 = V_7;
 		NullCheck(L_57);
@@ -18482,6 +20484,8 @@ IL_00ec:
 
 IL_0129:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3596>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3597>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_59 = V_7;
 		NullCheck(L_59);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_60 = L_59->___FirstLeft;
@@ -18502,6 +20506,7 @@ IL_0129:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3598>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_64 = V_7;
 		NullCheck(L_64);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_65 = L_64->___FirstLeft;
@@ -18517,6 +20522,7 @@ IL_0129:
 
 IL_015a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3600>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_69 = ___0_polytree;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_70 = V_7;
 		NullCheck(L_70);
@@ -18527,12 +20533,14 @@ IL_015a:
 
 IL_0167:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3587>
 		int32_t L_72 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_72, 1));
 	}
 
 IL_016d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3587>
 		int32_t L_73 = V_6;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_74 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_74);
@@ -18544,19 +20552,23 @@ IL_016d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3602>
 		return;
 	}
 }
+// Method Definition Index: 58077
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupOutPolyline_mD67B3527E6C50388E6E4A5610072C0340209E483 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_outrec, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_1 = NULL;
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_2 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3608>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_outrec;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___Pts;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3609>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = V_0;
 		NullCheck(L_2);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_3 = L_2->___Prev;
@@ -18566,10 +20578,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupOutPolyline_mD67B3527E6C503
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3612>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_4 = V_0;
 		NullCheck(L_4);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = L_4->___Next;
 		V_0 = L_5;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3613>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = V_0;
 		NullCheck(L_6);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_7 = L_6->___Pt;
@@ -18586,6 +20600,7 @@ IL_0010:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3615>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_12 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_13 = V_1;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_12) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_13))))
@@ -18594,6 +20609,7 @@ IL_0010:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3615>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_14 = V_0;
 		NullCheck(L_14);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_15 = L_14->___Prev;
@@ -18602,10 +20618,12 @@ IL_0010:
 
 IL_003a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3616>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_16 = V_0;
 		NullCheck(L_16);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_17 = L_16->___Prev;
 		V_2 = L_17;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3617>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_18 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_19 = V_0;
 		NullCheck(L_19);
@@ -18613,6 +20631,7 @@ IL_003a:
 		NullCheck(L_18);
 		L_18->___Next = L_20;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___Next), (void*)L_20);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3618>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_21 = V_0;
 		NullCheck(L_21);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_22 = L_21->___Next;
@@ -18620,12 +20639,14 @@ IL_003a:
 		NullCheck(L_22);
 		L_22->___Prev = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___Prev), (void*)L_23);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3619>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_24 = V_2;
 		V_0 = L_24;
 	}
 
 IL_005b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3610>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_25 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_26 = V_1;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_25) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_26))))
@@ -18634,6 +20655,7 @@ IL_005b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3622>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_27 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_28 = V_0;
 		NullCheck(L_28);
@@ -18644,6 +20666,7 @@ IL_005b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3622>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_30 = ___0_outrec;
 		NullCheck(L_30);
 		L_30->___Pts = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
@@ -18652,9 +20675,11 @@ IL_005b:
 
 IL_006f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3623>
 		return;
 	}
 }
+// Method Definition Index: 58078
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupOutPolygon_m85287817B16BDE7470C3BC58DD1C203298F6D299 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_outRec, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
@@ -18662,15 +20687,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupOutPolygon_m85287817B16BDE7
 	bool V_2 = false;
 	int32_t G_B3_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3631>
 		V_0 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3632>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_outRec;
 		NullCheck(L_0);
 		L_0->___BottomPt = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_0->___BottomPt), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3633>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_1 = ___0_outRec;
 		NullCheck(L_1);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = L_1->___Pts;
 		V_1 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3634>
 		bool L_3;
 		L_3 = ClipperBase_get_PreserveCollinear_m9D2B1A1F052450CACBF3905CA51A50A1BE37B4C2_inline(__this, NULL);
 		if (L_3)
@@ -18697,6 +20726,7 @@ IL_0021:
 
 IL_0022:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3637>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = V_1;
 		NullCheck(L_5);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = L_5->___Prev;
@@ -18721,15 +20751,20 @@ IL_0022:
 
 IL_0039:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3639>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_12 = ___0_outRec;
 		NullCheck(L_12);
 		L_12->___Pts = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_12->___Pts), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3640>
 		return;
 	}
 
 IL_0041:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3643>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3644>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3645>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_13 = V_1;
 		NullCheck(L_13);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_14 = L_13->___Pt;
@@ -18814,7 +20849,9 @@ IL_0041:
 
 IL_00c1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3647>
 		V_0 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3648>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_45 = V_1;
 		NullCheck(L_45);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_46 = L_45->___Prev;
@@ -18824,6 +20861,7 @@ IL_00c1:
 		NullCheck(L_46);
 		L_46->___Next = L_48;
 		Il2CppCodeGenWriteBarrier((void**)(&L_46->___Next), (void*)L_48);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3649>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49 = V_1;
 		NullCheck(L_49);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_50 = L_49->___Next;
@@ -18833,6 +20871,7 @@ IL_00c1:
 		NullCheck(L_50);
 		L_50->___Prev = L_52;
 		Il2CppCodeGenWriteBarrier((void**)(&L_50->___Prev), (void*)L_52);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3650>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_53 = V_1;
 		NullCheck(L_53);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_54 = L_53->___Prev;
@@ -18842,6 +20881,7 @@ IL_00c1:
 
 IL_00f1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3652>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_55 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_56 = V_0;
 		if ((((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_55) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_56)))
@@ -18850,6 +20890,7 @@ IL_00f1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3655>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_57 = V_0;
 		if (L_57)
 		{
@@ -18857,12 +20898,14 @@ IL_00f1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3655>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_58 = V_1;
 		V_0 = L_58;
 	}
 
 IL_00fa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3656>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_59 = V_1;
 		NullCheck(L_59);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_60 = L_59->___Next;
@@ -18872,14 +20915,17 @@ IL_00fa:
 
 IL_0106:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3659>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_61 = ___0_outRec;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_62 = V_1;
 		NullCheck(L_61);
 		L_61->___Pts = L_62;
 		Il2CppCodeGenWriteBarrier((void**)(&L_61->___Pts), (void*)L_62);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3660>
 		return;
 	}
 }
+// Method Definition Index: 58079
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_outPt, bool ___1_InsertAfter, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18890,21 +20936,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 	}
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3666>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)il2cpp_codegen_object_new(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE_il2cpp_TypeInfo_var);
 		OutPt__ctor_mCE53B6D8295199ABEC9AB5648E09C9F365A12F27(L_0, NULL);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3667>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = ___0_outPt;
 		NullCheck(L_2);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_3 = L_2->___Pt;
 		NullCheck(L_1);
 		L_1->___Pt = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3668>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_4 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = ___0_outPt;
 		NullCheck(L_5);
 		int32_t L_6 = L_5->___Idx;
 		NullCheck(L_4);
 		L_4->___Idx = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3669>
 		bool L_7 = ___1_InsertAfter;
 		if (!L_7)
 		{
@@ -18912,6 +20962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3671>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = ___0_outPt;
 		NullCheck(L_9);
@@ -18919,11 +20970,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		NullCheck(L_8);
 		L_8->___Next = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&L_8->___Next), (void*)L_10);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3672>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_12 = ___0_outPt;
 		NullCheck(L_11);
 		L_11->___Prev = L_12;
 		Il2CppCodeGenWriteBarrier((void**)(&L_11->___Prev), (void*)L_12);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3673>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_13 = ___0_outPt;
 		NullCheck(L_13);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_14 = L_13->___Next;
@@ -18931,6 +20984,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		NullCheck(L_14);
 		L_14->___Prev = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&L_14->___Prev), (void*)L_15);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3674>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_16 = ___0_outPt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_17 = V_0;
 		NullCheck(L_16);
@@ -18941,6 +20995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 
 IL_0049:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3678>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_18 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_19 = ___0_outPt;
 		NullCheck(L_19);
@@ -18948,11 +21003,13 @@ IL_0049:
 		NullCheck(L_18);
 		L_18->___Prev = L_20;
 		Il2CppCodeGenWriteBarrier((void**)(&L_18->___Prev), (void*)L_20);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3679>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_21 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_22 = ___0_outPt;
 		NullCheck(L_21);
 		L_21->___Next = L_22;
 		Il2CppCodeGenWriteBarrier((void**)(&L_21->___Next), (void*)L_22);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3680>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_23 = ___0_outPt;
 		NullCheck(L_23);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_24 = L_23->___Prev;
@@ -18960,6 +21017,7 @@ IL_0049:
 		NullCheck(L_24);
 		L_24->___Next = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&L_24->___Next), (void*)L_25);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3681>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_26 = ___0_outPt;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_27 = V_0;
 		NullCheck(L_26);
@@ -18969,10 +21027,12 @@ IL_0049:
 
 IL_006f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3683>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_28 = V_0;
 		return L_28;
 	}
 }
+// Method Definition Index: 58080
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_GetOverlap_m42026FC20CD4FBF2C537B7829B968504C9986E56 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, int64_t ___0_a1, int64_t ___1_a2, int64_t ___2_b1, int64_t ___3_b2, int64_t* ___4_Left, int64_t* ___5_Right, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18982,6 +21042,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_GetOverlap_m42026FC20CD4FBF2C537
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3690>
 		int64_t L_0 = ___0_a1;
 		int64_t L_1 = ___1_a2;
 		if ((((int64_t)L_0) >= ((int64_t)L_1)))
@@ -18990,6 +21051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_GetOverlap_m42026FC20CD4FBF2C537
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3692>
 		int64_t L_2 = ___2_b1;
 		int64_t L_3 = ___3_b2;
 		if ((((int64_t)L_2) >= ((int64_t)L_3)))
@@ -18998,6 +21060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_GetOverlap_m42026FC20CD4FBF2C537
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3692>
 		int64_t* L_4 = ___4_Left;
 		int64_t L_5 = ___0_a1;
 		int64_t L_6 = ___2_b1;
@@ -19005,6 +21068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_GetOverlap_m42026FC20CD4FBF2C537
 		int64_t L_7;
 		L_7 = Math_Max_mD37411571F0547F04F280D5A8D1F044819AFA597(L_5, L_6, NULL);
 		*((int64_t*)L_4) = (int64_t)L_7;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3692>
 		int64_t* L_8 = ___5_Right;
 		int64_t L_9 = ___1_a2;
 		int64_t L_10 = ___3_b2;
@@ -19016,6 +21080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_GetOverlap_m42026FC20CD4FBF2C537
 
 IL_0020:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3693>
 		int64_t* L_12 = ___4_Left;
 		int64_t L_13 = ___0_a1;
 		int64_t L_14 = ___3_b2;
@@ -19023,6 +21088,7 @@ IL_0020:
 		int64_t L_15;
 		L_15 = Math_Max_mD37411571F0547F04F280D5A8D1F044819AFA597(L_13, L_14, NULL);
 		*((int64_t*)L_12) = (int64_t)L_15;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3693>
 		int64_t* L_16 = ___5_Right;
 		int64_t L_17 = ___1_a2;
 		int64_t L_18 = ___2_b1;
@@ -19034,6 +21100,7 @@ IL_0020:
 
 IL_0037:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3697>
 		int64_t L_20 = ___2_b1;
 		int64_t L_21 = ___3_b2;
 		if ((((int64_t)L_20) >= ((int64_t)L_21)))
@@ -19042,6 +21109,7 @@ IL_0037:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3697>
 		int64_t* L_22 = ___4_Left;
 		int64_t L_23 = ___1_a2;
 		int64_t L_24 = ___2_b1;
@@ -19049,6 +21117,7 @@ IL_0037:
 		int64_t L_25;
 		L_25 = Math_Max_mD37411571F0547F04F280D5A8D1F044819AFA597(L_23, L_24, NULL);
 		*((int64_t*)L_22) = (int64_t)L_25;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3697>
 		int64_t* L_26 = ___5_Right;
 		int64_t L_27 = ___0_a1;
 		int64_t L_28 = ___3_b2;
@@ -19060,6 +21129,7 @@ IL_0037:
 
 IL_0053:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3698>
 		int64_t* L_30 = ___4_Left;
 		int64_t L_31 = ___1_a2;
 		int64_t L_32 = ___3_b2;
@@ -19067,6 +21137,7 @@ IL_0053:
 		int64_t L_33;
 		L_33 = Math_Max_mD37411571F0547F04F280D5A8D1F044819AFA597(L_31, L_32, NULL);
 		*((int64_t*)L_30) = (int64_t)L_33;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3698>
 		int64_t* L_34 = ___5_Right;
 		int64_t L_35 = ___0_a1;
 		int64_t L_36 = ___2_b1;
@@ -19077,6 +21148,7 @@ IL_0053:
 
 IL_0068:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3700>
 		int64_t* L_38 = ___4_Left;
 		int64_t L_39 = *((int64_t*)L_38);
 		int64_t* L_40 = ___5_Right;
@@ -19084,6 +21156,7 @@ IL_0068:
 		return (bool)((((int64_t)L_39) < ((int64_t)L_41))? 1 : 0);
 	}
 }
+// Method Definition Index: 58081
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_JoinHorz_mB4DCBF754F6D3F2FA0E3E1226E8830846B0FA549 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_op1, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___1_op1b, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___2_op2, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___3_op2b, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___4_Pt, bool ___5_DiscardLeft, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -19091,6 +21164,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_JoinHorz_mB4DCBF754F6D3F2FA0E3E1
 	int32_t G_B3_0 = 0;
 	int32_t G_B6_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3708>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3709>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_op1;
 		NullCheck(L_0);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_1 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_0->___Pt);
@@ -19117,6 +21192,8 @@ IL_001b:
 IL_001c:
 	{
 		V_0 = G_B3_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3710>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3711>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = ___2_op2;
 		NullCheck(L_6);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_7 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_6->___Pt);
@@ -19143,6 +21220,7 @@ IL_0039:
 IL_003a:
 	{
 		V_1 = G_B6_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3712>
 		int32_t L_12 = V_0;
 		int32_t L_13 = V_1;
 		if ((!(((uint32_t)L_12) == ((uint32_t)L_13))))
@@ -19151,11 +21229,13 @@ IL_003a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3712>
 		return (bool)0;
 	}
 
 IL_0041:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3719>
 		int32_t L_14 = V_0;
 		if ((!(((uint32_t)L_14) == ((uint32_t)1))))
 		{
@@ -19168,6 +21248,7 @@ IL_0041:
 
 IL_004a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3723>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_15 = ___0_op1;
 		NullCheck(L_15);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_16 = L_15->___Next;
@@ -19176,6 +21257,8 @@ IL_004a:
 
 IL_0052:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3721>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3722>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_17 = ___0_op1;
 		NullCheck(L_17);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_18 = L_17->___Next;
@@ -19222,6 +21305,7 @@ IL_0052:
 
 IL_00a1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3724>
 		bool L_36 = ___5_DiscardLeft;
 		if (!L_36)
 		{
@@ -19241,6 +21325,7 @@ IL_00a1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3724>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_42 = ___0_op1;
 		NullCheck(L_42);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_43 = L_42->___Next;
@@ -19249,11 +21334,13 @@ IL_00a1:
 
 IL_00c1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3725>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_44 = ___0_op1;
 		bool L_45 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_46;
 		L_46 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_44, (bool)((((int32_t)L_45) == ((int32_t)0))? 1 : 0), NULL);
 		___1_op1b = L_46;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3726>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_47 = ___1_op1b;
 		NullCheck(L_47);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_48 = L_47->___Pt;
@@ -19266,12 +21353,15 @@ IL_00c1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3728>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_51 = ___1_op1b;
 		___0_op1 = L_51;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3729>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_52 = ___0_op1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_53 = ___4_Pt;
 		NullCheck(L_52);
 		L_52->___Pt = L_53;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3730>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_54 = ___0_op1;
 		bool L_55 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_56;
@@ -19282,6 +21372,7 @@ IL_00c1:
 
 IL_00ff:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3737>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_57 = ___0_op1;
 		NullCheck(L_57);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_58 = L_57->___Next;
@@ -19290,6 +21381,8 @@ IL_00ff:
 
 IL_0107:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3735>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3736>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_59 = ___0_op1;
 		NullCheck(L_59);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_60 = L_59->___Next;
@@ -19336,6 +21429,7 @@ IL_0107:
 
 IL_0156:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3738>
 		bool L_78 = ___5_DiscardLeft;
 		if (L_78)
 		{
@@ -19355,6 +21449,7 @@ IL_0156:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3738>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_84 = ___0_op1;
 		NullCheck(L_84);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_85 = L_84->___Next;
@@ -19363,11 +21458,13 @@ IL_0156:
 
 IL_0176:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3739>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_86 = ___0_op1;
 		bool L_87 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_88;
 		L_88 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_86, L_87, NULL);
 		___1_op1b = L_88;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3740>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_89 = ___1_op1b;
 		NullCheck(L_89);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_90 = L_89->___Pt;
@@ -19380,12 +21477,15 @@ IL_0176:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3742>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_93 = ___1_op1b;
 		___0_op1 = L_93;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3743>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_94 = ___0_op1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_95 = ___4_Pt;
 		NullCheck(L_94);
 		L_94->___Pt = L_95;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3744>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_96 = ___0_op1;
 		bool L_97 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_98;
@@ -19395,6 +21495,7 @@ IL_0176:
 
 IL_01a6:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3748>
 		int32_t L_99 = V_1;
 		if ((!(((uint32_t)L_99) == ((uint32_t)1))))
 		{
@@ -19407,6 +21508,7 @@ IL_01a6:
 
 IL_01af:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3752>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_100 = ___2_op2;
 		NullCheck(L_100);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_101 = L_100->___Next;
@@ -19415,6 +21517,8 @@ IL_01af:
 
 IL_01b7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3750>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3751>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_102 = ___2_op2;
 		NullCheck(L_102);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_103 = L_102->___Next;
@@ -19461,6 +21565,7 @@ IL_01b7:
 
 IL_0206:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3753>
 		bool L_121 = ___5_DiscardLeft;
 		if (!L_121)
 		{
@@ -19480,6 +21585,7 @@ IL_0206:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3753>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_127 = ___2_op2;
 		NullCheck(L_127);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_128 = L_127->___Next;
@@ -19488,11 +21594,13 @@ IL_0206:
 
 IL_0226:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3754>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_129 = ___2_op2;
 		bool L_130 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_131;
 		L_131 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_129, (bool)((((int32_t)L_130) == ((int32_t)0))? 1 : 0), NULL);
 		___3_op2b = L_131;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3755>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_132 = ___3_op2b;
 		NullCheck(L_132);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_133 = L_132->___Pt;
@@ -19505,12 +21613,15 @@ IL_0226:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3757>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_136 = ___3_op2b;
 		___2_op2 = L_136;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3758>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_137 = ___2_op2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_138 = ___4_Pt;
 		NullCheck(L_137);
 		L_137->___Pt = L_138;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3759>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_139 = ___2_op2;
 		bool L_140 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_141;
@@ -19521,6 +21632,7 @@ IL_0226:
 
 IL_0266:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3766>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_142 = ___2_op2;
 		NullCheck(L_142);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_143 = L_142->___Next;
@@ -19529,6 +21641,8 @@ IL_0266:
 
 IL_026e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3764>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3765>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_144 = ___2_op2;
 		NullCheck(L_144);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_145 = L_144->___Next;
@@ -19575,6 +21689,7 @@ IL_026e:
 
 IL_02bd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3767>
 		bool L_163 = ___5_DiscardLeft;
 		if (L_163)
 		{
@@ -19594,6 +21709,7 @@ IL_02bd:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3767>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_169 = ___2_op2;
 		NullCheck(L_169);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_170 = L_169->___Next;
@@ -19602,11 +21718,13 @@ IL_02bd:
 
 IL_02dd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3768>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_171 = ___2_op2;
 		bool L_172 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_173;
 		L_173 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_171, L_172, NULL);
 		___3_op2b = L_173;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3769>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_174 = ___3_op2b;
 		NullCheck(L_174);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_175 = L_174->___Pt;
@@ -19619,12 +21737,15 @@ IL_02dd:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3771>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_178 = ___3_op2b;
 		___2_op2 = L_178;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3772>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_179 = ___2_op2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_180 = ___4_Pt;
 		NullCheck(L_179);
 		L_179->___Pt = L_180;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3773>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_181 = ___2_op2;
 		bool L_182 = ___5_DiscardLeft;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_183;
@@ -19634,6 +21755,7 @@ IL_02dd:
 
 IL_030f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3777>
 		int32_t L_184 = V_0;
 		bool L_185 = ___5_DiscardLeft;
 		if ((!(((uint32_t)((((int32_t)L_184) == ((int32_t)1))? 1 : 0)) == ((uint32_t)L_185))))
@@ -19642,21 +21764,25 @@ IL_030f:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3779>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_186 = ___0_op1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_187 = ___2_op2;
 		NullCheck(L_186);
 		L_186->___Prev = L_187;
 		Il2CppCodeGenWriteBarrier((void**)(&L_186->___Prev), (void*)L_187);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3780>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_188 = ___2_op2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_189 = ___0_op1;
 		NullCheck(L_188);
 		L_188->___Next = L_189;
 		Il2CppCodeGenWriteBarrier((void**)(&L_188->___Next), (void*)L_189);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3781>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_190 = ___1_op1b;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_191 = ___3_op2b;
 		NullCheck(L_190);
 		L_190->___Next = L_191;
 		Il2CppCodeGenWriteBarrier((void**)(&L_190->___Next), (void*)L_191);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3782>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_192 = ___3_op2b;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_193 = ___1_op1b;
 		NullCheck(L_192);
@@ -19667,21 +21793,25 @@ IL_030f:
 
 IL_0337:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3786>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_194 = ___0_op1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_195 = ___2_op2;
 		NullCheck(L_194);
 		L_194->___Next = L_195;
 		Il2CppCodeGenWriteBarrier((void**)(&L_194->___Next), (void*)L_195);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3787>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_196 = ___2_op2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_197 = ___0_op1;
 		NullCheck(L_196);
 		L_196->___Prev = L_197;
 		Il2CppCodeGenWriteBarrier((void**)(&L_196->___Prev), (void*)L_197);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3788>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_198 = ___1_op1b;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_199 = ___3_op2b;
 		NullCheck(L_198);
 		L_198->___Prev = L_199;
 		Il2CppCodeGenWriteBarrier((void**)(&L_198->___Prev), (void*)L_199);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3789>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_200 = ___3_op2b;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_201 = ___1_op1b;
 		NullCheck(L_200);
@@ -19691,9 +21821,11 @@ IL_0337:
 
 IL_0355:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3791>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58082
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_JoinPoints_m423275BB6DCB14C4DF436FB1EFC114FD6D1B3A80 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* ___0_j, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___1_outRec1, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___2_outRec2, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
@@ -19713,14 +21845,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_JoinPoints_m423275BB6DCB14C4DF43
 	int32_t G_B65_0 = 0;
 	int32_t G_B80_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3798>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_0 = ___0_j;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___OutPt1;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3799>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_2 = ___0_j;
 		NullCheck(L_2);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_3 = L_2->___OutPt2;
 		V_2 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3808>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_4 = ___0_j;
 		NullCheck(L_4);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = L_4->___OutPt1;
@@ -19732,6 +21867,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_JoinPoints_m423275BB6DCB14C4DF43
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_9 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_8->___OffPt);
 		int64_t L_10 = L_9->___Y;
 		V_4 = (bool)((((int64_t)L_7) == ((int64_t)L_10))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3810>
 		bool L_11 = V_4;
 		if (!L_11)
 		{
@@ -19771,6 +21907,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_JoinPoints_m423275BB6DCB14C4DF43
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3813>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_24 = ___1_outRec1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_25 = ___2_outRec2;
 		if ((((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_24) == ((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_25)))
@@ -19779,11 +21916,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_JoinPoints_m423275BB6DCB14C4DF43
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3813>
 		return (bool)0;
 	}
 
 IL_0070:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3814>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_26 = ___0_j;
 		NullCheck(L_26);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_27 = L_26->___OutPt1;
@@ -19795,6 +21934,7 @@ IL_0070:
 
 IL_007e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3816>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_29 = V_1;
 		NullCheck(L_29);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_30 = L_29->___Next;
@@ -19803,6 +21943,7 @@ IL_007e:
 
 IL_0085:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3815>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_31 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_32 = V_0;
 		if ((((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_31) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_32)))
@@ -19827,6 +21968,7 @@ IL_0085:
 
 IL_009c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3817>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_38 = V_1;
 		NullCheck(L_38);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_39 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_38->___Pt);
@@ -19836,6 +21978,7 @@ IL_009c:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_42 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_41->___OffPt);
 		int64_t L_43 = L_42->___Y;
 		V_5 = (bool)((((int64_t)L_40) > ((int64_t)L_43))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3818>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_44 = ___0_j;
 		NullCheck(L_44);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_45 = L_44->___OutPt2;
@@ -19847,6 +21990,7 @@ IL_009c:
 
 IL_00c4:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3820>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_47 = V_3;
 		NullCheck(L_47);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_48 = L_47->___Next;
@@ -19855,6 +21999,7 @@ IL_00c4:
 
 IL_00cb:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3819>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_50 = V_2;
 		if ((((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_49) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_50)))
@@ -19879,6 +22024,7 @@ IL_00cb:
 
 IL_00e2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3821>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_56 = V_3;
 		NullCheck(L_56);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_57 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_56->___Pt);
@@ -19888,6 +22034,7 @@ IL_00e2:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_60 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_59->___OffPt);
 		int64_t L_61 = L_60->___Y;
 		V_6 = (bool)((((int64_t)L_58) > ((int64_t)L_61))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3822>
 		bool L_62 = V_5;
 		bool L_63 = V_6;
 		if ((!(((uint32_t)L_62) == ((uint32_t)L_63))))
@@ -19896,11 +22043,13 @@ IL_00e2:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3822>
 		return (bool)0;
 	}
 
 IL_0104:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3823>
 		bool L_64 = V_5;
 		if (!L_64)
 		{
@@ -19908,92 +22057,111 @@ IL_0104:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3825>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_65 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_66;
 		L_66 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_65, (bool)0, NULL);
 		V_1 = L_66;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3826>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_67 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_68;
 		L_68 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_67, (bool)1, NULL);
 		V_3 = L_68;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3827>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_69 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_70 = V_2;
 		NullCheck(L_69);
 		L_69->___Prev = L_70;
 		Il2CppCodeGenWriteBarrier((void**)(&L_69->___Prev), (void*)L_70);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3828>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_71 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_72 = V_0;
 		NullCheck(L_71);
 		L_71->___Next = L_72;
 		Il2CppCodeGenWriteBarrier((void**)(&L_71->___Next), (void*)L_72);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3829>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_73 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_74 = V_3;
 		NullCheck(L_73);
 		L_73->___Next = L_74;
 		Il2CppCodeGenWriteBarrier((void**)(&L_73->___Next), (void*)L_74);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3830>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_75 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_76 = V_1;
 		NullCheck(L_75);
 		L_75->___Prev = L_76;
 		Il2CppCodeGenWriteBarrier((void**)(&L_75->___Prev), (void*)L_76);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3831>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_77 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_78 = V_0;
 		NullCheck(L_77);
 		L_77->___OutPt1 = L_78;
 		Il2CppCodeGenWriteBarrier((void**)(&L_77->___OutPt1), (void*)L_78);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3832>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_79 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_80 = V_1;
 		NullCheck(L_79);
 		L_79->___OutPt2 = L_80;
 		Il2CppCodeGenWriteBarrier((void**)(&L_79->___OutPt2), (void*)L_80);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3833>
 		return (bool)1;
 	}
 
 IL_0146:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3837>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_81 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_82;
 		L_82 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_81, (bool)1, NULL);
 		V_1 = L_82;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3838>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_83 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_84;
 		L_84 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_83, (bool)0, NULL);
 		V_3 = L_84;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3839>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_85 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_86 = V_2;
 		NullCheck(L_85);
 		L_85->___Next = L_86;
 		Il2CppCodeGenWriteBarrier((void**)(&L_85->___Next), (void*)L_86);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3840>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_87 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_88 = V_0;
 		NullCheck(L_87);
 		L_87->___Prev = L_88;
 		Il2CppCodeGenWriteBarrier((void**)(&L_87->___Prev), (void*)L_88);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3841>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_89 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_90 = V_3;
 		NullCheck(L_89);
 		L_89->___Prev = L_90;
 		Il2CppCodeGenWriteBarrier((void**)(&L_89->___Prev), (void*)L_90);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3842>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_91 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_92 = V_1;
 		NullCheck(L_91);
 		L_91->___Next = L_92;
 		Il2CppCodeGenWriteBarrier((void**)(&L_91->___Next), (void*)L_92);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3843>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_93 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_94 = V_0;
 		NullCheck(L_93);
 		L_93->___OutPt1 = L_94;
 		Il2CppCodeGenWriteBarrier((void**)(&L_93->___OutPt1), (void*)L_94);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3844>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_95 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_96 = V_1;
 		NullCheck(L_95);
 		L_95->___OutPt2 = L_96;
 		Il2CppCodeGenWriteBarrier((void**)(&L_95->___OutPt2), (void*)L_96);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3845>
 		return (bool)1;
 	}
 
 IL_0184:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3848>
 		bool L_97 = V_4;
 		if (!L_97)
 		{
@@ -20001,6 +22169,7 @@ IL_0184:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3853>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_98 = V_0;
 		V_1 = L_98;
 		goto IL_0196;
@@ -20008,6 +22177,7 @@ IL_0184:
 
 IL_018f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3855>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_99 = V_0;
 		NullCheck(L_99);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_100 = L_99->___Prev;
@@ -20016,6 +22186,7 @@ IL_018f:
 
 IL_0196:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3854>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_101 = V_0;
 		NullCheck(L_101);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_102 = L_101->___Prev;
@@ -20057,6 +22228,7 @@ IL_0196:
 
 IL_01c7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3857>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_114 = V_1;
 		NullCheck(L_114);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_115 = L_114->___Next;
@@ -20065,6 +22237,7 @@ IL_01c7:
 
 IL_01ce:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3856>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_116 = V_1;
 		NullCheck(L_116);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_117 = L_116->___Next;
@@ -20103,6 +22276,7 @@ IL_01ce:
 
 IL_01fd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3858>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_129 = V_1;
 		NullCheck(L_129);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_130 = L_129->___Next;
@@ -20125,11 +22299,13 @@ IL_01fd:
 
 IL_020f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3858>
 		return (bool)0;
 	}
 
 IL_0211:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3860>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_135 = V_2;
 		V_3 = L_135;
 		goto IL_021c;
@@ -20137,6 +22313,7 @@ IL_0211:
 
 IL_0215:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3862>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_136 = V_2;
 		NullCheck(L_136);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_137 = L_136->___Prev;
@@ -20145,6 +22322,7 @@ IL_0215:
 
 IL_021c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3861>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_138 = V_2;
 		NullCheck(L_138);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_139 = L_138->___Prev;
@@ -20186,6 +22364,7 @@ IL_021c:
 
 IL_024d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3864>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_151 = V_3;
 		NullCheck(L_151);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_152 = L_151->___Next;
@@ -20194,6 +22373,7 @@ IL_024d:
 
 IL_0254:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3863>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_153 = V_3;
 		NullCheck(L_153);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_154 = L_153->___Next;
@@ -20232,6 +22412,7 @@ IL_0254:
 
 IL_0283:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3865>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_166 = V_3;
 		NullCheck(L_166);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_167 = L_166->___Next;
@@ -20254,11 +22435,13 @@ IL_0283:
 
 IL_0295:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3865>
 		return (bool)0;
 	}
 
 IL_0297:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3869>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_172 = V_0;
 		NullCheck(L_172);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_173 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_172->___Pt);
@@ -20283,11 +22466,13 @@ IL_0297:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3870>
 		return (bool)0;
 	}
 
 IL_02d1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3877>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_185 = V_0;
 		NullCheck(L_185);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_186 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_185->___Pt);
@@ -20310,10 +22495,12 @@ IL_02d1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3879>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_193 = V_0;
 		NullCheck(L_193);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_194 = L_193->___Pt;
 		V_9 = L_194;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3879>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_195 = V_0;
 		NullCheck(L_195);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_196 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_195->___Pt);
@@ -20328,6 +22515,7 @@ IL_02d1:
 
 IL_0316:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3881>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_201 = V_2;
 		NullCheck(L_201);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_202 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_201->___Pt);
@@ -20350,10 +22538,12 @@ IL_0316:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3883>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_209 = V_2;
 		NullCheck(L_209);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_210 = L_209->___Pt;
 		V_9 = L_210;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3883>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_211 = V_2;
 		NullCheck(L_211);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_212 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_211->___Pt);
@@ -20368,6 +22558,7 @@ IL_0316:
 
 IL_0358:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3885>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_217 = V_1;
 		NullCheck(L_217);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_218 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_217->___Pt);
@@ -20390,10 +22581,12 @@ IL_0358:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3887>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_225 = V_1;
 		NullCheck(L_225);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_226 = L_225->___Pt;
 		V_9 = L_226;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3887>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_227 = V_1;
 		NullCheck(L_227);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_228 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_227->___Pt);
@@ -20408,10 +22601,12 @@ IL_0358:
 
 IL_039a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3891>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_233 = V_3;
 		NullCheck(L_233);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_234 = L_233->___Pt;
 		V_9 = L_234;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3891>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_235 = V_3;
 		NullCheck(L_235);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_236 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_235->___Pt);
@@ -20425,16 +22620,19 @@ IL_039a:
 
 IL_03bc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3893>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_241 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_242 = V_0;
 		NullCheck(L_241);
 		L_241->___OutPt1 = L_242;
 		Il2CppCodeGenWriteBarrier((void**)(&L_241->___OutPt1), (void*)L_242);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3894>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_243 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_244 = V_2;
 		NullCheck(L_243);
 		L_243->___OutPt2 = L_244;
 		Il2CppCodeGenWriteBarrier((void**)(&L_243->___OutPt2), (void*)L_244);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3895>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_245 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_246 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_247 = V_2;
@@ -20448,6 +22646,7 @@ IL_03bc:
 
 IL_03d9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3904>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_252 = V_0;
 		NullCheck(L_252);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_253 = L_252->___Next;
@@ -20457,6 +22656,7 @@ IL_03d9:
 
 IL_03e2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3905>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_254 = V_1;
 		NullCheck(L_254);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_255 = L_254->___Next;
@@ -20465,6 +22665,7 @@ IL_03e2:
 
 IL_03e9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3905>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_256 = V_1;
 		NullCheck(L_256);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_257 = L_256->___Pt;
@@ -20489,6 +22690,8 @@ IL_03e9:
 
 IL_0400:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3906>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3907>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_263 = V_1;
 		NullCheck(L_263);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_264 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_263->___Pt);
@@ -20527,6 +22730,7 @@ IL_043a:
 IL_043b:
 	{
 		V_11 = (bool)G_B65_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3908>
 		bool L_277 = V_11;
 		if (!L_277)
 		{
@@ -20534,6 +22738,7 @@ IL_043b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3910>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_278 = V_0;
 		NullCheck(L_278);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_279 = L_278->___Prev;
@@ -20543,6 +22748,7 @@ IL_043b:
 
 IL_044a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3911>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_280 = V_1;
 		NullCheck(L_280);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_281 = L_280->___Prev;
@@ -20551,6 +22757,7 @@ IL_044a:
 
 IL_0451:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3911>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_282 = V_1;
 		NullCheck(L_282);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_283 = L_282->___Pt;
@@ -20575,6 +22782,8 @@ IL_0451:
 
 IL_0468:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3912>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3913>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_289 = V_1;
 		NullCheck(L_289);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_290 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_289->___Pt);
@@ -20609,11 +22818,13 @@ IL_0468:
 
 IL_049f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3913>
 		return (bool)0;
 	}
 
 IL_04a1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3915>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_303 = V_2;
 		NullCheck(L_303);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_304 = L_303->___Next;
@@ -20623,6 +22834,7 @@ IL_04a1:
 
 IL_04aa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3916>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_305 = V_3;
 		NullCheck(L_305);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_306 = L_305->___Next;
@@ -20631,6 +22843,7 @@ IL_04aa:
 
 IL_04b1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3916>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_307 = V_3;
 		NullCheck(L_307);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_308 = L_307->___Pt;
@@ -20655,6 +22868,8 @@ IL_04b1:
 
 IL_04c8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3917>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3918>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_314 = V_3;
 		NullCheck(L_314);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_315 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_314->___Pt);
@@ -20693,6 +22908,7 @@ IL_0502:
 IL_0503:
 	{
 		V_12 = (bool)G_B80_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3919>
 		bool L_328 = V_12;
 		if (!L_328)
 		{
@@ -20700,6 +22916,7 @@ IL_0503:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3921>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_329 = V_2;
 		NullCheck(L_329);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_330 = L_329->___Prev;
@@ -20709,6 +22926,7 @@ IL_0503:
 
 IL_0512:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3922>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_331 = V_3;
 		NullCheck(L_331);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_332 = L_331->___Prev;
@@ -20717,6 +22935,7 @@ IL_0512:
 
 IL_0519:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3922>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_333 = V_3;
 		NullCheck(L_333);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_334 = L_333->___Pt;
@@ -20741,6 +22960,8 @@ IL_0519:
 
 IL_0530:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3923>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3924>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_340 = V_3;
 		NullCheck(L_340);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_341 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_340->___Pt);
@@ -20775,11 +22996,14 @@ IL_0530:
 
 IL_0567:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3924>
 		return (bool)0;
 	}
 
 IL_0569:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3927>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3928>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_354 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_355 = V_0;
 		if ((((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_354) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_355)))
@@ -20822,11 +23046,13 @@ IL_0569:
 
 IL_057f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3928>
 		return (bool)0;
 	}
 
 IL_0581:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3930>
 		bool L_364 = V_11;
 		if (!L_364)
 		{
@@ -20834,90 +23060,109 @@ IL_0581:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3932>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_365 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_366;
 		L_366 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_365, (bool)0, NULL);
 		V_1 = L_366;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3933>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_367 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_368;
 		L_368 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_367, (bool)1, NULL);
 		V_3 = L_368;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3934>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_369 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_370 = V_2;
 		NullCheck(L_369);
 		L_369->___Prev = L_370;
 		Il2CppCodeGenWriteBarrier((void**)(&L_369->___Prev), (void*)L_370);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3935>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_371 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_372 = V_0;
 		NullCheck(L_371);
 		L_371->___Next = L_372;
 		Il2CppCodeGenWriteBarrier((void**)(&L_371->___Next), (void*)L_372);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3936>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_373 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_374 = V_3;
 		NullCheck(L_373);
 		L_373->___Next = L_374;
 		Il2CppCodeGenWriteBarrier((void**)(&L_373->___Next), (void*)L_374);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3937>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_375 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_376 = V_1;
 		NullCheck(L_375);
 		L_375->___Prev = L_376;
 		Il2CppCodeGenWriteBarrier((void**)(&L_375->___Prev), (void*)L_376);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3938>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_377 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_378 = V_0;
 		NullCheck(L_377);
 		L_377->___OutPt1 = L_378;
 		Il2CppCodeGenWriteBarrier((void**)(&L_377->___OutPt1), (void*)L_378);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3939>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_379 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_380 = V_1;
 		NullCheck(L_379);
 		L_379->___OutPt2 = L_380;
 		Il2CppCodeGenWriteBarrier((void**)(&L_379->___OutPt2), (void*)L_380);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3940>
 		return (bool)1;
 	}
 
 IL_05c3:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3944>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_381 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_382;
 		L_382 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_381, (bool)1, NULL);
 		V_1 = L_382;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3945>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_383 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_384;
 		L_384 = Clipper_DupOutPt_m3BA477F43003B7EBEA4691B4F1EAAA6264F559FE(__this, L_383, (bool)0, NULL);
 		V_3 = L_384;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3946>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_385 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_386 = V_2;
 		NullCheck(L_385);
 		L_385->___Next = L_386;
 		Il2CppCodeGenWriteBarrier((void**)(&L_385->___Next), (void*)L_386);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3947>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_387 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_388 = V_0;
 		NullCheck(L_387);
 		L_387->___Prev = L_388;
 		Il2CppCodeGenWriteBarrier((void**)(&L_387->___Prev), (void*)L_388);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3948>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_389 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_390 = V_3;
 		NullCheck(L_389);
 		L_389->___Prev = L_390;
 		Il2CppCodeGenWriteBarrier((void**)(&L_389->___Prev), (void*)L_390);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3949>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_391 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_392 = V_1;
 		NullCheck(L_391);
 		L_391->___Next = L_392;
 		Il2CppCodeGenWriteBarrier((void**)(&L_391->___Next), (void*)L_392);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3950>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_393 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_394 = V_0;
 		NullCheck(L_393);
 		L_393->___OutPt1 = L_394;
 		Il2CppCodeGenWriteBarrier((void**)(&L_393->___OutPt1), (void*)L_394);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3951>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_395 = ___0_j;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_396 = V_1;
 		NullCheck(L_395);
 		L_395->___OutPt2 = L_396;
 		Il2CppCodeGenWriteBarrier((void**)(&L_395->___OutPt2), (void*)L_396);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3952>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58083
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointInPolygon_mF11506965411DFD9662DDA49A16CFA3209BB5C60 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt, List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___1_path, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -20939,12 +23184,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointInPolygon_mF11506965411D
 	IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 G_B6_0;
 	memset((&G_B6_0), 0, sizeof(G_B6_0));
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3964>
 		V_0 = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3964>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = ___1_path;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_inline(L_0, List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_RuntimeMethod_var);
 		V_1 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3965>
 		int32_t L_2 = V_1;
 		if ((((int32_t)L_2) >= ((int32_t)3)))
 		{
@@ -20952,22 +23200,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointInPolygon_mF11506965411D
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3965>
 		return 0;
 	}
 
 IL_000f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3966>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_3 = ___1_path;
 		NullCheck(L_3);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4;
 		L_4 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_3, 0, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		V_2 = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3967>
 		V_3 = 1;
 		goto IL_01c7;
 	}
 
 IL_001e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3969>
 		int32_t L_5 = V_3;
 		int32_t L_6 = V_1;
 		if ((((int32_t)L_5) == ((int32_t)L_6)))
@@ -20997,6 +23249,7 @@ IL_002b:
 IL_0032:
 	{
 		V_4 = G_B6_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3970>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_12 = V_4;
 		int64_t L_13 = L_12.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_14 = ___0_pt;
@@ -21007,6 +23260,8 @@ IL_0032:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3972>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3973>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_16 = V_4;
 		int64_t L_17 = L_16.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_18 = ___0_pt;
@@ -21043,11 +23298,13 @@ IL_0032:
 
 IL_007f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3973>
 		return (-1);
 	}
 
 IL_0081:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3975>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_32 = V_2;
 		int64_t L_33 = L_32.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_34 = ___0_pt;
@@ -21062,6 +23319,7 @@ IL_0081:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3977>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_40 = V_2;
 		int64_t L_41 = L_40.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_42 = ___0_pt;
@@ -21072,6 +23330,7 @@ IL_0081:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3979>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_44 = V_4;
 		int64_t L_45 = L_44.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_46 = ___0_pt;
@@ -21082,6 +23341,7 @@ IL_0081:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3979>
 		int32_t L_48 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(1, L_48));
 		goto IL_01c0;
@@ -21089,6 +23349,8 @@ IL_0081:
 
 IL_00cc:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3982>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3983>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_49 = V_2;
 		int64_t L_50 = L_49.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_51 = ___0_pt;
@@ -21106,6 +23368,7 @@ IL_00cc:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_63 = ___0_pt;
 		int64_t L_64 = L_63.___Y;
 		V_5 = ((double)il2cpp_codegen_subtract(((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_50, L_52))), ((double)((int64_t)il2cpp_codegen_subtract(L_54, L_56))))), ((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_58, L_60))), ((double)((int64_t)il2cpp_codegen_subtract(L_62, L_64)))))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3984>
 		double L_65 = V_5;
 		if ((!(((double)L_65) == ((double)(0.0)))))
 		{
@@ -21113,11 +23376,13 @@ IL_00cc:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3984>
 		return (-1);
 	}
 
 IL_011a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3985>
 		double L_66 = V_5;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_67 = V_4;
 		int64_t L_68 = L_67.___Y;
@@ -21129,6 +23394,7 @@ IL_011a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3985>
 		int32_t L_71 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(1, L_71));
 		goto IL_01c0;
@@ -21136,6 +23402,7 @@ IL_011a:
 
 IL_0141:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3990>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_72 = V_4;
 		int64_t L_73 = L_72.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_74 = ___0_pt;
@@ -21146,6 +23413,8 @@ IL_0141:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3992>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3993>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_76 = V_2;
 		int64_t L_77 = L_76.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_78 = ___0_pt;
@@ -21163,6 +23432,7 @@ IL_0141:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_90 = ___0_pt;
 		int64_t L_91 = L_90.___Y;
 		V_6 = ((double)il2cpp_codegen_subtract(((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_77, L_79))), ((double)((int64_t)il2cpp_codegen_subtract(L_81, L_83))))), ((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_85, L_87))), ((double)((int64_t)il2cpp_codegen_subtract(L_89, L_91)))))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3994>
 		double L_92 = V_6;
 		if ((!(((double)L_92) == ((double)(0.0)))))
 		{
@@ -21170,11 +23440,13 @@ IL_0141:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3994>
 		return (-1);
 	}
 
 IL_019e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3995>
 		double L_93 = V_6;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_94 = V_4;
 		int64_t L_95 = L_94.___Y;
@@ -21186,20 +23458,24 @@ IL_019e:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3995>
 		int32_t L_98 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(1, L_98));
 	}
 
 IL_01c0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3999>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_99 = V_4;
 		V_2 = L_99;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3967>
 		int32_t L_100 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_100, 1));
 	}
 
 IL_01c7:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:3967>
 		int32_t L_101 = V_3;
 		int32_t L_102 = V_1;
 		if ((((int32_t)L_101) <= ((int32_t)L_102)))
@@ -21208,10 +23484,12 @@ IL_01c7:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4001>
 		int32_t L_103 = V_0;
 		return L_103;
 	}
 }
+// Method Definition Index: 58084
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointInPolygon_mCF19505D43AE084A8BEA8860FCF134F5652524B2 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___1_op, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -21225,20 +23503,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointInPolygon_mCF19505D43AE0
 	double V_8 = 0.0;
 	double V_9 = 0.0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4011>
 		V_0 = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4012>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___1_op;
 		V_1 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4013>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_1 = ___0_pt;
 		int64_t L_2 = L_1.___X;
 		V_2 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4013>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_3 = ___0_pt;
 		int64_t L_4 = L_3.___Y;
 		V_3 = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4014>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = ___1_op;
 		NullCheck(L_5);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_6 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_5->___Pt);
 		int64_t L_7 = L_6->___X;
 		V_4 = L_7;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4014>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = ___1_op;
 		NullCheck(L_8);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_9 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_8->___Pt);
@@ -21248,20 +23532,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Clipper_PointInPolygon_mCF19505D43AE0
 
 IL_002c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4017>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = ___1_op;
 		NullCheck(L_11);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_12 = L_11->___Next;
 		___1_op = L_12;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4018>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_13 = ___1_op;
 		NullCheck(L_13);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_14 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_13->___Pt);
 		int64_t L_15 = L_14->___X;
 		V_6 = L_15;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4018>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_16 = ___1_op;
 		NullCheck(L_16);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_17 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_16->___Pt);
 		int64_t L_18 = L_17->___Y;
 		V_7 = L_18;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4020>
 		int64_t L_19 = V_7;
 		int64_t L_20 = V_3;
 		if ((!(((uint64_t)L_19) == ((uint64_t)L_20))))
@@ -21270,6 +23558,8 @@ IL_002c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4022>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4023>
 		int64_t L_21 = V_6;
 		int64_t L_22 = V_2;
 		if ((((int64_t)L_21) == ((int64_t)L_22)))
@@ -21298,11 +23588,13 @@ IL_002c:
 
 IL_0069:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4023>
 		return (-1);
 	}
 
 IL_006b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4025>
 		int64_t L_29 = V_5;
 		int64_t L_30 = V_3;
 		int64_t L_31 = V_7;
@@ -21313,6 +23605,7 @@ IL_006b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4027>
 		int64_t L_33 = V_4;
 		int64_t L_34 = V_2;
 		if ((((int64_t)L_33) < ((int64_t)L_34)))
@@ -21321,6 +23614,7 @@ IL_006b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4029>
 		int64_t L_35 = V_6;
 		int64_t L_36 = V_2;
 		if ((((int64_t)L_35) <= ((int64_t)L_36)))
@@ -21329,6 +23623,7 @@ IL_006b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4029>
 		int32_t L_37 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(1, L_37));
 		goto IL_0116;
@@ -21336,6 +23631,8 @@ IL_006b:
 
 IL_008d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4032>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4033>
 		int64_t L_38 = V_4;
 		int64_t L_39 = V_2;
 		int64_t L_40 = V_7;
@@ -21345,6 +23642,7 @@ IL_008d:
 		int64_t L_44 = V_5;
 		int64_t L_45 = V_3;
 		V_8 = ((double)il2cpp_codegen_subtract(((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_38, L_39))), ((double)((int64_t)il2cpp_codegen_subtract(L_40, L_41))))), ((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_42, L_43))), ((double)((int64_t)il2cpp_codegen_subtract(L_44, L_45)))))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4034>
 		double L_46 = V_8;
 		if ((!(((double)L_46) == ((double)(0.0)))))
 		{
@@ -21352,11 +23650,13 @@ IL_008d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4034>
 		return (-1);
 	}
 
 IL_00b5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4035>
 		double L_47 = V_8;
 		int64_t L_48 = V_7;
 		int64_t L_49 = V_5;
@@ -21366,6 +23666,7 @@ IL_00b5:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4035>
 		int32_t L_50 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(1, L_50));
 		goto IL_0116;
@@ -21373,6 +23674,7 @@ IL_00b5:
 
 IL_00d0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4040>
 		int64_t L_51 = V_6;
 		int64_t L_52 = V_2;
 		if ((((int64_t)L_51) <= ((int64_t)L_52)))
@@ -21381,6 +23683,8 @@ IL_00d0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4042>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4043>
 		int64_t L_53 = V_4;
 		int64_t L_54 = V_2;
 		int64_t L_55 = V_7;
@@ -21390,6 +23694,7 @@ IL_00d0:
 		int64_t L_59 = V_5;
 		int64_t L_60 = V_3;
 		V_9 = ((double)il2cpp_codegen_subtract(((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_53, L_54))), ((double)((int64_t)il2cpp_codegen_subtract(L_55, L_56))))), ((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_subtract(L_57, L_58))), ((double)((int64_t)il2cpp_codegen_subtract(L_59, L_60)))))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4044>
 		double L_61 = V_9;
 		if ((!(((double)L_61) == ((double)(0.0)))))
 		{
@@ -21397,11 +23702,13 @@ IL_00d0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4044>
 		return (-1);
 	}
 
 IL_00fd:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4045>
 		double L_62 = V_9;
 		int64_t L_63 = V_7;
 		int64_t L_64 = V_5;
@@ -21411,16 +23718,20 @@ IL_00fd:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4045>
 		int32_t L_65 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(1, L_65));
 	}
 
 IL_0116:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4049>
 		int64_t L_66 = V_6;
 		V_4 = L_66;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4049>
 		int64_t L_67 = V_7;
 		V_5 = L_67;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4051>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_68 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_69 = ___1_op;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_68) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_69))))
@@ -21429,21 +23740,25 @@ IL_0116:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4052>
 		int32_t L_70 = V_0;
 		return L_70;
 	}
 }
+// Method Definition Index: 58085
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_Poly2ContainsPoly1_mEC43E8E8547F0CADADE1DB80D45B6B67B29E7BBD (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_outPt1, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___1_outPt2, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4059>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_outPt1;
 		V_0 = L_0;
 	}
 
 IL_0002:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4063>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = V_0;
 		NullCheck(L_1);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = L_1->___Pt;
@@ -21451,6 +23766,7 @@ IL_0002:
 		int32_t L_4;
 		L_4 = Clipper_PointInPolygon_mCF19505D43AE084A8BEA8860FCF134F5652524B2(L_2, L_3, NULL);
 		V_1 = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4064>
 		int32_t L_5 = V_1;
 		if ((((int32_t)L_5) < ((int32_t)0)))
 		{
@@ -21458,16 +23774,19 @@ IL_0002:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4064>
 		int32_t L_6 = V_1;
 		return (bool)((((int32_t)L_6) > ((int32_t)0))? 1 : 0);
 	}
 
 IL_0018:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4065>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = V_0;
 		NullCheck(L_7);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = L_7->___Next;
 		V_0 = L_8;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4067>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_10 = ___0_outPt1;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_9) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_10))))
@@ -21476,9 +23795,11 @@ IL_0018:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4068>
 		return (bool)1;
 	}
 }
+// Method Definition Index: 58086
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupFirstLefts1_m955754CF5788136720A5C049B4C4CF761DC73AED (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_OldOutRec, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___1_NewOutRec, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21495,6 +23816,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupFirstLefts1_m955754CF578813
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_1 = NULL;
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_2 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4075>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_0);
 		Enumerator_t8CFADDCDB705973808AFFE48AF147A098B9CB264 L_1;
@@ -21519,15 +23841,18 @@ FINALLY_0053:
 
 IL_000e_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4075>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2;
 				L_2 = Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_inline((&V_0), Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_RuntimeMethod_var);
 				V_1 = L_2;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4077>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3 = V_1;
 				NullCheck(L_3);
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_4 = L_3->___FirstLeft;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_5;
 				L_5 = Clipper_ParseFirstLeft_m7D1AE9300F78210F45EB132427731BEF24C952B9(L_4, NULL);
 				V_2 = L_5;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4078>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_6 = V_1;
 				NullCheck(L_6);
 				OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = L_6->___Pts;
@@ -21545,6 +23870,7 @@ IL_000e_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4080>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_10 = V_1;
 				NullCheck(L_10);
 				OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = L_10->___Pts;
@@ -21559,6 +23885,7 @@ IL_000e_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4081>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_15 = V_1;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_16 = ___1_NewOutRec;
 				NullCheck(L_15);
@@ -21568,6 +23895,7 @@ IL_000e_1:
 
 IL_0048_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4075>
 				bool L_17;
 				L_17 = Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF((&V_0), Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF_RuntimeMethod_var);
 				if (L_17)
@@ -21587,9 +23915,11 @@ IL_0048_1:
 
 IL_0061:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4084>
 		return;
 	}
 }
+// Method Definition Index: 58087
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupFirstLefts2_m34CD287CAA95AA183535EAFFD64B45CDD8847752 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_innerOutRec, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___1_outerOutRec, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21607,10 +23937,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupFirstLefts2_m34CD287CAA95AA
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_2 = NULL;
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_3 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4094>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___1_outerOutRec;
 		NullCheck(L_0);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_1 = L_0->___FirstLeft;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4095>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_2 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_2);
 		Enumerator_t8CFADDCDB705973808AFFE48AF147A098B9CB264 L_3;
@@ -21635,9 +23967,11 @@ FINALLY_00a7:
 
 IL_0018_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4095>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_4;
 				L_4 = Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_inline((&V_1), Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_RuntimeMethod_var);
 				V_2 = L_4;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4097>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_5 = V_2;
 				NullCheck(L_5);
 				OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = L_5->___Pts;
@@ -21663,12 +23997,14 @@ IL_0018_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4099>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_11 = V_2;
 				NullCheck(L_11);
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_12 = L_11->___FirstLeft;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_13;
 				L_13 = Clipper_ParseFirstLeft_m7D1AE9300F78210F45EB132427731BEF24C952B9(L_12, NULL);
 				V_3 = L_13;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4100>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_14 = V_3;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_15 = V_0;
 				if ((((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_14) == ((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_15)))
@@ -21695,6 +24031,7 @@ IL_0018_1:
 
 IL_0048_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4102>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_20 = V_2;
 				NullCheck(L_20);
 				OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_21 = L_20->___Pts;
@@ -21709,6 +24046,7 @@ IL_0048_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4103>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_25 = V_2;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_26 = ___0_innerOutRec;
 				NullCheck(L_25);
@@ -21719,6 +24057,7 @@ IL_0048_1:
 
 IL_0064_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4104>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_27 = V_2;
 				NullCheck(L_27);
 				OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_28 = L_27->___Pts;
@@ -21733,6 +24072,7 @@ IL_0064_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4105>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_32 = V_2;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_33 = ___1_outerOutRec;
 				NullCheck(L_32);
@@ -21743,6 +24083,7 @@ IL_0064_1:
 
 IL_0080_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4106>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_34 = V_2;
 				NullCheck(L_34);
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_35 = L_34->___FirstLeft;
@@ -21765,6 +24106,7 @@ IL_0080_1:
 
 IL_0092_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4107>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_40 = V_2;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_41 = V_0;
 				NullCheck(L_40);
@@ -21774,6 +24116,7 @@ IL_0092_1:
 
 IL_0099_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4095>
 				bool L_42;
 				L_42 = Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF((&V_1), Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF_RuntimeMethod_var);
 				if (L_42)
@@ -21793,9 +24136,11 @@ IL_0099_1:
 
 IL_00b5:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4109>
 		return;
 	}
 }
+// Method Definition Index: 58088
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupFirstLefts3_m764B2D88C1CA5437B2014EB8EBF1A3A0BB4E9AC4 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_OldOutRec, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___1_NewOutRec, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21812,6 +24157,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_FixupFirstLefts3_m764B2D88C1CA54
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_1 = NULL;
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_2 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4116>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_0);
 		Enumerator_t8CFADDCDB705973808AFFE48AF147A098B9CB264 L_1;
@@ -21836,15 +24182,18 @@ FINALLY_0040:
 
 IL_000e_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4116>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2;
 				L_2 = Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_inline((&V_0), Enumerator_get_Current_m91CF8735C825F5F3AD5425DB3F97C8B090835E9B_RuntimeMethod_var);
 				V_1 = L_2;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4118>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3 = V_1;
 				NullCheck(L_3);
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_4 = L_3->___FirstLeft;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_5;
 				L_5 = Clipper_ParseFirstLeft_m7D1AE9300F78210F45EB132427731BEF24C952B9(L_4, NULL);
 				V_2 = L_5;
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4119>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_6 = V_1;
 				NullCheck(L_6);
 				OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = L_6->___Pts;
@@ -21862,6 +24211,7 @@ IL_000e_1:
 				}
 			}
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4120>
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_10 = V_1;
 				OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_11 = ___1_NewOutRec;
 				NullCheck(L_10);
@@ -21871,6 +24221,7 @@ IL_000e_1:
 
 IL_0035_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4116>
 				bool L_12;
 				L_12 = Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF((&V_0), Enumerator_MoveNext_m5EE1E0DD5521067FE7128E9958F812F7B84874FF_RuntimeMethod_var);
 				if (L_12)
@@ -21890,9 +24241,11 @@ IL_0035_1:
 
 IL_004e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4122>
 		return;
 	}
 }
+// Method Definition Index: 58089
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* Clipper_ParseFirstLeft_m7D1AE9300F78210F45EB132427731BEF24C952B9 (OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_FirstLeft, const RuntimeMethod* method) 
 {
 	{
@@ -21901,6 +24254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402
 
 IL_0002:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4129>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_FirstLeft;
 		NullCheck(L_0);
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_1 = L_0->___FirstLeft;
@@ -21909,6 +24263,7 @@ IL_0002:
 
 IL_000a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4128>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_2 = ___0_FirstLeft;
 		if (!L_2)
 		{
@@ -21927,10 +24282,12 @@ IL_000a:
 
 IL_0015:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4130>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_5 = ___0_FirstLeft;
 		return L_5;
 	}
 }
+// Method Definition Index: 58090
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_JoinCommonEdges_m2E6FD6E964AEE899F4725C3A930460926009DD02 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -21946,18 +24303,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_JoinCommonEdges_m2E6FD6E964AEE89
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_3 = NULL;
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_4 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4137>
 		V_0 = 0;
 		goto IL_0245;
 	}
 
 IL_0007:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4139>
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_0 = __this->___m_Joins;
 		int32_t L_1 = V_0;
 		NullCheck(L_0);
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_2;
 		L_2 = List_1_get_Item_mCF2E3DBAAABB4BA12A33934C3A5A3F145A33423C(L_0, L_1, List_1_get_Item_mCF2E3DBAAABB4BA12A33934C3A5A3F145A33423C_RuntimeMethod_var);
 		V_1 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4141>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_3 = V_1;
 		NullCheck(L_3);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_4 = L_3->___OutPt1;
@@ -21966,6 +24326,7 @@ IL_0007:
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_6;
 		L_6 = Clipper_GetOutRec_mE6B40CDC55D028755FF06F961E56EED4B46A970E(__this, L_5, NULL);
 		V_2 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4142>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_7 = V_1;
 		NullCheck(L_7);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = L_7->___OutPt2;
@@ -21974,6 +24335,7 @@ IL_0007:
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_10;
 		L_10 = Clipper_GetOutRec_mE6B40CDC55D028755FF06F961E56EED4B46A970E(__this, L_9, NULL);
 		V_3 = L_10;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4144>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_11 = V_2;
 		NullCheck(L_11);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_12 = L_11->___Pts;
@@ -21992,6 +24354,7 @@ IL_0007:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4145>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_15 = V_2;
 		NullCheck(L_15);
 		bool L_16 = L_15->___IsOpen;
@@ -22010,6 +24373,7 @@ IL_0007:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4150>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_19 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_20 = V_3;
 		if ((!(((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_19) == ((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_20))))
@@ -22018,6 +24382,7 @@ IL_0007:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4150>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_21 = V_2;
 		V_4 = L_21;
 		goto IL_0095;
@@ -22025,6 +24390,7 @@ IL_0007:
 
 IL_006d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4151>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_22 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_23 = V_3;
 		bool L_24;
@@ -22035,6 +24401,7 @@ IL_006d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4151>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_25 = V_3;
 		V_4 = L_25;
 		goto IL_0095;
@@ -22042,6 +24409,7 @@ IL_006d:
 
 IL_007c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4152>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_26 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_27 = V_2;
 		bool L_28;
@@ -22052,6 +24420,7 @@ IL_007c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4152>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_29 = V_2;
 		V_4 = L_29;
 		goto IL_0095;
@@ -22059,6 +24428,7 @@ IL_007c:
 
 IL_008b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4153>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_30 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_31 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_32;
@@ -22068,6 +24438,7 @@ IL_008b:
 
 IL_0095:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4155>
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_33 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_34 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_35 = V_3;
@@ -22079,6 +24450,7 @@ IL_0095:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4157>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_37 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_38 = V_3;
 		if ((!(((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_37) == ((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_38))))
@@ -22087,6 +24459,7 @@ IL_0095:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4161>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_39 = V_2;
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_40 = V_1;
 		NullCheck(L_40);
@@ -22094,13 +24467,16 @@ IL_0095:
 		NullCheck(L_39);
 		L_39->___Pts = L_41;
 		Il2CppCodeGenWriteBarrier((void**)(&L_39->___Pts), (void*)L_41);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4162>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_42 = V_2;
 		NullCheck(L_42);
 		L_42->___BottomPt = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_42->___BottomPt), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4163>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_43;
 		L_43 = ClipperBase_CreateOutRec_m8385CCD504D822268DDC5D9174253A80E76C2122(__this, NULL);
 		V_3 = L_43;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4164>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_44 = V_3;
 		Join_t90F9F274C15C122E140FA48AF4BCB6D0EB01C970* L_45 = V_1;
 		NullCheck(L_45);
@@ -22108,8 +24484,10 @@ IL_0095:
 		NullCheck(L_44);
 		L_44->___Pts = L_46;
 		Il2CppCodeGenWriteBarrier((void**)(&L_44->___Pts), (void*)L_46);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4167>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_47 = V_3;
 		Clipper_UpdateOutPtIdxs_mD7AA527B468A83E10A722589DA7DC6EDC74266B0(__this, L_47, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4169>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_48 = V_3;
 		NullCheck(L_48);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49 = L_48->___Pts;
@@ -22124,17 +24502,20 @@ IL_0095:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4172>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_53 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_54 = V_2;
 		NullCheck(L_54);
 		bool L_55 = L_54->___IsHole;
 		NullCheck(L_53);
 		L_53->___IsHole = (bool)((((int32_t)L_55) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4173>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_56 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_57 = V_2;
 		NullCheck(L_56);
 		L_56->___FirstLeft = L_57;
 		Il2CppCodeGenWriteBarrier((void**)(&L_56->___FirstLeft), (void*)L_57);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4175>
 		bool L_58 = __this->___m_UsingPolyTree;
 		if (!L_58)
 		{
@@ -22142,6 +24523,7 @@ IL_0095:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4175>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_59 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_60 = V_2;
 		Clipper_FixupFirstLefts2_m34CD287CAA95AA183535EAFFD64B45CDD8847752(__this, L_59, L_60, NULL);
@@ -22149,6 +24531,7 @@ IL_0095:
 
 IL_0110:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4177>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_61 = V_3;
 		NullCheck(L_61);
 		bool L_62 = L_61->___IsHole;
@@ -22163,6 +24546,7 @@ IL_0110:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4178>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_66 = V_3;
 		NullCheck(L_66);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_67 = L_66->___Pts;
@@ -22172,6 +24556,7 @@ IL_0110:
 
 IL_0145:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4180>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_68 = V_2;
 		NullCheck(L_68);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_69 = L_68->___Pts;
@@ -22186,18 +24571,21 @@ IL_0145:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4183>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_73 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_74 = V_2;
 		NullCheck(L_74);
 		bool L_75 = L_74->___IsHole;
 		NullCheck(L_73);
 		L_73->___IsHole = L_75;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4184>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_76 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_77 = V_3;
 		NullCheck(L_77);
 		bool L_78 = L_77->___IsHole;
 		NullCheck(L_76);
 		L_76->___IsHole = (bool)((((int32_t)L_78) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4185>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_79 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_80 = V_2;
 		NullCheck(L_80);
@@ -22205,11 +24593,13 @@ IL_0145:
 		NullCheck(L_79);
 		L_79->___FirstLeft = L_81;
 		Il2CppCodeGenWriteBarrier((void**)(&L_79->___FirstLeft), (void*)L_81);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4186>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_82 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_83 = V_3;
 		NullCheck(L_82);
 		L_82->___FirstLeft = L_83;
 		Il2CppCodeGenWriteBarrier((void**)(&L_82->___FirstLeft), (void*)L_83);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4188>
 		bool L_84 = __this->___m_UsingPolyTree;
 		if (!L_84)
 		{
@@ -22217,6 +24607,7 @@ IL_0145:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4188>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_85 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_86 = V_3;
 		Clipper_FixupFirstLefts2_m34CD287CAA95AA183535EAFFD64B45CDD8847752(__this, L_85, L_86, NULL);
@@ -22224,6 +24615,7 @@ IL_0145:
 
 IL_0196:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4190>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_87 = V_2;
 		NullCheck(L_87);
 		bool L_88 = L_87->___IsHole;
@@ -22238,6 +24630,7 @@ IL_0196:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4191>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_92 = V_2;
 		NullCheck(L_92);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_93 = L_92->___Pts;
@@ -22247,12 +24640,14 @@ IL_0196:
 
 IL_01c8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4196>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_94 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_95 = V_2;
 		NullCheck(L_95);
 		bool L_96 = L_95->___IsHole;
 		NullCheck(L_94);
 		L_94->___IsHole = L_96;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4197>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_97 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_98 = V_2;
 		NullCheck(L_98);
@@ -22260,6 +24655,7 @@ IL_01c8:
 		NullCheck(L_97);
 		L_97->___FirstLeft = L_99;
 		Il2CppCodeGenWriteBarrier((void**)(&L_97->___FirstLeft), (void*)L_99);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4200>
 		bool L_100 = __this->___m_UsingPolyTree;
 		if (!L_100)
 		{
@@ -22267,6 +24663,7 @@ IL_01c8:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4200>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_101 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_102 = V_3;
 		Clipper_FixupFirstLefts1_m955754CF5788136720A5C049B4C4CF761DC73AED(__this, L_101, L_102, NULL);
@@ -22275,26 +24672,31 @@ IL_01c8:
 
 IL_01f2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4207>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_103 = V_3;
 		NullCheck(L_103);
 		L_103->___Pts = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_103->___Pts), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4208>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_104 = V_3;
 		NullCheck(L_104);
 		L_104->___BottomPt = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(&L_104->___BottomPt), (void*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4209>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_105 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_106 = V_2;
 		NullCheck(L_106);
 		int32_t L_107 = L_106->___Idx;
 		NullCheck(L_105);
 		L_105->___Idx = L_107;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4211>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_108 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_109 = V_4;
 		NullCheck(L_109);
 		bool L_110 = L_109->___IsHole;
 		NullCheck(L_108);
 		L_108->___IsHole = L_110;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4212>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_111 = V_4;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_112 = V_3;
 		if ((!(((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_111) == ((RuntimeObject*)(OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954*)L_112))))
@@ -22303,6 +24705,7 @@ IL_01f2:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4213>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_113 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_114 = V_3;
 		NullCheck(L_114);
@@ -22314,11 +24717,13 @@ IL_01f2:
 
 IL_022a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4214>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_116 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_117 = V_2;
 		NullCheck(L_116);
 		L_116->___FirstLeft = L_117;
 		Il2CppCodeGenWriteBarrier((void**)(&L_116->___FirstLeft), (void*)L_117);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4217>
 		bool L_118 = __this->___m_UsingPolyTree;
 		if (!L_118)
 		{
@@ -22326,6 +24731,7 @@ IL_022a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4217>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_119 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_120 = V_2;
 		Clipper_FixupFirstLefts3_m764B2D88C1CA5437B2014EB8EBF1A3A0BB4E9AC4(__this, L_119, L_120, NULL);
@@ -22333,12 +24739,14 @@ IL_022a:
 
 IL_0241:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4137>
 		int32_t L_121 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_121, 1));
 	}
 
 IL_0245:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4137>
 		int32_t L_122 = V_0;
 		List_1_tE4DCA9914281D0B1F41C8C5C7BC7DB0AA0D512E6* L_123 = __this->___m_Joins;
 		NullCheck(L_123);
@@ -22350,13 +24758,16 @@ IL_0245:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4220>
 		return;
 	}
 }
+// Method Definition Index: 58091
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_UpdateOutPtIdxs_mD7AA527B468A83E10A722589DA7DC6EDC74266B0 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_outrec, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4226>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_outrec;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___Pts;
@@ -22365,16 +24776,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_UpdateOutPtIdxs_mD7AA527B468A83E
 
 IL_0007:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4229>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = V_0;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3 = ___0_outrec;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___Idx;
 		NullCheck(L_2);
 		L_2->___Idx = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4230>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = V_0;
 		NullCheck(L_5);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = L_5->___Prev;
 		V_0 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4232>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_7 = V_0;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_8 = ___0_outrec;
 		NullCheck(L_8);
@@ -22385,9 +24799,11 @@ IL_0007:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4233>
 		return;
 	}
 }
+// Method Definition Index: 58092
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DoSimplePolygons_mBEF68D5DED381C48823A211E5891E71A01E5A30C (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22405,12 +24821,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_DoSimplePolygons_mBEF68D5DED381C
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_5 = NULL;
 	OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* V_6 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4239>
 		V_0 = 0;
 		goto IL_01aa;
 	}
 
 IL_0007:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4242>
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_0 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		int32_t L_1 = V_0;
 		int32_t L_2 = L_1;
@@ -22419,10 +24837,12 @@ IL_0007:
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_3;
 		L_3 = List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED(L_0, L_2, List_1_get_Item_m3B46B82D39CF36DBD71EB454B573CE1D92CE71ED_RuntimeMethod_var);
 		V_1 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4243>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_4 = V_1;
 		NullCheck(L_4);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = L_4->___Pts;
 		V_2 = L_5;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4244>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = V_2;
 		if (!L_6)
 		{
@@ -22441,6 +24861,7 @@ IL_0007:
 
 IL_0030:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4247>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = V_2;
 		NullCheck(L_9);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_10 = L_9->___Next;
@@ -22450,6 +24871,7 @@ IL_0030:
 
 IL_003c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4250>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_11 = V_2;
 		NullCheck(L_11);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_12 = L_11->___Pt;
@@ -22484,49 +24906,60 @@ IL_003c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4253>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_22 = V_2;
 		NullCheck(L_22);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_23 = L_22->___Prev;
 		V_4 = L_23;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4254>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_24 = V_3;
 		NullCheck(L_24);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_25 = L_24->___Prev;
 		V_5 = L_25;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4255>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_26 = V_2;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_27 = V_5;
 		NullCheck(L_26);
 		L_26->___Prev = L_27;
 		Il2CppCodeGenWriteBarrier((void**)(&L_26->___Prev), (void*)L_27);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4256>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_28 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_29 = V_2;
 		NullCheck(L_28);
 		L_28->___Next = L_29;
 		Il2CppCodeGenWriteBarrier((void**)(&L_28->___Next), (void*)L_29);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4257>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_30 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_31 = V_4;
 		NullCheck(L_30);
 		L_30->___Prev = L_31;
 		Il2CppCodeGenWriteBarrier((void**)(&L_30->___Prev), (void*)L_31);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4258>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_32 = V_4;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_33 = V_3;
 		NullCheck(L_32);
 		L_32->___Next = L_33;
 		Il2CppCodeGenWriteBarrier((void**)(&L_32->___Next), (void*)L_33);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4260>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_34 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_35 = V_2;
 		NullCheck(L_34);
 		L_34->___Pts = L_35;
 		Il2CppCodeGenWriteBarrier((void**)(&L_34->___Pts), (void*)L_35);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4261>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_36;
 		L_36 = ClipperBase_CreateOutRec_m8385CCD504D822268DDC5D9174253A80E76C2122(__this, NULL);
 		V_6 = L_36;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4262>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_37 = V_6;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_38 = V_3;
 		NullCheck(L_37);
 		L_37->___Pts = L_38;
 		Il2CppCodeGenWriteBarrier((void**)(&L_37->___Pts), (void*)L_38);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4263>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_39 = V_6;
 		Clipper_UpdateOutPtIdxs_mD7AA527B468A83E10A722589DA7DC6EDC74266B0(__this, L_39, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4264>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_40 = V_6;
 		NullCheck(L_40);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_41 = L_40->___Pts;
@@ -22541,17 +24974,20 @@ IL_003c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4267>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_45 = V_6;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_46 = V_1;
 		NullCheck(L_46);
 		bool L_47 = L_46->___IsHole;
 		NullCheck(L_45);
 		L_45->___IsHole = (bool)((((int32_t)L_47) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4268>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_48 = V_6;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_49 = V_1;
 		NullCheck(L_48);
 		L_48->___FirstLeft = L_49;
 		Il2CppCodeGenWriteBarrier((void**)(&L_48->___FirstLeft), (void*)L_49);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4269>
 		bool L_50 = __this->___m_UsingPolyTree;
 		if (!L_50)
 		{
@@ -22559,6 +24995,7 @@ IL_003c:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4269>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_51 = V_6;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_52 = V_1;
 		Clipper_FixupFirstLefts2_m34CD287CAA95AA183535EAFFD64B45CDD8847752(__this, L_51, L_52, NULL);
@@ -22567,6 +25004,7 @@ IL_003c:
 
 IL_00fe:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4271>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_53 = V_1;
 		NullCheck(L_53);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_54 = L_53->___Pts;
@@ -22581,18 +25019,21 @@ IL_00fe:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4274>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_58 = V_6;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_59 = V_1;
 		NullCheck(L_59);
 		bool L_60 = L_59->___IsHole;
 		NullCheck(L_58);
 		L_58->___IsHole = L_60;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4275>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_61 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_62 = V_6;
 		NullCheck(L_62);
 		bool L_63 = L_62->___IsHole;
 		NullCheck(L_61);
 		L_61->___IsHole = (bool)((((int32_t)L_63) == ((int32_t)0))? 1 : 0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4276>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_64 = V_6;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_65 = V_1;
 		NullCheck(L_65);
@@ -22600,11 +25041,13 @@ IL_00fe:
 		NullCheck(L_64);
 		L_64->___FirstLeft = L_66;
 		Il2CppCodeGenWriteBarrier((void**)(&L_64->___FirstLeft), (void*)L_66);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4277>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_67 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_68 = V_6;
 		NullCheck(L_67);
 		L_67->___FirstLeft = L_68;
 		Il2CppCodeGenWriteBarrier((void**)(&L_67->___FirstLeft), (void*)L_68);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4278>
 		bool L_69 = __this->___m_UsingPolyTree;
 		if (!L_69)
 		{
@@ -22612,6 +25055,7 @@ IL_00fe:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4278>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_70 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_71 = V_6;
 		Clipper_FixupFirstLefts2_m34CD287CAA95AA183535EAFFD64B45CDD8847752(__this, L_70, L_71, NULL);
@@ -22620,12 +25064,14 @@ IL_00fe:
 
 IL_0157:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4283>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_72 = V_6;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_73 = V_1;
 		NullCheck(L_73);
 		bool L_74 = L_73->___IsHole;
 		NullCheck(L_72);
 		L_72->___IsHole = L_74;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4284>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_75 = V_6;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_76 = V_1;
 		NullCheck(L_76);
@@ -22633,6 +25079,7 @@ IL_0157:
 		NullCheck(L_75);
 		L_75->___FirstLeft = L_77;
 		Il2CppCodeGenWriteBarrier((void**)(&L_75->___FirstLeft), (void*)L_77);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4285>
 		bool L_78 = __this->___m_UsingPolyTree;
 		if (!L_78)
 		{
@@ -22640,6 +25087,7 @@ IL_0157:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4285>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_79 = V_1;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_80 = V_6;
 		Clipper_FixupFirstLefts1_m955754CF5788136720A5C049B4C4CF761DC73AED(__this, L_79, L_80, NULL);
@@ -22647,12 +25095,14 @@ IL_0157:
 
 IL_0182:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4287>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_81 = V_2;
 		V_3 = L_81;
 	}
 
 IL_0184:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4289>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_82 = V_3;
 		NullCheck(L_82);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_83 = L_82->___Next;
@@ -22661,6 +25111,7 @@ IL_0184:
 
 IL_018b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4248>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_84 = V_3;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_85 = V_1;
 		NullCheck(L_85);
@@ -22671,10 +25122,12 @@ IL_018b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4291>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_87 = V_2;
 		NullCheck(L_87);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_88 = L_87->___Next;
 		V_2 = L_88;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4293>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_89 = V_2;
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_90 = V_1;
 		NullCheck(L_90);
@@ -22687,6 +25140,7 @@ IL_018b:
 
 IL_01aa:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4240>
 		int32_t L_92 = V_0;
 		List_1_t7F09ADC14ECE3BFD6E64B61F6721FB09E1D18ED7* L_93 = ((ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749*)__this)->___m_PolyOuts;
 		NullCheck(L_93);
@@ -22698,9 +25152,11 @@ IL_01aa:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4295>
 		return;
 	}
 }
+// Method Definition Index: 58093
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_m0C8F6E265FB3A731A4BDEA4FAAC2BD11E691BDCF (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_poly, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22715,11 +25171,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_m0C8F6E265FB3A731A4BDEA4F
 	int32_t V_2 = 0;
 	int32_t V_3 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4301>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = ___0_poly;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_inline(L_0, List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_RuntimeMethod_var);
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4302>
 		int32_t L_2 = V_0;
 		if ((((int32_t)L_2) >= ((int32_t)3)))
 		{
@@ -22727,13 +25185,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_m0C8F6E265FB3A731A4BDEA4F
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4302>
 		return (0.0);
 	}
 
 IL_0015:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4303>
 		V_1 = (0.0);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4304>
 		V_2 = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4304>
 		int32_t L_3 = V_0;
 		V_3 = ((int32_t)il2cpp_codegen_subtract(L_3, 1));
 		goto IL_0067;
@@ -22741,6 +25203,7 @@ IL_0015:
 
 IL_0027:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4306>
 		double L_4 = V_1;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_5 = ___0_poly;
 		int32_t L_6 = V_3;
@@ -22767,14 +25230,17 @@ IL_0027:
 		L_19 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_17, L_18, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		int64_t L_20 = L_19.___Y;
 		V_1 = ((double)il2cpp_codegen_add(L_4, ((double)il2cpp_codegen_multiply(((double)il2cpp_codegen_add(((double)L_8), ((double)L_12))), ((double)il2cpp_codegen_subtract(((double)L_16), ((double)L_20)))))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4307>
 		int32_t L_21 = V_2;
 		V_3 = L_21;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4304>
 		int32_t L_22 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_22, 1));
 	}
 
 IL_0067:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4304>
 		int32_t L_23 = V_2;
 		int32_t L_24 = V_0;
 		if ((((int32_t)L_23) < ((int32_t)L_24)))
@@ -22783,13 +25249,16 @@ IL_0067:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4309>
 		double L_25 = V_1;
 		return ((double)il2cpp_codegen_multiply(((-L_25)), (0.5)));
 	}
 }
+// Method Definition Index: 58094
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_m22B30EDCF6C7DDE5B7DE2F892A3410DA26EACE13 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* ___0_outRec, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4316>
 		OutRec_t59CBECDA7FEE344D239EEBC34D09758DF1402954* L_0 = ___0_outRec;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___Pts;
@@ -22798,13 +25267,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_m22B30EDCF6C7DDE5B7DE2F89
 		return L_2;
 	}
 }
+// Method Definition Index: 58095
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_mD211BB43D4AE983C8EEAE1BCC9B4DE6E653B8299 (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_op, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	double V_1 = 0.0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4323>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_op;
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4324>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = ___0_op;
 		if (L_1)
 		{
@@ -22812,16 +25284,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_Area_mD211BB43D4AE983C8EEAE1BC
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4324>
 		return (0.0);
 	}
 
 IL_000f:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4325>
 		V_1 = (0.0);
 	}
 
 IL_0019:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4328>
 		double L_2 = V_1;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_3 = ___0_op;
 		NullCheck(L_3);
@@ -22844,10 +25319,12 @@ IL_0019:
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538* L_15 = (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538*)(&L_14->___Pt);
 		int64_t L_16 = L_15->___Y;
 		V_1 = ((double)il2cpp_codegen_add(L_2, ((double)il2cpp_codegen_multiply(((double)((int64_t)il2cpp_codegen_add(L_6, L_9))), ((double)((int64_t)il2cpp_codegen_subtract(L_13, L_16)))))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4329>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_17 = ___0_op;
 		NullCheck(L_17);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_18 = L_17->___Next;
 		___0_op = L_18;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4331>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_19 = ___0_op;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_20 = V_0;
 		if ((!(((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_19) == ((RuntimeObject*)(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_20))))
@@ -22856,10 +25333,12 @@ IL_0019:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4332>
 		double L_21 = V_1;
 		return ((double)il2cpp_codegen_multiply(L_21, (0.5)));
 	}
 }
+// Method Definition Index: 58096
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_SimplifyPolygon_m8AABE4A176C6DF388D644D478577211E86B69C06 (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_poly, int32_t ___1_fillType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22872,29 +25351,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	}
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4343>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571(L_0, List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571_RuntimeMethod_var);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4344>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_1 = (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12*)il2cpp_codegen_object_new(Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12_il2cpp_TypeInfo_var);
 		Clipper__ctor_m79876B5EC9228EEAAF0564D8AED96823013A9378(L_1, 0, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4345>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_2 = L_1;
 		NullCheck(L_2);
 		Clipper_set_StrictlySimple_mBAA38534C91283F371B0BC5847702C29E674A00C_inline(L_2, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4346>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_3 = L_2;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_4 = ___0_poly;
 		NullCheck(L_3);
 		bool L_5;
 		L_5 = ClipperBase_AddPath_mA946CF9B6011042421DDEE21266D25E70AA4FB68(L_3, L_4, 0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4347>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_6 = V_0;
 		int32_t L_7 = ___1_fillType;
 		int32_t L_8 = ___1_fillType;
 		NullCheck(L_3);
 		bool L_9;
 		L_9 = Clipper_Execute_m6BFF7174B7680F350A69BB8CD2B7997C27A78BEA(L_3, 1, L_6, L_7, L_8, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4348>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_10 = V_0;
 		return L_10;
 	}
 }
+// Method Definition Index: 58097
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_SimplifyPolygons_mE5D7A0917BBC6067C2F79050721BBF40599BA20A (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___0_polys, int32_t ___1_fillType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22907,64 +25393,78 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	}
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4356>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571(L_0, List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571_RuntimeMethod_var);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4357>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_1 = (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12*)il2cpp_codegen_object_new(Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12_il2cpp_TypeInfo_var);
 		Clipper__ctor_m79876B5EC9228EEAAF0564D8AED96823013A9378(L_1, 0, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4358>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_2 = L_1;
 		NullCheck(L_2);
 		Clipper_set_StrictlySimple_mBAA38534C91283F371B0BC5847702C29E674A00C_inline(L_2, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4359>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_3 = L_2;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_4 = ___0_polys;
 		NullCheck(L_3);
 		bool L_5;
 		L_5 = ClipperBase_AddPaths_m27ACCC4640137E92BE1FF9BAF3382FB70CFBEBB1(L_3, L_4, 0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4360>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_6 = V_0;
 		int32_t L_7 = ___1_fillType;
 		int32_t L_8 = ___1_fillType;
 		NullCheck(L_3);
 		bool L_9;
 		L_9 = Clipper_Execute_m6BFF7174B7680F350A69BB8CD2B7997C27A78BEA(L_3, 1, L_6, L_7, L_8, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4361>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_10 = V_0;
 		return L_10;
 	}
 }
+// Method Definition Index: 58098
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_DistanceSqrd_mDBED06ECBD73F8D0638A7DD69BA523AE596D9B5C (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt2, const RuntimeMethod* method) 
 {
 	double V_0 = 0.0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4368>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_pt1;
 		int64_t L_1 = L_0.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___1_pt2;
 		int64_t L_3 = L_2.___X;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4369>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = ___0_pt1;
 		int64_t L_5 = L_4.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = ___1_pt2;
 		int64_t L_7 = L_6.___Y;
 		V_0 = ((double)il2cpp_codegen_subtract(((double)L_5), ((double)L_7)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4370>
 		double L_8 = ((double)il2cpp_codegen_subtract(((double)L_1), ((double)L_3)));
 		double L_9 = V_0;
 		double L_10 = V_0;
 		return ((double)il2cpp_codegen_add(((double)il2cpp_codegen_multiply(L_8, L_8)), ((double)il2cpp_codegen_multiply(L_9, L_10))));
 	}
 }
+// Method Definition Index: 58099
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_DistanceFromLineSqrd_m1D0734740503B55AB703355431F34B24778AA4B0 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_ln1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_ln2, const RuntimeMethod* method) 
 {
 	double V_0 = 0.0;
 	double V_1 = 0.0;
 	double V_2 = 0.0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4383>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___1_ln1;
 		int64_t L_1 = L_0.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___2_ln2;
 		int64_t L_3 = L_2.___Y;
 		V_0 = ((double)((int64_t)il2cpp_codegen_subtract(L_1, L_3)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4384>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = ___2_ln2;
 		int64_t L_5 = L_4.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = ___1_ln1;
 		int64_t L_7 = L_6.___X;
 		V_1 = ((double)((int64_t)il2cpp_codegen_subtract(L_5, L_7)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4385>
 		double L_8 = V_0;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_9 = ___1_ln1;
 		int64_t L_10 = L_9.___X;
@@ -22972,6 +25472,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_DistanceFromLineSqrd_m1D073474
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_12 = ___1_ln1;
 		int64_t L_13 = L_12.___Y;
 		V_2 = ((double)il2cpp_codegen_add(((double)il2cpp_codegen_multiply(L_8, ((double)L_10))), ((double)il2cpp_codegen_multiply(L_11, ((double)L_13)))));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4386>
 		double L_14 = V_0;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_15 = ___0_pt;
 		int64_t L_16 = L_15.___X;
@@ -22980,6 +25481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_DistanceFromLineSqrd_m1D073474
 		int64_t L_19 = L_18.___Y;
 		double L_20 = V_2;
 		V_2 = ((double)il2cpp_codegen_subtract(((double)il2cpp_codegen_add(((double)il2cpp_codegen_multiply(L_14, ((double)L_16))), ((double)il2cpp_codegen_multiply(L_17, ((double)L_19))))), L_20));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4387>
 		double L_21 = V_2;
 		double L_22 = V_2;
 		double L_23 = V_0;
@@ -22989,6 +25491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double Clipper_DistanceFromLineSqrd_m1D073474
 		return ((double)(((double)il2cpp_codegen_multiply(L_21, L_22))/((double)il2cpp_codegen_add(((double)il2cpp_codegen_multiply(L_23, L_24)), ((double)il2cpp_codegen_multiply(L_25, L_26))))));
 	}
 }
+// Method Definition Index: 58100
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_SlopesNearCollinear_mB1DB109DE0E73203B2C85CB98037ED6B32874496 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt2, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___2_pt3, double ___3_distSqrd, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -22998,6 +25501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_SlopesNearCollinear_mB1DB109DE0E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4398>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_pt1;
 		int64_t L_1 = L_0.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___1_pt2;
@@ -23017,6 +25521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_SlopesNearCollinear_mB1DB109DE0E
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4400>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_10 = ___0_pt1;
 		int64_t L_11 = L_10.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_12 = ___1_pt2;
@@ -23031,6 +25536,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_SlopesNearCollinear_mB1DB109DE0E
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4401>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_18 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_19 = ___1_pt2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_20 = ___2_pt3;
@@ -23042,6 +25548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_SlopesNearCollinear_mB1DB109DE0E
 
 IL_0050:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4402>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_23 = ___1_pt2;
 		int64_t L_24 = L_23.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_25 = ___0_pt1;
@@ -23056,6 +25563,7 @@ IL_0050:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4403>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_31 = ___1_pt2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_32 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_33 = ___2_pt3;
@@ -23067,6 +25575,7 @@ IL_0050:
 
 IL_007a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4405>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_36 = ___2_pt3;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_37 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_38 = ___1_pt2;
@@ -23078,6 +25587,7 @@ IL_007a:
 
 IL_0086:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4409>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_41 = ___0_pt1;
 		int64_t L_42 = L_41.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_43 = ___1_pt2;
@@ -23092,6 +25602,7 @@ IL_0086:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4410>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_49 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_50 = ___1_pt2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_51 = ___2_pt3;
@@ -23103,6 +25614,7 @@ IL_0086:
 
 IL_00b0:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4411>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_54 = ___1_pt2;
 		int64_t L_55 = L_54.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_56 = ___0_pt1;
@@ -23117,6 +25629,7 @@ IL_00b0:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4412>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_62 = ___1_pt2;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_63 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_64 = ___2_pt3;
@@ -23128,6 +25641,7 @@ IL_00b0:
 
 IL_00da:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4414>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_67 = ___2_pt3;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_68 = ___0_pt1;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_69 = ___1_pt2;
@@ -23137,19 +25651,23 @@ IL_00da:
 		return (bool)((((double)L_70) < ((double)L_71))? 1 : 0);
 	}
 }
+// Method Definition Index: 58101
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_PointsAreClose_m55D44A9DC9B3367E5844C6AEFA406A6FC0CF2531 (IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_pt1, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_pt2, double ___2_distSqrd, const RuntimeMethod* method) 
 {
 	double V_0 = 0.0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4422>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_0 = ___0_pt1;
 		int64_t L_1 = L_0.___X;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_2 = ___1_pt2;
 		int64_t L_3 = L_2.___X;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4423>
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_4 = ___0_pt1;
 		int64_t L_5 = L_4.___Y;
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_6 = ___1_pt2;
 		int64_t L_7 = L_6.___Y;
 		V_0 = ((double)il2cpp_codegen_subtract(((double)L_5), ((double)L_7)));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4424>
 		double L_8 = ((double)il2cpp_codegen_subtract(((double)L_1), ((double)L_3)));
 		double L_9 = V_0;
 		double L_10 = V_0;
@@ -23157,14 +25675,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Clipper_PointsAreClose_m55D44A9DC9B3367E
 		return (bool)((((int32_t)((!(((double)((double)il2cpp_codegen_add(((double)il2cpp_codegen_multiply(L_8, L_8)), ((double)il2cpp_codegen_multiply(L_9, L_10))))) <= ((double)L_11)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
 	}
 }
+// Method Definition Index: 58102
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* Clipper_ExcludeOp_mF68B2639A94B551C633013C7DC1F6DAA19F1AA2F (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* ___0_op, const RuntimeMethod* method) 
 {
 	OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4431>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_0 = ___0_op;
 		NullCheck(L_0);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_1 = L_0->___Prev;
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4432>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_2 = V_0;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_3 = ___0_op;
 		NullCheck(L_3);
@@ -23172,6 +25693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		NullCheck(L_2);
 		L_2->___Next = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___Next), (void*)L_4);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4433>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_5 = ___0_op;
 		NullCheck(L_5);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_6 = L_5->___Next;
@@ -23179,13 +25701,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EB
 		NullCheck(L_6);
 		L_6->___Prev = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___Prev), (void*)L_7);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4434>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = V_0;
 		NullCheck(L_8);
 		L_8->___Idx = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4435>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_9 = V_0;
 		return L_9;
 	}
 }
+// Method Definition Index: 58103
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* Clipper_CleanPolygon_m50945A9225FE118C7E5AF61CAE3FFFFB8DC2F364 (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_path, double ___1_distance, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23210,11 +25735,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B7
 	int32_t V_6 = 0;
 	int32_t V_7 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4446>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = ___0_path;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_inline(L_0, List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_RuntimeMethod_var);
 		V_0 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4448>
 		int32_t L_2 = V_0;
 		if (L_2)
 		{
@@ -23222,6 +25749,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B7
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4448>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_3 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m5BB202F387A1636DB039D86A67417512F697C91C(L_3, List_1__ctor_m5BB202F387A1636DB039D86A67417512F697C91C_RuntimeMethod_var);
 		return L_3;
@@ -23229,15 +25757,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B7
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4450>
 		int32_t L_4 = V_0;
 		OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6* L_5 = (OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6*)(OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6*)SZArrayNew(OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6_il2cpp_TypeInfo_var, (uint32_t)L_4);
 		V_1 = L_5;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4451>
 		V_5 = 0;
 		goto IL_002b;
 	}
 
 IL_001c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4451>
 		OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6* L_6 = V_1;
 		int32_t L_7 = V_5;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_8 = (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)il2cpp_codegen_object_new(OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE_il2cpp_TypeInfo_var);
@@ -23245,12 +25776,14 @@ IL_001c:
 		NullCheck(L_6);
 		ArrayElementTypeCheck (L_6, L_8);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE*)L_8);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4451>
 		int32_t L_9 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_9, 1));
 	}
 
 IL_002b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4451>
 		int32_t L_10 = V_5;
 		int32_t L_11 = V_0;
 		if ((((int32_t)L_10) < ((int32_t)L_11)))
@@ -23259,12 +25792,14 @@ IL_002b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4453>
 		V_6 = 0;
 		goto IL_0079;
 	}
 
 IL_0035:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4455>
 		OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6* L_12 = V_1;
 		int32_t L_13 = V_6;
 		NullCheck(L_12);
@@ -23277,6 +25812,7 @@ IL_0035:
 		L_18 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_16, L_17, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		NullCheck(L_15);
 		L_15->___Pt = L_18;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4456>
 		OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6* L_19 = V_1;
 		int32_t L_20 = V_6;
 		NullCheck(L_19);
@@ -23291,6 +25827,7 @@ IL_0035:
 		NullCheck(L_22);
 		L_22->___Next = L_27;
 		Il2CppCodeGenWriteBarrier((void**)(&L_22->___Next), (void*)L_27);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4457>
 		OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6* L_28 = V_1;
 		int32_t L_29 = V_6;
 		NullCheck(L_28);
@@ -23306,6 +25843,7 @@ IL_0035:
 		NullCheck(L_32);
 		L_32->___Prev = L_36;
 		Il2CppCodeGenWriteBarrier((void**)(&L_32->___Prev), (void*)L_36);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4458>
 		OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6* L_37 = V_1;
 		int32_t L_38 = V_6;
 		NullCheck(L_37);
@@ -23313,12 +25851,14 @@ IL_0035:
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
 		NullCheck(L_40);
 		L_40->___Idx = 0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4453>
 		int32_t L_41 = V_6;
 		V_6 = ((int32_t)il2cpp_codegen_add(L_41, 1));
 	}
 
 IL_0079:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4453>
 		int32_t L_42 = V_6;
 		int32_t L_43 = V_0;
 		if ((((int32_t)L_42) < ((int32_t)L_43)))
@@ -23327,9 +25867,11 @@ IL_0079:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4461>
 		double L_44 = ___1_distance;
 		double L_45 = ___1_distance;
 		V_2 = ((double)il2cpp_codegen_multiply(L_44, L_45));
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4462>
 		OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6* L_46 = V_1;
 		NullCheck(L_46);
 		int32_t L_47 = 0;
@@ -23340,6 +25882,7 @@ IL_0079:
 
 IL_008b:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4465>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_49 = V_3;
 		NullCheck(L_49);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_50 = L_49->___Pt;
@@ -23357,10 +25900,12 @@ IL_008b:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4467>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_56 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_57;
 		L_57 = Clipper_ExcludeOp_mF68B2639A94B551C633013C7DC1F6DAA19F1AA2F(L_56, NULL);
 		V_3 = L_57;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4468>
 		int32_t L_58 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_58, 1));
 		goto IL_0127;
@@ -23368,6 +25913,7 @@ IL_008b:
 
 IL_00b1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4470>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_59 = V_3;
 		NullCheck(L_59);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_60 = L_59->___Prev;
@@ -23387,15 +25933,18 @@ IL_00b1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4472>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_67 = V_3;
 		NullCheck(L_67);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_68 = L_67->___Next;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_69;
 		L_69 = Clipper_ExcludeOp_mF68B2639A94B551C633013C7DC1F6DAA19F1AA2F(L_68, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4473>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_70 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_71;
 		L_71 = Clipper_ExcludeOp_mF68B2639A94B551C633013C7DC1F6DAA19F1AA2F(L_70, NULL);
 		V_3 = L_71;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4474>
 		int32_t L_72 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_72, 2));
 		goto IL_0127;
@@ -23403,6 +25952,7 @@ IL_00b1:
 
 IL_00e8:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4476>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_73 = V_3;
 		NullCheck(L_73);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_74 = L_73->___Prev;
@@ -23425,10 +25975,12 @@ IL_00e8:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4478>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_83 = V_3;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_84;
 		L_84 = Clipper_ExcludeOp_mF68B2639A94B551C633013C7DC1F6DAA19F1AA2F(L_83, NULL);
 		V_3 = L_84;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4479>
 		int32_t L_85 = V_0;
 		V_0 = ((int32_t)il2cpp_codegen_subtract(L_85, 1));
 		goto IL_0127;
@@ -23436,9 +25988,11 @@ IL_00e8:
 
 IL_0119:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4483>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_86 = V_3;
 		NullCheck(L_86);
 		L_86->___Idx = 1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4484>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_87 = V_3;
 		NullCheck(L_87);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_88 = L_87->___Next;
@@ -23447,6 +26001,7 @@ IL_0119:
 
 IL_0127:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4463>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_89 = V_3;
 		NullCheck(L_89);
 		int32_t L_90 = L_89->___Idx;
@@ -23470,6 +26025,7 @@ IL_0127:
 
 IL_0140:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4488>
 		int32_t L_95 = V_0;
 		if ((((int32_t)L_95) >= ((int32_t)3)))
 		{
@@ -23477,37 +26033,44 @@ IL_0140:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4488>
 		V_0 = 0;
 	}
 
 IL_0146:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4489>
 		int32_t L_96 = V_0;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_97 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118(L_97, L_96, List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118_RuntimeMethod_var);
 		V_4 = L_97;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4490>
 		V_7 = 0;
 		goto IL_016d;
 	}
 
 IL_0153:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4492>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_98 = V_4;
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_99 = V_3;
 		NullCheck(L_99);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_100 = L_99->___Pt;
 		NullCheck(L_98);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_98, L_100, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4493>
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_101 = V_3;
 		NullCheck(L_101);
 		OutPt_t3A3E89D65A30242FC6ADF6E0EE4EB8E37861EBBE* L_102 = L_101->___Next;
 		V_3 = L_102;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4490>
 		int32_t L_103 = V_7;
 		V_7 = ((int32_t)il2cpp_codegen_add(L_103, 1));
 	}
 
 IL_016d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4490>
 		int32_t L_104 = V_7;
 		int32_t L_105 = V_0;
 		if ((((int32_t)L_104) < ((int32_t)L_105)))
@@ -23516,11 +26079,14 @@ IL_016d:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4495>
 		V_1 = (OutPtU5BU5D_tF22F69DBBD6DFD900D4342712E1D3583EEAE05B6*)NULL;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4496>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_106 = V_4;
 		return L_106;
 	}
 }
+// Method Definition Index: 58104
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_CleanPolygons_m5AE84E4C1A0BF4F1B337EA16675674CBD7F6789F (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___0_polys, double ___1_distance, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23536,6 +26102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4504>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = ___0_polys;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -23543,12 +26110,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_2 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m92DB47F508EF5F2EB86BAF6F6E07D961C47BA467(L_2, L_1, List_1__ctor_m92DB47F508EF5F2EB86BAF6F6E07D961C47BA467_RuntimeMethod_var);
 		V_0 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4505>
 		V_1 = 0;
 		goto IL_0027;
 	}
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4506>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_3 = V_0;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_4 = ___0_polys;
 		int32_t L_5 = V_1;
@@ -23560,12 +26129,14 @@ IL_0010:
 		L_8 = Clipper_CleanPolygon_m50945A9225FE118C7E5AF61CAE3FFFFB8DC2F364(L_6, L_7, NULL);
 		NullCheck(L_3);
 		List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_inline(L_3, L_8, List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4505>
 		int32_t L_9 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_9, 1));
 	}
 
 IL_0027:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4505>
 		int32_t L_10 = V_1;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_11 = ___0_polys;
 		NullCheck(L_11);
@@ -23577,10 +26148,12 @@ IL_0027:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4507>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_13 = V_0;
 		return L_13;
 	}
 }
+// Method Definition Index: 58105
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_Minkowski_mEF5E1EFBB32800CC6FD0A31E9BFB98EA2E7F6AC3 (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_pattern, List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___1_path, bool ___2_IsSum, bool ___3_IsClosed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23618,6 +26191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* V_15 = NULL;
 	int32_t G_B3_0 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4514>
 		bool L_0 = ___3_IsClosed;
 		if (L_0)
 		{
@@ -23637,20 +26211,24 @@ IL_0006:
 IL_0007:
 	{
 		V_0 = G_B3_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4515>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_1 = ___0_pattern;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_inline(L_1, List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_RuntimeMethod_var);
 		V_1 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4516>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_3 = ___1_path;
 		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_inline(L_3, List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_RuntimeMethod_var);
 		V_2 = L_4;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4517>
 		int32_t L_5 = V_2;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_6 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m92DB47F508EF5F2EB86BAF6F6E07D961C47BA467(L_6, L_5, List_1__ctor_m92DB47F508EF5F2EB86BAF6F6E07D961C47BA467_RuntimeMethod_var);
 		V_3 = L_6;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4518>
 		bool L_7 = ___2_IsSum;
 		if (!L_7)
 		{
@@ -23658,28 +26236,33 @@ IL_0007:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4519>
 		V_5 = 0;
 		goto IL_0090;
 	}
 
 IL_0025:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4521>
 		int32_t L_8 = V_1;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_9 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118(L_9, L_8, List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118_RuntimeMethod_var);
 		V_6 = L_9;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4522>
 		V_7 = 0;
 		goto IL_0078;
 	}
 
 IL_0032:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4524>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_10 = ___0_pattern;
 		int32_t L_11 = V_7;
 		NullCheck(L_10);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_12;
 		L_12 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_10, L_11, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		V_8 = L_12;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4525>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_13 = V_6;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_14 = ___1_path;
 		int32_t L_15 = V_5;
@@ -23702,12 +26285,14 @@ IL_0032:
 		IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7((&L_26), ((int64_t)il2cpp_codegen_add(L_17, L_19)), ((int64_t)il2cpp_codegen_add(L_23, L_25)), NULL);
 		NullCheck(L_13);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_13, L_26, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4522>
 		int32_t L_27 = V_7;
 		V_7 = ((int32_t)il2cpp_codegen_add(L_27, 1));
 	}
 
 IL_0078:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4522>
 		int32_t L_28 = V_7;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_29 = ___0_pattern;
 		NullCheck(L_29);
@@ -23719,16 +26304,19 @@ IL_0078:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4527>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_31 = V_3;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_32 = V_6;
 		NullCheck(L_31);
 		List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_inline(L_31, L_32, List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4519>
 		int32_t L_33 = V_5;
 		V_5 = ((int32_t)il2cpp_codegen_add(L_33, 1));
 	}
 
 IL_0090:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4519>
 		int32_t L_34 = V_5;
 		int32_t L_35 = V_2;
 		if ((((int32_t)L_34) < ((int32_t)L_35)))
@@ -23742,28 +26330,33 @@ IL_0090:
 
 IL_0097:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4530>
 		V_9 = 0;
 		goto IL_0107;
 	}
 
 IL_009c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4532>
 		int32_t L_36 = V_1;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_37 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118(L_37, L_36, List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118_RuntimeMethod_var);
 		V_10 = L_37;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4533>
 		V_11 = 0;
 		goto IL_00ef;
 	}
 
 IL_00a9:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4535>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_38 = ___0_pattern;
 		int32_t L_39 = V_11;
 		NullCheck(L_38);
 		IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 L_40;
 		L_40 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_38, L_39, List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		V_12 = L_40;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4536>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_41 = V_10;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_42 = ___1_path;
 		int32_t L_43 = V_9;
@@ -23786,12 +26379,14 @@ IL_00a9:
 		IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7((&L_54), ((int64_t)il2cpp_codegen_subtract(L_45, L_47)), ((int64_t)il2cpp_codegen_subtract(L_51, L_53)), NULL);
 		NullCheck(L_41);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_41, L_54, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4533>
 		int32_t L_55 = V_11;
 		V_11 = ((int32_t)il2cpp_codegen_add(L_55, 1));
 	}
 
 IL_00ef:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4533>
 		int32_t L_56 = V_11;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_57 = ___0_pattern;
 		NullCheck(L_57);
@@ -23803,16 +26398,19 @@ IL_00ef:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4538>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_59 = V_3;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_60 = V_10;
 		NullCheck(L_59);
 		List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_inline(L_59, L_60, List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4530>
 		int32_t L_61 = V_9;
 		V_9 = ((int32_t)il2cpp_codegen_add(L_61, 1));
 	}
 
 IL_0107:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4530>
 		int32_t L_62 = V_9;
 		int32_t L_63 = V_2;
 		if ((((int32_t)L_62) < ((int32_t)L_63)))
@@ -23823,27 +26421,32 @@ IL_0107:
 
 IL_010c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4541>
 		int32_t L_64 = V_2;
 		int32_t L_65 = V_0;
 		int32_t L_66 = V_1;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_67 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m92DB47F508EF5F2EB86BAF6F6E07D961C47BA467(L_67, ((int32_t)il2cpp_codegen_multiply(((int32_t)il2cpp_codegen_add(L_64, L_65)), ((int32_t)il2cpp_codegen_add(L_66, 1)))), List_1__ctor_m92DB47F508EF5F2EB86BAF6F6E07D961C47BA467_RuntimeMethod_var);
 		V_4 = L_67;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4542>
 		V_13 = 0;
 		goto IL_01cf;
 	}
 
 IL_0122:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4543>
 		V_14 = 0;
 		goto IL_01c1;
 	}
 
 IL_012a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4545>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_68 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118(L_68, 4, List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118_RuntimeMethod_var);
 		V_15 = L_68;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4546>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_69 = V_15;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_70 = V_3;
 		int32_t L_71 = V_13;
@@ -23858,6 +26461,7 @@ IL_012a:
 		L_76 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_73, ((int32_t)(L_74%L_75)), List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		NullCheck(L_69);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_69, L_76, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4547>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_77 = V_15;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_78 = V_3;
 		int32_t L_79 = V_13;
@@ -23872,6 +26476,7 @@ IL_012a:
 		L_84 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_81, ((int32_t)(L_82%L_83)), List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		NullCheck(L_77);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_77, L_84, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4548>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_85 = V_15;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_86 = V_3;
 		int32_t L_87 = V_13;
@@ -23886,6 +26491,7 @@ IL_012a:
 		L_92 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_89, ((int32_t)(((int32_t)il2cpp_codegen_add(L_90, 1))%L_91)), List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		NullCheck(L_85);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_85, L_92, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4549>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_93 = V_15;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_94 = V_3;
 		int32_t L_95 = V_13;
@@ -23900,6 +26506,7 @@ IL_012a:
 		L_100 = List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37(L_97, ((int32_t)(((int32_t)il2cpp_codegen_add(L_98, 1))%L_99)), List_1_get_Item_m8B1A5819FF3620334D4AB49EBF7890876FA37F37_RuntimeMethod_var);
 		NullCheck(L_93);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_93, L_100, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4550>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_101 = V_15;
 		bool L_102;
 		L_102 = Clipper_Orientation_mAA2E77E8CFB335296C5F6DDF07DB62A401674FB6(L_101, NULL);
@@ -23909,6 +26516,7 @@ IL_012a:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4550>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_103 = V_15;
 		NullCheck(L_103);
 		List_1_Reverse_mF1CBF6168A0A35AEB533CA9D610558FFEE23E7B0(L_103, List_1_Reverse_mF1CBF6168A0A35AEB533CA9D610558FFEE23E7B0_RuntimeMethod_var);
@@ -23916,16 +26524,19 @@ IL_012a:
 
 IL_01b2:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4551>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_104 = V_4;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_105 = V_15;
 		NullCheck(L_104);
 		List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_inline(L_104, L_105, List_1_Add_mD4753FFDF16AFF1F454618DAF3C392D2806CB3F7_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4543>
 		int32_t L_106 = V_14;
 		V_14 = ((int32_t)il2cpp_codegen_add(L_106, 1));
 	}
 
 IL_01c1:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4543>
 		int32_t L_107 = V_14;
 		int32_t L_108 = V_1;
 		if ((((int32_t)L_107) < ((int32_t)L_108)))
@@ -23934,12 +26545,14 @@ IL_01c1:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4542>
 		int32_t L_109 = V_13;
 		V_13 = ((int32_t)il2cpp_codegen_add(L_109, 1));
 	}
 
 IL_01cf:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4542>
 		int32_t L_110 = V_13;
 		int32_t L_111 = V_2;
 		int32_t L_112 = V_0;
@@ -23949,10 +26562,12 @@ IL_01cf:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4553>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_113 = V_4;
 		return L_113;
 	}
 }
+// Method Definition Index: 58106
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_MinkowskiSum_m52E28149418FBC2DA0BD6CDC7CD51DE0C0914B12 (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_pattern, List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___1_path, bool ___2_pathIsClosed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23963,27 +26578,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	}
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4560>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = ___0_pattern;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_1 = ___1_path;
 		bool L_2 = ___2_pathIsClosed;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_3;
 		L_3 = Clipper_Minkowski_mEF5E1EFBB32800CC6FD0A31E9BFB98EA2E7F6AC3(L_0, L_1, (bool)1, L_2, NULL);
 		V_0 = L_3;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4561>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_4 = (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12*)il2cpp_codegen_object_new(Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12_il2cpp_TypeInfo_var);
 		Clipper__ctor_m79876B5EC9228EEAAF0564D8AED96823013A9378(L_4, 0, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4562>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_5 = L_4;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_6 = V_0;
 		NullCheck(L_5);
 		bool L_7;
 		L_7 = ClipperBase_AddPaths_m27ACCC4640137E92BE1FF9BAF3382FB70CFBEBB1(L_5, L_6, 0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4563>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_8 = V_0;
 		NullCheck(L_5);
 		bool L_9;
 		L_9 = Clipper_Execute_m6BFF7174B7680F350A69BB8CD2B7997C27A78BEA(L_5, 1, L_8, 1, 1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4564>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_10 = V_0;
 		return L_10;
 	}
 }
+// Method Definition Index: 58107
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* Clipper_TranslatePath_m989F5B720466DE87DD7ED7222A81B819BD7EC735 (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_path, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___1_delta, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -23999,6 +26620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B7
 	List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4571>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = ___0_path;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -24006,12 +26628,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B7
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_2 = (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5*)il2cpp_codegen_object_new(List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5_il2cpp_TypeInfo_var);
 		List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118(L_2, L_1, List_1__ctor_m01C8A1CFE7DDC3A65A2A00C3760CB99105D00118_RuntimeMethod_var);
 		V_0 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4572>
 		V_1 = 0;
 		goto IL_0045;
 	}
 
 IL_0010:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4573>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_3 = V_0;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_4 = ___0_path;
 		int32_t L_5 = V_1;
@@ -24034,12 +26658,14 @@ IL_0010:
 		IntPoint__ctor_m975E8CAF60B3C05EA5C947E1E5A5D46A6991C9F7((&L_16), ((int64_t)il2cpp_codegen_add(L_7, L_9)), ((int64_t)il2cpp_codegen_add(L_13, L_15)), NULL);
 		NullCheck(L_3);
 		List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_inline(L_3, L_16, List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4572>
 		int32_t L_17 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_17, 1));
 	}
 
 IL_0045:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4572>
 		int32_t L_18 = V_1;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_19 = ___0_path;
 		NullCheck(L_19);
@@ -24051,10 +26677,12 @@ IL_0045:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4574>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_21 = V_0;
 		return L_21;
 	}
 }
+// Method Definition Index: 58108
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_MinkowskiSum_mC50F9511EB58CAEB4AF2E6A7893123D75B43A3DA (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_pattern, List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___1_paths, bool ___2_pathIsClosed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24074,18 +26702,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_3 = NULL;
 	List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* V_4 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4581>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571(L_0, List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571_RuntimeMethod_var);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4582>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_1 = (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12*)il2cpp_codegen_object_new(Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12_il2cpp_TypeInfo_var);
 		Clipper__ctor_m79876B5EC9228EEAAF0564D8AED96823013A9378(L_1, 0, NULL);
 		V_1 = L_1;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4583>
 		V_2 = 0;
 		goto IL_0052;
 	}
 
 IL_0011:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4585>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_2 = ___0_pattern;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_3 = ___1_paths;
 		int32_t L_4 = V_2;
@@ -24096,11 +26728,13 @@ IL_0011:
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_7;
 		L_7 = Clipper_Minkowski_mEF5E1EFBB32800CC6FD0A31E9BFB98EA2E7F6AC3(L_2, L_5, (bool)1, L_6, NULL);
 		V_3 = L_7;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4586>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_8 = V_1;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_9 = V_3;
 		NullCheck(L_8);
 		bool L_10;
 		L_10 = ClipperBase_AddPaths_m27ACCC4640137E92BE1FF9BAF3382FB70CFBEBB1(L_8, L_9, 0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4587>
 		bool L_11 = ___2_pathIsClosed;
 		if (!L_11)
 		{
@@ -24108,6 +26742,7 @@ IL_0011:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4589>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_12 = ___1_paths;
 		int32_t L_13 = V_2;
 		NullCheck(L_12);
@@ -24120,6 +26755,7 @@ IL_0011:
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_17;
 		L_17 = Clipper_TranslatePath_m989F5B720466DE87DD7ED7222A81B819BD7EC735(L_14, L_16, NULL);
 		V_4 = L_17;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4590>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_18 = V_1;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_19 = V_4;
 		NullCheck(L_18);
@@ -24129,12 +26765,14 @@ IL_0011:
 
 IL_004e:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4583>
 		int32_t L_21 = V_2;
 		V_2 = ((int32_t)il2cpp_codegen_add(L_21, 1));
 	}
 
 IL_0052:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4583>
 		int32_t L_22 = V_2;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_23 = ___1_paths;
 		NullCheck(L_23);
@@ -24146,15 +26784,19 @@ IL_0052:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4593>
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4594>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_25 = V_1;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_26 = V_0;
 		NullCheck(L_25);
 		bool L_27;
 		L_27 = Clipper_Execute_m6BFF7174B7680F350A69BB8CD2B7997C27A78BEA(L_25, 1, L_26, 1, 1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4595>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_28 = V_0;
 		return L_28;
 	}
 }
+// Method Definition Index: 58109
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_MinkowskiDiff_mD3BAC64A9C19F98526FB081E775427F4E500A921 (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___0_poly1, List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* ___1_poly2, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24165,26 +26807,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	}
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4602>
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_0 = ___0_poly1;
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_1 = ___1_poly2;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_2;
 		L_2 = Clipper_Minkowski_mEF5E1EFBB32800CC6FD0A31E9BFB98EA2E7F6AC3(L_0, L_1, (bool)0, (bool)1, NULL);
 		V_0 = L_2;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4603>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_3 = (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12*)il2cpp_codegen_object_new(Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12_il2cpp_TypeInfo_var);
 		Clipper__ctor_m79876B5EC9228EEAAF0564D8AED96823013A9378(L_3, 0, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4604>
 		Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* L_4 = L_3;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_5 = V_0;
 		NullCheck(L_4);
 		bool L_6;
 		L_6 = ClipperBase_AddPaths_m27ACCC4640137E92BE1FF9BAF3382FB70CFBEBB1(L_4, L_5, 0, (bool)1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4605>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_7 = V_0;
 		NullCheck(L_4);
 		bool L_8;
 		L_8 = Clipper_Execute_m6BFF7174B7680F350A69BB8CD2B7997C27A78BEA(L_4, 1, L_7, 1, 1, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4606>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_9 = V_0;
 		return L_9;
 	}
 }
+// Method Definition Index: 58110
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_PolyTreeToPaths_m7ACCF8C1783D5D638EB2473756F5DA78F82CEDE9 (PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* ___0_polytree, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24197,9 +26845,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	}
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4615>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571(L_0, List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571_RuntimeMethod_var);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4616>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_1 = V_0;
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_2 = ___0_polytree;
 		NullCheck(L_2);
@@ -24207,13 +26857,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 		L_3 = PolyTree_get_Total_m2C24746F50527209FE394C6CF52CD40BB95B48C7(L_2, NULL);
 		NullCheck(L_1);
 		List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52(L_1, L_3, List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4617>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_4 = ___0_polytree;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_5 = V_0;
 		Clipper_AddPolyNodeToPaths_m8285754304395D43033E500A6FB193A0130135B8(L_4, 0, L_5, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4618>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_6 = V_0;
 		return L_6;
 	}
 }
+// Method Definition Index: 58111
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddPolyNodeToPaths_m8285754304395D43033E500A6FB193A0130135B8 (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* ___0_polynode, int32_t ___1_nt, List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* ___2_paths, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24231,6 +26884,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddPolyNodeToPaths_m828575430439
 	Enumerator_tDC6337755EB1A66B0AA6EE1AA967FA28464DA08C V_1;
 	memset((&V_1), 0, sizeof(V_1));
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4625>
 		V_0 = (bool)1;
 		int32_t L_0 = ___1_nt;
 		if ((((int32_t)L_0) == ((int32_t)1)))
@@ -24251,11 +26905,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Clipper_AddPolyNodeToPaths_m828575430439
 
 IL_000c:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4628>
 		return;
 	}
 
 IL_000d:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4629>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_2 = ___0_polynode;
 		NullCheck(L_2);
 		bool L_3;
@@ -24265,6 +26921,7 @@ IL_000d:
 
 IL_0017:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4633>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_4 = ___0_polynode;
 		NullCheck(L_4);
 		List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* L_5 = L_4->___m_polygon;
@@ -24278,6 +26935,7 @@ IL_0017:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4634>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_8 = ___2_paths;
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_9 = ___0_polynode;
 		NullCheck(L_9);
@@ -24288,6 +26946,7 @@ IL_0017:
 
 IL_0035:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4635>
 		PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_11 = ___0_polynode;
 		NullCheck(L_11);
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_12;
@@ -24315,8 +26974,10 @@ FINALLY_005c:
 
 IL_0043_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4635>
 				PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* L_14;
 				L_14 = Enumerator_get_Current_m5BDB85A73E33D1E7B4F1D498E3B3B8F6E1CB3C82_inline((&V_1), Enumerator_get_Current_m5BDB85A73E33D1E7B4F1D498E3B3B8F6E1CB3C82_RuntimeMethod_var);
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4636>
 				int32_t L_15 = ___1_nt;
 				List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_16 = ___2_paths;
 				Clipper_AddPolyNodeToPaths_m8285754304395D43033E500A6FB193A0130135B8(L_14, L_15, L_16, NULL);
@@ -24324,6 +26985,7 @@ IL_0043_1:
 
 IL_0051_1:
 			{
+				//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4635>
 				bool L_17;
 				L_17 = Enumerator_MoveNext_m73E63964DF4EDAFFA6196706FD2E9DEC893B9B7F((&V_1), Enumerator_MoveNext_m73E63964DF4EDAFFA6196706FD2E9DEC893B9B7F_RuntimeMethod_var);
 				if (L_17)
@@ -24343,9 +27005,11 @@ IL_0051_1:
 
 IL_006a:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4637>
 		return;
 	}
 }
+// Method Definition Index: 58112
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_OpenPathsFromPolyTree_m1B293AF32A608083F8EFBB54D78F453E3C7BC599 (PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* ___0_polytree, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24361,9 +27025,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4643>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571(L_0, List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571_RuntimeMethod_var);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4644>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_1 = V_0;
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_2 = ___0_polytree;
 		NullCheck(L_2);
@@ -24371,12 +27037,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 		L_3 = PolyNode_get_ChildCount_m0C56A91C4A8A62998B9AA4D3ABC143B511B66A89(L_2, NULL);
 		NullCheck(L_1);
 		List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52(L_1, L_3, List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4645>
 		V_1 = 0;
 		goto IL_0044;
 	}
 
 IL_0016:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4646>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_4 = ___0_polytree;
 		NullCheck(L_4);
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_5;
@@ -24394,6 +27062,7 @@ IL_0016:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4647>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_9 = V_0;
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_10 = ___0_polytree;
 		NullCheck(L_10);
@@ -24411,12 +27080,14 @@ IL_0016:
 
 IL_0040:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4645>
 		int32_t L_15 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_15, 1));
 	}
 
 IL_0044:
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4645>
 		int32_t L_16 = V_1;
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_17 = ___0_polytree;
 		NullCheck(L_17);
@@ -24428,10 +27099,12 @@ IL_0044:
 		}
 	}
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4648>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_19 = V_0;
 		return L_19;
 	}
 }
+// Method Definition Index: 58113
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* Clipper_ClosedPathsFromPolyTree_m2C78F9D0CF438791FAA3DDEC26D6C17D470BAF38 (PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* ___0_polytree, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -24444,9 +27117,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 	}
 	List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* V_0 = NULL;
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4655>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_0 = (List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8*)il2cpp_codegen_object_new(List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8_il2cpp_TypeInfo_var);
 		List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571(L_0, List_1__ctor_m8619DCD3C0F8DD31F2755C5A6064CBE32863E571_RuntimeMethod_var);
 		V_0 = L_0;
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4656>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_1 = V_0;
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_2 = ___0_polytree;
 		NullCheck(L_2);
@@ -24454,9 +27129,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 		L_3 = PolyTree_get_Total_m2C24746F50527209FE394C6CF52CD40BB95B48C7(L_2, NULL);
 		NullCheck(L_1);
 		List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52(L_1, L_3, List_1_set_Capacity_m4EBB42E00213A8BCD8EB2BBB90D9658E33D6ED52_RuntimeMethod_var);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4657>
 		PolyTree_t7862D11D8E14A477F6A8FC505DC0DE7AC2095CE9* L_4 = ___0_polytree;
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_5 = V_0;
 		Clipper_AddPolyNodeToPaths_m8285754304395D43033E500A6FB193A0130135B8(L_4, 2, L_5, NULL);
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:4658>
 		List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B1B8* L_6 = V_0;
 		return L_6;
 	}
@@ -24464,6 +27141,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t3618591C15EC8330EF75646F8EE8DD95E1E7B
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+// Method Definition Index: 27986
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_size_m0699A53A55A78B3201D7270D6F338DFA91B6FAD4_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
@@ -24483,80 +27161,101 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_6;
 	}
 }
+// Method Definition Index: 57969
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ClipperBase_get_PreserveCollinear_m9D2B1A1F052450CACBF3905CA51A50A1BE37B4C2_inline (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:652>
 		bool L_0 = __this->___U3CPreserveCollinearU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 58010
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Clipper_set_ReverseSolution_m0D892BFC128ED8F617128C1247B128DA98046355_inline (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1549>
 		bool L_0 = ___0_value;
 		__this->___U3CReverseSolutionU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 58012
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Clipper_set_StrictlySimple_mBAA38534C91283F371B0BC5847702C29E674A00C_inline (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1556>
 		bool L_0 = ___0_value;
 		__this->___U3CStrictlySimpleU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 57970
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ClipperBase_set_PreserveCollinear_mC58976CDF7BAF261FABB75AFCB9EAFA07E24F78A_inline (ClipperBase_tCC8D9264809A4F77C00EC66F5248C241FD508749* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:653>
 		bool L_0 = ___0_value;
 		__this->___U3CPreserveCollinearU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 58009
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Clipper_get_ReverseSolution_mDA8487BE5689AC1DD8FA0AECA1687EDFC05442BE_inline (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1548>
 		bool L_0 = __this->___U3CReverseSolutionU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 58011
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Clipper_get_StrictlySimple_m0668EAFA6CBFB92C4BA987D31B968956E406DA90_inline (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1555>
 		bool L_0 = __this->___U3CStrictlySimpleU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 58007
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Clipper_get_LastIndex_mAC6074E04AB6F8042F2D853F146D20735F096B26_inline (Clipper_t7CEE90C02F11EA69F8EBBCFE79B3DB8480FECD12* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:1540>
 		int32_t L_0 = __this->___U3CLastIndexU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 57932
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PolyNode_set_IsOpen_m2242B21BDCDB2E105ED4EBCD63F89F602047F629_inline (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:196>
 		bool L_0 = ___0_value;
 		__this->___U3CIsOpenU3Ek__BackingField = L_0;
 		return;
 	}
 }
+// Method Definition Index: 57931
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PolyNode_get_IsOpen_m92C56CD9B1E64B260B7C09FC2A90D5D834292447_inline (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:196>
 		bool L_0 = __this->___U3CIsOpenU3Ek__BackingField;
 		return L_0;
 	}
 }
+// Method Definition Index: 57928
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_t1B6F28CED46A3783113870E638DC8159DE918001* PolyNode_get_Childs_m9504B6F5165F6AD581F63D3A80A5FAA7B472BC79_inline (PolyNode_t4F81C406DA85EC586081DCAD52F0213CBF437ABC* __this, const RuntimeMethod* method) 
 {
 	{
+		//<source_info:./Library/PackageCache/com.unity.render-pipelines.universal@e9f15c489688/Runtime/2D/Clipper.cs:183>
 		List_1_t1B6F28CED46A3783113870E638DC8159DE918001* L_0 = __this->___m_Childs;
 		return L_0;
 	}
 }
+// Method Definition Index: 20960
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24564,6 +27263,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C
 		return L_0;
 	}
 }
+// Method Definition Index: 20978
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -24593,6 +27293,7 @@ IL_003c:
 		return;
 	}
 }
+// Method Definition Index: 20970
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
@@ -24630,6 +27331,7 @@ IL_0034:
 		return;
 	}
 }
+// Method Definition Index: 20960
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m9F0940C5FAFC1526F802D93C4C03EFAD22DE55C9_gshared_inline (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24637,6 +27339,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m9F0940C
 		return L_0;
 	}
 }
+// Method Definition Index: 21020
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
 {
 	{
@@ -24644,6 +27347,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Cur
 		return L_0;
 	}
 }
+// Method Definition Index: 20970
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m4C3BD24822DAB085100B75B524D75F13271649D8_gshared_inline (List_1_t658DE29611A2A6A3EB5E47C7BB7AB6C7053B75B5* __this, IntPoint_t1C7E2ACAE403B91D8319A729F2F6A2E95898E538 ___0_item, const RuntimeMethod* method) 
 {
 	IntPointU5BU5D_t00D6B5BAD11F059227DF1C6F84990D735DFAF07F* V_0 = NULL;
