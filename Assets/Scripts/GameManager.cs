@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
         }
 
         Debug.Log("PUZZLE SOLVED!");
+        canPlay = false;
         GT.GetComponent<GameTimer>().StopTimer();
         StartCoroutine(ACC.GetComponent<AutoColorChanger>().ChangeColorRoutine());
         CongratsText.enabled = true;
